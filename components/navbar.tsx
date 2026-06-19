@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ScalesIcon } from "@/components/scales-icon"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { useLanguage } from "@/lib/language-context"
 
 const LINKS = [
   { label: "Accueil", href: "#accueil" },
@@ -15,8 +16,11 @@ const LINKS = [
 ]
 
 export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
+  const { t } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+
+  const links = t.navbar.links
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -45,7 +49,7 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">
-          {LINKS.map((l) => (
+          {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -63,14 +67,14 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
             onClick={() => onAuth("in")}
             className="rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
-            Se Connecter
+            {t.navbar.login}
           </button>
           <button
             type="button"
             onClick={() => onAuth("up")}
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.04] glow-blue"
           >
-            Commencer
+            {t.navbar.start}
           </button>
         </div>
 
@@ -78,7 +82,7 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
           type="button"
           className="inline-flex size-10 items-center justify-center rounded-lg border border-border text-foreground lg:hidden"
           onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={open ? t.navbar.closeMenu : t.navbar.openMenu}
           aria-expanded={open}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -88,7 +92,7 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
       {open && (
         <div className="fixed inset-0 top-16 z-40 animate-fade-up bg-background/95 backdrop-blur-xl lg:hidden">
           <div className="flex flex-col gap-1 px-4 py-6">
-            {LINKS.map((l) => (
+            {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
@@ -110,7 +114,7 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                 }}
                 className="rounded-xl border border-border px-4 py-3 text-base font-medium"
               >
-                Se Connecter
+                {t.navbar.login}
               </button>
               <button
                 type="button"
@@ -120,7 +124,7 @@ export function Navbar({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                 }}
                 className="rounded-xl bg-primary px-4 py-3 text-base font-semibold text-primary-foreground glow-blue"
               >
-                Commencer
+                {t.navbar.start}
               </button>
             </div>
           </div>

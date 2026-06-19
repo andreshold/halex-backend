@@ -4,6 +4,7 @@ import { Copy, Share2, ThumbsUp, ThumbsDown, FileText } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ScalesIcon } from "@/components/scales-icon"
 import { JusticeMeter } from "@/components/chat/justice-meter"
+import { useLanguage } from "@/lib/language-context"
 
 export type Source = { article: string; code: string }
 
@@ -26,6 +27,7 @@ export function UserMessage({ content }: { content: string }) {
 }
 
 export function AiMessage({ message }: { message: ChatMessage }) {
+  const { t } = useLanguage()
   const confidence = message.confidence ?? 92
   return (
     <div className="flex gap-3">
@@ -39,7 +41,7 @@ export function AiMessage({ message }: { message: ChatMessage }) {
               Lajistis AI
             </span>
             <span className="rounded-full bg-green-500/15 px-2 py-0.5 text-[10px] font-medium text-green-400">
-              Confiance élevée
+              {t.message.highConfidence}
             </span>
           </div>
           <p className="text-sm leading-relaxed text-foreground/90">
@@ -65,7 +67,7 @@ export function AiMessage({ message }: { message: ChatMessage }) {
             <JusticeMeter score={confidence} />
             <div className="flex-1">
               <div className="mb-1 flex items-center justify-between text-[11px] text-muted-foreground">
-                <span>Lajistis Score</span>
+                <span>{t.message.lajistisScore}</span>
                 <span className="font-mono">{confidence}%</span>
               </div>
               <div className="h-1.5 overflow-hidden rounded-full bg-secondary">
@@ -80,10 +82,10 @@ export function AiMessage({ message }: { message: ChatMessage }) {
 
         {/* actions */}
         <div className="flex items-center gap-1">
-          <Action icon={Copy} label="Copier" />
-          <Action icon={Share2} label="Partager" />
-          <Action icon={ThumbsUp} label="Utile" />
-          <Action icon={ThumbsDown} label="Pas utile" />
+          <Action icon={Copy} label={t.message.copy} />
+          <Action icon={Share2} label={t.message.share} />
+          <Action icon={ThumbsUp} label={t.message.useful} />
+          <Action icon={ThumbsDown} label={t.message.notUseful} />
         </div>
       </div>
     </div>

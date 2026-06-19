@@ -3,14 +3,16 @@
 import Link from "next/link"
 import { ArrowRight, Play, ChevronDown, Sparkles, Check } from "lucide-react"
 import { ScalesIcon } from "@/components/scales-icon"
-
-const BADGES = [
-  { label: "Constitution Haïtienne", delay: "0s" },
-  { label: "Code Civil", delay: "1.4s" },
-  { label: "Code Pénal", delay: "2.6s" },
-]
+import { useLanguage } from "@/lib/language-context"
 
 export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
+  const { t } = useLanguage()
+  const badgeLabels = t.heroPage.badgeLabels
+  const BADGES = badgeLabels.map((label, i) => ({
+    label,
+    delay: `${i * 1.2}s`,
+  }))
+
   return (
     <section
       id="accueil"
@@ -25,7 +27,7 @@ export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
         <div className="flex flex-col items-start text-left">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1.5 text-xs font-medium text-muted-foreground">
             <Sparkles className="size-3.5 text-gold" />
-            L&apos;intelligence juridique haïtienne
+            {t.heroPage.promoLabel}
           </span>
 
           <h1 className="mt-6 font-heading text-6xl font-bold leading-[0.95] tracking-tight text-balance sm:text-7xl">
@@ -35,11 +37,10 @@ export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
           </h1>
 
           <p className="mt-5 font-heading text-2xl font-semibold text-foreground/90">
-            Dwa ou, nan men ou.
+            {t.heroPage.headline}
           </p>
           <p className="mt-3 max-w-md text-lg leading-relaxed text-muted-foreground text-pretty">
-            L&apos;intelligence juridique haïtienne à votre service. Des réponses
-            claires et sourcées sur vos droits, 24h/24.
+            {t.heroPage.description}
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -48,7 +49,7 @@ export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
               onClick={() => onAuth("up")}
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.04] glow-blue"
             >
-              Commencer Gratuitement
+              {t.heroPage.primaryCta}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </button>
             <Link
@@ -56,7 +57,7 @@ export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-secondary/40 px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:bg-secondary"
             >
               <Play className="size-4 text-primary" />
-              Voir une Démo
+              {t.heroPage.demoCta}
             </Link>
           </div>
 
@@ -100,9 +101,9 @@ export function Hero({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
       <a
         href="#fonctionnalites"
         className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-        aria-label="Faire défiler vers le bas"
+        aria-label={t.heroPage.scrollAria}
       >
-        <span className="text-xs">Découvrir</span>
+        <span className="text-xs">{t.heroPage.discover}</span>
         <ChevronDown className="size-5 animate-float" />
       </a>
     </section>

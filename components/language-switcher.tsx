@@ -1,12 +1,16 @@
 "use client"
 
-import { useState } from "react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
-const LANGS = ["FR", "KR", "EN"] as const
+const LANGS = [
+  { code: "fr" as const, label: "FR" },
+  { code: "ht" as const, label: "HT" },
+] as const
 
 export function LanguageSwitcher({ className }: { className?: string }) {
-  const [active, setActive] = useState<(typeof LANGS)[number]>("FR")
+  const { language, setLanguage, t } = useLanguage()
+
   return (
     <div
       className={cn(
@@ -14,21 +18,21 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         className,
       )}
       role="group"
-      aria-label="Sélecteur de langue"
+      aria-label={t.languageSwitcher.ariaLabel}
     >
-      {LANGS.map((l) => (
+      {LANGS.map(({ code, label }) => (
         <button
-          key={l}
+          key={code}
           type="button"
-          onClick={() => setActive(l)}
+          onClick={() => setLanguage(code)}
           className={cn(
             "rounded-full px-2.5 py-1 transition-colors",
-            active === l
+            language === code
               ? "bg-primary text-primary-foreground"
               : "text-muted-foreground hover:text-foreground",
           )}
         >
-          {l}
+          {label}
         </button>
       ))}
     </div>

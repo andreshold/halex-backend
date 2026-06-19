@@ -12,46 +12,25 @@ import {
   type ChatMessage,
 } from "@/components/chat/message"
 import { ScalesIcon } from "@/components/scales-icon"
-
-const WELCOME: ChatMessage = {
-  id: "welcome",
-  role: "ai",
-  content:
-    "Bonjou! Mwen se Lajistis AI, asistan jiridik ou. Posez-moi vos questions sur le droit haïtien — droit civil, pénal, du travail ou familial — et je vous répondrai avec les articles de loi exacts.",
-  sources: [{ article: "Préambule", code: "Constitution 1987" }],
-  confidence: 96,
-}
-
-const SUGGESTIONS = [
-  "Quels sont mes droits en cas de licenciement ?",
-  "Comment se déroule une procédure de divorce ?",
-  "Que faire si mon propriétaire m'expulse ?",
-  "Quels sont mes droits lors d'une garde à vue ?",
-]
-
-const SAMPLE_ANSWER: Omit<ChatMessage, "id" | "role"> = {
-  content:
-    "En droit haïtien, plusieurs protections s'appliquent à votre situation. Le contrat ne peut être rompu sans motif légitime, et un préavis ainsi qu'une indemnité peuvent vous être dus. Voici les références applicables à votre cas.",
-  sources: [
-    { article: "Art. 45", code: "Code du Travail" },
-    { article: "Art. 1134", code: "Code Civil" },
-  ],
-  confidence: 88,
-}
+import { useLanguage } from "@/lib/language-context"
 
 export default function ChatPage() {
+  const { t } = useLanguage()
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [messages, setMessages] = useState<ChatMessage[]>([WELCOME])
+  const [messages, setMessages] = useState<ChatMessage[]>([])
   const [typing, setTyping] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
   const hasUser = messages.some((m) => m.role === "user")
 
   useEffect(() => {
-    scrollRef.current?.scrollTo({
-      top: scrollRef.current.scrollHeight,
-      behavior: "smooth",
-    })
-  }, [messages, typing])
+    setMessages([{
+      id: "welcome",
+      role: "ai",
+      content: t.chatPage.welcome.content,
+      sources: [...t.chatPage.welcome.sources],
+      confidence: 96,
+    }])
+  }, [t])
 
   const send = (text: string) => {
     const userMsg: ChatMessage = {
@@ -65,7 +44,13 @@ export default function ChatPage() {
       setTyping(false)
       setMessages((m) => [
         ...m,
-        { id: `a-${Date.now()}`, role: "ai", ...SAMPLE_ANSWER },
+        {
+          id: `a-${Date.now()}`,
+          role: "ai",
+          content: t.chatPage.sampleAnswer.content,
+          sources: [...t.chatPage.sampleAnswer.sources],
+          confidence: 88,
+        },
       ])
     }, 1600)
   }
@@ -82,17 +67,17 @@ export default function ChatPage() {
               type="button"
               onClick={() => setSidebarOpen(true)}
               className="flex size-9 items-center justify-center rounded-lg border border-border text-foreground lg:hidden"
-              aria-label="Ouvrir le menu"
+              aria-label={t.chatPage.header.openMenu}
             >
               <Menu className="size-5" />
             </button>
             <div>
               <h1 className="font-heading text-sm font-semibold">
-                Assistant Juridique
+                {t.chatPage.header.assistant}
               </h1>
               <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 <span className="size-1.5 rounded-full bg-green-500" />
-                En ligne
+                {t.chatPage.header.online}
               </p>
             </div>
           </div>
@@ -101,7 +86,7 @@ export default function ChatPage() {
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="size-3.5" />
-            Accueil
+            {t.chatPage.header.back}
           </Link>
         </header>
 
@@ -130,10 +115,10 @@ export default function ChatPage() {
               <div className="mt-2">
                 <p className="mb-3 flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   <Sparkles className="size-3.5 text-gold" />
-                  Questions suggérées
+                  {t.chatPage.suggestionsHeading}
                 </p>
                 <div className="grid gap-2.5 sm:grid-cols-2">
-                  {SUGGESTIONS.map((s) => (
+                  {t.chatPage.suggestions.map((s) => (
                     <button
                       key={s}
                       type="button"

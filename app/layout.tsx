@@ -1,6 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
+import { LanguageProvider } from '@/lib/language-context'
+import translations from '@/translation'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -14,15 +16,14 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Lajistis AI — Dwa ou, nan men ou',
-  description:
-    "Lajistis AI, l'intelligence juridique haïtienne à votre service. Assistant légal spécialisé dans le droit haïtien : Constitution, Code Civil, Code Pénal et plus.",
-  generator: 'v0.app',
+  title: translations.fr.appLayout.title,
+  description: translations.fr.appLayout.description,
+  generator: translations.fr.appLayout.generator,
 }
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#050914',
+  themeColor: translations.fr.appLayout.themeColor,
 }
 
 export default function RootLayout({
@@ -36,8 +37,10 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} bg-background`}
     >
       <body className="font-sans antialiased">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <LanguageProvider>
+          {children}
+          {process.env.NODE_ENV === 'production' && <Analytics />}
+        </LanguageProvider>
       </body>
     </html>
   )

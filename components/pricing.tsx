@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Check } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
 const TIERS = [
   {
@@ -53,7 +54,9 @@ const TIERS = [
 ]
 
 export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
+  const { t } = useLanguage()
   const [annual, setAnnual] = useState(false)
+  const TIERS = t.pricingPage.tiers
 
   return (
     <section id="tarifs" className="relative py-24 sm:py-32">
@@ -61,10 +64,12 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Tarifs
+            {t.pricingPage.sectionLabel}
           </span>
           <h2 className="mt-3 font-heading text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Un plan pour <span className="gradient-text">chaque citoyen</span>
+            {t.pricingPage.heading.split(" ")[0]} {t.pricingPage.heading.split(" ")[1]}
+            {" "}
+            <span className="gradient-text">{t.pricingPage.heading.split(" ").slice(2).join(" ")}</span>
           </h2>
 
           <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-border bg-secondary/60 p-1">
@@ -76,7 +81,7 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                 !annual ? "bg-primary text-primary-foreground" : "text-muted-foreground",
               )}
             >
-              Mensuel
+              {t.pricingPage.monthlyLabel}
             </button>
             <button
               type="button"
@@ -86,9 +91,9 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                 annual ? "bg-primary text-primary-foreground" : "text-muted-foreground",
               )}
             >
-              Annuel
+              {t.pricingPage.annualLabel}
               <span className="rounded-full bg-gold/20 px-2 py-0.5 text-xs font-semibold text-gold">
-                -20%
+                {t.pricingPage.discountLabel}
               </span>
             </button>
           </div>
@@ -102,21 +107,21 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                 key={t.name}
                 className={cn(
                   "relative flex flex-col rounded-3xl p-7 transition-all duration-300",
-                  t.highlight
+                  t.popularBadge
                     ? "glass-strong glow-blue lg:-translate-y-4"
                     : "glass hover:-translate-y-1",
                 )}
               >
-                {t.highlight && (
+                {t.popularBadge && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
-                    Le plus populaire
+                    {t.popularBadge}
                   </span>
                 )}
                 <h3 className="font-heading text-xl font-bold">{t.name}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{t.tagline}</p>
                 <div className="mt-6 flex items-end gap-1">
                   <span className="font-heading text-5xl font-bold">${price}</span>
-                  <span className="mb-1.5 text-sm text-muted-foreground">/mois</span>
+                  <span className="mb-1.5 text-sm text-muted-foreground">{t.perMonth}</span>
                 </div>
 
                 <button
@@ -124,7 +129,7 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                   onClick={() => onAuth("up")}
                   className={cn(
                     "mt-6 rounded-xl px-5 py-3 text-sm font-semibold transition-transform hover:scale-[1.03]",
-                    t.highlight
+                    t.popularBadge
                       ? "bg-primary text-primary-foreground glow-blue"
                       : "border border-border bg-secondary/40 text-foreground hover:border-primary/50",
                   )}
@@ -138,7 +143,7 @@ export function Pricing({ onAuth }: { onAuth: (mode: "in" | "up") => void }) {
                       <Check
                         className={cn(
                           "mt-0.5 size-4 shrink-0",
-                          t.highlight ? "text-primary" : "text-gold",
+                          t.popularBadge ? "text-primary" : "text-gold",
                         )}
                       />
                       <span className="text-muted-foreground">{f}</span>

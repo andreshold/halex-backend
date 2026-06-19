@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ScalesIcon } from "@/components/scales-icon"
+import { useLanguage } from "@/lib/language-context"
 
 type Mode = "in" | "up"
 
@@ -18,6 +19,7 @@ export function AuthModal({
   onClose: () => void
   onModeChange: (m: Mode) => void
 }) {
+  const { t } = useLanguage()
   useEffect(() => {
     if (!open) return
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose()
@@ -35,7 +37,7 @@ export function AuthModal({
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
       <button
         type="button"
-        aria-label="Fermer"
+        aria-label={t.authModal.closeLabel}
         onClick={onClose}
         className="absolute inset-0 bg-background/80 backdrop-blur-md animate-fade-up"
       />
@@ -65,12 +67,10 @@ export function AuthModal({
         </div>
 
         <h2 className="relative mt-6 font-heading text-2xl font-bold">
-          {mode === "up" ? "Créer un compte" : "Bon retour"}
+          {mode === "up" ? t.authModal.createAccount : t.authModal.welcomeBack}
         </h2>
         <p className="relative mt-1 text-sm text-muted-foreground">
-          {mode === "up"
-            ? "Rejoignez des milliers de citoyens haïtiens."
-            : "Accédez à votre assistant juridique."}
+          {mode === "up" ? t.authModal.join : t.authModal.access}
         </p>
 
         {/* tabs */}
@@ -83,7 +83,7 @@ export function AuthModal({
               mode === "up" ? "bg-primary text-primary-foreground" : "text-muted-foreground",
             )}
           >
-            Inscription
+            {t.authModal.signUpTab}
           </button>
           <button
             type="button"
@@ -93,7 +93,7 @@ export function AuthModal({
               mode === "in" ? "bg-primary text-primary-foreground" : "text-muted-foreground",
             )}
           >
-            Connexion
+            {t.authModal.signInTab}
           </button>
         </div>
 
@@ -101,20 +101,20 @@ export function AuthModal({
           className="relative mt-6 flex flex-col gap-4"
           onSubmit={(e) => e.preventDefault()}
         >
-          <FloatingField label="Adresse email" type="email" />
-          <FloatingField label="Mot de passe" type="password" />
+          <FloatingField label={t.authModal.emailLabel} type="email" />
+          <FloatingField label={t.authModal.passwordLabel} type="password" />
 
           <button
             type="submit"
             className="mt-2 rounded-xl bg-primary py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] glow-blue"
           >
-            {mode === "up" ? "Créer mon compte" : "Se connecter"}
+            {mode === "up" ? t.authModal.createAccountCta : t.authModal.signInCta}
           </button>
         </form>
 
         <div className="relative my-5 flex items-center gap-3">
           <span className="h-px flex-1 bg-border" />
-          <span className="text-xs text-muted-foreground">ou</span>
+          <span className="text-xs text-muted-foreground">{t.authModal.or}</span>
           <span className="h-px flex-1 bg-border" />
         </div>
 
@@ -123,7 +123,7 @@ export function AuthModal({
           className="relative flex w-full items-center justify-center gap-3 rounded-xl border border-border bg-secondary/40 py-3 text-sm font-medium transition-colors hover:bg-secondary"
         >
           <GoogleIcon />
-          Continuer avec Google
+          {t.authModal.continueWithGoogle}
         </button>
       </div>
     </div>

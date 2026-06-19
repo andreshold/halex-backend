@@ -14,21 +14,7 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ScalesIcon } from "@/components/scales-icon"
-
-const CATEGORIES = [
-  { label: "Droit Civil", icon: Gavel, color: "text-primary" },
-  { label: "Droit Pénal", icon: Shield, color: "text-haiti-red" },
-  { label: "Travail", icon: Briefcase, color: "text-gold" },
-  { label: "Famille", icon: Users, color: "text-primary" },
-]
-
-const HISTORY = [
-  "Procédure de divorce en Haïti",
-  "Droits du locataire",
-  "Contrat de travail rompu",
-  "Héritage et succession",
-  "Plainte pour diffamation",
-]
+import { useLanguage } from "@/lib/language-context"
 
 export function ChatSidebar({
   open,
@@ -37,6 +23,14 @@ export function ChatSidebar({
   open: boolean
   onClose: () => void
 }) {
+  const { t } = useLanguage()
+  const CATEGORIES = [
+    { label: t.chatSidebar.categories[0], icon: Gavel, color: "text-primary" },
+    { label: t.chatSidebar.categories[1], icon: Shield, color: "text-haiti-red" },
+    { label: t.chatSidebar.categories[2], icon: Briefcase, color: "text-gold" },
+    { label: t.chatSidebar.categories[3], icon: Users, color: "text-primary" },
+  ]
+  const HISTORY = t.chatSidebar.history
   return (
     <>
       {open && (

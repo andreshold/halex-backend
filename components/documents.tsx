@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Search, BookOpen, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
 type Category = "Civil" | "Pénal" | "Commercial" | "Travail"
 
@@ -24,8 +25,10 @@ const DOCS: {
 const TABS = ["All", "Civil", "Pénal", "Commercial", "Travail"] as const
 
 export function Documents() {
+  const { t } = useLanguage()
   const [tab, setTab] = useState<(typeof TABS)[number]>("All")
   const [q, setQ] = useState("")
+  const TABS = ["All", ...t.documentsPage.tabs] as const
 
   const filtered = DOCS.filter(
     (d) =>
@@ -55,7 +58,7 @@ export function Documents() {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Rechercher dans tous les documents..."
+              placeholder={t.documentsPage.searchPlaceholder}
               className="w-full bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground"
             />
           </div>
@@ -108,7 +111,7 @@ export function Documents() {
                   type="button"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-transform group-hover:translate-x-0.5"
                 >
-                  Explorer <ArrowRight className="size-4" />
+                  {t.documentsPage.exploreButton} <ArrowRight className="size-4" />
                 </button>
               </div>
             </div>
@@ -117,7 +120,7 @@ export function Documents() {
 
         {filtered.length === 0 && (
           <p className="mt-12 text-center text-muted-foreground">
-            Aucun document trouvé.
+            {t.documentsPage.noResults}
           </p>
         )}
       </div>

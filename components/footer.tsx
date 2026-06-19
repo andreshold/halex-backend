@@ -1,29 +1,13 @@
 import Link from "next/link"
 import { Globe, MessageCircle, Send, Share2, Heart } from "lucide-react"
 import { ScalesIcon } from "@/components/scales-icon"
-
-const COLUMNS = [
-  {
-    title: "Produit",
-    links: ["Fonctionnalités", "Documents", "Tarifs", "API"],
-  },
-  {
-    title: "Légal",
-    links: ["Conditions", "Confidentialité", "Mentions légales", "Cookies"],
-  },
-  {
-    title: "Support",
-    links: ["Centre d'aide", "Contact", "Statut", "FAQ"],
-  },
-  {
-    title: "Communauté",
-    links: ["Blog", "Discord", "Partenaires", "Carrières"],
-  },
-]
-
-const SOCIALS = [Globe, MessageCircle, Send, Share2]
+import { useLanguage } from "@/lib/language-context"
 
 export function Footer() {
+  const { t } = useLanguage()
+  const COLUMNS = t.footerPage.columns
+  const SOCIALS = [Globe, MessageCircle, Send, Share2]
+
   return (
     <footer className="relative overflow-hidden border-t border-primary/20">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
@@ -39,8 +23,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Dwa ou, nan men ou. L&apos;intelligence juridique haïtienne au
-              service de millions de citoyens.
+              {t.footerPage.description}
             </p>
             <div className="mt-5 flex gap-2">
               {SOCIALS.map((Icon, i) => (
@@ -48,7 +31,7 @@ export function Footer() {
                   key={i}
                   href="#"
                   className="flex size-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
-                  aria-label="Réseau social"
+                  aria-label={t.footerPage.socialLabel}
                 >
                   <Icon className="size-4" />
                 </a>
@@ -79,12 +62,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center gap-4 border-t border-border pt-8">
           <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
-            Fait avec <Heart className="size-4 fill-haiti-red text-haiti-red" />{" "}
-            pour Haïti
+            {t.footerPage.madeWith} <Heart className="size-4 fill-haiti-red text-haiti-red" />{" "}
+            {t.footerPage.forHaiti}
             <span aria-hidden="true">🇭🇹</span>
           </p>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Lajistis AI. Tous droits réservés.
+            {t.footerPage.copyright(new Date().getFullYear())}
           </p>
         </div>
       </div>

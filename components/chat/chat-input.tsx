@@ -3,8 +3,10 @@
 import { useState } from "react"
 import { Mic, ArrowUp } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
 export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
+  const { t } = useLanguage()
   const [value, setValue] = useState("")
   const [recording, setRecording] = useState(false)
 
@@ -28,7 +30,7 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
                 ? "bg-destructive text-destructive-foreground animate-pulse-glow"
                 : "text-muted-foreground hover:bg-secondary hover:text-foreground",
             )}
-            aria-label="Entrée vocale"
+            aria-label={t.chatInput.voiceLabel}
           >
             <Mic className="size-5" />
           </button>
@@ -43,7 +45,7 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
               }
             }}
             rows={1}
-            placeholder="Décrivez votre situation juridique..."
+            placeholder={t.chatInput.placeholder}
             className="max-h-40 flex-1 resize-none self-center bg-transparent py-2.5 text-sm text-foreground outline-none placeholder:text-muted-foreground"
           />
 
@@ -52,14 +54,13 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
             onClick={submit}
             disabled={!value.trim()}
             className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40 enabled:glow-blue"
-            aria-label="Envoyer"
+            aria-label={t.chatInput.sendLabel}
           >
             <ArrowUp className="size-5" />
           </button>
         </div>
         <p className="mt-2.5 text-center text-xs text-muted-foreground">
-          Lajistis AI fournit des informations juridiques, pas de conseil légal
-          professionnel.
+          {t.chatInput.disclaimer}
         </p>
       </div>
     </div>

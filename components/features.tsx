@@ -1,60 +1,62 @@
 import { Gavel, Shield, Briefcase, Globe, BookText, Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
-
-const FEATURES = [
-  {
-    icon: Gavel,
-    title: "Droit Civil",
-    desc: "Famille, propriété, contrats. Des réponses claires sur vos droits civils.",
-    accent: "text-primary",
-  },
-  {
-    icon: Shield,
-    title: "Droit Pénal",
-    desc: "Infractions, procédures, défense. Comprenez vos droits face à la justice.",
-    accent: "text-haiti-red",
-  },
-  {
-    icon: Briefcase,
-    title: "Droit du Travail",
-    desc: "Emploi, licenciements, droits. Protégez votre vie professionnelle.",
-    accent: "text-gold",
-  },
-  {
-    icon: Globe,
-    title: "Multilingue",
-    desc: "Français, Créole et Anglais. La justice dans votre langue.",
-    accent: "text-primary",
-  },
-  {
-    icon: BookText,
-    title: "Réponses Sourcées",
-    desc: "Citations d'articles de loi exacts pour chaque réponse fournie.",
-    accent: "text-gold",
-  },
-  {
-    icon: Zap,
-    title: "Disponible 24/7",
-    desc: "Toujours accessible, où que vous soyez, à tout moment.",
-    accent: "text-primary",
-  },
-]
+import { useLanguage } from "@/lib/language-context"
 
 export function Features() {
+  const { t } = useLanguage()
+  const FEATURES = [
+    {
+      icon: Gavel,
+      title: t.featuresPage.cards[0].title,
+      desc: t.featuresPage.cards[0].desc,
+      accent: "text-primary",
+    },
+    {
+      icon: Shield,
+      title: t.featuresPage.cards[1].title,
+      desc: t.featuresPage.cards[1].desc,
+      accent: "text-haiti-red",
+    },
+    {
+      icon: Briefcase,
+      title: t.featuresPage.cards[2].title,
+      desc: t.featuresPage.cards[2].desc,
+      accent: "text-gold",
+    },
+    {
+      icon: Globe,
+      title: t.featuresPage.cards[3].title,
+      desc: t.featuresPage.cards[3].desc,
+      accent: "text-primary",
+    },
+    {
+      icon: BookText,
+      title: t.featuresPage.cards[4].title,
+      desc: t.featuresPage.cards[4].desc,
+      accent: "text-gold",
+    },
+    {
+      icon: Zap,
+      title: t.featuresPage.cards[5].title,
+      desc: t.featuresPage.cards[5].desc,
+      accent: "text-primary",
+    },
+  ]
+
   return (
     <section id="fonctionnalites" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Fonctionnalités
+            {t.featuresPage.sectionLabel}
           </span>
           <h2 className="mt-3 font-heading text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Tout le droit haïtien,{" "}
-            <span className="gradient-text">en un seul endroit</span>
+            {t.featuresPage.heading.split(", ")[0]},
+            {" "}
+            <span className="gradient-text">{t.featuresPage.heading.split(", ")[1]}</span>
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            Une intelligence entraînée sur les textes de loi haïtiens pour vous
-            guider à chaque étape.
+            {t.featuresPage.description}
           </p>
         </div>
 
