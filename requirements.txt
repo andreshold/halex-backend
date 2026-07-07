@@ -1,0 +1,20 @@
+# --- Serveur web : le corps du backend ---
+fastapi
+uvicorn[standard]
+
+# --- Chargement des clés secrètes depuis le fichier .env ---
+python-dotenv
+
+# --- Le cerveau : orchestration LangChain ---
+langchain
+langchain-openai
+langchain-community
+
+# --- SDK OpenAI (embeddings + génération) ---
+openai
+
+# --- Base vectorielle Supabase ---
+supabase
+
+# --- Conversion des PDF juridiques en Markdown ---
+pymupdf4llm
