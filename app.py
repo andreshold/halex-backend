@@ -1,5 +1,5 @@
 import streamlit as st
-from halex_core import poser_question
+from halex_core_supabase import poser_question
 
 # Configuration de la page (titre de l'onglet, icône)
 st.set_page_config(page_title="Halex — Assistant juridique", page_icon="⚖️")
