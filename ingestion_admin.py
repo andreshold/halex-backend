@@ -1,20 +1,29 @@
 """
 ingestion_admin.py
-Bloc 3, étape 1/2 : validation d'un fichier JSON de chunks déjà découpés
-par les scripts locaux (decoupeur_unifie.py etc., HORS de l'application).
-Cet endpoint VALIDE uniquement — aucune écriture en base, aucun appel
-OpenAI. L'insertion sera un endpoint séparé, construit après validation
-de celui-ci.
+Bloc 3, étape 2/2 : validation ET insertion réelle d'un fichier JSON de
+chunks déjà découpés par les scripts locaux (decoupeur_unifie.py etc.,
+HORS de l'application).
+
+/admin/validation valide uniquement — aucune écriture en base, aucun appel
+OpenAI. Rejouable à l'infini.
+
+/admin/insertion revalide intégralement (aucune confiance dans une
+validation antérieure côté client), génère tous les embeddings AVANT toute
+écriture, puis insère par lots. Les deux endpoints partagent la même
+logique de validation (_valider_donnees) pour garantir un comportement
+strictement identique.
 """
 
 import json
 import os
 import re
+import uuid
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from langchain_openai import OpenAIEmbeddings
 from supabase import create_client
 
 from auth_admin import verifier_admin
@@ -23,15 +32,30 @@ load_dotenv()
 
 router = APIRouter()
 
-# Client dédié en lecture seule, indépendant de celui de halex_core_supabase.py
-# et de celui d'auth_admin.py. Utilise la clé service_role pour lire la table
-# documents malgré la RLS.
+# Client dédié, indépendant de celui de halex_core_supabase.py et de celui
+# d'auth_admin.py. Utilise la clé service_role pour lire ET écrire dans la
+# table documents malgré la RLS (lecture pour /admin/validation et la
+# détection de doublons, écriture pour /admin/insertion).
 _supabase_ingestion = create_client(
     os.environ["SUPABASE_URL"], os.environ["SUPABASE_SERVICE_KEY"]
 )
 
+# Instance dédiée, indépendante de celle de halex_core_supabase.py — même
+# modèle que la recherche RAG (1536 dimensions), utilisée ici uniquement
+# pour générer les embeddings des chunks insérés.
+_embeddings_ingestion = OpenAIEmbeddings(model="text-embedding-3-small")
+
 TAILLE_MAX_OCTETS = 10 * 1024 * 1024  # 10 Mo
 TAILLE_PAGE_SUPABASE = 1000  # limite PostgREST par requête
+TAILLE_LOT_EMBEDDINGS = 100  # textes par appel OpenAI
+TAILLE_LOT_INSERTION = 100  # lignes par appel Supabase
+
+# text-embedding-3-small limite les textes à 8192 tokens. 20 000 caractères
+# est une marge de sécurité pour le français (où un token vaut souvent moins
+# d'un caractère qu'en anglais) : un chunk qui dépasse cette limite ferait
+# échouer TOUT le lot d'embeddings avec une erreur OpenAI peu explicite,
+# potentiellement après plusieurs minutes d'attente réseau.
+LONGUEUR_MAX_PAGE_CONTENT = 20000
 
 RANGS_PAR_TYPE_NORME = {
     "constitution": 1,
@@ -57,6 +81,11 @@ CLES_METADATA_OBLIGATOIRES = {
 }
 CLES_METADATA_OPTIONNELLES = {"livre", "titre", "chapitre", "section", "paragraphe"}
 CLES_METADATA_AUTORISEES = CLES_METADATA_OBLIGATOIRES | CLES_METADATA_OPTIONNELLES
+
+# Générées exclusivement côté serveur au moment de l'insertion : un fichier
+# téléversé qui les contient déjà est une erreur de validation, pour les
+# DEUX endpoints.
+CLES_METADATA_INTERDITES = {"lot_ingestion", "date_ingestion"}
 
 REGEX_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -98,6 +127,13 @@ def _valider_chunk(item, index: int) -> tuple[list[dict], str | None, str | None
         raisons.append(f"'page_content' doit être une chaîne de caractères, reçu : {page_content!r}")
     elif not page_content.strip():
         raisons.append("'page_content' est vide ou ne contient que des espaces")
+    elif len(page_content) > LONGUEUR_MAX_PAGE_CONTENT:
+        raisons.append(
+            f"'page_content' trop long : {len(page_content)} caractères (maximum "
+            f"{LONGUEUR_MAX_PAGE_CONTENT}). text-embedding-3-small limite les textes à 8192 "
+            "tokens ; un chunk trop long ferait échouer tout le lot d'embeddings au moment de "
+            "l'insertion. Découpez ce chunk en plusieurs plus petits."
+        )
 
     metadata = item.get("metadata", _ABSENT)
     if metadata is _ABSENT:
@@ -107,8 +143,17 @@ def _valider_chunk(item, index: int) -> tuple[list[dict], str | None, str | None
         raisons.append(f"'metadata' doit être un objet JSON, reçu : {type(metadata).__name__}")
         return _emballer(raisons, index, None), None, None
 
+    # Clés interdites : générées exclusivement côté serveur, jamais admises en entrée
+    cles_interdites_presentes = sorted(set(metadata.keys()) & CLES_METADATA_INTERDITES)
+    for cle in cles_interdites_presentes:
+        raisons.append(
+            f"Clé 'metadata.{cle}' interdite : générée exclusivement par le serveur lors de "
+            f"l'insertion, elle ne doit jamais figurer dans le fichier téléversé (valeur reçue : "
+            f"{metadata[cle]!r})"
+        )
+
     # Clés inconnues (protection contre les fautes de frappe type "articl")
-    cles_inconnues = sorted(set(metadata.keys()) - CLES_METADATA_AUTORISEES)
+    cles_inconnues = sorted(set(metadata.keys()) - CLES_METADATA_AUTORISEES - CLES_METADATA_INTERDITES)
     for cle in cles_inconnues:
         raisons.append(f"Clé 'metadata.{cle}' inconnue (valeur reçue : {metadata[cle]!r})")
 
@@ -246,13 +291,10 @@ def _paires_existantes_en_base(sources: list[str]) -> set[tuple[str, str]]:
     )
 
 
-@router.post("/admin/validation")
-async def endpoint_validation(
-    fichier: UploadFile = File(...),
-    admin: dict = Depends(verifier_admin),
-):
-    """Valide un fichier JSON de chunks (liste d'objets page_content/metadata)
-    sans jamais écrire en base ni appeler OpenAI. Rejouable à l'infini."""
+async def _lire_et_parser_fichier(fichier: UploadFile) -> list:
+    """Lit, décode et parse le fichier téléversé. Lève une HTTPException
+    explicite à la première étape défaillante (extension, taille, encodage,
+    JSON, forme). Commune à /admin/validation et /admin/insertion."""
     nom = fichier.filename or ""
     if not nom.lower().endswith(".json"):
         raise HTTPException(
@@ -292,6 +334,14 @@ async def endpoint_validation(
             detail=f"Le fichier doit contenir une liste JSON d'objets, reçu : {type(donnees).__name__}",
         )
 
+    return donnees
+
+
+def _valider_donnees(donnees: list) -> dict:
+    """Valide une liste de chunks déjà parsée (chaque erreur, doublon interne
+    et doublon en base). Aucune écriture, aucun appel OpenAI. Commune à
+    /admin/validation et /admin/insertion — la revalidation faite par ce
+    dernier n'a AUCUNE confiance dans une validation antérieure côté client."""
     erreurs: list[dict] = []
     pairs_par_index: dict[int, tuple[str, str]] = {}
     resume: dict[str, dict] = {}
@@ -348,4 +398,161 @@ async def endpoint_validation(
         "doublons_internes": doublons_internes,
         "doublons_en_base": doublons_en_base,
         "resume_par_source": list(resume.values()),
+    }
+
+
+def _generer_embeddings(textes: list[str]) -> list[list[float]]:
+    """Génère tous les embeddings AVANT toute écriture, par lots (un seul
+    appel OpenAI par lot, jamais un appel par chunk). Si un lot échoue
+    (réseau, quota, timeout) ou renvoie un nombre de vecteurs différent du
+    nombre de textes envoyés, abandonne tout immédiatement : un décalage
+    d'index associerait silencieusement le mauvais vecteur au mauvais
+    article, ce que rien ne détecterait ensuite côté RAG."""
+    vecteurs: list[list[float]] = []
+
+    for debut in range(0, len(textes), TAILLE_LOT_EMBEDDINGS):
+        lot = textes[debut : debut + TAILLE_LOT_EMBEDDINGS]
+        try:
+            vecteurs_lot = _embeddings_ingestion.embed_documents(lot)
+        except Exception as exc:
+            raise HTTPException(
+                status_code=502,
+                detail=(
+                    f"Échec de génération des embeddings (lot {debut}-{debut + len(lot) - 1} sur "
+                    f"{len(textes)} chunks) : {type(exc).__name__} — {exc}. Aucune donnée n'a été "
+                    "écrite en base. Réessayez le téléversement."
+                ),
+            ) from exc
+
+        if len(vecteurs_lot) != len(lot):
+            raise HTTPException(
+                status_code=502,
+                detail=(
+                    f"Incohérence dans la réponse d'embeddings (lot {debut}-{debut + len(lot) - 1}) : "
+                    f"{len(vecteurs_lot)} vecteur(s) reçu(s) pour {len(lot)} chunk(s) envoyé(s). "
+                    "Abandon par sécurité pour éviter d'associer un vecteur au mauvais article. "
+                    "Aucune donnée n'a été écrite en base."
+                ),
+            )
+        vecteurs.extend(vecteurs_lot)
+
+    if len(vecteurs) != len(textes):
+        raise HTTPException(
+            status_code=502,
+            detail=(
+                f"Incohérence globale : {len(vecteurs)} vecteur(s) obtenu(s) pour {len(textes)} "
+                "chunk(s) au total. Abandon par sécurité. Aucune donnée n'a été écrite en base."
+            ),
+        )
+
+    return vecteurs
+
+
+def _inserer_documents(lignes: list[dict], lot_ingestion: str) -> int:
+    """Insère les lignes par lots dans documents. Si un lot échoue en cours
+    de route, tente de supprimer les lignes déjà écrites pour ce
+    lot_ingestion, vérifie le nombre réellement supprimé, et lève une
+    HTTPException 500 indiquant clairement si le nettoyage a réussi ou s'il
+    reste des lignes orphelines à traiter à la main."""
+    inseres = 0
+    try:
+        for debut in range(0, len(lignes), TAILLE_LOT_INSERTION):
+            lot = lignes[debut : debut + TAILLE_LOT_INSERTION]
+            _supabase_ingestion.table("documents").insert(lot).execute()
+            inseres += len(lot)
+    except Exception as exc:
+        try:
+            suppression = (
+                _supabase_ingestion.table("documents")
+                .delete()
+                .eq("metadata->>lot_ingestion", lot_ingestion)
+                .execute()
+            )
+            nb_supprimees = len(suppression.data or [])
+        except Exception:
+            nb_supprimees = None
+
+        if nb_supprimees is None:
+            message_nettoyage = (
+                "Le nettoyage automatique a lui-même échoué : impossible de confirmer si des "
+                "lignes orphelines subsistent."
+            )
+        elif nb_supprimees == inseres:
+            message_nettoyage = f"Nettoyage automatique réussi : {nb_supprimees} ligne(s) supprimée(s)."
+        else:
+            message_nettoyage = (
+                f"ATTENTION, nettoyage incomplet : {nb_supprimees} ligne(s) supprimée(s) alors que "
+                f"{inseres} avaient été insérées avec ce lot_ingestion. Des lignes orphelines "
+                "peuvent subsister."
+            )
+
+        raise HTTPException(
+            status_code=500,
+            detail=(
+                f"Échec d'écriture en base après {inseres} chunk(s) inséré(s) sur {len(lignes)} "
+                f"({type(exc).__name__} — {exc}). {message_nettoyage} Vérifiez manuellement la "
+                f"table documents pour lot_ingestion = '{lot_ingestion}'."
+            ),
+        ) from exc
+
+    return inseres
+
+
+@router.post("/admin/validation")
+async def endpoint_validation(
+    fichier: UploadFile = File(...),
+    admin: dict = Depends(verifier_admin),
+):
+    """Valide un fichier JSON de chunks (liste d'objets page_content/metadata)
+    sans jamais écrire en base ni appeler OpenAI. Rejouable à l'infini."""
+    donnees = await _lire_et_parser_fichier(fichier)
+    return _valider_donnees(donnees)
+
+
+@router.post("/admin/insertion")
+async def endpoint_insertion(
+    fichier: UploadFile = File(...),
+    admin: dict = Depends(verifier_admin),
+):
+    """Revalide intégralement le fichier (aucune confiance dans une
+    validation antérieure côté client), génère tous les embeddings AVANT
+    toute écriture, puis insère en base par lots avec un lot_ingestion
+    commun. N'écrit rien si la validation ou la génération d'embeddings
+    échoue."""
+    donnees = await _lire_et_parser_fichier(fichier)
+    rapport = _valider_donnees(donnees)
+
+    if not rapport["pret_pour_insertion"]:
+        raise HTTPException(status_code=409, detail=rapport)
+
+    textes = [item["page_content"] for item in donnees]
+    vecteurs = _generer_embeddings(textes)
+
+    lot_ingestion = str(uuid.uuid4())
+    date_ingestion = datetime.now(timezone.utc).isoformat()
+
+    lignes = []
+    for item, vecteur in zip(donnees, vecteurs):
+        metadata = dict(item["metadata"])
+        metadata["lot_ingestion"] = lot_ingestion
+        metadata["date_ingestion"] = date_ingestion
+        lignes.append(
+            {
+                "content": item["page_content"],
+                "metadata": metadata,
+                "embedding": vecteur,
+            }
+        )
+
+    nb_chunks_inseres = _inserer_documents(lignes, lot_ingestion)
+
+    return {
+        "succes": True,
+        "lot_ingestion": lot_ingestion,
+        "date_ingestion": date_ingestion,
+        "nb_chunks_inseres": nb_chunks_inseres,
+        "resume_par_source": rapport["resume_par_source"],
+        "commande_annulation": (
+            f"DELETE FROM documents WHERE metadata->>'lot_ingestion' = '{lot_ingestion}';"
+        ),
     }
