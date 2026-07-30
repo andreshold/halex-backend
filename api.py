@@ -4,10 +4,11 @@ Porte d'entrée HTTP de Halex : expose le moteur (halex_core_supabase)
 sous forme d'API REST. C'est ce que le frontend Next.js appellera.
 """
 
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, field_validator
 
+from auth_admin import verifier_admin
 from halex_core_supabase import (
     poser_question,
     lookup_article,
@@ -125,3 +126,9 @@ def endpoint_article_du_jour():
 def endpoint_archives_article_du_jour():
     """Historique des articles du jour déjà générés (30 plus récents)."""
     return archives_article_du_jour()
+
+
+@app.get("/admin/ping")
+def endpoint_admin_ping(admin: dict = Depends(verifier_admin)):
+    """Endpoint de test temporaire pour valider la dépendance verifier_admin."""
+    return {"status": "ok", "admin": admin["email"]}
