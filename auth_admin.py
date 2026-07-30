@@ -7,7 +7,8 @@ utilisateur authentifié avec role = 'admin' dans public.profils.
 import os
 
 from dotenv import load_dotenv
-from fastapi import Header, HTTPException
+from fastapi import Depends, HTTPException
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from supabase import create_client
 
 load_dotenv()
@@ -19,15 +20,19 @@ _supabase_admin = create_client(
     os.environ["SUPABASE_URL"], os.environ["SUPABASE_SERVICE_KEY"]
 )
 
+# auto_error=False : on gère nous-mêmes le 401 pour garder un message
+# explicite, plutôt que le 403 générique par défaut de HTTPBearer.
+security = HTTPBearer(auto_error=False)
 
-def verifier_admin(authorization: str | None = Header(None)) -> dict:
+
+def verifier_admin(credentials: HTTPAuthorizationCredentials | None = Depends(security)) -> dict:
     """Dépendance FastAPI : lève 401 si le token Bearer est absent ou
     invalide, 403 si l'utilisateur authentifié n'a pas role='admin' dans
     public.profils. Retourne {"id": ..., "email": ...} si admin."""
-    if not authorization or not authorization.startswith("Bearer "):
+    if credentials is None:
         raise HTTPException(status_code=401, detail="Token d'authentification manquant")
 
-    token = authorization.removeprefix("Bearer ").strip()
+    token = credentials.credentials
 
     try:
         reponse_auth = _supabase_admin.auth.get_user(token)
