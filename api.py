@@ -17,6 +17,7 @@ from halex_core_supabase import (
     MODE_PAR_DEFAUT,
     INSTRUCTIONS_MODES,
 )
+from ingestion_admin import router as ingestion_router
 
 app = FastAPI(
     title="Halex API",
@@ -33,6 +34,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(ingestion_router)
 
 
 class Question(BaseModel):

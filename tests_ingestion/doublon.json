@@ -1,0 +1,16 @@
+[
+  {
+    "page_content": "Texte de test pour vérifier la détection de doublon en base (couple source/article déjà présent dans la table documents).",
+    "metadata": {
+      "source": "Constitution de 1987 Amendée",
+      "type_norme": "constitution",
+      "rang": 1,
+      "date": "1987-03-29",
+      "statut": "en_vigueur",
+      "article": "Préambule",
+      "moniteur_annee": 178,
+      "moniteur_numero": "11",
+      "moniteur_type": "spécial"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "page_content": "Le salaire minimum interprofessionnel garanti est fixé par arrêté du ministre des Affaires Sociales et du Travail, après consultation du Conseil Supérieur des Salaires.",
+    "metadata": {
+      "source": "Code du Travail",
+      "type_norme": "code",
+      "rang": 3,
+      "date": "2020-01-15",
+      "statut": "en_vigueur",
+      "article": "Article 1",
+      "moniteur_annee": 178,
+      "moniteur_numero": "11",
+      "moniteur_type": "ordinaire",
+      "section": "Section 2",
+      "paragraphe": "Paragraphe 3"
+    }
+  },
+  {
+    "page_content": "Tout travailleur a droit à un jour de repos hebdomadaire d'au moins vingt-quatre heures consécutives.",
+    "metadata": {
+      "source": "Code du Travail",
+      "type_norme": "code",
+      "rang": 3,
+      "date": "2020-01-15",
+      "statut": "en_vigueur",
+      "article": "Article 2",
+      "moniteur_annee": 178,
+      "moniteur_numero": "11",
+      "moniteur_type": "ordinaire"
+    }
+  }
+]
