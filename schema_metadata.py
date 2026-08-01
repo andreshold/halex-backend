@@ -41,6 +41,7 @@ CLES_METADATA_OPTIONNELLES = {
     "moniteur_numero",
     "moniteur_type",
     "source_courte",
+    "mots_cles",
 }
 CLES_METADATA_AUTORISEES = CLES_METADATA_OBLIGATOIRES | CLES_METADATA_OPTIONNELLES
 

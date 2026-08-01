@@ -26,6 +26,7 @@ from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from langchain_openai import OpenAIEmbeddings
 from supabase import create_client
 
+import halex_core_supabase
 from auth_admin import verifier_admin
 from schema_metadata import (
     CLES_METADATA_AUTORISEES,
@@ -215,10 +216,20 @@ def _valider_chunk(item, index: int) -> tuple[list[dict], str | None, str | None
             "ou aucune."
         )
 
+    # mots_cles : optionnelle, mais si présente doit être une liste non vide
+    # de chaînes non vides (exclue de la boucle générique ci-dessous, qui ne
+    # s'applique qu'aux clés optionnelles de type chaîne).
+    if "mots_cles" in metadata:
+        mots_cles_brut = metadata["mots_cles"]
+        if not isinstance(mots_cles_brut, list) or not mots_cles_brut:
+            raisons.append(f"'metadata.mots_cles' doit être une liste non vide, reçu : {mots_cles_brut!r}")
+        elif not all(isinstance(m, str) and m.strip() for m in mots_cles_brut):
+            raisons.append(f"'metadata.mots_cles' doit être une liste de chaînes non vides, reçu : {mots_cles_brut!r}")
+
     # Clés optionnelles restantes : string non vide si présentes (les trois
-    # clés moniteur_* ont chacune leur propre contrôle de type ci-dessus,
-    # elles ne sont pas toutes des chaînes).
-    for cle in sorted(CLES_METADATA_OPTIONNELLES - CLES_MONITEUR):
+    # clés moniteur_* et mots_cles ont chacune leur propre contrôle de type
+    # ci-dessus, elles ne sont pas toutes des chaînes).
+    for cle in sorted(CLES_METADATA_OPTIONNELLES - CLES_MONITEUR - {"mots_cles"}):
         if cle in metadata:
             valeur = metadata[cle]
             if not isinstance(valeur, str) or not valeur.strip():
@@ -530,6 +541,11 @@ async def endpoint_insertion(
         )
 
     nb_chunks_inseres = _inserer_documents(lignes, lot_ingestion)
+
+    # Le corpus vient de changer : force la relecture des caches module-level
+    # de halex_core_supabase (sources distinctes, mapping mots-clés, libellés)
+    # au prochain appel plutôt que de servir des valeurs pré-ingestion.
+    halex_core_supabase.invalider_caches()
 
     return {
         "succes": True,

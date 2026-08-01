@@ -60,6 +60,7 @@ class SourceItem(BaseModel):
     """Un article cité, tel qu'affiché dans une puce de source côté frontend."""
     article: str
     source: str
+    source_courte: str | None = None
     texte: str
 
 
@@ -80,13 +81,17 @@ class ReponseHalex(BaseModel):
 
 
 class ArticleDuJour(BaseModel):
-    """Format de réponse de l'endpoint /article-du-jour."""
-    titre: str
-    extrait: str
-    texte_complet: str
-    explication_fr: str
-    explication_ht: str
+    """Format de réponse de l'endpoint /article-du-jour. Champs optionnels
+    car indisponible=True (corpus vide) ne renvoie que indisponible/message ;
+    cas nominal inchangé (tous les champs texte sont renseignés)."""
+    titre: str | None = None
+    extrait: str | None = None
+    texte_complet: str | None = None
+    explication_fr: str | None = None
+    explication_ht: str | None = None
     tags: list[str] = []
+    indisponible: bool = False
+    message: str | None = None
 
 
 class ArchiveItem(BaseModel):

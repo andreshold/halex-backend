@@ -9,12 +9,15 @@ import json
 import logging
 import os
 import re
+import unicodedata
 from datetime import date
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from supabase import create_client
+
+from schema_metadata import libelle_source
 
 load_dotenv()
 
@@ -90,19 +93,7 @@ INSTRUCTIONS_MODES = {
 - Mentionne explicitement la position du texte dans la hiérarchie des normes
   et son statut d'application.
 - Format dense et technique, sans détour pédagogique.""",
-}
 
-# Mots-clés -> valeur exacte de metadata->>'source', pour la détection de
-# source dans une question (lookup direct d'article). L'ordre est important :
-# "amendement" / "loi constitutionnelle" doivent être testés AVANT
-# "constitution", pour qu'une question qui mentionne les deux résolve vers
-# le texte d'amendement plutôt que vers la Constitution de base.
-SOURCES_CORPUS: dict[str, str] = {
-    "amendement": "Loi Constitutionnelle du 9 mai 2011 (amendement)",
-    "loi constitutionnelle": "Loi Constitutionnelle du 9 mai 2011 (amendement)",
-    "constitution": "Constitution de 1987 Amendée",
-    "pénal": "Code pénal",
-    "penal": "Code pénal",
 }
 
 SALUTATIONS: set[str] = {
@@ -141,25 +132,33 @@ def _construire_sources(articles: list[dict]) -> list[dict]:
     sources: list[dict] = []
     index: dict[tuple[str, str], dict] = {}
     for a in articles:
-        article = a["metadata"].get("article", "?")
-        source = a["metadata"].get("source", "?")
+        meta = a["metadata"]
+        article = meta.get("article", "?")
+        source = meta.get("source", "?")
         cle = (article, source)
         texte = _texte_article(a)
         if cle in index:
             index[cle]["texte"] += "\n\n" + texte
         else:
-            entree = {"article": article, "source": source, "texte": texte}
+            entree = {
+                "article": article,
+                "source": source,
+                "source_courte": meta.get("source_courte"),
+                "texte": texte,
+            }
             index[cle] = entree
             sources.append(entree)
     return sources
 
 
-def _etiquette_citation(article: str, source: str) -> str:
+def _etiquette_citation(article: str, libelle: str) -> str:
     """Étiquette stable et sans ambiguïté pour l'appariement citation ↔ puce.
-    Doit être une copie exacte du couple (article, source) utilisé pour
-    construire les puces (_construire_sources), afin que le filtrage par
-    intersection puisse matcher la sortie du LLM au texte."""
-    return f"[SOURCE: {article} — {source}]"
+    `libelle` doit être calculé avec libelle_source() à partir des MÊMES
+    champs metadata (source/source_courte) des deux côtés — construction du
+    contexte (poser_question, lookup_article) et filtrage
+    (_filtrer_sources_citees) — sinon l'intersection anti-hallucination ne
+    matche plus rien."""
+    return f"[SOURCE: {article} — {libelle}]"
 
 
 def _filtrer_sources_citees(sources: list[dict], articles_cites: list[str]) -> list[dict]:
@@ -169,7 +168,7 @@ def _filtrer_sources_citees(sources: list[dict], articles_cites: list[str]) -> l
     articles_cites, c'est-à-dire l'ordre dans lequel le LLM a cité les
     articles — plus utile pour l'utilisateur que l'ordre brut de pertinence
     du retriever."""
-    index = {_etiquette_citation(s["article"], s["source"]): s for s in sources}
+    index = {_etiquette_citation(s["article"], libelle_source(s)): s for s in sources}
     vues: set[str] = set()
     resultat: list[dict] = []
     for etiquette in articles_cites:
@@ -217,6 +216,10 @@ def _etiquette(meta: dict) -> str:
         parties.append(statut.replace("_", " "))
     if date and not date.startswith("XXXX"):
         parties.append(date)
+    if meta.get("moniteur_annee") and meta.get("moniteur_numero") and meta.get("moniteur_type"):
+        parties.append(
+            f"Le Moniteur n° {meta['moniteur_numero']} {meta['moniteur_type']} {meta['moniteur_annee']}"
+        )
     return "[" + " — ".join(str(p) for p in parties) + "]"
 
 
@@ -300,12 +303,18 @@ QUESTION DU CITOYEN :
 
 RÉPONSE (en français clair, avec citations de l'article ET du texte source) :
 
-{instructions_mode}"""
+{instructions_mode}
+
+RAPPEL FINAL (prime sur le style ci-dessus) : le style change la présentation,
+JAMAIS la sélection des articles. Avant de rédiger, détermine la liste des
+articles pertinents comme si aucun style n'était demandé, puis rédige dans le
+style demandé en utilisant et citant TOUS ces articles. En mode simple, tu
+peux traiter un article en une phrase, mais tu ne peux pas l'omettre."""
 )
 
 _prompt_reformulation = ChatPromptTemplate.from_template(
     """Reformule la requête suivante en UNE seule question claire et complète,
-en français, portant sur le droit haïtien (Constitution ou Code pénal).
+en français, portant sur le droit haïtien ({libelles_corpus}).
 Ne réponds PAS à la question. Renvoie UNIQUEMENT la question reformulée,
 sans guillemets ni préambule.
 
@@ -317,7 +326,7 @@ Question reformulée :"""
 
 def reformuler(requete: str) -> str:
     return _llm.invoke(
-        _prompt_reformulation.format(requete=requete)
+        _prompt_reformulation.format(requete=requete, libelles_corpus=_libelles_corpus_texte())
     ).content.strip()
 
 
@@ -325,7 +334,7 @@ def _reponse_hors_domaine(methode: str = "vectorielle") -> dict:
     return {
         "reponse": (
             "Cette question semble sortir du domaine actuellement couvert par "
-            "Halex (Constitution haïtienne de 1987 amendée et Code pénal). "
+            f"Halex ({_libelles_corpus_texte()}). "
             "Je ne peux pas y répondre de façon fiable. Pour votre situation, "
             "consultez un professionnel du droit ou l'autorité compétente."
         ),
@@ -360,11 +369,105 @@ _RE_ARTICLE = re.compile(
 _RE_PREAMBULE = re.compile(r"\b(?:pr[ée]ambule|preyanbil)\b", re.IGNORECASE)
 
 
+_cache_mapping_mots_cles: dict[str, str] | None = None
+
+
+def _construire_sources_corpus() -> dict[str, str]:
+    """Mot-clé -> valeur exacte de metadata->>'source', construit depuis le
+    corpus réel (mots_cles + source_courte de chaque document, minuscules,
+    NFC). Chaque élément de mots_cles est utilisé tel quel comme clé, jamais
+    découpé par espaces (permet des expressions à mots multiples, ex.
+    "loi constitutionnelle"). Trié par longueur de clé décroissante : le
+    mot-clé le plus spécifique gagne — remplace l'ordre manuel de l'ancien
+    SOURCES_CORPUS, qui testait "amendement" avant "constitution".
+    Mis en cache au niveau du module ; invalidé par invalider_caches()."""
+    global _cache_mapping_mots_cles
+    if _cache_mapping_mots_cles is not None:
+        return _cache_mapping_mots_cles
+
+    resultat = (
+        _supabase.table("documents")
+        .select("metadata->>source, metadata->>source_courte, metadata->mots_cles")
+        .execute()
+    )
+
+    paires: dict[str, str] = {}
+    for ligne in resultat.data:
+        source = ligne.get("source")
+        if not source:
+            continue
+        candidats = list(ligne.get("mots_cles") or [])
+        source_courte = ligne.get("source_courte")
+        if source_courte:
+            candidats.append(source_courte)
+        for mot in candidats:
+            if isinstance(mot, str) and mot.strip():
+                cle = unicodedata.normalize("NFC", mot.strip().lower())
+                paires[cle] = source
+
+    _cache_mapping_mots_cles = dict(
+        sorted(paires.items(), key=lambda item: len(item[0]), reverse=True)
+    )
+    return _cache_mapping_mots_cles
+
+
+_cache_libelles_corpus: str | None = None
+
+
+def _libelles_corpus_texte() -> str:
+    """Phrase française listant les libellés (libelle_source) des sources
+    distinctes du corpus réel, ex. "Constitution de 1987 Amendée et Code
+    pénal". Texte neutre si le corpus est vide (table documents non encore
+    peuplée). Mis en cache au niveau du module ; invalidé par
+    invalider_caches()."""
+    global _cache_libelles_corpus
+    if _cache_libelles_corpus is not None:
+        return _cache_libelles_corpus
+
+    resultat = (
+        _supabase.table("documents")
+        .select("metadata->>source, metadata->>source_courte")
+        .execute()
+    )
+    libelles = sorted({
+        libelle_source({"source": ligne["source"], "source_courte": ligne.get("source_courte")})
+        for ligne in resultat.data
+        if ligne.get("source")
+    })
+
+    if not libelles:
+        texte = "les textes actuellement couverts par Halex"
+    elif len(libelles) == 1:
+        texte = libelles[0]
+    else:
+        texte = ", ".join(libelles[:-1]) + " et " + libelles[-1]
+
+    _cache_libelles_corpus = texte
+    return _cache_libelles_corpus
+
+
+def invalider_caches() -> None:
+    """Invalide les caches module-level construits depuis le corpus (mapping
+    mots-clés, libellés). À appeler après toute ingestion réussie pour que
+    le prochain appel relise le corpus à jour plutôt que de servir des
+    valeurs pré-ingestion."""
+    global _cache_mapping_mots_cles, _cache_libelles_corpus
+    _cache_mapping_mots_cles = None
+    _cache_libelles_corpus = None
+
+
 def _detecter_source_corpus(question_minuscule: str) -> str | None:
-    """Première source de SOURCES_CORPUS dont le mot-clé apparaît dans la
-    question (déjà en minuscules). Respecte l'ordre d'itération du dict."""
-    for mot_cle, source in SOURCES_CORPUS.items():
-        if mot_cle in question_minuscule:
+    """Première source du mapping construit par _construire_sources_corpus()
+    dont le mot-clé apparaît dans la question (déjà en minuscules). La
+    question est normalisée en NFC, symétriquement à la normalisation NFC
+    appliquée aux fichiers de chunks à l'ingestion (_lire_et_parser_fichier
+    dans ingestion_admin.py) — sans cette symétrie, un mot-clé et une
+    question visuellement identiques mais en formes Unicode différentes ne
+    matcheraient pas. Respecte l'ordre d'itération du dict (longueur
+    décroissante)."""
+    question_normalisee = unicodedata.normalize("NFC", question_minuscule)
+    for mot_cle, source in _construire_sources_corpus().items():
+        if mot_cle in question_normalisee:
             return source
     return None
 
@@ -388,20 +491,6 @@ def detecter_reference_article(question: str) -> dict | None:
 
 # --- Lookup direct d'article (sans recherche vectorielle) ---
 
-_cache_sources_distinctes: list[str] | None = None
-
-
-def _sources_distinctes() -> list[str]:
-    """Sources distinctes présentes dans le corpus, mises en cache au niveau
-    du module (un seul aller-retour Supabase par redémarrage du process)."""
-    global _cache_sources_distinctes
-    if _cache_sources_distinctes is not None:
-        return _cache_sources_distinctes
-    resultat = _supabase.table("documents").select("metadata->>source").execute()
-    sources = {ligne["source"] for ligne in resultat.data if ligne.get("source")}
-    _cache_sources_distinctes = sorted(sources)
-    return _cache_sources_distinctes
-
 
 def lookup_article(numero: str | None, source: str | None, preambule: bool = False) -> dict:
     """Requête directe (PAS match_documents) d'un article par son numéro
@@ -419,12 +508,10 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
     chunks = requete.execute().data
 
     if not chunks:
-        sources_disponibles = _sources_distinctes()
         return {
             "reponse": (
                 f"{valeur_article} n'existe pas dans les textes actuellement "
-                "couverts par Halex. Les documents disponibles sont : "
-                + ", ".join(sources_disponibles) + "."
+                f"couverts par Halex ({_libelles_corpus_texte()})."
             ),
             "sources": [],
             "hors_domaine": True,
@@ -454,7 +541,7 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
 
     toutes_sources = _construire_sources(chunks)
     contexte = "\n\n".join(
-        f"{_etiquette_citation(s['article'], s['source'])}\n{s['texte']}"
+        f"{_etiquette_citation(s['article'], libelle_source(s))}\n{s['texte']}"
         for s in toutes_sources
     )
     prompt_final = (
@@ -631,7 +718,7 @@ def poser_question(question: str, mode: str = MODE_PAR_DEFAUT) -> dict:
     articles = _chercher(question_recherche, k=6)
 
     contexte = "\n\n".join(
-        f"{_etiquette_citation(a['metadata'].get('article', '?'), a['metadata'].get('source', '?'))}\n"
+        f"{_etiquette_citation(a['metadata'].get('article', '?'), libelle_source(a['metadata']))}\n"
         f"{_etiquette(a['metadata'])} {a['metadata'].get('article', '')}\n{a['content']}"
         for a in articles
     )
@@ -745,6 +832,11 @@ def article_du_jour() -> dict:
         .like("content", "Article%")
         .execute()
     )
+    if not total.count:
+        return {
+            "indisponible": True,
+            "message": "Aucun article disponible pour le moment.",
+        }
     offset = tranche % total.count
 
     resultat = (
