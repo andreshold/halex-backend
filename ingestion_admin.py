@@ -16,7 +16,7 @@ strictement identique.
 
 import json
 import os
-import re
+import unicodedata
 import uuid
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -27,6 +27,17 @@ from langchain_openai import OpenAIEmbeddings
 from supabase import create_client
 
 from auth_admin import verifier_admin
+from schema_metadata import (
+    CLES_METADATA_AUTORISEES,
+    CLES_METADATA_INTERDITES,
+    CLES_METADATA_OPTIONNELLES,
+    CLES_MONITEUR,
+    LONGUEUR_MAX_PAGE_CONTENT,
+    MONITEUR_TYPES_VALIDES,
+    RANGS_PAR_TYPE_NORME,
+    STATUTS_VALIDES,
+    date_valide,
+)
 
 load_dotenv()
 
@@ -50,59 +61,8 @@ TAILLE_PAGE_SUPABASE = 1000  # limite PostgREST par requête
 TAILLE_LOT_EMBEDDINGS = 100  # textes par appel OpenAI
 TAILLE_LOT_INSERTION = 100  # lignes par appel Supabase
 
-# text-embedding-3-small limite les textes à 8192 tokens. 20 000 caractères
-# est une marge de sécurité pour le français (où un token vaut souvent moins
-# d'un caractère qu'en anglais) : un chunk qui dépasse cette limite ferait
-# échouer TOUT le lot d'embeddings avec une erreur OpenAI peu explicite,
-# potentiellement après plusieurs minutes d'attente réseau.
-LONGUEUR_MAX_PAGE_CONTENT = 20000
-
-RANGS_PAR_TYPE_NORME = {
-    "constitution": 1,
-    "loi": 2,
-    "code": 3,
-    "décret": 4,
-    "arrêté": 5,
-}
-
-STATUTS_VALIDES = {"en_vigueur", "adopté_non_appliqué"}
-MONITEUR_TYPES_VALIDES = {"spécial", "ordinaire", "extraordinaire"}
-
-CLES_METADATA_OBLIGATOIRES = {
-    "source",
-    "type_norme",
-    "rang",
-    "date",
-    "statut",
-    "article",
-    "moniteur_annee",
-    "moniteur_numero",
-    "moniteur_type",
-}
-CLES_METADATA_OPTIONNELLES = {"livre", "titre", "chapitre", "section", "paragraphe"}
-CLES_METADATA_AUTORISEES = CLES_METADATA_OBLIGATOIRES | CLES_METADATA_OPTIONNELLES
-
-# Générées exclusivement côté serveur au moment de l'insertion : un fichier
-# téléversé qui les contient déjà est une erreur de validation, pour les
-# DEUX endpoints.
-CLES_METADATA_INTERDITES = {"lot_ingestion", "date_ingestion"}
-
-REGEX_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-
 # Sentinelle pour distinguer "clé absente" de "clé présente avec valeur None".
 _ABSENT = object()
-
-
-def _date_valide(valeur: str) -> bool:
-    """Format strict YYYY-MM-DD ET date calendaire réellement valide
-    (rejette par exemple "2024-1-5" ou "2024-02-30")."""
-    if not REGEX_DATE.match(valeur):
-        return False
-    try:
-        datetime.strptime(valeur, "%Y-%m-%d")
-    except ValueError:
-        return False
-    return True
 
 
 def _emballer(raisons: list[str], index: int, article_label: str | None) -> list[dict]:
@@ -196,7 +156,7 @@ def _valider_chunk(item, index: int) -> tuple[list[dict], str | None, str | None
     date_brut = metadata.get("date", _ABSENT)
     if date_brut is _ABSENT:
         raisons.append("Clé 'metadata.date' absente")
-    elif not isinstance(date_brut, str) or not _date_valide(date_brut):
+    elif not isinstance(date_brut, str) or not date_valide(date_brut):
         raisons.append(f"'metadata.date' invalide, reçu : {date_brut!r}. Format attendu : YYYY-MM-DD (date réelle)")
 
     # statut
@@ -219,36 +179,46 @@ def _valider_chunk(item, index: int) -> tuple[list[dict], str | None, str | None
     else:
         article_label = article_brut
 
-    # moniteur_annee
-    moniteur_annee_brut = metadata.get("moniteur_annee", _ABSENT)
-    if moniteur_annee_brut is _ABSENT:
-        raisons.append("Clé 'metadata.moniteur_annee' absente")
-    elif (
-        not isinstance(moniteur_annee_brut, int)
-        or isinstance(moniteur_annee_brut, bool)
-        or moniteur_annee_brut <= 0
-    ):
-        raisons.append(f"'metadata.moniteur_annee' doit être un entier positif, reçu : {moniteur_annee_brut!r}")
+    # moniteur_annee / moniteur_numero / moniteur_type : chacune optionnelle
+    # individuellement (aucune erreur si absente), mais soumises ensemble à
+    # une règle tout-ou-rien vérifiée juste après.
+    if "moniteur_annee" in metadata:
+        moniteur_annee_brut = metadata["moniteur_annee"]
+        if (
+            not isinstance(moniteur_annee_brut, int)
+            or isinstance(moniteur_annee_brut, bool)
+            or moniteur_annee_brut <= 0
+        ):
+            raisons.append(f"'metadata.moniteur_annee' doit être un entier positif, reçu : {moniteur_annee_brut!r}")
 
-    # moniteur_numero
-    moniteur_numero_brut = metadata.get("moniteur_numero", _ABSENT)
-    if moniteur_numero_brut is _ABSENT:
-        raisons.append("Clé 'metadata.moniteur_numero' absente")
-    elif not isinstance(moniteur_numero_brut, str) or not moniteur_numero_brut.strip():
-        raisons.append(f"'metadata.moniteur_numero' doit être une chaîne non vide, reçu : {moniteur_numero_brut!r}")
+    if "moniteur_numero" in metadata:
+        moniteur_numero_brut = metadata["moniteur_numero"]
+        if not isinstance(moniteur_numero_brut, str) or not moniteur_numero_brut.strip():
+            raisons.append(f"'metadata.moniteur_numero' doit être une chaîne non vide, reçu : {moniteur_numero_brut!r}")
 
-    # moniteur_type
-    moniteur_type_brut = metadata.get("moniteur_type", _ABSENT)
-    if moniteur_type_brut is _ABSENT:
-        raisons.append("Clé 'metadata.moniteur_type' absente")
-    elif moniteur_type_brut not in MONITEUR_TYPES_VALIDES:
+    if "moniteur_type" in metadata:
+        moniteur_type_brut = metadata["moniteur_type"]
+        if moniteur_type_brut not in MONITEUR_TYPES_VALIDES:
+            raisons.append(
+                f"'metadata.moniteur_type' invalide, reçu : {moniteur_type_brut!r}. "
+                f"Valeurs acceptées : {', '.join(sorted(MONITEUR_TYPES_VALIDES))}"
+            )
+
+    # Règle tout-ou-rien : les trois clés moniteur_* doivent être fournies
+    # ensemble, ou aucune — une référence Moniteur partielle est inexploitable.
+    presentes_moniteur = set(metadata) & CLES_MONITEUR
+    if 0 < len(presentes_moniteur) < len(CLES_MONITEUR):
+        manquantes_moniteur = CLES_MONITEUR - presentes_moniteur
         raisons.append(
-            f"'metadata.moniteur_type' invalide, reçu : {moniteur_type_brut!r}. "
-            f"Valeurs acceptées : {', '.join(sorted(MONITEUR_TYPES_VALIDES))}"
+            f"Référence Moniteur incomplète : clés présentes {presentes_moniteur}, manquantes "
+            f"{manquantes_moniteur}. Les trois clés moniteur_* doivent être fournies ensemble, "
+            "ou aucune."
         )
 
-    # Clés optionnelles : string non vide si présentes
-    for cle in sorted(CLES_METADATA_OPTIONNELLES):
+    # Clés optionnelles restantes : string non vide si présentes (les trois
+    # clés moniteur_* ont chacune leur propre contrôle de type ci-dessus,
+    # elles ne sont pas toutes des chaînes).
+    for cle in sorted(CLES_METADATA_OPTIONNELLES - CLES_MONITEUR):
         if cle in metadata:
             valeur = metadata[cle]
             if not isinstance(valeur, str) or not valeur.strip():
@@ -323,6 +293,15 @@ async def _lire_et_parser_fichier(fichier: UploadFile) -> list:
             ),
         )
 
+    # Normalisation Unicode NFC : un fichier produit par OCR ou passé par un
+    # système de fichiers macOS peut arriver en NFD (accent combinant séparé
+    # de la lettre), visuellement identique mais différent en comparaison de
+    # chaînes — un "spécial" NFD serait rejeté par MONITEUR_TYPES_VALIDES
+    # sans que repr() ne le distingue du NFC accepté. Normaliser ici, avant
+    # le parsing JSON, couvre les deux endpoints et le contenu inséré en
+    # base (donc aussi les embeddings et les lookups par article).
+    texte = unicodedata.normalize("NFC", texte)
+
     try:
         donnees = json.loads(texte)
     except json.JSONDecodeError as exc:
@@ -357,12 +336,18 @@ def _valider_donnees(donnees: list) -> dict:
                 source_label,
                 {
                     "source": source_label,
+                    "source_courte": meta.get("source_courte"),
                     "type_norme": meta["type_norme"],
                     "rang": meta["rang"],
                     "nb_chunks": 0,
+                    # Signal d'information uniquement : n'influence ni
+                    # `valide` ni `pret_pour_insertion`.
+                    "nb_chunks_sans_moniteur": 0,
                 },
             )
             info["nb_chunks"] += 1
+            if not (set(meta) & CLES_MONITEUR):
+                info["nb_chunks_sans_moniteur"] += 1
 
     # Doublons internes au fichier
     indices_par_pair: dict[tuple[str, str], list[int]] = defaultdict(list)
