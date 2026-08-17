@@ -1,0 +1,31 @@
+{
+  "nb_chunks_total": 73,
+  "nb_chunks_valides": 73,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Loi relative à la Police nationale",
+      "source_courte": "Loi relative à la Police nationale",
+      "type_norme": "loi",
+      "rang": 30,
+      "nb_chunks": 73,
+      "nb_chunks_sans_moniteur": 0,
+      "nb_par_type_bloc": {
+        "article": 73
+      },
+      "thematiques": [
+        "droit_administratif",
+        "droits_fondamentaux",
+        "fonction_publique"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 73,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

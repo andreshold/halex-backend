@@ -1,0 +1,59 @@
+14
+
+<< LE MONITEUR >> No. 20 - Vendredi 29 Janvier 2016
+
+Section 2.-
+
+Article 5.-
+
+De même, il n’est requis des administrés que les données strictement nécessaires à la finalité pour
+laquelle elles sont demandées.
+
+h) Le principe de responsabilité et de qualité relativement à la véracité et à l’authenticité des informa-
+tions et services offerts par l'administration publique à travers les moyens électroniques ;
+
+i) Le principe de neutralité technologique et d’adaptabilité au progrès des techniques et systèmes de
+communications électroniques garantissant un choix indépendant des alternatives technologiques par
+les administrés et l’administration publique, ainsi que le libre développement des avancées technologiques
+dans un environnement concurrentiel ;
+
+A cet effet, l’administration publique doit utiliser des standards ouverts ainsi que, de manière
+complémentaire, des standards utilisés de manière généralisée par les administrés.
+
+j) Le principe de simplification administrative par une réduction substantielle de la durée des
+procédures administratives, en vue d’une plus grande efficacité de l’activité administrative ;
+
+k) Le principe de transparence et de publicité des procédures administratives, l'usage des moyens
+électroniques devant faciliter les plus grandes diffusion, publicité et transparence des procédures
+administratives.
+
+Définitions
+A l’effet du présent Décret, on entend par :
+
+a) Activité de services : toute activité économique exercée à son propre compte généralement en
+échange de rémunération;
+
+b) Adresse électronique : identifiant d’un équipement ou d’un système électronique à partir duquel
+on obtient une information dans un réseau de communications;
+
+c) Administré : toutes personnes physiques ou morales qui entrent en rapport ou sont susceptibles
+d'entrer en rapport avec l’administration publique;
+
+d) Application : programme ou ensemble de programmes dont l’objet est la résolution d’un problème
+par l’usage de l'informatique;
+
+e) Application de sources ouvertes : l’application distribuée par une licence qui permette la liberté
+d'exécution, la connaissance du code source, sa modification, son amélioration et la distribution de
+copies à d’autres usagers;
+
+f) Canaux : les structures ou moyens de diffusion des contenus et des services, incluant la présence
+physique, le canal téléphonique ou électronique, ceux qui existent actuellement ou qui pourront exister
+dans le futur;
+
+g) Certificat électronique : un document sous forme électronique attestant du lien entre les données
+de vérification de signature électronique et un signataire;
+
+h) Certificat électronique qualifié : un certificat électronique délivré par un prestataire de services
+de certification électronique qualifié et répondant aux exigences définies par l’Arrêté pris pour
+l'application de la Loi sur la signature électronique, adaptant le droit de la preuve aux technologies de
+l'information et élargissant les compétences du Conseil National des Télécommunications;

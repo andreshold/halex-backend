@@ -1,0 +1,65 @@
+24
+
+<< LE MONITEUR >> No. 20 - Vendredi 29 Janvier 2016
+
+Article 31.-
+
+Article 32.-
+
+Article 33.-
+
+Article 34.-
+
+généré électroniquement ou d’autres dispositifs de vérification permettant de vérifier leur conformité
+à l’original grâce à l’accès aux archives électroniques de l’entité administrative d’où émane le docu-
+ment.
+
+Peuvent être archivés électroniquement tous les documents utilisés dans les procédures administratives.
+
+Les documents électroniques contenant des actes administratifs affectant les droits ou les intérêts des
+administrés seront conservés sur des supports de même nature, dans le même format ou dans un autre,
+pourvu que soient assurées aux fins de reproduction l’identité et l’intégrité de l'information. Il sera
+toujours possible de transférer les données sur d’autres formats et supports qui en garantissent l’accès
+à partir d'applications différentes.
+
+Les moyens ou supports sur lesquels sont archivés les documents doivent contenir des mesures de
+
+sécurité assurant l’intégrité, l'authenticité, la confidentialité, la qualité, la protection et la conservation
+des documents archivés. L'identification des utilisateurs et le contrôle de l’accès sont garantis.
+
+Le dossier électronique est l’ensemble de documents électroniques relatifs à une procédure administra-
+tive, quel que soit le type d'informations contenues.
+
+Le fichier des dossiers électroniques contient un index électronique signé de l'entité administrative.
+Cet index garantit l'intégrité des dossiers électroniques et permettra sa récupération chaque fois que
+nécessaire. Un même document électronique peut appartenir à des dossiers électroniques différents.
+
+La mise à disposition du dossier électronique produit les mêmes effets que la remise à l’intéressé du
+dossier papier, sans préjudicie du droit de l’administré à en obtenir des copies.
+
+_ TITRE IV ;
+DE LA GESTION ÉLECTRONIQUE DES PROCÉDURES
+
+CHAPITRE PREMIER
+DISPOSITIONS COMMUNES
+La gestion électronique de l’activité administrative s'effectue en fonction des compétences légales de
+chaque entité administrative et de l’accomplissement des exigences formelles et matérielles qui les
+régissent. En vue de la simplification administrative, est encouragée l'application des moyens
+
+électroniques aux méthodes de travail et aux procédures administratives.
+
+A ces fins, l’État veille à la dotation adéquate des ressources et des moyens matériels pour le personnel
+administratif qui sera formé en conséquence.
+
+L'application des moyens électroniques aux procédures et services administratifs est précédée d’un
+réexamen et d’une simplification des procédures et services où sont spécialement pris en compte les
+
+aspects suivants :
+
+a) La suppression ou la réduction de la documentation exigée des administrés grâce à son remplacement
+par des données ou des transmissions de données ;
+
+b) Laprévision de moyens et d’instruments favorisant la participation, la transparence et l’information;
+c) La réduction des délais et du temps de réponse :
+
+d) La rationalisation des communications internes et de la distribution des charges de travail.

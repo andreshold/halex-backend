@@ -1,0 +1,33 @@
+{
+  "nb_chunks_total": 5,
+  "nb_chunks_valides": 5,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Loi portant modification de l’article 29 de la loi organique de la Police Nationale d’Haïti",
+      "source_courte": "Loi modifiant l’article 29 de la loi organique de la Police Nationale d’Haïti",
+      "type_norme": "loi",
+      "rang": 30,
+      "nb_chunks": 5,
+      "nb_chunks_sans_moniteur": 0,
+      "nb_par_type_bloc": {
+        "preambule": 1,
+        "visas": 1,
+        "article": 2,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_administratif",
+        "fonction_publique"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 5,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

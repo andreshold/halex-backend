@@ -6,7 +6,8 @@ sous forme d'API REST. C'est ce que le frontend Next.js appellera.
 
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, field_validator
+from typing import Literal
+from pydantic import BaseModel, Field, field_validator
 
 from auth_admin import verifier_admin
 from halex_core_supabase import (
@@ -38,15 +39,36 @@ app.add_middleware(
 app.include_router(ingestion_router)
 
 
+
+class MessageHistorique(BaseModel):
+    """Message conversationnel envoyé par le frontend.
+
+    Seuls les rôles user/assistant sont acceptés : les messages system,
+    developer ou autres instructions internes ne doivent jamais être
+    réinjectés depuis le client.
+    """
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=10000)
+
+
 class Question(BaseModel):
-    """Format attendu dans le corps de la requête. numero_article et
-    source_choisie sont optionnels : quand les deux sont fournis (ex. suite
-    à une clarification de lookup direct), l'article est recherché
-    directement sans repasser par la détection sur le texte de la question."""
+    """Format attendu dans le corps de la requête.
+
+    `historique` sert uniquement à résoudre les références conversationnelles.
+    `numero_article` et `source_choisie` restent prioritaires : quand les deux
+    sont fournis, l'article est recherché directement sans contextualisation."""
     question: str
     numero_article: str | None = None
     source_choisie: str | None = None
     mode: str = "citoyen"
+    historique: list[MessageHistorique] = Field(
+        default_factory=list,
+        max_length=50,
+        description=(
+            "Historique conversationnel récent. Le moteur n'en conserve "
+            "qu'une fenêtre courte pour résoudre les référents linguistiques."
+        ),
+    )
 
     @field_validator("mode")
     @classmethod
@@ -61,7 +83,21 @@ class SourceItem(BaseModel):
     article: str
     source: str
     source_courte: str | None = None
+    chemin_hierarchique: str | None = None
     texte: str
+
+
+
+class TraceConversation(BaseModel):
+    """Diagnostic léger de contextualisation.
+
+    Utile en développement pour vérifier que le moteur transforme correctement
+    une ellipse conversationnelle en question autonome.
+    """
+    depend_historique: bool
+    question_originale: str
+    question_autonome: str
+    confiance: str
 
 
 class ReponseHalex(BaseModel):
@@ -78,6 +114,8 @@ class ReponseHalex(BaseModel):
     options: list[str] | None = None
     autre_autorise: bool | None = None
     contexte_clarification: dict | None = None
+    conversation: TraceConversation | None = None
+    normatif: dict | None = None
 
 
 class ArticleDuJour(BaseModel):
@@ -120,7 +158,12 @@ def endpoint_question(q: Question):
     utilisateur)."""
     if q.numero_article and q.source_choisie:
         return lookup_article(q.numero_article, q.source_choisie)
-    return poser_question(q.question, mode=q.mode)
+
+    return poser_question(
+        q.question,
+        mode=q.mode,
+        historique=[message.model_dump() for message in q.historique],
+    )
 
 
 @app.get("/article-du-jour", response_model=ArticleDuJour)

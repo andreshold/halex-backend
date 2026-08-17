@@ -1,0 +1,281 @@
+{
+  "statut": "a_revoir",
+  "raison": "validation humaine demandée avant ingestion",
+  "sous_divisions_non_stylees": [
+    {
+      "article_cible": "Article 260",
+      "page": 43,
+      "segments": [
+        "section ni.",
+        "Des Fins de non-recevoir contre V action en divorce pour cause déterminée."
+      ],
+      "valeur_hierarchique": "section ni. — Des Fins de non-recevoir contre V action en divorce pour cause déterminée."
+    },
+    {
+      "article_cible": "Article 605",
+      "page": 95,
+      "segments": [
+        "section ni.",
+        "Des Successions déférées aux Descendants, soit légitimes, soit naturels."
+      ],
+      "valeur_hierarchique": "section ni. — Des Successions déférées aux Descendants, soit légitimes, soit naturels."
+    },
+    {
+      "article_cible": "Article 1007",
+      "page": 150,
+      "segments": [
+        "s i.",
+        "Des Effets de l'Obligation divisible."
+      ],
+      "valeur_hierarchique": "s i. — Des Effets de l'Obligation divisible."
+    },
+    {
+      "article_cible": "Article 1009",
+      "page": 151,
+      "segments": [
+        "S n. Des Effets de l'Obligation indivisible."
+      ],
+      "valeur_hierarchique": "S n. Des Effets de l'Obligation indivisible."
+    },
+    {
+      "article_cible": "Article 1035",
+      "page": 154,
+      "segments": [
+        "S ii. Du Payement avec subrogation."
+      ],
+      "valeur_hierarchique": "S ii. Du Payement avec subrogation."
+    },
+    {
+      "article_cible": "Article 1039",
+      "page": 155,
+      "segments": [
+        "S mDe l'Imputation des Payements."
+      ],
+      "valeur_hierarchique": "S mDe l'Imputation des Payements."
+    },
+    {
+      "article_cible": "Article 1107",
+      "page": 165,
+      "segments": [
+        "De l'Acte sous seing privé."
+      ],
+      "valeur_hierarchique": "De l'Acte sous seing privé."
+    },
+    {
+      "article_cible": "Article 1122",
+      "page": 168,
+      "segments": [
+        "s*. Des Actes récognitifs et confirrnatifs."
+      ],
+      "valeur_hierarchique": "s*. Des Actes récognitifs et confirrnatifs."
+    },
+    {
+      "article_cible": "Article 1135",
+      "page": 170,
+      "segments": [
+        "Des Présomptions établies par la loi."
+      ],
+      "valeur_hierarchique": "Des Présomptions établies par la loi."
+    },
+    {
+      "article_cible": "Article 1152",
+      "page": 173,
+      "segments": [
+        "S n. Du Serment déféré d'office."
+      ],
+      "valeur_hierarchique": "S n. Du Serment déféré d'office."
+    },
+    {
+      "article_cible": "Article 1186",
+      "page": 178,
+      "segments": [
+        "PREMIÈRE PARTIE. De la Communauté légale."
+      ],
+      "valeur_hierarchique": "PREMIÈRE PARTIE. De la Communauté légale."
+    },
+    {
+      "article_cible": "Article 1194",
+      "page": 179,
+      "segments": [
+        "SuDu Passif de la Communauté, et des Actions qui en résultent contre la Communauté."
+      ],
+      "valeur_hierarchique": "SuDu Passif de la Communauté, et des Actions qui en résultent contre la Communauté."
+    },
+    {
+      "article_cible": "Article 1253",
+      "page": 189,
+      "segments": [
+        "Si. Du Partage de V Actif."
+      ],
+      "valeur_hierarchique": "Si. Du Partage de V Actif."
+    },
+    {
+      "article_cible": "Article 1312",
+      "page": 199,
+      "segments": [
+        "Dispositions communes aux huit Sections ci-dessus."
+      ],
+      "valeur_hierarchique": "Dispositions communes aux huit Sections ci-dessus."
+    },
+    {
+      "article_cible": "Article 1315",
+      "page": 200,
+      "segments": [
+        "s h,",
+        "De la Clause portant que les Époux se marient sans Communauté."
+      ],
+      "valeur_hierarchique": "s h, — De la Clause portant que les Époux se marient sans Communauté."
+    },
+    {
+      "article_cible": "Article 1321",
+      "page": 200,
+      "segments": [
+        "Sn. De la Clause de séparation de biens."
+      ],
+      "valeur_hierarchique": "Sn. De la Clause de séparation de biens."
+    },
+    {
+      "article_cible": "Article 1411",
+      "page": 212,
+      "segments": [
+        "De la Garantie en cas d'éviction."
+      ],
+      "valeur_hierarchique": "De la Garantie en cas d'éviction."
+    },
+    {
+      "article_cible": "Article 1426",
+      "page": 214,
+      "segments": [
+        "Sn. De la Garantie des défauts de la chose vendue."
+      ],
+      "valeur_hierarchique": "Sn. De la Garantie des défauts de la chose vendue."
+    },
+    {
+      "article_cible": "Article 1444",
+      "page": 216,
+      "segments": [
+        "De la Faculté de rachat."
+      ],
+      "valeur_hierarchique": "De la Faculté de rachat."
+    },
+    {
+      "article_cible": "Article 1642",
+      "page": 242,
+      "segments": [
+        "Dispositions relatives aux Sociétés de Commerce,"
+      ],
+      "valeur_hierarchique": "Dispositions relatives aux Sociétés de Commerce,"
+    },
+    {
+      "article_cible": "Article 2047",
+      "page": 302,
+      "segments": [
+        "Dispositions générales."
+      ],
+      "valeur_hierarchique": "Dispositions générales."
+    }
+  ],
+  "artefacts_source": [
+    {
+      "page": 40,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "parties se proposent de faire entendre. Elles seront | averties par le doyen, qu'elles peuvent encore en",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 43,
+      "motif": "pension aliet mentaire",
+      "ligne_source": "la poursuite, demander une pension aliet mentaire proportionnée aux facultés du mari. Le tribunal",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 43,
+      "motif": "V action en divorce",
+      "ligne_source": "Des Fins de non-recevoir contre V action en divorce pour cause déterminée.",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 43,
+      "motif": "[demande en divorce",
+      "ligne_source": "auraient pu autoriser cette action, soit depuis la [demande en divorce.",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 44,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "Il ne pourra plus l'être après vingt ans de mariage, ni lorsque la femme aura quarante-cinq ans. |",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 72,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "[Du Droit d'Accession sur ce qui s'unit et s'incorpore à la Chose.",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 95,
+      "motif": "primogénilure",
+      "ligne_source": "ascendants, sans distinction de sexe ni de primogénilure, et encore qu'ils soient issus de différents",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 113,
+      "motif": "31. Pour faire une donation",
+      "ligne_source": "31. Pour faire une donation entre-vifs ou un testament, il faut être sain d'esprit.",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 138,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "Tout contrat a pour objet une chose ?[u'une partie s'oblige à donner, à faire ou à ne pas aire. Le simple",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 200,
+      "motif": "obstac\\e",
+      "ligne_source": "La clause énoncée au présent paragraphe ne fait point obstac\\e à ce qu'il soit convenu que la femme",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 201,
+      "motif": "comp-| table",
+      "ligne_source": "fruits existants, et il n'est point comp-| table de ceux qui ont été consommés jusqu'alors.",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 203,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "L'immeuble acquis des deniers dotaux n'est point dotal, si la condition de l'emploi n'a été [",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 203,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "\\ stipulée par le contrat de mariage. Il en est de même pour l'immeuble donné en paye-",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 294,
+      "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+      "ligne_source": "Le créancier ne peut poursuivre la vente des|| immeubles qui ne lui sont*pas hypothéqués, que dans",
+      "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+    },
+    {
+      "page": 300,
+      "motif": "unimmeuble",
+      "ligne_source": "Celui qui acquiert de bonne loi et par juste titre unimmeuble, en prescrit la propriété par",
+      "action": "conservé exactement; relecture humaine recommandée"
+    },
+    {
+      "page": 302,
+      "motif": "an 23 e en:",
+      "ligne_source": "Le présent Code sera exécuté dans toute la République à dater du 1 er mai 1826, an 23 e en:",
+      "action": "conservé exactement; relecture humaine recommandée"
+    }
+  ],
+  "suggestions": [
+    "Relire les sous-divisions non stylées et les artefacts signalés avant insertion.",
+    "Comparer les passages dégradés à une édition officielle ou à un fac-similé de 1825; la couche texte LexHaïti contient des défauts hérités qui ont été conservés.",
+    "Conserver le statut a_revoir jusqu'à la validation manuelle demandée."
+  ]
+}

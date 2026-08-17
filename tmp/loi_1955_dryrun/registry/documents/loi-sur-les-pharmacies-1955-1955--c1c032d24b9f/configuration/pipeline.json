@@ -1,0 +1,54 @@
+{
+  "source_texte": "transcription contrôlée d'un PDF image sans couche texte",
+  "extracteur_principal": "Tesseract OCR français, psm 3, rendu 300 dpi",
+  "contre_verification": "texte indexé FAOLEX/ONU",
+  "verificateurs_pdf": [
+    "pdfplumber 0.11.9",
+    "pypdf 6.10.0"
+  ],
+  "controle_visuel_pages": 11,
+  "rendu_global_dpi": 150,
+  "rendu_detail_dpi": 300,
+  "coupures_de_lignes_du_scan_supprimees": true,
+  "separateurs_de_paragraphes": "double retour de ligne",
+  "titres_migres_vers_chemin_hierarchique": true,
+  "entetes_et_pieds_non_juridiques_ignores": true,
+  "corrections_juridiques_silencieuses": false,
+  "anomalies_imprimees_conservees": [
+    {
+      "article": "Article 21",
+      "texte": "Les substance",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 22",
+      "texte": "cidessus",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 22",
+      "texte": "Santé Publique.communiquée",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 27",
+      "texte": "produits ,du. Tableau B",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 44",
+      "texte": "déj À établie",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 44",
+      "texte": "Santé Publique.au",
+      "decision": "conservé tel qu'imprimé"
+    },
+    {
+      "article": "Article 46",
+      "texte": "À sesmalades",
+      "decision": "conservé tel qu'imprimé"
+    }
+  ]
+}

@@ -1,0 +1,875 @@
+DECRET DU 14 NOVEMBRE 1980 REGLEMENTANT LE FONCTIONNEMENT DES BANQUES ET DES ACTIVITES BANCAIRES SUR LE TERRITOIRE DE LA REPUBLIQUE D’HAITI
+
+(Moniteur no. 82 du lundi 17 novembre 1980)
+
+JEAN CLAUDE DUVALIER
+
+Président à Vie de la République
+
+Vu les articles 68, 76, 77, 78, 79, 83, 90, 93, 94, 149, 160, 161 de la Constitution;
+
+Vu la Loi du 16 août 1979 sur le Budget et la Comptabilité Publique;
+
+Vu la Loi du 17 août 1979 créant la Banque de la République d’Haïti (BRH) à laquelle sont transférées les activités monétaires de la Banque Nationale de la République d’Haïti ( BNRH);
+
+Vu la Loi du 17 août 1979 créant la Banque Nationale de Crédit à laquelle sont transférées les activités bancaires et commerciales de la Banque Nationale de la République d’Haïti ( BNRH);
+
+Vu le décret de la Chambre Législative en date du 20 septembre 1980, suspendant les garanties prévues aux articles, 17, 18, 19, 20, 25, 31, 34, 48, 70, 72, 93 ( 7ème alinéa), 97, 109, 110, 119 (2ème alinéa), 147, 148, 151, 190 et 195 de la Constitution et accordant Pleins Pouvoirs au Chef du Pouvoir Exécutif, pour lui permettre de prendre jusqu’au deuxième lundi d’avril 1981 par Décrets ayant force de Lois toutes les mesures qu’il aura jugées utiles à la sauvegarde de l’intégrité du Territoire et de la Souveraineté de l’Etat, à la consolidation de l’ordre et de la paix, au maintien de la stabilité politique et économique et financière de la Nation, à l’approfondissement du bien-être des populations, à la défense des intérêts généraux de la République;
+
+Considérant que l’Etat Haïtien a intérêt à réglementer le fonctionnement des Banques et des activités bancaires sur tout le territoire de la République d’Haïti;
+
+Sur le Rapport du Secrétaire d’Etat des Finances et des Affaires Economiques;
+
+Et après délibération en Conseil des Secrétaires d’Etat;
+
+DECRETE;
+
+TITRE I.-
+
+PORTEE ET APPLICATION DE LA LOI
+
+CHAPITRE I. PRELIMINAIRES
+
+Article 1 -
+
+Le présent Décret réglemente le fonctionnement des Banques et les activités bancaires sur le territoire de la République d’Haïti. Demeure cependant régies par les traités, conventions internationales, Lois et Règlements les concernant, les Institutions Financières Internationales dont la République d’Haïti est Membre ainsi que la Banque de la République d’Haïti.
+
+CHAPITRE II. DEFINITIONS
+
+ARTICLE 2. -
+
+est considérée comme Banque: L’Entreprise ou Etablissement dont la profession habituelle est le commerce de l’argent, et qui, à cet effet, reçoit du public, sous forme de dépôt, des fonds qu’il emploie pour son propre compte en opérations de crédit, d’escompte ou en opérations financières.
+
+ARTICLE 3. -
+
+Par Fonds reçus du Public, on entend les fonds que les Banques reçoivent sous forme quelconque de tiers, ou pour compte de tiers, à charge d’en restituer le montant intégral. Ne sont pas considérés comme fonds reçus du public pour l’application du présent Décret:
+
+a) les fonds reçus en contrepartie de titres émis ou placé conformément à la Loi.
+
+b) les sommes laissées en compte dans une Banque par:
+
+- le propriétaire ou par le détenteur d’au moins 10% du capital social;
+
+- les dirigeants, administrateurs, gérants et membres du personnel;
+
+c) les fonds obtenus par la mise en pension, l’escompte d’effets publics ou de commerce ou les fonds obtenus sous forme de prêts ou d’avances consenties par des institutions financières.
+
+ARTICLE 4. -
+
+Par Fonds reçus sous Formes de dépôts bancaires, on entend tous Fonds en monnaie libératoire que toute entreprise de Banque reçoit de tout tiers avec, par dérogation aux stipulations de la Loi No. 26 du Code Civil, le droit d’en disposer pour les besoins de son activité propre à charge d’assurer au dit déposant un service de caisse et notamment de payer seulement et toujours en monnaie libératoire, jusqu’à concurrence du solde des valeurs ainsi reçues du client, des fonds, tous ordres de dépôts bancaire est sujet à la compensation entre le Déposant et le Dépositaire telle que cette compensation est prévue par les ARTICLES 1073 et 1084 du Code Civil. Par DEPOT BANCAIRE A VUE, on entend les dépôts bancaires mobilisables sur demande du déposant ou seulement par chèque du déposant. Par DEPOT BANCAIRE A TERME, on entend les dépôts bancaires qui ne sont point mobilisables sur demande ou par chèque du déposant; les dépôts à terme sont sujets aux stipulations des parties quant à leur montant, les intérêts qu’ils peuvent rapporter au profit du déposant, et le délai pendant lequel la restitution de ce dépôt par le dépositaire n’est point exigible. Aux termes du présent Décret, les mots MONNAIE LIBERATOIRE signifieront toute monnaie ayant cours légal sur le territoire de la République d’Haïti ou toute monnaie déclarée par avis de la BRH monnaie libératoire seulement dans les rapports entre:
+
+a) une banque privée et une ou plusieurs autres banques privées
+
+b) les Banques privées et la BRH
+
+ARTICLE 5-
+
+Les Banques se distinguent en :
+
+A. Banques Commerciales,
+
+B. Banques d’Affaires
+
+C. Banques d’Epargne
+
+ARTICLE 6-
+
+Par Banque Commerciale, le présent Décret désigne les établissements de Banque dont les activités principales consistent à recevoir du public des dépôts de fonds à vue ou à terme, et à effectuer des opérations de crédit à court, à moyen ou, à long terme, selon les proportions fixées par la Banque de la République d’Haïti. Les Banques Commerciales ne peuvent participer pour plus de 20% au Capital d’aucune entreprise, sauf de Banque, d’Institutions Financières ou de Sociétés immobilières nécessaires à leur exploitation. Néanmoins le montant total de ses participations y compris celles effectuées dans les entreprises mentionnées au paragraphe précédent ne peut pas excéder le montant des ressources propres ( capital et réserves) de chaque banque commerciale. Elle sont de plus autorisées à effectuer des prêts hypothécaires jusqu’à concurrence de 50% de leurs ressources propres. Toutefois, la BRH est autorisée à modifier les taux susmentionnés selon la conjoncture économique.
+
+ARTICLE 7-
+
+Les Banques d’affaires sont celles dont l’activité principale est, outre l’octroi de crédit à long terme aux entreprises, la prise et la gestion de participations dans les affaires existantes ou en formation. Les ressources de ces Banques proviennent de leurs capitaux propres et des dépôts à moyen terme et long terme. Elles utilisent seulement leurs propres fonds pour la prise et la gestion de leurs participations dans les entreprises.
+
+ARTICLE 8 -
+
+Par banque d’Epargne, le présent Décret désigne toutes les Banques ne recevant que des dépôts en compte d’Epargne et des dépôts à terme dans les limites fixées par la BRH. Elles sont autorisées à effectuer des prêts hypothécaires et des opérations de crédit à moyen et long terme. Elles doivent être des Sociétés de droit haïtien.
+
+ARTICLE 9-
+
+Dans les cas non prévus aux dispositions des ARTICLES 2,3,4, du présent chapitre, la Banque de la République d’Haïti (BRH) jugera dans quelle mesure, il importe d’étendre l‘application de la Loi à des entités se livrant à des activités assimilables aux opérations de Banque.
+
+ARTICLE 10-
+
+Aux termes du présent Décret, sont considérées comme banques Etrangères, quel que soit le lieu de leur siège social, les Banques qui, directement ou indirectement sont sous le contrôle de personne physiques ou morales étrangères. Sont considérées comme étant sous le contrôle de personnes physiques ou morales étrangères, les banques dont plus de la moitié du capital appartient à des ressortissants étrangers.
+
+TITRE II
+
+CONDITIONS DE FONCTIONNEMENT
+
+CHAPITRE I AUTORISATION DE FONCTIONNEMENT
+
+ARTICLE 11-
+
+L’exercice de la profession bancaire est permis tant aux personnes physiques qu’aux personnes morales. Les sociétés ayant pour objet l’exploitation de banque, cependant, ne seront autorisées à fonctionner que si elles sont organisées en vertu du présent Décret. Il ne sera pas permis aux personnes faillies et non réhabilitées d’exercer la profession de Banquier de même qu’aux individus qui auront été frappés de condamnation pour crime de droit commun, pour faux en écriture et usage de faux en écriture privée de commerce ou de Banque, pour vol, abus de confiance pour escroquerie, pour extorsion de fonds ou de valeurs, pour émission de mauvaise foi de chèque sans provision, pour atteinte au crédit de l’Etat.
+
+ARTICLE 12-
+
+la demande d’autorisation de fonctionnement d’une Entreprise de Banque sera soumise en un original et deux copies à la Secrétairerie d’Etat des Finances et des Affaires Economiques qui acheminera immédiatement copie de cette demande à la Banque de la République d’Haïti (BRH) et à la Secrétairerie d’Etat du Commerce et de l’industrie.
+
+ARTICLE 13 -
+
+Toute demande d’autorisation pour le fonctionnement produite par une entreprise de Banque organisée selon les Lois haïtiennes, doit être accompagnée des renseignements et documents suivants:
+
+- nom, prénom, profession, domicile, nationalité du ou des fondateurs
+
+- la dénomination commerciale , dans le cas d’une Société;
+
+- les opérations auxquelles elle compte se livrer et la catégorie choisie conformément aux ARTICLES 5,6,7, et 8 du présent Décret;
+
+- le domicile légal du Siège Social et l’indication des villes ou lieu d’affaires ou cette entreprise se propose d’établir ses bureaux;
+
+- le montant du capital payé au moyen duquel la Banque commencera les opérations;
+
+une copie des Statuts et Amendements y relatifs, le nombre de Membres de son Conseil D’Administration, leur nom et prénom, profession, domicile et nationalité, le nombre des actions qu’ils détiennent;
+
+- les nom, prénom, domicile et nationalité des fonctionnaires exécutifs;
+
+- tous renseignements financiers que la BRH peut réclamer
+
+ARTICLE 14-
+
+Toute banque ayant son Siège Social en dehors du territoire haïtien et qui désire s’établir en Haïti, doit soumettre à la Banque de la République d’Haïti (BRH), les documents suivants:
+
+1) l’acte constitutif et les statuts assurant son fonctionnement au pays d’origine;
+
+2) l’autorisation de fonctionnement au Pays d’origine;
+
+3) la preuve que la Société est autorisée par ses statuts et les Lois du Pays d’origine à établir une succursale ou une agence en territoire étranger;
+
+4) les noms du ou des représentants légaux chargés de la gestion de la succursale ou agence établie sur le territoire de la République d’Haïti, ses facultés et pouvoirs;
+
+5) les rapports annuels de cette banque correspondant à ses trois dernières années d’existence
+
+6) la déclaration du Capital affecté à cette succursale ou agence destinée à assurer son fonctionnement ou ses opérations.
+
+ARTICLE 15 -
+
+La demande d’autorisation de fonctionnement, et tous les documents soumis en vertu des articles 12 et 13 ci-dessus, devront être signés par le représentant légal de la Banque ou de l’Etablissement solliciteur.
+
+ARTICLE 16 -
+
+En examinant la demande d’autorisation de fonctionnement, la Banque de la République d’Haïti (BRH) fera les investigations nécessaires pour s’assurer de la validité des documents soumis, du statut financier et des antécédents du solliciteur, des qualités et de l’expérience de sa Direction, du caractère adéquat de la structure de son Capital et des opérations qu’il se propose de faire, de son aptitude à répondre aux besoins de la clientèle qu’il entend servir.
+
+ARTICLE 17-
+
+Tout avis motivé de la BRH et de la Secrétairerie d’Etat du Commerce et de l’Industrie devra être communiqué à la Secrétairerie d’Etat des Finances et des Affaires Economiques dans un délai n’excédant pas 30 jours.
+
+ARTICLE 18 -
+
+Dans les 10 jours au plus tard après la réception de la demande ou si des renseignements complémentaires ont été réclamés, après réception de ces renseignements, la Secrétairerie d’Etat des Finances et Affaires Economiques avisera le solliciteur que l’autorisation lui a été octroyée ou refusée, le cas échéant. Dans le cas de refus, la Secrétairerie d’Etat des Finances et des Affaires Economiques pourra indiquer au solliciteur seulement les raisons d’ordre technique qui ont justifié ce refus.
+
+ARTICLE 19-
+
+L’autorisation de fonctionnement sera constatée par un Certificat publié dans le Moniteur et dans un quotidien à grand tirage du pays sous forme d’un avis de la Secrétairerie d’Etat des Finances et Affaires Economiques. Cette autorisation de fonctionnement n’est pas opposable aux tiers avant sa publication.
+
+ARTICLE 20 -
+
+Aucune banque organisée selon les Lois Haïtiennes, ne pourra, sans l’autorisation de la banque de la République d’Haïti (BRH)
+
+a) changer sa dénomination commerciale telle que enregistrée et inscrite sur la liste des Banques;
+
+b) entreprendre des activités autres que celles qui sont conformes à l’objet de son établissement;
+
+c) fusionner avec une autre banque;
+
+d) prendre le contrôle d’une banque, soit par l’acquisition de la majorité des actions, soit en lui consentant des avances de fonds supérieurs à 50% du Capital des réserves et des profits non répartis de la Banque bénéficiaire:
+
+e) modifier son capital
+
+f) amender ses statuts
+
+g) céder ou mettre en gérance l’ensemble ou une partie importante de son actif
+
+ARTICLE 21-
+
+Toutes les banques agréées qu’elles soient organisées selon les lois Haïtiennes ou autorisées à fonctionner comme succursales, agences ou comptoirs de Banques étrangères sont tenus de notifier à la Secrétairerie d’Etat des Finances et Affaires Economiques toute modification concernant les renseignements fournis par elles en vertu des articles 13 et 14 lors de l’instruction de leur demande.
+
+ARTICLE 22-
+
+La Banque de la République d’Haïti (BRH) approuvera les changements de Statuts ou Capital des banques Etrangères pour autant que ces changements ne sont pas contraires à la législation haïtienne régissant leur fonctionnement sur le territoire de la République.
+
+ARTICLE 23 -
+
+Les personnes, entreprises et établissements dont l’activité est réglementée par les dispositions du présent Décret sont tenus de se faire inscrire auprès de la BRH.
+
+ARTICLE 24 -
+
+Toute autorisation de fonctionnement délivrée en vertu du présent Décret, sera exhibée et exposée à une place visible au local de l’entreprise ou établissement qui la détient, dans une partie de ce local à laquelle le public a accès, tant à son Siège Principal que dans ses succursales ou agences éventuelles.
+
+ARTICLE 25 -
+
+Toute banque fonctionnant en Haiti doit solliciter l’autorisation de la BRH pour ouvrir un bureau, comptoir, agence ou succursale ailleurs qu’à son siège social ou principal établissement. Toute réponse défavorable à cette demande sera motivée.
+
+ARTICLE 26 -
+
+La Secrétairerie d’Etat aux Finances et Affaires Economiques, à la demande de la BRH, peut révoquer l’autorisation de fonctionnement d’une Banque si celle-ci:
+
+a) n’a pas commencé ses opérations dans les douze (12) mois qui suivent l’approbation donnée, à moins que la BRH ait prolongé ce délai par notification écrite;
+
+b) contrevient de façon grave ou répétée aux dispositions du présent Décret, aux instructions de la Secrétairerie d’Etat des Finances et Affaires Economiques, ou aux modalités de son autorisation de fonctionnement;
+
+c) cesse d’exercer son activité
+
+ARTICLE 27 -
+
+Avant de révoquer une autorisation de fonctionnement, la Secrétairerie d’Etat des Finances et Affaires Economiques donnera à l’entreprise concernée, avis de son intention de le faire, et lui accordera un délai de (30) jours au plus pour justifier éventuellement les raisons de reconsidérer cette intention.
+
+ARTICLE 28 -
+
+Quand une autorisation de fonctionnement aura été révoquée, la Secrétairerie d’Etat des Finances et Affaires Economiques la notifiera à la BRH et à la Secrétairerie d’Etat du Commerce et de l’Industrie. Elle en donnera avis le plus tôt possible, au Moniteur et le cas échéant, dans un quotidien à grand tirage de la ville où est établi le Bureau principal de la Banque concernée et prendra toute autre mesure nécessaire pour que le public soit informé. Les frais qui découlent de ces avis sont à la charge de la banque ainsi radiée de la liste des banques.
+
+ARTICLE 29-
+
+Toutes les fois que la BRH a des raisons de croire qu’une personne ou société fait des opérations de banque sans l’autorisation exigée par la loi, elle exigera d’examiner les livres , comptes et dossiers de cette personne ou de cette société pour s’assurer que tel est le cas.
+
+ARTICLE 30-
+
+Toute personne ou société faisant des opérations de banque sans autorisation de fonctionnement et refusant de produire pour examen des livres comptes et dossiers requis, sera passible d’une amende de VINGT MILLE À CINQUANTE MILLE GOURDES.
+
+ARTICLE 31-
+
+Toute personne ou société surprise en flagrant délit, à faire des opérations de banque sans être en possession d’une autorisation délivrée en vertu du présent Décret, sera passible de la même amende prévue à l’article précédent.
+
+CHAPITRE II
+
+DES PRESCRIPTIONS RELATIVES AU CAPITAL
+
+AUX RESERVES ET A LA REPARTITION DES PROFITS
+
+SECTION I. DU CAPITAL DES BANQUES
+
+ARTICLE 32-
+
+Toute personne physique ou morale faisant profession de banque sur le territoire de la République doit faire preuve de la constitution à cet effet d’un CAPITAL MINIMUM qui varie en fonction de la spécialisation mentionnée à l’article 5 du présent Décret. Mention de ce Capital doit être faite dans tous les actes, lettres et documents de cette banque.
+
+ARTICLE 33 -
+
+Le Capital Minimum des banques commerciales est de CINQ MILLIONS DE GOURDES (G 5.000.000.00) entièrement payé. Ce chiffre pourra être augmenté pour les Banques de cette catégorie dont le montant total des engagements du bilan et des engagements hors bilan est supérieur à CENT (100) MILLIONS DE GOURDES aux termes de deux (2) exercices sociaux consécutifs. Le Capital Minimum des banques d’affaires est de SEPT MILLIONS CINQ CENT MILLE GOURDES (G. 7.500.000.00) souscrit dans sa totalité et payé à raison de 90% de son montant. Ce chiffre pourra être augmenté pour les banques de cette catégorie dont le montant total des engagements du Bilan et des engagements hors bilan dépassera un montant à déterminer par la BRH. Le Capital Minimum des banques d’Epargne est de Deux Millions CINQ CENT MILLE GOURDES souscrit dans sa totalité et payé à raison de 90% de son montant. Ce chiffre pourra être augmenté pour les banques de cette catégorie dont le montant total des engagements du Bilan et des engagements hors bilan est supérieur à cinquante (50 MILLIONS DE GOURDES) aux termes de deux (2) exercices sociaux consécutifs.
+
+ARTICLE 34-
+
+Les Banques Etrangères doivent justifier auprès de la BRH de l’affectation à l’ensemble de leurs opérations en Haïti d’une dotation minimum de CINQ MILLIONS DE GOURDES (GDES5.000.000.00). Cette dotation serait établie pour les banques déjà installées avant la publication du présent décret par un apport initial de trois millions cinq cent mille gourdes (GDES3.500.000) à compléter sur trois ans par des termes égaux de cinq cent mille Gourdes (Gdes 500.000). La BRH a compétence pour apprécier les éléments constitutifs de cette dotation minimum. Sauf dérogation temporaire accordée par la BRH, cette dotation ne peut être compensée en trésorerie par des avances ou prêts consentis aux sièges ou aux filiales succursales, agences ou guichets de la même Banque.
+
+ARTICLE 35 -
+
+Toute Banque maintiendra un Compte de Réserve de Capital où sera transféré à la fin de chaque exercice, un pourcentage de son profit net, comme il est indiqué à l’article 38.
+
+ARTICLE 36 -
+
+Le montant du capital et celui du compte de Réserve ne pourront être diminués que dans les circonstances et selon les formes spécifiquement prévues aux articles 20 et 37 du présent Décret.
+
+SECTION II. DES RESERVES ET PROFITS
+
+ARTICLE 37 -
+
+La constitution du Compte de Réserve de Capital se fera comme suit:
+
+a) Toute Banque avant toute déclaration de dividende ou tout transfert de profit à son siège social ou ailleurs, transférera à un compte de Réserve de Capital, du montant du profit commercial, après constitution d’une provision pour les taxes à payer, une valeur égale à un montant qui ne sera pas inférieur à celui spécifié à l’article 38;
+
+b) Le compte de Réserve ne sera pas diminué à moins que la Banque de la République d’Haïti n’en autorise une réduction dont la valeur sera transférée en augmentation du Capital ou éventuellement appliquée à l’absorption des pertes éventuelles déclarées, dûment contrôlées par la BRH, ou toute autre opération soumise à l’appréciation de la BRH.
+
+ARTICLE 38 -
+
+A la fin de chaque exercice, toute Banque transférera à son compte de Réserve une valeur égale à 10% au moins de son profit commercial net jusqu’à ce que le montant consolidé du Capital autorisé ou de la dotation, et du compte de Réserve atteigne une fois et demie le Capital autorisé. Cette réserve, dans le cas d’une Société Anonyme qualifiée de banque, se confondra avec celle prévue par la Loi sur les Sociétés Anonymes:
+
+ARTICLE 39 -
+
+En effectuant les calculs nécessaires pour s’assurer qu’une banque a satisfait aux exigences de l’article 38, il sera tenu compte, à la satisfaction de la BRH, des facteurs suivants:
+
+a)l’amortissement des actifs immobiliers et mobiliers (à calculer au moins une fois au cours de chaque Exercice);
+
+b) les réserves pour créance douteuse ou irrécouvrable;
+
+c) les pertes d’opérations accumulées, y compris la dépréciation accumulée et les valeurs irrécouvrables qui n’auront pas encore été éliminées ainsi que les pertes sur opérations de change;
+
+d) les frais de premier établissement (dépenses relatives à l’organisation ou l’extension, ou l’achat de l’entreprise);
+
+e) tous les autres éléments que la BRH peut prescrire par des règlements.
+
+ARTICLE 40 -
+
+La BRH pourra recommander aux Banques l’adoption des mesures tendant à la récupération des créances douteuses dans le but d’améliorer la qualité du portefeuille.
+
+ARTICLE 41 -
+
+Les Banques doivent se conformer aux décisions de la BRH qui, dans certaines circonstances particulières (telles que des difficultés à faire face à des obligations courantes) pourra ordonner de:
+
+a) limiter ou prohiber la distribution des profits ou tous autres bénéfices;
+
+b) augmenter le capital;
+
+c) maintenir jusqu’à 100% d’encaisse contre toute augmentation de dépôts ou de crédits;
+
+d) limiter ou prohiber la réalisation de nouveaux prêts.
+
+ARTICLE 42 -
+
+Aucune Banque ne peut procéder à une distribution de bénéfices tant que n’auront point été constituées les Réserves couvrant les amortissements annuels mentionnés à l’article 38 du présent Décret ou tant que son Capital, sa dotation ou son Compte de Réserves de Capital se trouvent affectés par des pertes.
+
+ARTICLE 43-
+
+La BRH peut déterminer le rapport minimum ou maximum que toutes les Banques de même catégorie doivent maintenir:
+
+a) entre certains de leurs engagements et certaines de leurs ressources ainsi que
+
+b) entre certains ou l’ensemble de leurs emplois et certaines ou l’ensemble de leurs ressources. La BRH a compétence pour déterminer les éléments constitutifs de chaque coefficient. En vertu des articles 29 à 32 de la Loi du 17 Août 1979 créant la Banque de la République d’Haïti (BRH), celle-ci a compétence pour réglementer l’activité des Banques. A cet effet, elle pourra astreindre les établissements bancaires au respect des règles de gestion visant à assurer la sécurité des dépôts qui leur sont confiés et à promouvoir une politique de crédit conforme à l’intérêt national.
+
+1) La Banque Centrale pourra notamment instituer des règles de liquidité visant à contraindre les établissements à conserver sous une forme immédiatement disponible ou aisément mobilisable une partie de leurs ressources à court terme.
+
+2) Elle pourra également édicter des règles visant à s’assurer que le montant des ressources propres des banques est en rapport avec le volume des fonds qui leur sont confiés ou des risques qu’elles assument.
+
+3) Toute disposition pourra de même être prise pour limiter les risques de transformation qu’encourent les établissements bancaires, en utilisant des dépôts de courte durée en opérations de crédit à plus long terme. De façon plus générale des règles pourront être instituées pour assurer une concordance suffisante entre la durée des emplois et celle de ressources, notamment en matière de prêts et d’emprunts sur le marché des devises.
+
+4) Des règles pourront être prises par la Banque Centrale pour éviter que ne soit concentré entre un nombre trop restreint de bénéficiaires ou de secteurs-d’activités un volume de risques jugé trop important par rapport aux fonds propres des banques.
+
+5) Enfin la Banque Centrale pourra limiter le volume des fonds que les banques pourront conserver à l’étranger ainsi que le déséquilibre non couvert que les banques pourront entretenir entre leurs avoirs et leurs dettes libellées en devises.
+
+ARTICLE 44 -
+
+La BRH fera connaître aux Banques par voie d’instructions écrites le dispositif réglementaire institué dans le cadre de l’article 43 et ses modalités d’application. Elle informera notamment les établissements assujettis du délai qui leur est octroyé pour se conformer à la nouvelle réglementation. Lorsque les circonstances l’exigeront, la BRH pourra modifier, remplacer ou abroger tout ou partie des règles ainsi instituées et devra en informer les établissements assujettis par voie d’instructions écrites.
+
+ARTICLE 45 -
+
+Toute Banque qui contrevient aux instructions de la BRH relatives à l’application de l’article 43 du présent Décret peut être frappée d’une pénalité n’excédant pas 1/10 de 1% par jour, conformément à l’article 34 de la Loi du 17 Août 1979 créant la BRH. Les valeurs ainsi prélevées à titre de pénalité seront versées à un Compte spécial tenu à la BRH et dont le produit sera affecté aux frais de gestion du Département de Contrôle des Institutions Financières. La BRH pourra prendre, le cas échéant, toute autre action qu’elle jugera appropriée pour porter ou aider la Banque fautive à normaliser la situation, ou appliquer à son endroit les dispositions du présent Décret.
+
+ARTICLE 46 -
+
+Les instructions passées par la BRH, conformément aux dispositions de cette Section et de l’Article 33 de la Loi du 17 Août 1979 créant la BRH, seront toujours transmises par écrit et entreront en vigueur à une date à fixer par la BRH.
+
+CHAPITRE III
+
+DES LIMITATIONS AUX OPERATIONS DE CREDIT DES AVANCES
+
+AU PUBLIC EN GENERAL
+
+ARTICLE 47 -
+
+Les facilités de crédit ne seront consenties par les Banques que sur effets à présentation ou à terme. Les Banques ne consentiront point d’avance de fonds par simples chèques et les découverts accidentels devront être remboursés sans délai. La BRH émettra les règles gouvernant ou prohibant les découverts accidentels.
+
+2- Aucune Banque ne pourra ni directement, ni indirectement sans approbation de la BRH:
+
+a) accorder des prêts sous la garantie de ses propres actions;
+
+b) consentir des prêts hypothécaires pour des montants excédants 70% de la valeur de la garantie offerte; excepté à son personnel auquel cas ce montant peut atteindre 95% de la valeur de la garantie offerte;
+
+c) cautionner ou contracter des obligations pour montants indéterminés;
+
+d) accorder des crédits à des personnes physiques ou morales pour des investissements financiers ou immobiliers en dehors de la République d’Haïti.
+
+ARTICLE 48-
+
+Les Banques peuvent consentir des prêts non garantis aux membres de leur Conseil d’Administration avec l’approbation de tous les membres du dit Conseil pour des sommes inférieures ou égales au montant des actions déposées par les dits membres de la Banque en garantie de leur gestion. Quand le montant consolidé des crédits sans garantie excède le montant des actions déposées par les dits membres dans la caisse sociale de la Banque en garantie de leur gestion, tous versements sur ces crédits devront être préalablement approuvés par la BRH.
+
+ARTICLE 49-
+
+En cas de faillite ou de mise sous gestion contrôlée d’une Banque, sont nuls et sans effets relativement à la masse, les paiements par cet établissement, soit par compensation ou autrement à ses administrateurs, gérants ou directeurs à titre de tantième ou autres participations aux bénéfices au cours des deux dernières années qui précèdent.
+
+ARTICLE 50-
+
+Ces dispositions ne sont pas applicables si le Tribunal reconnaît que la faillite ou la mise sous gestion contrôlée a été contrôlée a été provoquée par la force majeure.
+
+TITRE III.
+
+SUPERVISION ET CONTROLE DES BANQUES
+
+CHAPITRE I. DU CONTROLE EXERCE PAR LA BRH
+
+ARTICLE 51 -
+
+L’Etat Haïtien exerce le contrôle des Banques par l’intermédiaire de la BRH, en tant que Banque Centrale.
+
+ARTICLE 52-
+
+La BRH peut, sans aucun préavis donné à une Banque, procéder à son inspection toute les fois qu’elle juge une telle inspection nécessaire pour déterminer dans quelle mesure cette institution travaille de façon adéquate et saine et si les prescriptions légales sont observées par elle. Les débours relatifs à cette inspection seront supportés par la BRH.
+
+ARTICLE 53-
+
+Toute Banque est tenue de fournir aux inspecteurs de la BRH quand elle est requise tous les renseignements et de leur communiquer tous les livres et documents qu’ils jugent nécessaire pour leur permettre de connaître avec exactitude la position de la Banque inspectée. Cependant, pour préserver le caractère confidentiel des transactions de dépôts à vue, à terme ou en comptes d’épargne, les inspecteurs de la BRH ne pourront réclamer que les éléments nécessaires au contrôle des balances de vérification sans référence aux noms des déposants.
+
+ARTICLE 54-
+
+Si l’Inspecteur d’une Banque fait apparaître dans son administration ou sa gestion de contraventions aux dispositions du présent Décret, aux instructions de la BRH, ou aux modalités de son agrément, ou des pratiques préjudiciables aux intérêts des déposants ou autres créanciers, la BRH peut notamment:
+
+- exiger que la Banque concernée prenne les mesures de redressement nécessaire;
+
+- et dans le cas où les mesures de redressement ne seraient pas appliquées comme prescrites, nomme pour une période maximale de six mois, un contrôleur provisoire auprès de cette Banque.
+
+ARTICLE 55-
+
+Le Contrôleur provisoire est informé de toute décision concernant l’Administration, direction ou la Gestion de la Banque. Il peut suspendre pour huit jours l’exécution de toute décision visée ci-dessus et proposer toute mesure de redressement qu’il juge nécessaire à charge d’en faire un rapport sans délai à la BRH. La rémunération maximum est fixée par la BRH et mise à la charge de la Banque contrôlée. La BRH peut mettre fin à tout moment aux fonctions du contrôleur provisoire.
+
+ARTICLE 56-
+
+En cas de récidive, la BRH pourra reprendre le contrôle de l’établissement qui sera mis en état de décaissement en attendant sa mise en liquidation, selon les modalités prévues au chapitre IV du présent Décret.
+
+CHAPITRE II
+
+DES ETATS, RAPPORTS ET AUTRES RENSEIGNEMENTS A SOUMETTRE A LA BRH
+
+ARTICLE 57-
+
+Toute Banque établie et fonctionnant sur le territoire de la République d’Haïti devra obligatoirement soumettre à la BRH.
+
+1- un état de sa situation mensuelle;
+
+2- un état de son compte de profits et pertes pour chaque semestre de son année comptable et toutes autres informations et données jugées utiles. Ces documents sont dressés selon les règles fixées par la BRH et acheminés à la BRH dans les vingt- deux (22) jours de la date de la clôture des opérations.
+
+ARTICLE 58-
+
+A la demande de la BRH, les Banques sont tenues de lui communiquer leurs taux d’intérêts et leurs tarifs de commissions et autres rémunérations qu’elles prévoient pour les opérations visées à l’article 2 du présent Décret.
+
+ARTICLE 59-
+
+Les Banques qui ont leur siège hors du territoire de la République d’Haïti doivent tenir, de façon distincte, au lieu de leurs principaux succursales, agences ou guichets en Haïti, la comptabilité de leurs opérations en Haïti.
+
+ARTICLE 60-
+
+Les Banques établies en Haïti devront publier à la fin de chaque trois (3) mois leur situation générale au Moniteur. Ce bilan devra être clair, explicite et d’interprétation facile. Le schéma-type sera fourni par la BRH.
+
+ARTICLE 61-
+
+Tous les renseignements fournis par une Banque restent confidentiels et ne sont dévoilés au public qu’en combinaison avec d’autres renseignements de même nature.
+
+ARTICLE 62-
+
+Cependant quand les circonstances l’exigent et dans l’intérêt du public, la BRH peut divulguer certaines informations sur les activités d’une Banque.
+
+TITRE IV.
+
+AUTRES RELATIONS DES BANQUES AVEC LA BRH
+
+CHAPITRE I.- DES COMPTES TENUS A LA BRH AU NOM DES BANQUES
+
+ARTICLE 63-
+
+Les Banques pourront maintenir des Comptes ouverts en leur nom à la BRH, soit pour les dépôts, soit pour des avances ou toutes autres opérations prévues dans la Loi organique de la BRH, sur la base des termes et conditions fixés par la BRH.
+
+CHAPITRE II- DES OPERATIONS DE COMPENSATION OU CLEARING
+
+ARTICLE 64-
+
+La BRH remplit le rôle d’une chambre de Compensation quotidienne entre les différentes catégories de Banque opérant sur le territoire de la République. Elle assure la présidence d’une Chambre de Compensation et en règle le fonctionnement. Les soldes débiteurs et créditeurs dégagés à la charge ou au profit de chaque participant par la confrontation des dettes et créances réciproques sont imputés au compte ouvert en son nom sur les livres de la BRH.
+
+ARTICLE 65-
+
+La BRH effectue à ce titre, tous les jours ouvrables, le règlement aux Banques des chèques, effets domiciliés ou autres dont elles sont bénéficiaires ou débitrices. A ce titre, la BRH calcule chaque jour ouvrable les balances dues aux banques ou par elles en raison des chèques, effets domiciliés ou autres présentés à la Compensation.
+
+ARTICLE 66-
+
+Les Banques sont tenues de se soumettre aux directives de la BRH régissant les opérations de la Chambre de Compensation. A cet effet, la BRH établira un système d’identification numérique des différentes Banques fonctionnant en Haïti, de leurs succursales et agences; la BRH, de concert avec les dites Banques, formulera la réglementation à laquelle sont assujetties les dites opérations de la Chambre de Compensation.
+
+ARTICLE 67-
+
+La BRH contrôle les opérations de compensations et dans le cas d’un litige entre les Banques, joue le rôle d’arbitre avec l’accord des parties intéressées.
+
+CHAPITRE III. DE LA CENTRALISATION ET DE L’UTILISATION
+
+DES INFORMATIONS DE CREDIT
+
+ARTICLE 68-
+
+La BRH centralise toutes les informations de crédit que les différentes Banques établies sur le territoire de la République sont tenues de lui fournir.
+
+ARTICLE 69-
+
+La BRH met à la disposition des Banques les informations recueillies et répertoriées avec ses remarques et recommandations. Ces informations sont confidentielles.
+
+ARTICLE 70-
+
+Les renseignements fournis par la BRH sur les engagements d’une firme à l’égard du secteur bancaire ne feront pas mention de la ventilation du chiffre des crédits déclarés, ni du nom des banques informatrices. Les informations fournies par la BRH ou par une Banque à la BRH le sont d’une manière strictement confidentielle et sans préjudice pour elle ou un quelconque de ses membres de l’usage qui pourrait être fait des informations ainsi communiquées.
+
+CHAPITRE IV. DU SEQUESTRE, DE LA LIQUIDATION ET DE
+
+LA REORGANISATION DES BANQUES
+
+SECTION I DESSAISISSEMENT DES BANQUES
+
+ARTICLE 71-
+
+La Banque de la République d’Haïti (BRH) peut, par décision motivée, procéder au dessaisissement de toute Banque dans les cas suivants:
+
+a) lorsque la Banque cesse ses paiements;
+
+b) lorsqu’elle ne peut pas justifier que son actif excède effectivement le passif dont elle est tenue envers les tiers d’un montant égal au capital payé minimum prévu aux articles 32, 33, 34 ou à la dotation minimum exigée à l’article 34 du présent Décret:
+
+c) lorsqu’elle met obstacle à la mission du contrôleur provisoire de la BRH prévue aux articles 54 et 55 du présent Décret;
+
+d) lorsqu’elle est en liquidation volontaire et qu’il est constaté que la Banque n’est pas en mesure d’exécuter promptement et intégralement toutes ses obligation à l’égard de ses déposants et autres créanciers ou que l’achèvement de la liquidation est indûment retardé.
+
+ARTICLE 72-
+
+1 - En cas de dessaisissement, la BRH fait immédiatement afficher dans les locaux du siège social ou du principal établissement et de chaque succursale, agence et guichet de la Banque dessaisie, un avis annonçant son action et l’heure à laquelle le dessaisissement prend effet. Le dessaisissement qui en tien lieu, ci-après dénommé le Tribunal dans le ressort duquel le siège ou le principal établissement de la Banque est.
+
+2.- Aussitôt que possible après le dessaisissement, la BRH établit une situation comptable et dresse un inventaire de l’actif. Un exemplaire de ces deux documents est transmis au greffe. ‘L’exemplaire de l’inventaire est tenu à la disposition des parties intéressées pour examen.
+
+ARTICLE 73-
+
+La levée judiciaire du dessaisissement peut être demandée par tout intéressé qui en aura produit la demande à la BRH. Le Tribunal saisi par ajournement ou par requête, n’ordonnera la levée du dessaisissement que si celui-ci est intervenu en contravention des dispositions de l’article 71 du présent Décret.
+
+ARTICLE 74-
+
+1 - Le dessaisissement suspend l’exercice des pouvoirs des Administrateurs et Dirigeants de la Banque;
+
+2- La BRH peut effectuer tous actes nécessaires ou accessoires à la poursuite des activités et au maintien de l’actif de la Banque. Elle peut notamment poursuivre ou interrompre les opérations de la Banque au nom de celle-ci. Contracter et signer au nom de la Banque, ester en justice au nom de la Banque tant comme demandeur que comme défenseur, conclure un contrat de location gérance, nommer ou révoquer les dirigeants, engager ou licencier le personnel et, en cas d’insuffisance de fonds, cesser ou limiter le remboursement des déposants et le paiement des autres créanciers;
+
+3- Toutefois, la BRH ne eut vendre aucun immeuble de la Banque, ni, sans l’autorisation du Tribunal, hypothéquer aucun immeuble de celle-ci.
+
+ARTICLE 75-
+
+Tous les délais légaux ou contractuels, sauf ceux d’ordre public, sont de plein droit prorogés au profit de la BRH pour une durée de deux (2) mois à compter de la date de dessaisissement.
+
+ARTICLE 76-
+
+Dans un délai de deux (2) mois à compter de la date du dessaisissement, la BRH est tenue, soit d’entamer la procédure de liquidation forcée ou de réorganisation, soit de mettre fin au dessaisissement.
+
+SECTION II. LIQUIDATION DES BANQUES
+
+ARTICLE 77-
+
+Toute liquidation volontaire d’une Banque est subordonnée à l’autorisation de la BRH qui avisera la Secrétairerie d’Etat des Finances et des Affaires Economiques dès que le contrôleur de la BRH aura certifié que la Banque en liquidation est en mesure d’exécuter promptement et intégralement toutes ses obligation à l’égard de ses déposants et autres créanciers.
+
+ARTICLE 78-
+
+Sous réserve de dispositions du présent chapitre, la liquidation forcée des Banques est soumise à la législation en matière de faillite sauf en ce qui concerne les dispositions relatives au concordat préventif.
+
+ARTICLE 79-
+
+1 - La liquidation forcée d’une Banque qui cesse ses paiements et qui n’a pas fait l’objet d’une mesure de dessaisissement peut être ordonnée par le Tribunal sur demande de toute personne intéressée. La BRH peut intervenir si ses intérêts le réclament.
+
+2- La liquidation forcée ou la réorganisation d’une Banque dessaisie peut être ordonnée par le Tribunal sur la demande la BRH. Si le Tribunal refuse d’ordonner la liquidation forcée ou la réorganisation, la BRH dispose d’un délai de deux (2) mois tel qui prévu à l’article 76 pour mettre fin au dessaisissement.
+
+3- La liquidation forcée également peut être ordonnée par le Tribunal dans le cas et sous les conditions prévues au présent Décret.
+
+ARTICLE 80 -
+
+Lorsque le Tribunal est saisi d’une demande prévue à l’article 79, le greffe en avise par tout moyen qu’il juge approprié les actionnaires, dirigeants, administrateurs, déposants et autres créanciers de la Banque et toute autre personne intéressée. Le Tribunal se prononce dans un délai d’un (1) mois à compter de la demande.
+
+ARTICLE 81-
+
+1- Lorsque le Tribunal ordonne la liquidation forcée, il désigne comme liquidateur la BRH qui peut se faire substituer par toute autre personne sous sa responsabilité propre;
+
+2- Le jugement ordonnant la liquidation forcée arrête toutes voies d’exécution pour parvenir au paiement des créancier chirographaires ou privilégiées sur la généralité des meubles ou des immeubles de la Banque en liquidation. Il suspend toute autre poursuite individuelle des créanciers jusqu’à l’homologation prévue au présent Décret;
+
+3- Le jugement ordonnant la liquidation forcée d’une Banque dessaisie met fin au dessaisissement, lorsque ce jugement est passé en force de chose jugée.
+
+ARTICLE 82-
+
+1 - Toute Banque en liquidation doit:
+
+a) faire suivre sa raison sociale de la mention “en liquidation”.
+
+b) cesser immédiatement ses opérations;
+
+c) afficher dans tous ses locaux ouverts au public un avis de mise en liquidation avec mention soit de l’autorisation de la BRH, soit au jugement du tribunal, selon le cas.
+
+2- La personnalité morale d’une Banque en liquidation subsiste jusqu’à clôture de celle-ci.
+
+ARTICLE 83-
+
+1 - Dans le délai d’un (1) mois à compter de l’autorisation de la Secrétairerie d’Etat des Finances et Affaires Economiques de procéder à la liquidation volontaire ou du jugement ordonnant la liquidation forcée, le liquidateur envoie à tous les déposants et autres créanciers un relevé du montant pour lequel leur créance figure dans les livres de la Banque et, le cas échéant, un relevé des avoirs détenus pour leur compte par la Banque. Le relevé est envoyé par lettre recommandée avec accusé de réception à la dernière adresse connue du destinataire. Dans le cas de liquidation forcée, le liquidateur joint au relevé un avis informant le destinataire que toute réclamation concernant le contenu du relevé doit lui être notifié par lettre recommandée avec accusée de réception, dans le délai de deux (2) mois qui suit l’envoi du relevé.
+
+ARTICLE 84 -
+
+Dans le délai et les formes prévus à l’article précédent, le liquidateur avise chaque locataire de coffre du jour et de l’heure auxquels aura lieu l’ouverture du coffre si celui-ci n’a pas été libéré auparavant. Si le locataire n’assiste pas à l’ouverture, celle-ci ne peut être faite qu’en présence d’un représentant de la BRH et d’un juge de Paix, un inventaire du contenu est dressé et signé conjointement par ledit représentant, le juge de Paix et liquidateur. Le contenu est déposé à la BRH.
+
+ARTICLE 85 -
+
+Dans le cas de liquidation forcée le liquidateur établit un inventaire de l’actif et une estimation du passif de la banque dans le délai prévu à l’article 83, paragraphe 1. Il transmet des documents au tribunal avec copie à la Banque.
+
+ARTICLE 86-
+
+1 - Le liquidateur peut exercer tous les droits et actions de la BRH. Toutefois, dans le cas de liquidation forcée, le liquidateur doit obtenir l’autorisation du Tribunal pour les opérations suivantes:
+
+a) cession de toute créance ou autre actif mobilier de la Banque d’une valeur supérieure à 15,000 gdes
+
+b) transcription de toute créance de la Banque d’un montant excédant cinq mille (5,000.00) gourdes en principal ou abandon d’une créance excédant cinq cent (500.00) en principal:
+
+c) règlement d’une dette quelconque de la Banque contractée avant le dessaisissement ou la mise en liquidation forcée; le Tribunal ne peut autoriser le paiement que dans les cas prévus aux articles 88 et 89 du présent Décret;
+
+d) aliénation ou hypothèque de tout immeuble de la Banque Cette autorisation est obtenue sur requête présentée à cet effet.
+
+ARTICLE 87-
+
+1- Aussitôt que possible après l’expiration du délai prévu à l’article 83, paragraphe 2, du présent Décret pour la notification des réclamations, le liquidateur d’une Banque en liquidation forcée transmet au greffe du Tribunal aux fins de droit, avec copie à la BRH:
+
+a) un état détaillé du passif de la Banque en précisant le montant de chaque créance, son caractère privilégié ou chirographaire et si elle est contestée ou non;
+
+b) un plan de liquidation de a Banque
+
+2- Il avise par acte d’huissier chaque personne dont la créance est contestée et publie hebdomadairement pendant trois (3) semaines consécutives dans un journal à grand tirage en Haïti ou par tout autre moyen approprié, un avis indiquant les lieux où l’état du passif et le plan de liquidation peuvent être consultés par toute personne intéressée.
+
+3- La BRH et toute personne intéressée peuvent déposer leurs observations sur l’état du passif et plan de liquidation au greffe du Tribunal. Ces observations peuvent y être consultées par toute personne intéressée. Tout contredit relatif à une créance est communiqué, le cas échéant, par le liquidateur au créancier intéressé par acte d’huissier.
+
+ARTICLE 88-
+
+1 - Un (1) mois au plus tôt et deux (2) mois au plus tard après la transmission de l’état du passif et du plan de liquidation, le Tribunal dûment saisi:
+
+a) se prononce sur la demande en homologation du passif et statue sur les créances contestées ou ayant fait l’objet d’un contredit;
+
+b) statue sur le plan de liquidation;
+
+c) autorise, s’il y échet, le liquidateur à commencer le règlement des créances;
+
+d) fixe la date de cessation de paiement qui ne peut être antérieure de plus de six (6) mois au dessaisissement par la BRH ou si la Banque n’était pas dessaisie, antérieure de plus de six mois au jugement ordonnant la liquidation forcée.
+
+2- En statuant sur le plan de liquidation, le Tribunal peut le modifier en tout ou en partie. Il peut également ordonner à la demande de la Banque la réorganisation de la Banque conformément à la section III du présent chapitre.
+
+ARTICLE 89 -
+
+Le tribunal peut, avant toute homologation définitive de l’état du passif et sur la base de l’inventaire et de l’estimation prévus à l’article 85, autoriser le liquidateur à effectuer des distributions partielles aux déposants.
+
+ARTICLE 90 -
+
+Dans toute liquidation forcée d’une Banque, les créances des déposants sont réglées par préférence aux autres créances chirographaires,. Si l’actif de la Banque est insuffisant pour désintéresser tous les déposants, il est versé à chaque déposant, a concurrence du montant de son dépôt majoré des intérêts, un dividende égal qui ne peut excéder Cinq Cent (500.00) Gourdes.
+
+ARTICLE 91. -
+
+Les créances qui ne figurent pas sur l’état du passif homologué par le Tribunal ne peuvent être régies qu’après toutes autres créances.
+
+ARTICLE 92 -
+
+Le créancier d’une banque en liquidation forcée dont la créance est réglée avant l’échéance normale ne peut exiger le versement des intérêts non échus ni aucune indemnité stipulée a l titre de clause pénale ou autrement pour le cas de paiement anticipé.
+
+ARTICLE 93 -
+
+Le reliquat d’actif de la Banque en liquidation après que toutes les créances ont ;été payées est réparti entre les actionnaires selon leurs droits respectifs.
+
+ARTICLE 94-
+
+1- Tous les fonds et avoirs non retirés au cours de la liquidation sont déposés par le liquidateur auprès de la Banque, il en est donné reçu par la BRH.
+
+2- Les fonds et avoirs déposés à la BRH en application de l’article 84 du présent chapitre sont conservés par elle pendant un (1) an à compter de leur réception ou, le cas échéant, de l’expiration du délai qui avait été convenu entre la Banque et le déposant. A l’expiration du délai d’un (1) an, tous les fonds et avoirs qui n’ont pas été réclamés sont traités comme il est prévu par la législation relative aux choses abandonnées ou perdues.
+
+ARTICLE 95-
+
+1 - La clôture de la liquidation forcée est prononcée par le Tribunal après la répartition du reliquat et l’approbation des comptes du liquidateur.
+
+2- La liquidation forcée prend également fin par l’homologation du plan de réorganisation prévu à la Section III du présent chapitre
+
+SECTION III - REORGANISATION DES BANQUES
+
+ARTICLE 96-
+
+1 La réorganisation d’une Banque peut être ordonnée par le Tribunal saisi à cet effet dans les cas prévus aux articles 79 paragraphe 2, et 80 paragraphe 2.
+
+2-Lorsque le Tribunal ordonne la réorganisation d’une Banque, il désigne comme réorganisateur la BRH qui put se faire suppléer par toute personne de son choix sous sa responsabilité propre.
+
+3-Le jugement ordonnant la réorganisation d’une Banque dessaisie ou en liquidation forcée ne met pas fin au dessaisissement ou à la liquidation ni aux pouvoirs de la BRH ou liquidateur. Toutefois, le jugement ordonnant la réorganisation d’une Banque en liquidation forcée suspend l’exercice des pouvoirs du liquidateur prévus à l’article 89.
+
+ARTICLE 97
+
+1- Le réorganisateur après avoir entendu toutes les parties intéressées, établit un plan de réorganisation.
+
+2. Le plan doit:
+
+a) être équitable pour les déposants et autres créanciers et pour les actionnaires de toutes catégories;
+
+b) prévoir le remboursement à leur échéance des dépôts de Fonds à concurrence d’un montant de 1.000 Gourdes au moins par déposant;
+
+c) Définir l’étendue et la durée des pouvoirs qui seront dévolus au réorganisateur;
+
+d) le cas échéant, prévoir un apport de fonds nouveaux pour établir un rapport suffisant entre l’actif disponible et les engagements à l’égard des tiers.
+
+3. Le plan ne peut retirer à aucun créancier, sans son consentement, le bénéfice des ses sûretés réelles et privilèges, ni en modifier le rang.
+
+ARTICLE 98-
+
+Le plan de réorganisation est déposé au greffe du Tribunal. Le réorganisateur en adresse copie à tous les déposants et autres créanciers à l’égard desquels le plan prévoit des remises de dette ou des reports d’échéance au profit de la Banque, en indiquant que si dans un délai d’un (1) mois le plan de réorganisation n’a pas été refusé par écrit par des personnes détenant au moins le tiers du montant global des créances ainsi modifiées et représentant au moins le tiers des déposants titulaires de telles créances, le réorganisateur soumettra le plan de réorganisation à l’homologation du Tribunal.
+
+ARTICLE 99-
+
+Si le plan est refusé par les créanciers ou si le Tribunal refuse de l’homologuer, le Tribunal peut, soit autoriser le réorganisateur à proposer un nouveau plan conformément aux articles 97 et 98 soit, après avoir pris l’avis du réorganisateur et de la BRH, ordonner, le cas échéant, la liquidation forcée de la Banque.
+
+ARTICLE 100-
+
+L’homologation du plan de réorganisation le rend obligatoire à l’égard des actionnaires et des créanciers de la Banque. Elle met fin au dessaisissement ou à la liquidation forcée de la Banque.
+
+ARTICLE 101-
+
+Sile plan de réorganisation ne peut être mené à bine ou si son exécution est indument retardée ou s’avère préjudiciable aux intérêts des actionnaires et des créanciers, le Tribunal prend l’une ou l’autre des décisions prévues à l’article 99.
+
+ARTICLE 102-
+
+Tant que la procédure de réorganisation est en cours, La BRH peut, sur la demande du réorganisateur, prononcer la révocation de tout administrateur qui s’est rendu coupable d’actes illicites ou préjudiciables aux intérêts des déposants et autres créanciers.
+
+ARTICLE 103 -
+
+Après que la BRH eut avisé le Tribunal de l’achèvement de la mission du réorganisateur pour avoir reçu et approuvé le rapport final de ce dernier, la clôture de la procédure de réorganisation est prononcée par le Tribunal.
+
+CHAPITRE V. DISPOSITIONS COMMUNES AU CHAPITRE IV SECTIONS I, II ET III
+
+ARTICLE 104-
+
+1 Lorsque la liquidation, la réorganisation, ou le dessaisissement d’une Banque font apparaître une insuffisance d’actif, le Tribunal peut décider, à la demande respectivement du liquidateur, du réorganisateur ou de la BRH, ou du Ministère Public, que les dettes de la Banque seront supportées, ou tout en partie, avec ou sans solidarité, par tout dirigeant ou administrateur, de droit ou de fait, apparent ou occulte, rémunéré ou non.
+
+2- Pour dégager leur responsabilité, les administrateurs et dirigeants impliqués doivent faire la preuve qu’ils ont apporté à la gestion des affaires de la Banque toute l’activité et la diligence nécessaires.
+
+3-Le Tribunal peut étendre la procédure de liquidation forcée d’une Banque aux biens d’un administrateur ou dirigeant à la Charge duquel a été mis tout ou partie du passif de la Banque et qui ne s’acquitte pas de cette dette dans les cas où il a:
+
+- sous le couvert de la Banque masquant des agissements, fait des actes de commerce dans un intérêt personnel;
+
+- ou disposé des biens sociaux comme des siens propres;
+
+- ou poursuivi abusivement dans son intérêt personnel, une exploitation déficitaire qui ne pouvait conduire qu’à la cessation des paiements de la Banque.
+
+ARTICLE 105-
+
+1 Les dispositions du Chapitre IV, sections I, II, III peuvent être étendues par décret aux autres Institutions Financières qui reçoivent des Fonds du public.
+
+2-S’il s’agit, d’une Institution Financière de Droit public, l’accord préalable du Secrétaire d’Etat des Finances et des Affaires Economiques doit être obtenu.
+
+TITRE V
+
+CHAPITRE I
+
+DES ADMINISTRATEURS ET DIRIGEANTS DES BANQUES
+
+ARTICLE 106-
+
+Nul ne peut diriger, administrer ou gérer une Banque à un titre quelconque s’il a été:
+
+a) déclaré en faillite en Haïti ou à l’étranger et n’a pas été réhabilité;
+
+b) condamné en Haïti ou à l’étranger par jugement irrévocable ayant acquis force de chose jugée comme auteur ou complice d’une des infractions suivantes:
+
+I) fausse monnaie;
+
+II) contrefaçon ou falsification d’effets publics ou de commerce, d’actions, d’obligations de coupons d’intérêts ou de billets de Banque;
+
+III) contrefaçon ou falsification de sceaux, timbres poinçons ou marques;
+
+IV) corruption de fonctionnaire public ou concussion
+
+V) vol, extorsion, détournement ou abus de confiance, escroquerie ou recel
+
+VI) circulation de titres sans provision
+
+VII) banqueroute ou infraction y assimilée
+
+VIII) fraude fiscale
+
+ARTICLE 107
+
+Toute personne qui, au moment de la mise ne faillite ou en liquidation forcée, en Haïti ou à l’étranger d’une Institution Financière participait à un tire quelconque à l’Administration, à la Direction ou à la Gestion de cette Institution, ne peut, sans l’autorisation de la BRH, administrer diriger ou gérer une autre Institution Financière.
+
+CHAPITRE II
+
+DU PERSONNEL DES BANQUES ET ETABLISSEMENTS FINANCIERS
+
+ARTICLE 108-
+
+Tous les Membres du Conseil d’Administration ou du Personnel de toute Banque établie en Haïti, sont individuellement tenus au secret professionnel et ne peuvent communiquer à qui que ce soit des renseignements sur la clientèle, à l’exception des informations d’ordre professionnel qui ne peuvent être communiqués qu’à une autre Banque, en vertu des règlements intérieurs des Banques ou des renseignements devant être fournis aux autorités monétaires ou à la justice, conformément à la Loi.
+
+ARTICLE 109-
+
+Le secret professionnel du Banquier porte sur les avoirs de la Clientèle et tous les faits dont il a connaissance, sauf s’il en est dégagé par autorisation écrite du client ou de ses héritiers ou légataires.
+
+ARTICLE 110-
+
+Le secret s’applique aux Directeurs et Employés de banque sans distinction de rang, mais aussi à toutes personnes qui, sans faire partie du personnel ont eu connaissance par leur qualité ou par leur fonction, des affaires de la clientèle et autres faits confidentiels: les Membres du Conseil d’Administration des banques, les Commissaires, les Avocats, Conseillers Juridiques.
+
+ARTICLE 111-
+
+Celui qui viole le secret professionnel auquel il est tenu en vertu de la Loi, qui incite à commettre cette infraction, ou tente d’y inciter, est passible d’une amende de VINGT MILLE GOURDES (Gdes 20.000.-) au plus ou d’un emprisonnement de trois (3) mois à un (1) an au plus. Les deux peines peuvent être cumulées. Si l’auteur a agi par négligence, la peine est une amende de DIX MILLE GOURDES (Gdes 10.000.-)
+
+TITRE VI
+
+DISPOSITIONS DIVERSES
+
+ARTICLE 112-
+
+Il est interdit aux Banques de se livrer pour leur propre compte ou pour le compte d’autrui à des activités commerciales, industrielles, agricoles ou de service, sauf dans la mesure où ces opérations sont nécessaires ou accessoires à la conduite de l’activité qui fait l’objet de leur autorisation de fonctionnement, ou nécessaires au recouvrement de créances douteuses ou en souffrance.
+
+ARTICLE 113 -
+
+Par dérogation à l’article 4 de la loi du 16 juin 1975, et conformément à l’article 10 de cette même loi, les Banques étrangères opérant sur le territoire de la République d’Haïti pourront acquérir des biens meubles et immeubles en recouvrement de dettes. Les biens acquis en paiement de dettes ou obtenus en surenchère définitive qui comporte adjudication en faveur des Banques devront être vendus dans un délai de deux (2) ans à partir de l’acquisition, délai qui peut être prolongé par le Secrétaire d’Etat à la Justice. En aucun cas, la prorogation ne pourra excéder trois (3) années.
+
+ARTICLE 114 -
+
+Il est interdit aux banques de se servir des fonds ou valeurs dont elles disposent pour exercer directement ou indirectement sur l’opinion publique nationale ou étrangère une influence intéressée. Cette interdiction ne s’applique pas à une publicité commerciale faite ouvertement.
+
+ARTICLE 115-
+
+Les banques sont obligées de tenir une comptabilité spéciale et détaillée de leurs frais de publicité ainsi que de toutes indemnités ou subventions et de tous avantages gratuits qu’elles accorderaient.
+
+ARTICLE 116-
+
+Les Banques communiquent la liste des dépenses de cette nature à la BRH en même temps que l’Etat de profits et pertes semestriels.
+
+ARTICLE 117-
+
+L’autorisation préalable de la BRH est requise pour toute émission ou placement de titres dans le public ainsi que pour l’introduction en bourse de Valeurs Mobilières en Haïti, à l’exclusion de titres émis par l’Etat Haïtien.
+
+ARTICLE 118-
+
+Sont considérés comme délaissés, les fonds et avoirs reçus par une Banque à titre de dépôt, de prêt ou autrement à charge de les restituer ou d’en disposer pour le compte d’autrui lorsque dans les dix ans de la réception de fonds ou avoirs ou le cas échéant de l’expiration du préavis ou du terme convenu, le propriétaire n’a effectué aucune opération de dépôt, de retrait, d’encaissement ou de virement ni autrement été en rapport avec la Banque. Un (1) an au moins avant l’expiration de ce délai, la Banque par avis dans un quotidien invite le déposant à entrer en rapport avec elle, ou par lettre recommandée avec accusé de réception expédiée à la dernière adresse connue du propriétaire fait connaître son intention de remettre les fonds à la BRH.. Lorsque les fonds ou avoirs sont contenus dans le coffre, la notification prévue au paragraphe précédent peut être faite, dès l’expiration de la location du coffre et le contenu du coffre est considéré comme délaissé un (1) an après cette notification. L’ouverture du coffre se fait en présence d’un représentant de la BRH et d’un notaire. Le contenu de coffre, est , après inventaire, mis ne paquet scellé remis à la BRH. Le Notaire en dressera Procès-Verbal
+
+ARTICLE 119 -
+
+Toute Banque détenant des fonds ou avoirs délaissés doit en faire la déclaration à la BRH et les remettre à celle-ci pour compte du déposant ou des ayants-droits après déduction des avoirs et charges du dépositaire selon son tarif. Cette remise décharge la Banque intéressée de cette responsabilité ultérieure relative à ces fonds avoirs.
+
+ARTICLE 120-
+
+Sous tous les régimes par dérogation aux stipulations du Code Civil relativement à la capacité de la femme mariée, le dépôt bancaire au nom d’une femme mariée est mobilisable sur sa seule signature, en application des dispositions de l’article 1er du Décret-loi du 13 janvier 1944 pourvu que la femme pratique une industrie, exercice une profession ou loue ses services dans l’Administration ou dans les Entreprises Privées.
+
+ARTICLE 121 -
+
+Le déposant et le dépositaire pourront convenir que les valeurs remises et reçues à titre de dépôts bancaires seront réparties selon instructions du déposant en un ou plusieurs comptes de dépôts. Chaque compte de dépôt aura sa comptabilité particulière reflétant le mouvement des valeurs reçues par le dépositaire, celles versées par le dépositaire au nom et pour compte du déposant.
+
+ARTICLE 122-
+
+le Dépositaire ne sera point tenu par l’obligation de payer le tirage effectué sur un compte de dépôt excédant le solde de ce compte disponible en faveur du déposant, tel que ce solde est établi par le dépositaire.
+
+ARTICLE 123-
+
+Le dépositaire d’un dépôt bancaire pourra se payer, à partir des fonds constituant le dépôt bancaire à lui confié, des frais par lui encourus pour les services rendus au déposant à l’occasion de la garde, de la manipulation et de la remise de fonds de ce dépôt bancaire.
+
+ARTICLE 124 -
+
+Les mouvements des fonds détenus en dépôt bancaire mobilisés par chèques seront reflétés par un Etat de compte que le dépositaire sera tenu de dresser au moins une fois chaque trois (3) mois pour le tenir à la disposition du déposant. La période de trois (3) mois mentionnés au présent article, sera à moins de convention écrite entre le déposant et le dépositaire, celle prévue par l’article 60 du présent décret.
+
+ARTICLE 125 -
+
+Les Banques établies en Haïti, selon les articles 10, 11, 14 du présent Décret peuvent faire, aux moyens de tous procédés de reproduction par copie photostatique, par microfilm ou par tout autre procédé de reproduction, des copies de tous chèques ou effets de commerce par elle déjà négociés ou déjà payés. Les dites copies par reproduction seront admissibles comme preuve dans toute procédure judiciaire ou administrative à condition qu’elles soient lisibles et certifiées par la Banque qui les a faites. L’original reproduit par les moyens cités plus haut pourra être remis aux intéressés. La production de l’original reproduit par les moyens cités plus haut pourra être à tout moment requise devant les Tribunaux par décision rendue avant dire droit.
+
+ARTICLE 126 -
+
+En cas de décès d’un titulaire d’un compte bancaire, la procédure suivante sera adoptée pour retirer les fonds déposés. Jusqu’à un solde de 10.000.00 gourdes au moment du décès, il sera remis à la Banque l’acte de décès du déposant ou le jugement déclaratif, le certificat attestant du paiement des droits de mutation et un acte passé par devant le Juge de Paix ou un Notaire de la Juridiction du lieu où la succession a été ouverte; ce dit acte, contenant les attestations sous serment de trois (3) Notables ayant bien connu le décédé, connus eux- mêmes du dit Juge de la Paix ou du dit Notaire, attestations confirmant la constance du décès et énumérant les héritiers du décédé connu des dits notables. Le dit acte constaterait aussi, le cas échéant, le mandat donné par ces héritiers à une personne de recevoir du dépositaire la portion des fonds détenus par le dit dépositaire et appartenant à la succession; Quand le solde détenu au moment du décès pour compte d’un déposant décédé appartiendra tant à un conjoint survivant qu’aux héritiers et excédera 10.000.00 gourdes les intéressés obtiendront le versement de ce solde sur la production d’une ordonnance de la juridiction de Référés rendue sur requête à cet effet.
+
+ARTICLE 127-
+
+Les banques établies sur le territoire de la République d’Haïti sont tenues de retenir contre reçu délivré au détenteur et contresigné par ce dernier les billets ou monnaies présumés faux et des acheminer à la BRH pour vérification. Le reçu sera dressé selon modèle fourni par la BRH.
+
+ARTICLE 128 -
+
+Aucune Banque étrangère ne pourra invoquer des droits spéciaux dérivés de sa nationalité. Tout litige entre la BRH et les banques opérant sur le territoire de la République d’Haïti ou entre les dites banques sera résolu conformément aux lois de la République d’Haïti.
+
+ARTICLE 129-
+
+Les cadres exécutifs de Banques étrangères en Haïti doivent comprendre après une période de cinq (5) ans deux Membres au moins, de nationalité Haïtienne.
+
+ARTICLE 130-
+
+La BRH précise, par voie d’instructions, les modalités d’application des dispositions du présent Décret. Les instructions de portée générale sont publiées au Moniteur.
+
+TITRE III. DISPOSITIONS PENALES
+
+ARTICLE 131 -
+
+Toutes infractions qui n’ont pas été mentionnées et pénalisées spécialement par le présent décret ni dans d’autres lois en vigueur sur le territoire de la République d’Haïti seront punies d’une amende de 500.00 gourdes à 25.000.00 gourdes selon la cause et la gravité de l’infraction prononcée par le Tribunal Correctionnel à la requête du Commissaire du Gouvernement sur plainte de la partie lésée.
+
+TITRE VIII. DISPOSITIONS TRANSITOIRES
+
+ARTICLE 132 -
+
+Sont inscrites de plein droit sur la liste des Banques toutes les Institutions reconnues comme banques au moment de l’entrée en vigueur du présent décret et qui auront notifié à la BRH dans le mois qui suit cette entrée en vigueur, leur intention de poursuivre leurs opérations. Toute autre entreprise qualifiée banque en vertu des dispositions du présent Décret et en raison de ses opérations aura un délai d’un (1) mois après la promulgation du présent Décret pour notifier à la BRH son intention de poursuivre ses opérations. Ces institutions disposent d’un délai de six (6) mois à compter de cette notification pour se conformer aux dispositions du présent décret.
+
+TITRE IX- CLAUSE D’ABROGATION
+
+ARTICLE 133 -
+
+Le présent Décret abroge toutes lois ou dispositions de Lois, tous Décrets ou dispositions de Décrets, tous Décrets-Lois ou dispositions de Décrets-lois qui lui sont contraires et sera publié et exécuté à la diligence des Secrétaireries d’Etat des Finances et des Affaires Economiques, du Commerce et de l’Industrie, de la Justice, chacun en ce qui le concerne.
+
+Donné au Palais National, à Port-au-Prince, le 14 novembre 1980. An 177ème de l’Indépendance.
+
+Jean-Claude DUVALIER

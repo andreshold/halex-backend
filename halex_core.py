@@ -24,12 +24,36 @@ def _etiquette(meta: dict) -> str:
     rang   = meta.get("rang", "?")
     statut = meta.get("statut", "")
     date   = meta.get("date", "")
+    date_publication = meta.get("date_publication", "")
+    abroge_par = meta.get("abroge_par")
+    publication_abrogation = meta.get("publication_abrogation")
+    date_abrogation = meta.get("date_abrogation")
 
     parties = [source, f"rang {rang}"]
     if statut:
-        parties.append(statut.replace("_", " "))
+        libelle = statut.replace("_", " ")
+        details_abrogation = []
+        if statut == "abroge":
+            if isinstance(abroge_par, str) and abroge_par.strip():
+                details_abrogation.append(abroge_par.strip())
+            if (
+                isinstance(publication_abrogation, str)
+                and publication_abrogation.strip()
+            ):
+                details_abrogation.append(
+                    f"publication : {publication_abrogation.strip()}"
+                )
+            if isinstance(date_abrogation, str) and date_abrogation.strip():
+                details_abrogation.append(
+                    f"date d’abrogation : {date_abrogation.strip()}"
+                )
+        if details_abrogation:
+            libelle += " (" + " ; ".join(details_abrogation) + ")"
+        parties.append(libelle)
     if date and not date.startswith("XXXX"):
         parties.append(date)
+    if date_publication and date_publication != date:
+        parties.append(f"publication : {date_publication}")
     return "[" + " — ".join(str(p) for p in parties) + "]"
 
 

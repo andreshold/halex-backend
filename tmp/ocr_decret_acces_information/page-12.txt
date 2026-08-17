@@ -1,0 +1,55 @@
+No. 20 - Vendredi 29 Janvier 2016 << LE MONITEUR >> 21
+
+CCE vx “vx AE TE EEE CPE’ '<<€E<€E << œÂÎœœ<Œœ
+Les systèmes de signature électronique utilisés et admis par une entité administrative, différents de
+ceux attestés par un certificat électronique qualifié, peuvent être reconnus valides par d’autres entités
+administratives conformément aux principes de réciprocité et de reconnaissance mutuelle.
+Le Conseil Supérieur de l’Administration et de la Fonction Publiques dispose d’une plateforme de
+vérification de la validité de tous les certificats électroniques émis dans le cadre de l’administration
+publique. Cette plateforme est librement accessible à toutes les entités administratives. Chaque entité
+administrative peut établir son propre système de vérification de certificats et signatures électroniques
+émis pour elle et ses agents.
+
+Article 22.- Lorsque pour la réalisation d’une opération quelconque par les moyens électroniques, un administré
+ne dispose pas d’un des moyens d'identification prévus à l’article 13 du présent Décret, cette identifi-
+cation peut être effectuée par un agent de l’entité administrative concernée à travers le dispositif
+sécurisé de création de signature électronique dont il est pourvu.
+
+À cette fin, l’administré doit s'identifier et accorder son consentement exprès, étant renseigné qu’il
+engage sa responsabilité civile et pénale en cas d’inexactitude des renseignements fournis.
+
+Chaque entité administrative maintient une liste actualisée des agents habilités à l’identification des
+administrés prévue dans le présent article.
+
+Article 23.- Sans préjudice de ce qui est dit à l’article 13 alinéa 3, les agents d’une entité administrative pourront,
+dans le cadre des transactions et procédures utilisant des moyens électroniques, utiliser la procédure de
+la délégation telle qu’elle est prévue au Décret du 17 mai 2005 portant organisation de l’Administration
+Centrale de l’État. Les administrés et les autres entités administratives peuvent à tout moment requérir
+la preuve de cette délégation qui devra leur être fournie.
+
+CHAPITRE III
+DES REGISTRES, COMMUNICATIONS ET NOTIFICATIONS ÉLECTRONIQUES
+
+Section I'“.- Des registres
+
+Article 24.- Les administrations publiques créeront des registres électroniques destinés à la réception et à la remise
+des requêtes, écrits et communications.
+
+Les registres électroniques pourront recevoir :
+
+a) Des documents électroniques normalisés correspondant aux services, procédures et formalités
+déterminés lors de la création du registre, et respectant des formats préétablis ;
+
+b) Toute requête ou communication distincte de celles mentionnées ci-dessus adressée à un agent ou
+service de l’entité administrative détentrice du registre.
+
+Chaque entité administrative tient au moins un registre électronique destiné à la réception de requêtes
+et de communications de toutes sortes adressées à cette entité administrative. Les entités administratives
+peuvent conclure des conventions de collaboration stipulant l’utilisation des registres d’une entité
+administrative pour la réception des requêtes et communications destinées à une autre entité adminis-
+trative.
+
+Une circulaire du Premier Ministre établit les conditions dans lesquelles les registres physiques de
+diverses entités administratives nommément désignées sont numérisées et automatisées afin de permettre
+l'interconnexion de ces registres et l’accès par des moyens électroniques aux contenus enregistrés et la
+délivrance de copies des documents qui y sont contenus.

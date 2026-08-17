@@ -1,0 +1,63 @@
+No. 20 - Vendredi 29 Janvier 2016 << LE MONITEUR >> 25
+
+Article 35.-
+
+Article 36.-
+
+Article 37.-
+
+Article 38.-
+
+CHAPITRE II
+L'UTILISATION DES MOYENS ÉLECTRONIQUES
+DANS LE DÉROULEMENT DES PROCÉDURES
+
+La mise en branle d’une procédure administrative par un administré par des moyens électroniques
+requiert la disponibilité des modèles correspondants ou des dispositifs électroniques de requête sur le
+site électronique. Ces modèles et dispositifs doivent être accessibles sans autres restrictions technologiques
+que celles découlant de l’utilisation des standards dans les termes prévus à l’article 4 i) et des critères
+de communication et de sécurité applicables en fonction des normes et protocoles nationaux et
+internationaux.
+
+Les intéressés peuvent joindre au dossier les copies numérisées des documents, dont la fidélité à
+l'original sera garantie par l’utilisation de signatures électroniques sécurisées. L'administration publique
+peut solliciter de l’archive correspondante la comparaison des copies soumises. En cas d’impossibilité
+de la comparaison et de manière exceptionnelle, l'administration publique peut exiger de l’administré
+la production du document ou de l'information originaux. La soumission de ces copies implique
+l’autorisation accordée à l'administration publique d'accéder et de traiter les informations personnelles
+qui y sont contenues.
+
+En vue de faciliter et de promouvoir leur usage, les dispositifs normalisés de requêtes peuvent inclure
+des vérifications automatiques de l'information soumise par rapport à leurs propres données archivées
+ou à celles archivées par d’autres entités administratives. Dans le même but, les dispositifs normalisés
+de requête peuvent offrir un formulaire complété en tout ou en partie, que l’administré vérifiera ou
+complétera.
+
+Les applications ou systèmes d’information pour l’instruction des procédures par des moyens
+électroniques doivent garantir le contrôle du temps et des délais, l’identification des services chargés
+des procédures ainsi que le cheminement ordonné des données, et favoriseront la simplification et la
+publicité des procédures.
+
+Les systèmes de communication utilisés pour la gestion électronique des procédures entre les différents
+services compétents doivent respecter les exigences établies dans le présent Décret.
+
+Lorsque la participation des administrés est nécessaire à l’instruction de la procédure par des moyens
+électroniques, il est fait usage des moyens de communication et de notification prévus aux articles 27
+et 28 du présent Décret.
+
+Lorsque la procédure administrative est prise en charge complètement par des moyens électroniques,
+le service compétent met à la disposition de l’administré un service électronique à accès restreint où il
+pourra consulter, moyennant une identification appropriée, pour le moins l’état d'avancement de la
+procédure, sauf en cas de restrictions à l'information imposées par la loi ou les règlements. L'information
+sur l’état d'avancement de la procédure indique les actes posés, l'indication de leur contenu, ainsi que
+la date de leur réalisation.
+
+Pour les autres procédures, il est également établi un service électronique d’information qui en indiquera
+au moins l’état d’avancement et le service responsable.
+
+La clôture d’une procédure administrative par des moyens électroniques indique clairement l'identité
+du service et de l'agent compétents en utilisant l’un des moyens prévus aux articles 18 et 19 du présent
+Décret.
+
+Dans les cas prévus par l’entité administrative compétente la clôture de la procédure et la notification
+y relative peut se faire de manière informatisée.

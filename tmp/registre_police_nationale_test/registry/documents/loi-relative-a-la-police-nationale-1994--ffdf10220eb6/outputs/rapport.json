@@ -1,0 +1,275 @@
+{
+  "statut": "conforme_techniquement_a_relecture_humaine",
+  "source": {
+    "pdf": "C:\\Users\\Andres Luis\\Andres Docs\\halex-conversion\\document_old\\Loi relative à la Police nationale.pdf",
+    "sha256": "ffdf10220eb64b415db0fe8c33f50ea0ebf7f5419717a8e06fb3ae71f2960ae2",
+    "octets": 75801,
+    "pages": 13,
+    "titre_pdf": "Haiti_National Police Law",
+    "extraction": "pdfplumber 0.11.9, couche texte native et géométrie",
+    "contre_verification": "pypdf 6.10.0",
+    "ocr_requis": false,
+    "controle_visuel": "13 pages sur 13"
+  },
+  "sorties": {
+    "dossier_registre": "C:\\Users\\Andres Luis\\Andres Docs\\halex-backend\\tmp\\registre_police_nationale_test\\registry\\documents\\loi-relative-a-la-police-nationale-1994--ffdf10220eb6",
+    "markdown": "outputs/document.md",
+    "chunks": "outputs/chunks.json",
+    "rapport_validation_backend": "outputs/rapport_validation_backend.json",
+    "extraction_auditable": "extraction/lignes_pdf.json",
+    "points_a_revoir": "review/points_a_revoir.json"
+  },
+  "chunks": {
+    "prevus": 73,
+    "trouves": 73,
+    "ecart": 0,
+    "par_type_bloc": {
+      "article": 73
+    },
+    "types_bloc_non_valides": []
+  },
+  "articles": {
+    "prevus": 73,
+    "trouves": 73,
+    "sequence_attendue": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "42.1",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "64.1",
+      "64.2",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70"
+    ],
+    "articles_introuvables": [],
+    "articles_inattendus": [],
+    "articles_dupliques": [],
+    "sequence_exacte": true,
+    "articles_speciaux_presents": [
+      "42.1",
+      "64.1",
+      "64.2"
+    ]
+  },
+  "hierarchie": {
+    "racine": "LOI RELATIVE À LA POLICE NATIONALE",
+    "structures_prevues": 30,
+    "structures_trouvees": 30,
+    "structures_par_type": {
+      "CHAPITRE": 9,
+      "SECTION": 9,
+      "SOUS-SECTION": 9,
+      "TITRE": 3
+    },
+    "articles_avec_chemin_hierarchique": 73,
+    "articles_sans_chemin_hierarchique": []
+  },
+  "integrite_caracteres": {
+    "regle": "comparaison Unicode NFC hors espaces de mise en page",
+    "source_chunks_non_blanche": 23628,
+    "sortie_chunks_non_blanche": 23628,
+    "chunks_identiques_a_la_source": true,
+    "caracteres_manquants": 0,
+    "caracteres_ajoutes": 0,
+    "markdown_incluant_structures_identique_a_la_source": true,
+    "lignes_juridiques_non_affectees": [],
+    "jointures_conservant_le_tiret_lexical": 2
+  },
+  "mise_en_page": {
+    "retours_simples_dans_page_content": 0,
+    "retours_simples_attendus": 0,
+    "separations_conservees": "article/corps, énumérations, tableau des grades et serment",
+    "entetes_repetitifs_ignores": 0,
+    "pieds_de_page_ignores": 0,
+    "numeros_de_page_ignores": 0
+  },
+  "metadata": {
+    "date": [
+      "1994-11-29"
+    ],
+    "historique": [
+      false
+    ],
+    "tous_chunks_historique_false": true,
+    "moniteur": {
+      "annee": 149,
+      "numero": "103",
+      "type": "ordinaire",
+      "preuve_pdf": "Moniteur nº 103, 28 décembre 1994",
+      "annee_deduite_de_la_serie_du_Moniteur": true
+    },
+    "tous_chunks_avec_les_trois_cles_moniteur": true,
+    "tous_chunks_avec_chemin_hierarchique": true,
+    "types_bloc_utilises": [
+      "article"
+    ],
+    "types_bloc_valides_backend": [
+      "annexe",
+      "article",
+      "cloture",
+      "preambule",
+      "visas"
+    ]
+  },
+  "blocs_absents_de_la_source": {
+    "preambule": "aucun préambule juridique dans le PDF",
+    "visas": "aucun visa juridique dans le PDF",
+    "cloture": "aucune formule de promulgation ni signature après l'article 70",
+    "annexe": "aucune annexe dans le PDF",
+    "blocs_artificiels_ajoutes": 0
+  },
+  "validation_backend": {
+    "nb_chunks_total": 73,
+    "nb_chunks_valides": 73,
+    "valide": true,
+    "pret_pour_insertion": true,
+    "erreurs": [],
+    "doublons_internes": [],
+    "doublons_en_base": []
+  },
+  "points_a_revoir": {
+    "artefacts_deja_presents_dans_la_source": [
+      {
+        "page": 1,
+        "motif": "corps professionnel de police civil",
+        "ligne_source": "but de créer un corps professionnel de police civil, avec accent sur la protection de la vie et des biens du",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 2,
+        "motif": "maritime, portuaires",
+        "ligne_source": "9. Contrôler toutes les voies de communications terrestres, maritime, portuaires et aériennes;",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 4,
+        "motif": "toues dépenses",
+        "ligne_source": "7. Superviser et contrôler le fonctionnement de toues dépenses ou sorties de fonds et préparer, de",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 4,
+        "motif": "à lui conférés",
+        "ligne_source": "10. Exercer toutes autres attributions à lui conférés par la constitution, les lois et les règlements.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 7,
+        "motif": "poli-ce",
+        "ligne_source": "5. veiller à l’entraînement régulier des sections de poli-ce nationale;",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 9,
+        "motif": "annuel-le",
+        "ligne_source": "9. adresser un rapport d’activité mensuelle et annuel-le au directeur général avec copie au commissaire",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 11,
+        "motif": "poli-ce",
+        "ligne_source": "Article 60.- La carrière des différents fonctionnaires de la Poli-ce nationale comprend des grades",
+        "action": "conservé exactement; relecture humaine recommandée"
+      }
+    ],
+    "nombre_artefacts_reperes": 7,
+    "cloture_absente": true,
+    "entete_documentaire_non_chunked": [
+      {
+        "page": 1,
+        "top": 111.1,
+        "texte": "Loi relative à la Police nationale",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 147.6,
+        "texte": "Loi du 29 novembre 1994",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 170.2,
+        "texte": "Portant création, organisation et fonctionnement de la Police nationale (Moniteur nº 103, 28 décembre",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 181.3,
+        "texte": "1994)",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      }
+    ],
+    "corrections_silencieuses": false
+  },
+  "suggestions": [
+    "Comparer les artefacts signalés à l'exemplaire officiel du Moniteur nº 103 avant correction.",
+    "Vérifier dans l'exemplaire officiel si une formule de promulgation ou des signatures suivent l'article 70; elles sont absentes du PDF fourni.",
+    "Conserver l'état a_revoir jusqu'à la validation humaine demandée."
+  ]
+}

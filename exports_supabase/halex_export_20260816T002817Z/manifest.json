@@ -1,0 +1,97 @@
+{
+  "export_utc": "2026-08-16T00:28:24.386294+00:00",
+  "table": "documents",
+  "nb_documents": 3117,
+  "nb_sources": 17,
+  "metadonnees_exclues_des_json_editables": [
+    "date_ingestion",
+    "lot_ingestion"
+  ],
+  "sources": [
+    {
+      "source": "Arrêté du 6 mai 2026 fixant le salaire minimum à compter du 6 mai 2026",
+      "nb_chunks": 9,
+      "fichier": "par_source/arrete_du_6_mai_2026_fixant_le_salaire_minimum_a_compter_du_6_ma_22a9eab4.json"
+    },
+    {
+      "source": "Arrêté fixant le salaire minimum à compter du 6 mai 2026",
+      "nb_chunks": 10,
+      "fichier": "par_source/arrete_fixant_le_salaire_minimum_a_compter_du_6_mai_2026_5d9ebac0.json"
+    },
+    {
+      "source": "Arrêté portant règlement général de la Comptabilité Publique",
+      "nb_chunks": 105,
+      "fichier": "par_source/arrete_portant_reglement_general_de_la_comptabilite_publique_9bf23156.json"
+    },
+    {
+      "source": "Code Pénal",
+      "nb_chunks": 1038,
+      "fichier": "par_source/code_penal_9af47568.json"
+    },
+    {
+      "source": "Code des douanes du 21 mars 2023",
+      "nb_chunks": 348,
+      "fichier": "par_source/code_des_douanes_du_21_mars_2023_259218eb.json"
+    },
+    {
+      "source": "Code des investissements",
+      "nb_chunks": 86,
+      "fichier": "par_source/code_des_investissements_e604a162.json"
+    },
+    {
+      "source": "Code du Travail",
+      "nb_chunks": 499,
+      "fichier": "par_source/code_du_travail_3f854427.json"
+    },
+    {
+      "source": "Constitution de 1987 amendée",
+      "nb_chunks": 514,
+      "fichier": "par_source/constitution_de_1987_amendee_38d03827.json"
+    },
+    {
+      "source": "Décret du 29 janvier 2016 reconnaissant le droit de tout administré à s’adresser à l’Administration Publique par des moyens électroniques",
+      "nb_chunks": 54,
+      "fichier": "par_source/decret_du_29_janvier_2016_reconnaissant_le_droit_de_tout_adminis_5f9a0d6f.json"
+    },
+    {
+      "source": "Décret reconnaissant le droit de tout administré à s'adresser à l'Administration Publique par des moyens électroniques",
+      "nb_chunks": 54,
+      "fichier": "par_source/decret_reconnaissant_le_droit_de_tout_administre_a_s_adresser_a_2141dc10.json"
+    },
+    {
+      "source": "Loi du 11 septembre 2017 portant organisation et réglementation du travail sur la durée de vingt-quatre (24) heures répartie en trois (3) tranches de huit (8) heures",
+      "nb_chunks": 13,
+      "fichier": "par_source/loi_du_11_septembre_2017_portant_organisation_et_reglementation_e96481a4.json"
+    },
+    {
+      "source": "Loi du 19 août 1955 réglementant la pharmacie et les produits pharmaceutiques",
+      "nb_chunks": 53,
+      "fichier": "par_source/loi_du_19_aout_1955_reglementant_la_pharmacie_et_les_produits_ph_6e411c74.json"
+    },
+    {
+      "source": "Loi modifiant l'article 257 du Code du Travail",
+      "nb_chunks": 4,
+      "fichier": "par_source/loi_modifiant_l_article_257_du_code_du_travail_1c47a6f0.json"
+    },
+    {
+      "source": "Loi portant formation, fonctionnement et financement des partis politiques",
+      "nb_chunks": 72,
+      "fichier": "par_source/loi_portant_formation_fonctionnement_et_financement_des_partis_p_4b600efc.json"
+    },
+    {
+      "source": "Loi portant organisation et réglementation du travail sur la durée de vingt-quatre heures répartie en trois tranches de huit heures",
+      "nb_chunks": 13,
+      "fichier": "par_source/loi_portant_organisation_et_reglementation_du_travail_sur_la_dur_35f62de3.json"
+    },
+    {
+      "source": "Loi sanctionnant le blanchiment de capitaux et le financement du terrorisme",
+      "nb_chunks": 91,
+      "fichier": "par_source/loi_sanctionnant_le_blanchiment_de_capitaux_et_le_financement_du_fdeb205d.json"
+    },
+    {
+      "source": "Loi sur les coopératives d'épargne et de crédit",
+      "nb_chunks": 154,
+      "fichier": "par_source/loi_sur_les_cooperatives_d_epargne_et_de_credit_86a98078.json"
+    }
+  ]
+}

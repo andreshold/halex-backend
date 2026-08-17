@@ -1,0 +1,65 @@
+26
+
+<< LE MONITEUR >> No. 20 - Vendredi 29 Janvier 2016
+
+Article 39.-
+
+Article 40.-
+
+Article 41.-
+
+Article 42.-
+
+En cas de procédure administrative informatisée, sont préalablement prévus, le ou les services compétents
+pour la définition des spécifications, la programmation, l'entretien, la supervision, le contrôle de
+qualité, l'audit du système d’information et de son code source, Il est également indiqué le service
+assumant la responsabilité en cas de contestation.
+
+TITRE V
+COOPÉRATION ENTRE ENTITÉS ADMINISTRATIVES POUR LA MISE EN
+ŒUVRE DE L'ADMINISTRATION ÉLECTRONIQUE
+
+CHAPITRE PREMIER
+
+CHAMP INSTITUTIONNEL DE COOPÉRATION EN MATIÈRE
+D'ADMINISTRATION ÉLECTRONIQUE
+
+Le Conseil Supérieur de l'Administration et de la Fonction Publique est l'organe technique de direc-
+tion, de supervision et de coopération pour la mise en œuvre de l'administration électronique à tous les
+niveaux de l’administration publique au sens de l’article 2 alinéa 1 a) du présent Décret.
+
+Il veille à la réalisation des objectifs et des principes définis par le présent Décret en s'assurant
+particulièrement des fonctions suivantes :
+
+a) Assurer la compatibilité et l’interopérabilité des systèmes et applications employés par les différentes
+entités administratives ;
+
+b) Préparer les plans et programmes conjoints de mise en œuvre de l'administration électronique.
+
+Il peut, en raison des matières traitées, associer à ses travaux les personnes, organisations ou associa-
+tions qui, en raison de leur objet ou de leurs compétences techniques, peuvent apporter une contribu-
+tion utile à la réalisation des missions du Conseil.
+
+CHAPITRE II
+
+COOPÉRATION EN MATIÈRE D’INTEROPÉRABILITÉ
+DES SYSTÈMES ET APPLICATIONS
+
+Lorsque les entités administratives utilisent les systèmes d’informations dans leurs rapports avec les
+autres entités administratives et les administrés, elles le feront en appliquant les mesures informatiques,
+technologiques, organisationnelles et sécuritaires qui garantissent un niveau adéquat d’interopérabilité
+technique, sémantique et organisationnelle et qui évitent la discrimination entre les administrés en
+raison de leurs choix technologiques.
+
+Le Schéma National d’Interopérabilité établit, en matière de sécurité, de conservation et de normalisation
+de l’information, des formats et des applications, un ensemble de critères et de recommandations dont
+devront tenir compte les entités administratives dans leurs décisions en matière de technologie de
+manière à garantir l’interopérabilité.
+
+Le Schéma National de Sécurité a pour objet d’établir dans le cadre du présent Décret la politique de
+sécurité dans l’utilisation des moyens électroniques ; il est constitué des principes de base et des
+conditions minimum requises permettant une protection adéquate de l'information.
+
+Les deux schémas, après consultation des diverses entités administratives et sur proposition du Conseil
+Supérieur de l'Administration et de la Fonction Publique, sont adoptés par Arrêté du Premier Ministre
+et sont actualisés de manière permanente.

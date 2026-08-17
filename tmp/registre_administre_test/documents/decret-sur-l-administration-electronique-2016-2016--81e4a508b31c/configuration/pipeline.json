@@ -1,0 +1,400 @@
+{
+  "source_texte": "PDF image sans couche texte",
+  "ocr_principal": "Tesseract LSTM tessdata_best français sur rendu Poppler 300 dpi",
+  "ocr_contre_lecture": "Tesseract LSTM tessdata_fast français sur le même rendu",
+  "controle_visuel_pages": 22,
+  "rendu_global_dpi": 150,
+  "rendu_ocr_et_detail_dpi": 300,
+  "page_editoriale_et_decret_precedent_exclus": 1,
+  "coupures_de_lignes_et_cesures_supprimees": true,
+  "separateurs_dans_articles": "double retour pour listes et numérotations seulement",
+  "titres_migres_vers_chemin_hierarchique": true,
+  "corrections_juridiques_silencieuses": false,
+  "corrections_ocr": [
+    {
+      "page": 2,
+      "top": 701,
+      "avant": "MICHEL J OSEPH MARTELLY",
+      "apres": "MICHEL JOSEPH MARTELLY",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 2,
+      "top": 766,
+      "avant": "PRESIDENT",
+      "apres": "PRÉSIDENT",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 2,
+      "top": 1253,
+      "avant": "Vu le Décret du 1°” juin 2005 relatif à la Carte d’Identification Nationale, créant l'Office National d’Identification ;",
+      "apres": "Vu le Décret du 1er juin 2005 relatif à la Carte d’Identification Nationale, créant l'Office National d’Identification ;",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 2,
+      "top": 2631,
+      "avant": "l’administration électronique:",
+      "apres": "l’administration électronique ;",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 3,
+      "top": 661,
+      "avant": "OBJET, CHAMP D'APPLICATION ET OBJECTIFS *",
+      "apres": "OBJET, CHAMP D’APPLICATION ET OBJECTIFS",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 3,
+      "top": 767,
+      "avant": "Section 1°“ .- Objet",
+      "apres": "Section 1re.- Objet",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 3,
+      "top": 860,
+      "avant": "Article 1°\".- Le présent Décret reconnaît le droit de tout administré à s'adresser à l'administration publique par des",
+      "apres": "Article 1er.- Le présent Décret reconnaît le droit de tout administré à s'adresser à l'administration publique par des",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 3,
+      "top": 1421,
+      "avant": "Section 2.- Champ d'application",
+      "apres": "Section 2.- Champ d’application",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 4,
+      "top": 666,
+      "avant": "CHAPITRE II .",
+      "apres": "CHAPITRE II",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 4,
+      "top": 824,
+      "avant": "Section 1. Principes généraux",
+      "apres": "Section 1re.- Principes généraux",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 6,
+      "top": 857,
+      "avant": "1) Dispositif sécurisé de création de signature électronique : un dispositif de création de signature",
+      "apres": "l) Dispositif sécurisé de création de signature électronique : un dispositif de création de signature",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 6,
+      "top": 1435,
+      "avant": "0) Document électronique : information de toute nature sous forme électronique, archivée",
+      "apres": "o) Document électronique : information de toute nature sous forme électronique, archivée",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 7,
+      "top": 850,
+      "avant": "I. Qu'il soit public et que son utilisation soit disponible gratuitement ou à un coût qui n’en",
+      "apres": "1. Qu'il soit public et que son utilisation soit disponible gratuitement ou à un coût qui n’en",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 7,
+      "top": 1203,
+      "avant": "DANS LEURS RAPPORTS AVEC L'ADMINISTRATION PUBLIQUE",
+      "apres": "DANS LEURS RAPPORTS AVEC L’ADMINISTRATION PUBLIQUE",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 7,
+      "top": 1303,
+      "avant": "Article 6.- [1 est reconnu aux administrés le droit d’utiliser les moyens électroniques dans leurs rapports avec",
+      "apres": "Article 6.- Il est reconnu aux administrés le droit d’utiliser les moyens électroniques dans leurs rapports avec",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 7,
+      "top": 1849,
+      "avant": "b) N'’avoir pas à soumettre les données et documents que détient déjà l’administration publique,",
+      "apres": "b) N’avoir pas à soumettre les données et documents que détient déjà l’administration publique,",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 8,
+      "top": 532,
+      "avant": "des standards ouverts ou, à défaut, deux qui sont utilisés de manière générale par les administrés.",
+      "apres": "des standards ouverts ou, à défaut, ceux qui sont utilisés de manière générale par les administrés.",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 8,
+      "top": 1353,
+      "avant": "de l'Administration et de la Fonction Publiques. Sa rédaction définitive n'intervient qu'après que le",
+      "apres": "de l'Administration et de la Fonction Publique. Sa rédaction définitive n'intervient qu'après que le",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 9,
+      "top": 786,
+      "avant": "TITRE II",
+      "apres": "TITRE III",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 9,
+      "top": 826,
+      "avant": "DU RÉGIME JURIDIQUE DE L'ADMINISTRATION ÉLECTRONIQUE",
+      "apres": "DU RÉGIME JURIDIQUE DE L’ADMINISTRATION ÉLECTRONIQUE",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 9,
+      "top": 2370,
+      "avant": "officiel et authentique, les effets de cette publication étant régis par l’article 1% du Code Civil et les",
+      "apres": "officiel et authentique, les effets de cette publication étant régis par l’article 1er du Code Civil et les",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 9,
+      "top": 2889,
+      "avant": "Section I'°.- Dispositions communes",
+      "apres": "Section 1re.- Dispositions communes",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1408,
+      "avant": "d) L’échange électronique de données dans des univers fermés de communication, selon accorc",
+      "apres": "d) L’échange électronique de données dans des univers fermés de communication, selon accord",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1665,
+      "avant": "Article 14.- L'Office National d’Identification a vocation naturelle de prestataire de services de certificatio",
+      "apres": "Article 14.- L'Office National d’Identification a vocation naturelle de prestataire de services de certification",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1716,
+      "avant": "électronique. Il remplit à cet effet toutes les conditions prescrites par l’ Arrêté d’application de la Lc",
+      "apres": "électronique. Il remplit à cet effet toutes les conditions prescrites par l’Arrêté d’application de la Loi",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1767,
+      "avant": "sur la signature électronique en vue de sa qualification par le Conseil National des Télécommunication",
+      "apres": "sur la signature électronique en vue de sa qualification par le Conseil National des Télécommunications.",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1818,
+      "avant": "Une fois qualifié, il fournit ses services exclusivement aux personnes physiques titulaires de la Car!",
+      "apres": "Une fois qualifié, il fournit ses services exclusivement aux personnes physiques titulaires de la Carte",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 1972,
+      "avant": "Il étudie les voies et moyens et mettra en œuvre les ressources financières, techniques et humaines po",
+      "apres": "Il étudie les voies et moyens et mettra en œuvre les ressources financières, techniques et humaines pour",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2126,
+      "avant": "Article 15.- Les administrés peuvent faire usage de la signature électronique sécurisée pour s'identifier et authentif",
+      "apres": "Article 15.- Les administrés peuvent faire usage de la signature électronique sécurisée pour s'identifier et authentifier",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2280,
+      "avant": "La signature électronique sécurisée doit être attestée par un certificat électronique délivré par",
+      "apres": "La signature électronique sécurisée doit être attestée par un certificat électronique délivré par un",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2434,
+      "avant": "Article 16.- Les entités administratives peuvent déterminer et justifier, en tenant compte des données et intérêts",
+      "apres": "Article 16.- Les entités administratives peuvent déterminer et justifier, en tenant compte des données et intérêts en",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2485,
+      "avant": "cause, les circonstances et conditions d’utilisation par les administrés d’autres systèmes de signat",
+      "apres": "cause, les circonstances et conditions d’utilisation par les administrés d’autres systèmes de signature",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2537,
+      "avant": "électronique, comme la fourniture d’une information connue seulement des deux parties ou d’au!",
+      "apres": "électronique, comme la fourniture d’une information connue seulement des deux parties ou d’autres",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2689,
+      "avant": "Lorsque ces systèmes sont utilisés pour confirmer un renseignement, une proposition ou un proje",
+      "apres": "Lorsque ces systèmes sont utilisés pour confirmer un renseignement, une proposition ou un projet de",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2741,
+      "avant": "document remis ou produits par une entité administrative, celle-ci doit s'assurer de l’intégrité e",
+      "apres": "document remis ou produits par une entité administrative, celle-ci doit s'assurer de l’intégrité et de",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2895,
+      "avant": "Lorsque cela s'avère nécessaire, les entités administratives attesteront de l'existence et du contenu",
+      "apres": "Lorsque cela s'avère nécessaire, les entités administratives attesteront de l'existence et du contenu des",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 10,
+      "top": 2946,
+      "avant": "formalités entreprises par les administrés pour lesquelles il aura été fait usage des moyens d’identifice",
+      "apres": "formalités entreprises par les administrés pour lesquelles il aura été fait usage des moyens d’identification",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 11,
+      "top": 647,
+      "avant": "Article 18. Pour l'identification et l’authentification de l'exercice de sa compétence lors d’une procédure adminis-",
+      "apres": "Article 18.- Pour l'identification et l’authentification de l'exercice de sa compétence lors d’une procédure adminis-",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 11,
+      "top": 1636,
+      "avant": "Article 19.- Sans préjudice des dispositions des articles 17 et 18 du présent Décret, l’ identification et l’authentification",
+      "apres": "Article 19.- Sans préjudice des dispositions des articles 17 et 18 du présent Décret, l’identification et l’authentification",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 11,
+      "top": 2940,
+      "avant": "Article 21.- Les certificats électroniques émis par des prestataires de services de certi fication qualifiés seront reconnus",
+      "apres": "Article 21.- Les certificats électroniques émis par des prestataires de services de certification qualifiés seront reconnus",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 12,
+      "top": 545,
+      "avant": "Le Conseil Supérieur de l’Administration et de la Fonction Publiques dispose d’une plateforme de",
+      "apres": "Le Conseil Supérieur de l’Administration et de la Fonction Publique dispose d’une plateforme de",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 12,
+      "top": 1877,
+      "avant": "Section I\"\".- Des registres",
+      "apres": "Section 1re.- Des registres",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 13,
+      "top": 694,
+      "avant": "possibilité d’admission des documents mentiomiés à l’alinéa 2 b) du même article.",
+      "apres": "possibilité d’admission des documents mentionnés à l’alinéa 2 b) du même article.",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 14,
+      "top": 2141,
+      "avant": "ou de l’administration publique, que le format orignal soit maintenu ou non, sont considérées conformes",
+      "apres": "ou de l’administration publique, que le format original soit maintenu ou non, sont considérées conformes",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 15,
+      "top": 1603,
+      "avant": "dossier papier, sans préjudicie du droit de l’administré à en obtenir des copies.",
+      "apres": "dossier papier, sans préjudice du droit de l’administré à en obtenir des copies.",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 15,
+      "top": 1705,
+      "avant": "_ TITRE IV ;",
+      "apres": "TITRE IV",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 15,
+      "top": 2833,
+      "avant": "b) Laprévision de moyens et d’instruments favorisant la participation, la transparence et l’information;",
+      "apres": "b) La prévision de moyens et d’instruments favorisant la participation, la transparence et l’information;",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 16,
+      "top": 393,
+      "avant": "L'UTILISATION DES MOYENS ÉLECTRONIQUES",
+      "apres": "L’UTILISATION DES MOYENS ÉLECTRONIQUES",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 16,
+      "top": 1229,
+      "avant": "qui y sont contenues,",
+      "apres": "qui y sont contenues.",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 17,
+      "top": 427,
+      "avant": "qualité, l'audit du système d’information et de son code source, Il est également indiqué le service",
+      "apres": "qualité, l'audit du système d’information et de son code source. Il est également indiqué le service",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 17,
+      "top": 677,
+      "avant": "ŒUVRE DE L'ADMINISTRATION ÉLECTRONIQUE",
+      "apres": "ŒUVRE DE L’ADMINISTRATION ÉLECTRONIQUE",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 17,
+      "top": 934,
+      "avant": "D'ADMINISTRATION ÉLECTRONIQUE",
+      "apres": "D’ADMINISTRATION ÉLECTRONIQUE",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 18,
+      "top": 1138,
+      "avant": "RÉUTILISATION D'’APPLICATIONS ET TRANSFERT DE TECHNOLOGIES",
+      "apres": "RÉUTILISATION D’APPLICATIONS ET TRANSFERT DE TECHNOLOGIES",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 19,
+      "top": 410,
+      "avant": "de la Fonction Publique élaborera un plan de mise en œuvre des moyens nécessaires dans le cadre",
+      "apres": "de la Fonction Publique élaborera un plan de mise en œuvre des moyens nécessaires dans le cadre de",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    },
+    {
+      "page": 19,
+      "top": 731,
+      "avant": "Article 49,- Le présent Décret garantit l’usage des deux langues officielles dans les rapports entre l’administration",
+      "apres": "Article 49.- Le présent Décret garantit l’usage des deux langues officielles dans les rapports entre l’administration",
+      "raison": "correction OCR ou structure vérifiée sur le rendu 300 dpi"
+    }
+  ]
+}

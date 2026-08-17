@@ -1,0 +1,9 @@
+{
+  "statut": "a_revoir",
+  "points": [
+    "Les dates 2012-06-19 et 1996-10-10 fournies dans le message ne correspondent pas au document; la date imprimée 1955-08-19 a été appliquée.",
+    "Aucune référence complète au Moniteur ne figure dans la copie; les trois clés moniteur_* sont donc toutes absentes.",
+    "Les anomalies typographiques imprimées recensées ont été conservées sans correction juridique silencieuse.",
+    "La page 11 contient un pied de page du site UNODC sans valeur juridique; il a été exclu."
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "statut": "conforme_techniquement_a_relecture_humaine",
+  "source": {
+    "pdf": "C:\\Users\\Andres Luis\\Andres Docs\\halex-conversion\\document_old\\lexhaiti-code-civil-fr.pdf",
+    "sha256": "4abe25d541a83d58315d5992efea04c556ef8c1b277a68c0a58d10705a1be2d8",
+    "octets": 870253,
+    "pages": 303,
+    "pages_juridiques_traitees": "7-303",
+    "pages_exclues": "1-6 (couverture et sommaire)",
+    "date_metadata_demandee": "2023-01-01",
+    "date_promulgation_affichee_dans_le_pdf": "1825-03-27",
+    "version_affichee_dans_le_pdf": "25 mai 2026",
+    "document_genere_affiche": "5 août 2026",
+    "extraction": "pdfplumber 0.11.9, couche texte native et géométrie",
+    "contre_verification": "pypdf 6.10.0",
+    "ocr_requis": false
+  },
+  "sorties": {
+    "dossier_registre": "C:\\Users\\Andres Luis\\Andres Docs\\halex-backend\\tmp\\code_civil_rebuild\\registry\\documents\\code-civil-dhaiti-2023--4abe25d541a8",
+    "markdown": "outputs/document.md",
+    "chunks": "outputs/chunks.json",
+    "rapport_validation_backend": "outputs/rapport_validation_backend.json",
+    "extraction_auditable": "extraction/lignes_pdf.json",
+    "points_a_revoir": "review/points_a_revoir.json"
+  },
+  "chunks": {
+    "prevus": 2048,
+    "trouves": 2048,
+    "ecart": 0,
+    "par_type_bloc": {
+      "article": 2047,
+      "cloture": 1
+    },
+    "types_bloc_non_valides": []
+  },
+  "articles": {
+    "prevus": 2047,
+    "trouves": 2047,
+    "premier": "Article Premier",
+    "dernier": "Article 2047",
+    "articles_introuvables": [],
+    "articles_inattendus": [],
+    "articles_dupliques": [],
+    "sequence_1_a_2047_continue": true
+  },
+  "hierarchie": {
+    "racine": "CODE CIVIL D’HAÏTI",
+    "structures_formelles_prevues": 318,
+    "structures_formelles_trouvees": 318,
+    "structures_par_type": {
+      "CHAPITRE": 119,
+      "LIVRE": 36,
+      "SECTION": 153,
+      "SOUS-SECTION": 10
+    },
+    "sous_divisions_non_stylees_promues": 21,
+    "articles_avec_chemin_hierarchique": 2047,
+    "articles_sans_chemin_hierarchique": [],
+    "details_promotions": [
+      {
+        "article_cible": "Article 260",
+        "page": 43,
+        "segments": [
+          "section ni.",
+          "Des Fins de non-recevoir contre V action en divorce pour cause déterminée."
+        ],
+        "valeur_hierarchique": "section ni. — Des Fins de non-recevoir contre V action en divorce pour cause déterminée."
+      },
+      {
+        "article_cible": "Article 605",
+        "page": 95,
+        "segments": [
+          "section ni.",
+          "Des Successions déférées aux Descendants, soit légitimes, soit naturels."
+        ],
+        "valeur_hierarchique": "section ni. — Des Successions déférées aux Descendants, soit légitimes, soit naturels."
+      },
+      {
+        "article_cible": "Article 1007",
+        "page": 150,
+        "segments": [
+          "s i.",
+          "Des Effets de l'Obligation divisible."
+        ],
+        "valeur_hierarchique": "s i. — Des Effets de l'Obligation divisible."
+      },
+      {
+        "article_cible": "Article 1009",
+        "page": 151,
+        "segments": [
+          "S n. Des Effets de l'Obligation indivisible."
+        ],
+        "valeur_hierarchique": "S n. Des Effets de l'Obligation indivisible."
+      },
+      {
+        "article_cible": "Article 1035",
+        "page": 154,
+        "segments": [
+          "S ii. Du Payement avec subrogation."
+        ],
+        "valeur_hierarchique": "S ii. Du Payement avec subrogation."
+      },
+      {
+        "article_cible": "Article 1039",
+        "page": 155,
+        "segments": [
+          "S mDe l'Imputation des Payements."
+        ],
+        "valeur_hierarchique": "S mDe l'Imputation des Payements."
+      },
+      {
+        "article_cible": "Article 1107",
+        "page": 165,
+        "segments": [
+          "De l'Acte sous seing privé."
+        ],
+        "valeur_hierarchique": "De l'Acte sous seing privé."
+      },
+      {
+        "article_cible": "Article 1122",
+        "page": 168,
+        "segments": [
+          "s*. Des Actes récognitifs et confirrnatifs."
+        ],
+        "valeur_hierarchique": "s*. Des Actes récognitifs et confirrnatifs."
+      },
+      {
+        "article_cible": "Article 1135",
+        "page": 170,
+        "segments": [
+          "Des Présomptions établies par la loi."
+        ],
+        "valeur_hierarchique": "Des Présomptions établies par la loi."
+      },
+      {
+        "article_cible": "Article 1152",
+        "page": 173,
+        "segments": [
+          "S n. Du Serment déféré d'office."
+        ],
+        "valeur_hierarchique": "S n. Du Serment déféré d'office."
+      },
+      {
+        "article_cible": "Article 1186",
+        "page": 178,
+        "segments": [
+          "PREMIÈRE PARTIE. De la Communauté légale."
+        ],
+        "valeur_hierarchique": "PREMIÈRE PARTIE. De la Communauté légale."
+      },
+      {
+        "article_cible": "Article 1194",
+        "page": 179,
+        "segments": [
+          "SuDu Passif de la Communauté, et des Actions qui en résultent contre la Communauté."
+        ],
+        "valeur_hierarchique": "SuDu Passif de la Communauté, et des Actions qui en résultent contre la Communauté."
+      },
+      {
+        "article_cible": "Article 1253",
+        "page": 189,
+        "segments": [
+          "Si. Du Partage de V Actif."
+        ],
+        "valeur_hierarchique": "Si. Du Partage de V Actif."
+      },
+      {
+        "article_cible": "Article 1312",
+        "page": 199,
+        "segments": [
+          "Dispositions communes aux huit Sections ci-dessus."
+        ],
+        "valeur_hierarchique": "Dispositions communes aux huit Sections ci-dessus."
+      },
+      {
+        "article_cible": "Article 1315",
+        "page": 200,
+        "segments": [
+          "s h,",
+          "De la Clause portant que les Époux se marient sans Communauté."
+        ],
+        "valeur_hierarchique": "s h, — De la Clause portant que les Époux se marient sans Communauté."
+      },
+      {
+        "article_cible": "Article 1321",
+        "page": 200,
+        "segments": [
+          "Sn. De la Clause de séparation de biens."
+        ],
+        "valeur_hierarchique": "Sn. De la Clause de séparation de biens."
+      },
+      {
+        "article_cible": "Article 1411",
+        "page": 212,
+        "segments": [
+          "De la Garantie en cas d'éviction."
+        ],
+        "valeur_hierarchique": "De la Garantie en cas d'éviction."
+      },
+      {
+        "article_cible": "Article 1426",
+        "page": 214,
+        "segments": [
+          "Sn. De la Garantie des défauts de la chose vendue."
+        ],
+        "valeur_hierarchique": "Sn. De la Garantie des défauts de la chose vendue."
+      },
+      {
+        "article_cible": "Article 1444",
+        "page": 216,
+        "segments": [
+          "De la Faculté de rachat."
+        ],
+        "valeur_hierarchique": "De la Faculté de rachat."
+      },
+      {
+        "article_cible": "Article 1642",
+        "page": 242,
+        "segments": [
+          "Dispositions relatives aux Sociétés de Commerce,"
+        ],
+        "valeur_hierarchique": "Dispositions relatives aux Sociétés de Commerce,"
+      },
+      {
+        "article_cible": "Article 2047",
+        "page": 302,
+        "segments": [
+          "Dispositions générales."
+        ],
+        "valeur_hierarchique": "Dispositions générales."
+      }
+    ]
+  },
+  "integrite_caracteres": {
+    "regle": "comparaison Unicode NFC hors espaces; seules les césures typographiques de fin de ligne ont été ressoudées lorsque la ligne suivante commence par une minuscule",
+    "source_chunks_non_blanche": 473751,
+    "sortie_chunks_non_blanche": 473751,
+    "chunks_identiques_a_la_source": true,
+    "caracteres_manquants": 0,
+    "caracteres_ajoutes": 0,
+    "markdown_incluant_structures_identique_a_la_source": true,
+    "cesures_reference_chunks": 463,
+    "cesures_reference_markdown": 464,
+    "cesures_sortie": 464,
+    "lignes_retenues_non_affectees": []
+  },
+  "mise_en_page": {
+    "retours_simples_dans_page_content": 0,
+    "retours_simples_attendus": 0,
+    "separateur_paragraphe": "deux retours; article/corps, énumérations et signatures seulement",
+    "entetes_repetitifs_ignores": 297,
+    "pieds_source_et_pagination_ignores": 297,
+    "anciens_entetes_et_numeros_integres_ignores": 13,
+    "url_source_presente_dans_page_content": false
+  },
+  "metadata": {
+    "date": [
+      "2023-01-01"
+    ],
+    "historique": [
+      false
+    ],
+    "tous_chunks_historique_false": true,
+    "abroge_par": [
+      null
+    ],
+    "publication_abrogation": [
+      null
+    ],
+    "date_abrogation": [
+      null
+    ],
+    "tous_chunks_abrogation_non_renseignee": true,
+    "chunks_avec_une_cle_moniteur": 0,
+    "regle_moniteur_tout_ou_rien": "respectée: aucune des trois clés n'est fournie",
+    "tous_chunks_avec_chemin_hierarchique": true,
+    "types_bloc_utilises": [
+      "article",
+      "cloture"
+    ],
+    "types_bloc_valides_backend": [
+      "annexe",
+      "article",
+      "cloture",
+      "preambule",
+      "visas"
+    ]
+  },
+  "validation_backend": {
+    "nb_chunks_total": 2048,
+    "nb_chunks_valides": 2048,
+    "valide": true,
+    "pret_pour_insertion": true,
+    "erreurs": [],
+    "doublons_internes": [],
+    "doublons_en_base": []
+  },
+  "controle_qualite": {
+    "pages_controlees_visuellement": "1-303",
+    "planches_contact_controlees": 19,
+    "pages_plein_format_echantillonnees": [
+      43,
+      95,
+      150,
+      151,
+      154,
+      155,
+      165,
+      168,
+      170,
+      173,
+      178,
+      179,
+      189,
+      199,
+      200,
+      201,
+      212,
+      214,
+      216,
+      242,
+      302,
+      303
+    ],
+    "artefacts_deja_presents_dans_la_source": [
+      {
+        "page": 40,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "parties se proposent de faire entendre. Elles seront | averties par le doyen, qu'elles peuvent encore en",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 43,
+        "motif": "pension aliet mentaire",
+        "ligne_source": "la poursuite, demander une pension aliet mentaire proportionnée aux facultés du mari. Le tribunal",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 43,
+        "motif": "V action en divorce",
+        "ligne_source": "Des Fins de non-recevoir contre V action en divorce pour cause déterminée.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 43,
+        "motif": "[demande en divorce",
+        "ligne_source": "auraient pu autoriser cette action, soit depuis la [demande en divorce.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 44,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "Il ne pourra plus l'être après vingt ans de mariage, ni lorsque la femme aura quarante-cinq ans. |",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 72,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "[Du Droit d'Accession sur ce qui s'unit et s'incorpore à la Chose.",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 95,
+        "motif": "primogénilure",
+        "ligne_source": "ascendants, sans distinction de sexe ni de primogénilure, et encore qu'ils soient issus de différents",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 113,
+        "motif": "31. Pour faire une donation",
+        "ligne_source": "31. Pour faire une donation entre-vifs ou un testament, il faut être sain d'esprit.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 138,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "Tout contrat a pour objet une chose ?[u'une partie s'oblige à donner, à faire ou à ne pas aire. Le simple",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 200,
+        "motif": "obstac\\e",
+        "ligne_source": "La clause énoncée au présent paragraphe ne fait point obstac\\e à ce qu'il soit convenu que la femme",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 201,
+        "motif": "comp-| table",
+        "ligne_source": "fruits existants, et il n'est point comp-| table de ceux qui ont été consommés jusqu'alors.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 203,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "L'immeuble acquis des deniers dotaux n'est point dotal, si la condition de l'emploi n'a été [",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 203,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "\\ stipulée par le contrat de mariage. Il en est de même pour l'immeuble donné en paye-",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 294,
+        "motif": "glyphe OCR inhabituel (crochet, barre verticale ou barre oblique inverse)",
+        "ligne_source": "Le créancier ne peut poursuivre la vente des|| immeubles qui ne lui sont*pas hypothéqués, que dans",
+        "action": "conservé exactement; correction interdite sans source juridique de comparaison"
+      },
+      {
+        "page": 300,
+        "motif": "unimmeuble",
+        "ligne_source": "Celui qui acquiert de bonne loi et par juste titre unimmeuble, en prescrit la propriété par",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 302,
+        "motif": "an 23 e en:",
+        "ligne_source": "Le présent Code sera exécuté dans toute la République à dater du 1 er mai 1826, an 23 e en:",
+        "action": "conservé exactement; relecture humaine recommandée"
+      }
+    ],
+    "nombre_artefacts_reperes": 16,
+    "corrections_silencieuses": false
+  },
+  "suggestions": [
+    "Relire les sous-divisions non stylées et les artefacts signalés avant insertion.",
+    "Comparer les passages dégradés à une édition officielle ou à un fac-similé de 1825; la couche texte LexHaïti contient des défauts hérités qui ont été conservés.",
+    "Conserver le statut a_revoir jusqu'à la validation manuelle demandée."
+  ],
+  "audit_extraction": {
+    "pages_pdfplumber": 303,
+    "pages_pypdf": 303,
+    "pages_juridiques_retenues": [
+      7,
+      303
+    ],
+    "pages_couverture_sommaire_exclues": [
+      1,
+      6
+    ],
+    "lignes_retenues": 9422,
+    "lignes_exclues_par_raison": {
+      "ancien_entete_ou_numero_page_integre": 13,
+      "couverture_et_table_des_matieres": 185,
+      "entete_repetitif_lexhaiti": 297,
+      "source_lexhaiti_et_pagination": 297
+    },
+    "exemples_exclus": {
+      "couverture_et_table_des_matieres": [
+        {
+          "page": 1,
+          "top": 92.7,
+          "texte": "LexHaïti"
+        },
+        {
+          "page": 1,
+          "top": 99.6,
+          "texte": "PORTAIL JURIDIQUE DE LA RÉPUBLIQUE D'HAÏTI"
+        },
+        {
+          "page": 1,
+          "top": 184.8,
+          "texte": "CODE — CODE CIVIL"
+        }
+      ],
+      "entete_repetitif_lexhaiti": [
+        {
+          "page": 7,
+          "top": 36.9,
+          "texte": "LEXHAÏTI Code civil d'Haïti"
+        },
+        {
+          "page": 8,
+          "top": 36.9,
+          "texte": "LEXHAÏTI Code civil d'Haïti"
+        },
+        {
+          "page": 9,
+          "top": 36.9,
+          "texte": "LEXHAÏTI Code civil d'Haïti"
+        }
+      ],
+      "source_lexhaiti_et_pagination": [
+        {
+          "page": 7,
+          "top": 796.8,
+          "texte": "Source : https://lexhaiti.org/loi/code-civil 7 / 303"
+        },
+        {
+          "page": 8,
+          "top": 796.8,
+          "texte": "Source : https://lexhaiti.org/loi/code-civil 8 / 303"
+        },
+        {
+          "page": 9,
+          "top": 796.8,
+          "texte": "Source : https://lexhaiti.org/loi/code-civil 9 / 303"
+        }
+      ],
+      "ancien_entete_ou_numero_page_integre": [
+        {
+          "page": 44,
+          "top": 370.9,
+          "texte": "i"
+        },
+        {
+          "page": 44,
+          "top": 394.2,
+          "texte": "46 ÉTAT ET CAPACITÉ DES PERSONNES."
+        },
+        {
+          "page": 53,
+          "top": 355.1,
+          "texte": "."
+        }
+      ]
+    },
+    "scissions_documentees": [
+      {
+        "page": 200,
+        "avant": "l'autorisation de la justice. Sn. De la Clause de séparation de biens.",
+        "apres": [
+          "l'autorisation de la justice.",
+          "Sn. De la Clause de séparation de biens."
+        ],
+        "caracteres_non_blancs_identiques": true,
+        "raison": "fin de l'article 1320 et sous-titre de l'article 1321 fusionnés"
+      }
+    ],
+    "retraits_marginaux_internes_documentes": [
+      {
+        "page": 44,
+        "avant": "i",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 44,
+        "avant": "46 ÉTAT ET CAPACITÉ DES PERSONNES.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 53,
+        "avant": ".",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 53,
+        "avant": "56 ÉTAT ET CAPACITÉ DES PERSONNES. l'émancipation qui pourrait avoir lieu avant l'âge de vingt-un",
+        "apres": "l'émancipation qui pourrait avoir lieu avant l'âge de vingt-un",
+        "raison": "préfixe d'ancien en-tête de page retiré; texte juridique conservé"
+      },
+      {
+        "page": 59,
+        "avant": ".",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 59,
+        "avant": "62 ÉTAT ET CAPACITÉ DES PERSONNES.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 97,
+        "avant": "1 10 MANIÈRES D'ACQUÉRIR LA PROPRIÉTÉ.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 99,
+        "avant": "IIS MANIÈRES D'ACQUÉRIR LA PROPRIETE.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 190,
+        "avant": "2^0 MANIÈRES DACQUÉR1R LA PROPRIÉTÉ.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 195,
+        "avant": ",",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 195,
+        "avant": "226 MANIÈRES D'ACQUÉRIR LA PROPRIÉTÉ.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 199,
+        "avant": ".",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 199,
+        "avant": "230 MANIÈRES D'ACQUÉRIR LA PROPRIÉTÉ.",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      },
+      {
+        "page": 208,
+        "avant": "L0[ 22. DE LA VENTE. 241",
+        "apres": null,
+        "raison": "ancien en-tête, numéro ou séparateur de page, contrôlé visuellement"
+      }
+    ],
+    "metadata_pdf": {
+      "Producer": "WeasyPrint 69.0",
+      "Title": "Code civil d'Haïti"
+    },
+    "version_affichee": "25 mai 2026",
+    "generation_affichee": "5 août 2026",
+    "ocr_requis": false
+  }
+}

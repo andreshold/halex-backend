@@ -1,0 +1,34 @@
+{
+  "nb_chunks_total": 2048,
+  "nb_chunks_valides": 2048,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Code civil d’Haïti",
+      "source_courte": "Code civil d’Haïti",
+      "type_norme": "code",
+      "rang": 40,
+      "nb_chunks": 2048,
+      "nb_chunks_sans_moniteur": 2048,
+      "nb_par_type_bloc": {
+        "article": 2047,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_civil",
+        "droit_de_la_famille",
+        "droit_des_societes",
+        "droit_foncier",
+        "successions_et_liberalites"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 2048,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

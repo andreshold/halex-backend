@@ -1,0 +1,164 @@
+{
+  "document": {
+    "titre": "Loi portant modification de l’article 29 de la loi organique de la Police Nationale d’Haïti",
+    "fichier_source": "C:\\Users\\Andres Luis\\Andres Docs\\halex-conversion\\document_old\\loi_du_4_mai_2016.pdf",
+    "dossier_registre": "C:\\Users\\Andres Luis\\Andres Docs\\halex-backend\\tmp\\loi_police_article29_dryrun\\registry\\documents\\loi-modifiant-larticle-29-de-la-loi-organique-de-la-police-nationale-dhaiti-2016--d83bdeba9df8",
+    "sha256_source": "d83bdeba9df845f9b317ffe4ced661b633c73c5a64a58cb345dad80178a2e549",
+    "pages_pdf": 32,
+    "pages_retenues": [
+      1,
+      2,
+      3
+    ],
+    "pages_exclues": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "motif_exclusion": "Les pages 4 à 31 portent une autre loi et la page 32 un communiqué; elles ne relèvent pas du texte demandé."
+  },
+  "resultats": {
+    "chunks_prevus": 5,
+    "chunks_trouves": 5,
+    "repartition_types_bloc": {
+      "article": 2,
+      "cloture": 1,
+      "preambule": 1,
+      "visas": 1
+    },
+    "articles_prevus": 2,
+    "articles_trouves": 2,
+    "articles_attendus": [
+      "Article 1",
+      "Article 2"
+    ],
+    "articles_trouves_liste": [
+      "Article 1",
+      "Article 2"
+    ],
+    "articles_introuvables": [],
+    "caracteres_page_content": 3949,
+    "retours_ligne_simples": 0,
+    "entetes_pied_pages_residuels": [],
+    "chemins_hierarchiques_presents": true,
+    "historique_toujours_false": true,
+    "types_bloc_valides": true,
+    "moniteur_tout_ou_rien": true
+  },
+  "integrite_caracteres": {
+    "reference": "transcription canonique contrôlée visuellement sur les pages 1 à 3",
+    "caracteres_manquants_par_rapport_a_la_reference": 0,
+    "caracteres_ajoutes_par_rapport_a_la_reference": 0,
+    "chunks_identiques_a_la_reference_corrigee": true,
+    "limite": "Le zéro porte sur la comparaison déterministe avec la transcription contrôlée, non sur une preuve mathématique directe à partir des pixels."
+  },
+  "controle_ocr": {
+    "principal": {
+      "moteur": "Tesseract LSTM, modèle français tessdata_best, rendu 300 dpi",
+      "fichiers": 3,
+      "mots": 521,
+      "confiance_moyenne": 92.09
+    },
+    "contre_lecture": {
+      "moteur": "Tesseract LSTM, modèle français tessdata_fast, rendu 300 dpi",
+      "fichiers": 3,
+      "mots": 657,
+      "confiance_moyenne": 91.42
+    },
+    "similarite_normalisee_best_fast": 0.568661,
+    "decision": "Le corps a été recomposé ligne à ligne puis contrôlé visuellement; les signatures ont été transcrites depuis l’image plutôt que depuis les zones OCR faibles."
+  },
+  "validation_backend": {
+    "nb_chunks_total": 5,
+    "nb_chunks_valides": 5,
+    "valide": true,
+    "pret_pour_insertion": true,
+    "erreurs": [],
+    "doublons_internes": [],
+    "doublons_en_base": [],
+    "resume_par_source": [
+      {
+        "source": "Loi portant modification de l’article 29 de la loi organique de la Police Nationale d’Haïti",
+        "source_courte": "Loi modifiant l’article 29 de la loi organique de la Police Nationale d’Haïti",
+        "type_norme": "loi",
+        "rang": 30,
+        "nb_chunks": 5,
+        "nb_chunks_sans_moniteur": 0,
+        "nb_par_type_bloc": {
+          "preambule": 1,
+          "visas": 1,
+          "article": 2,
+          "cloture": 1
+        },
+        "thematiques": [
+          "droit_administratif",
+          "fonction_publique"
+        ],
+        "ordre_min": 1,
+        "ordre_max": 5,
+        "ordre_contigu": true,
+        "historique": false
+      }
+    ]
+  },
+  "alerte_metadata_publication": {
+    "metadonnees_demandees_et_conservees": {
+      "date": "2016-01-29",
+      "moniteur_annee": 171,
+      "moniteur_numero": "20",
+      "moniteur_type": "special"
+    },
+    "publication_visible_dans_le_pdf": {
+      "date": "2017-02-01",
+      "moniteur_annee": 172,
+      "moniteur_numero": "5",
+      "moniteur_type": "special"
+    },
+    "date_de_promulgation_visible": "2017-01-23",
+    "coherent": false,
+    "decision": "Les valeurs fournies par l’utilisateur sont conservées exactement; la divergence doit être validée avant ingestion."
+  },
+  "points_a_revoir": [
+    {
+      "priorite": "haute",
+      "portee": "métadonnées de publication",
+      "motif": "Le PDF affiche 172e Année, Spécial No 5, mercredi 1er février 2017, alors que les métadonnées demandées sont 171e Année, No 20, 29 janvier 2016."
+    },
+    {
+      "priorite": "basse",
+      "portee": "clôture, page 3",
+      "motif": "Les noms sous signatures et cachets ont été contrôlés visuellement; le nom Miolin CHARLES-PIERRE a aussi été recoupé sur un document institutionnel."
+    }
+  ],
+  "suggestions": [
+    "Confirmer les métadonnées Moniteur et la date avant toute insertion en base.",
+    "Conserver l’état a_revoir jusqu’à comparaison humaine finale avec les trois pages du PDF.",
+    "Après validation, faire passer le document à chunks_valides puis pret_ingestion."
+  ]
+}

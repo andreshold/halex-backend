@@ -1,0 +1,33 @@
+{
+  "nb_chunks_total": 53,
+  "nb_chunks_valides": 53,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Loi du 19 août 1955 réglementant la pharmacie et les produits pharmaceutiques",
+      "source_courte": "Loi sur les pharmacies 1955",
+      "type_norme": "loi",
+      "rang": 30,
+      "nb_chunks": 53,
+      "nb_chunks_sans_moniteur": 53,
+      "nb_par_type_bloc": {
+        "preambule": 1,
+        "visas": 1,
+        "article": 50,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_commercial",
+        "droit_de_la_sante"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 53,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

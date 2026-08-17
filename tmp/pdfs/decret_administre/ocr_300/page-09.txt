@@ -1,0 +1,64 @@
+18
+
+<< LE MONITEUR >> No. 20- Vendredi 29 Janvier 2016
+
+Article 10.-
+
+Article 11.-
+
+Article 12.-
+
+intéressées et qui se trouvent sur support électronique. Elle spécifie les conditions, les protocoles, les
+critères fonctionnels et techniques nécessaires pour accéder à ces données dans les meilleures condi-
+tions de sécurité, d’intégrité, de disponibilité et de respect des informations à caractère personnel.
+
+La disponibilité de ces données est limitée strictement à celles requises des administrés par les autres
+entités administratives pour les formalités et procédures relevant de leurs compétences légales. L'accès
+aux données à caractère personnel demeure subordonné aux conditions prescrites à l’article 6 alinéa
+2 b) du présent Décret.
+TITRE II
+DU RÉGIME JURIDIQUE DE L'ADMINISTRATION ÉLECTRONIQUE
+
+CHAPITRE PREMIER
+DU SITE ÉLECTRONIQUE
+
+Le site électronique est l'adresse électronique disponible aux administrés à travers les réseaux de
+communication dont le titre, la gestion et l’administration incombent à une entité administrative.
+L'établissement d’un site électronique confère à son titulaire la responsabilité en ce qui a trait à
+l'intégrité, la véracité et la mise à jour de l’information et des services auxquels on peut accéder par
+l'intermédiaire de ce site.
+
+Chaque entité de l’administration publique détermine les conditions et instruments de création des
+sites électroniques en respectant les principes de publicité officielle, de responsabilité, de qualité, de
+sécurité, de disponibilité, d'accessibilité, de neutralité et d’interopérabilité. Dans tous les cas, l’identité
+du titulaire du site doit être garantie, ainsi que la disponibilité des moyens pour la formulation des
+plaintes, requêtes et suggestions.
+
+Les sites électroniques disposent de systèmes qui permettent l'établissement de communications sécurisées
+toutes les fois que cela est nécessaire.
+
+La publication sur les sites électroniques d'informations, de services et de transactions doit respecter
+les principes d'accessibilité et de maniabilité conformément aux normes établies en la matière, et faire
+application de standards ouverts ou à défaut de ceux utilisés de manière généralisée par les administrés.
+
+Toutes les fois où une publication est requise par la loi ou les règlements au Journal Officiel, la
+publication sur le site électronique du Journal Officiel « Le Moniteur » emportera les mêmes effets
+que celle effectuée dans l'édition imprimée.
+
+La publication du Journal Officiel « Le Moniteur » sur le site électronique correspondant a un caractère
+officiel et authentique, les effets de cette publication étant régis par l’article 1“ du Code Civil et les
+articles 125 et 125-1 de la Constitution.
+
+Toutes les fois où la loi ou un règlement prescrit la publication d'un avis, d’une annonce ou d'un
+dispositif de jugement quelconques dans un quotidien à grand tirage, cette formalité est respectée si la
+publication a lieu sur le site électronique du journal correspondant.
+
+CHAPITRE II
+DE L’IDENTIFICATION ET DE L’AUTHENTIFICATION
+
+Section 1". Dispositions communes
+
+Article 13.-
+
+L'administration publique admet dans ses rapports par la voie électronique, les systèmes de signature
+électronique sécurisée conformes à l’Arrêté d'application de la Loi sur la signature électronique.

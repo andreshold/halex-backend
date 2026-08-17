@@ -1,0 +1,54 @@
+No. 20 - Vendredi 29 Janvier 2016 << LE MONITEUR >> ES
+
+i) Certification : la certification par des moyens électroniques de l'identité d’une personne ou d'une
+entité, du contenu de la volonté exprimée dans ses opérations, transactions et documents, de l'intégrité
+et de l’origine de ces derniers;
+
+j) Données de création de signature électronique : les éléments propres au signataire, tels que des
+clés cryptographiques privées, utilisés par lui pour créer une signature électronique;
+
+k) Dispositif de création de signature électronique : un matériel ou un logiciel destiné à mettre en
+application les données de création de signature électronique:
+
+1) Dispositif sécurisé de création de signature électronique : un dispositif de création de signature
+électronique qui satisfait aux exigences définies par l’Arrêté pris pour l'application de la Loi sur la
+signature électronique, adaptant le droit de la preuve aux technologies de l'information et élargissant
+les compétences du Conseil National des Télécommunications:
+
+m) Données de vérification de signature électronique : les éléments, tels que des clés cryptographiques
+publiques, utilisés pour vérifier la signature électronique:
+
+n) Dispositif de vérification de signature électronique : un matériel ou un logiciel destiné à mettre
+en application les données de vérification de signature électronique:
+
+o) Document électronique : information de toute nature sous forme électronique, archivée
+sur un Support électronique selon un format déterminé et susceptible d'identification et de traitement
+différencié;
+
+p) Espaces communs ou guichets uniques : modes ou canaux, bureaux intégrés, assistance
+téléphonique, page web, etc., auxquels les administrés peuvent se présenter pour accéder aux informa-
+tions, formalités et services publics déterminés selon accord entre diverses entités administratives;
+
+q) Interopérabilité : capacité des systèmes d’information, par le biais des procédures auxquelles ils
+servent de support, à partager des données et à rendre possibles entre eux l'échange d'informations et
+de connaissances;
+
+r) Moyen électronique : mécanisme, installation, équipement ou système permettant la production, la
+sauvegarde ou la transmission de documents, de données et d'informations : incluant tout réseau de
+communication ouvert ou restreint comme l'internet, la téléphonie filaire et mobile, etc:
+
+s) Point d'accès électronique : ensemble de pages web groupées en un domaine internet dont l'objectif
+est d'offrir à l'usager, de manière aisée et intégrée, l'accès à une série de ressources et de services
+destinés à répondre aux nécessités spécifiques d’un groupe de personnes ou à accéder à l'information
+et aux services d’une entité administrative;
+
+t) Prestataire de services : toute personne physique ou morale qui offre ou effectue des activités de
+services;
+
+u) Procédure administrative automatisée : la procédure administrative produite par un système
+d’information adéquatement programmé ne nécessitant pas l'intervention d’une personne physique
+pour chaque cas particulier. Elle inclut la production de formulaires, d’actes mettant fin à une procédure
+ainsi que les simples actes de communication:
+
+v) Sceau horodateur : certificat délivré par un tiers de certification attestant de la date et de l'heure
+de la réalisation d’une opération ou d’une transaction quelconque par des moyens électroniques;

@@ -1,0 +1,14 @@
+{
+  "document_id": "loi-relative-a-la-police-nationale-1994--ffdf10220eb6",
+  "sha256": {
+    "source": "ffdf10220eb64b415db0fe8c33f50ea0ebf7f5419717a8e06fb3ae71f2960ae2",
+    "markdown": "c06d3d370036f684a194af8b384d7acc32a50e0e465803fe80d12797d770ab34",
+    "chunks": "84757f3f5225fc1ff783299e12f20230711b317d9954736067e894508f9b928b",
+    "rapport": "62ec0613a9119ceea3b9bc6364aea652e50f8351c5bd71dfb8a0fc4b231c1136",
+    "validation_backend": "8318a5b2ed4f3891bdc578a708e0aa0718acd93cdc64422f346b99487974b9d0",
+    "extraction": "fffe434fb2f0c5a3b330f1ccd466af964924530a8ce5d17468d13dcec2ef2b47",
+    "points_a_revoir": "4c6f01063ef70565dacc660680b0275f5b4467df56daee9f93c8a2e3d1108475",
+    "pipeline": "0aa965e7e26228643de22343fcdc2ce9dfad2df2d3b6992ad6234240037131d2",
+    "metadata": "47f56dfd6f421482eef5dbc4baf8c08101e12bc5c070a88c541f036468743171"
+  }
+}

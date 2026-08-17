@@ -1,0 +1,25 @@
+{
+  "source": "Loi relative à la Police nationale",
+  "source_courte": "Loi relative à la Police nationale",
+  "type_norme": "loi",
+  "rang": 30,
+  "date": "1994-11-29",
+  "statut": "en_vigueur",
+  "moniteur_annee": 149,
+  "moniteur_numero": "103",
+  "moniteur_type": "ordinaire",
+  "mots_cles": [
+    "Police nationale d’Haïti",
+    "sécurité publique",
+    "Police administrative",
+    "Police judiciaire",
+    "CSPN",
+    "commissariats"
+  ],
+  "type_thematique": [
+    "droit_administratif",
+    "fonction_publique",
+    "droits_fondamentaux"
+  ],
+  "historique": false
+}

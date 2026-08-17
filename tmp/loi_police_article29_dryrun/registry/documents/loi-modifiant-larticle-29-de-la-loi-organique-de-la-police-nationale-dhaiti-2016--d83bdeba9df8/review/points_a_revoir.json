@@ -1,0 +1,15 @@
+{
+  "statut": "a_revoir",
+  "points": [
+    {
+      "priorite": "haute",
+      "portee": "métadonnées de publication",
+      "motif": "Le PDF affiche 172e Année, Spécial No 5, mercredi 1er février 2017, alors que les métadonnées demandées sont 171e Année, No 20, 29 janvier 2016."
+    },
+    {
+      "priorite": "basse",
+      "portee": "clôture, page 3",
+      "motif": "Les noms sous signatures et cachets ont été contrôlés visuellement; le nom Miolin CHARLES-PIERRE a aussi été recoupé sur un document institutionnel."
+    }
+  ]
+}

@@ -1,8 +1,15 @@
 """
 halex_core_supabase.py
-Jumeau de halex_core.py : même logique, même prompt, mêmes garde-fous.
-Seul le moteur de recherche change : Supabase pgvector au lieu de FAISS.
-Seuils convertis mathématiquement (similarité = 1 - distance/2).
+Moteur RAG Halex sur Supabase/pgvector.
+
+Phase 3 :
+- résolution conversationnelle avant retrieval ;
+- enrichissement des références explicites ;
+- qualification normative avant rédaction ;
+- priorité déterministe (statut/rang/spécialité/date) uniquement lorsqu'une
+  contradiction a été qualifiée.
+
+La RPC Supabase renvoie une similarité cosinus : 1 - cosine_distance.
 """
 
 import json
@@ -17,7 +24,17 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from supabase import create_client
 
-from schema_metadata import libelle_source
+from schema_metadata import libelle_source, libelle_statut, libelle_type_norme
+
+from conversation_context import resoudre_question_conversationnelle
+from moteur_normatif import analyser_normativement
+
+from modifications import (
+    charger_registre,
+    enrichir_modifications,
+    formater_bloc_prompt,
+    invalider_cache_registre,
+)
 
 load_dotenv()
 
@@ -59,9 +76,10 @@ _llm_structure = _llm.with_structured_output(ReponseGeneree)
 
 DATE_VIDE_LEGISLATIF = "2020-01-13"
 
-# Seuils de similarité pgvector (embeddings normalisés) : sim = 1 - distance/2.
-#   distance 1.25  ->  similarité 0.375
-#   distance 0.9   ->  similarité 0.55
+# Seuils historiques de similarité cosinus (RPC match_documents :
+# similarity = 1 - cosine_distance). Ils sont conservés pour compatibilité
+# comportementale et devront être recalibrés empiriquement sur un jeu de
+# questions de référence lorsque plusieurs corpus seront chargés.
 SEUIL_SIM = 0.375
 SEUIL_SIM_SECONDE_CHANCE = 0.55
 
@@ -108,9 +126,109 @@ def _chercher(question: str, k: int = 6) -> list[dict]:
     vecteur = _embeddings.embed_query(question)
     resultat = _supabase.rpc(
         "match_documents",
-        {"query_embedding": vecteur, "match_count": k},
+        {"query_embedding": vecteur, "match_count": k * 3},
     ).execute()
-    return resultat.data
+    # Défense en profondeur : même si la fonction SQL déployée est ancienne
+    # et ne filtre pas encore les abrogations, un article abrogé n'entre pas
+    # dans le contexte qui fonde une réponse.
+    return [
+        ligne for ligne in (resultat.data or [])
+        if (ligne.get("metadata") or {}).get("statut") != "abroge"
+    ][:k]
+
+
+
+def _enrichir_references_articles(
+    documents: list[dict],
+    limite_documents_sources: int = 4,
+    limite_references: int = 8,
+) -> list[dict]:
+    """Ajoute conservativement les articles explicitement référencés.
+
+    Utilise `metadata.references_articles` du nouveau schéma RAG.
+    Cette expansion est DÉTERMINISTE : aucun LLM et aucune similarité.
+    Elle ne signifie pas que l'article référencé est nécessaire à la réponse ;
+    le moteur normatif le qualifiera ensuite (complémentaire/contexte/etc.).
+
+    Les références sont recherchées dans la même `metadata.source` que le
+    document qui les cite. Les textes abrogés ne sont pas ajoutés à l'état
+    courant du droit.
+    """
+    if not documents:
+        return documents
+
+    existants = {
+        (
+            (d.get("metadata") or {}).get("source"),
+            (d.get("metadata") or {}).get("article"),
+        )
+        for d in documents
+    }
+
+    par_source: dict[str, list[str]] = {}
+    total = 0
+
+    for doc in documents[:limite_documents_sources]:
+        meta = doc.get("metadata") or {}
+        source = meta.get("source")
+        refs = meta.get("references_articles")
+        if not isinstance(source, str) or not isinstance(refs, list):
+            continue
+
+        for numero in refs:
+            if total >= limite_references:
+                break
+            if not isinstance(numero, int) or isinstance(numero, bool):
+                continue
+            article = f"Article {numero}"
+            if (source, article) in existants:
+                continue
+            par_source.setdefault(source, [])
+            if article not in par_source[source]:
+                par_source[source].append(article)
+                total += 1
+
+    if not par_source:
+        return documents
+
+    ajoutes: list[dict] = []
+    for source, articles in par_source.items():
+        try:
+            resultat = (
+                _supabase.table("documents")
+                .select("id, content, metadata")
+                .eq("metadata->>source", source)
+                .in_("metadata->>article", articles)
+                .neq("metadata->>statut", "abroge")
+                .eq("metadata->>type_bloc", "article")
+                .execute()
+            )
+        except Exception as exc:
+            _logger.warning(
+                "Échec expansion references_articles pour %r / %r : %s",
+                source,
+                articles,
+                exc,
+            )
+            continue
+
+        for ligne in (resultat.data or []):
+            meta = ligne.get("metadata") or {}
+            cle = (meta.get("source"), meta.get("article"))
+            if cle in existants:
+                continue
+            existants.add(cle)
+            # Les lookups table n'ont pas de score vectoriel : score neutre.
+            ligne["similarity"] = None
+            ajoutes.append(ligne)
+
+    if ajoutes:
+        _logger.info(
+            "Expansion références explicites : %d document(s) ajouté(s).",
+            len(ajoutes),
+        )
+
+    return documents + ajoutes
 
 
 def _texte_article(a: dict) -> str:
@@ -144,6 +262,13 @@ def _construire_sources(articles: list[dict]) -> list[dict]:
                 "article": article,
                 "source": source,
                 "source_courte": meta.get("source_courte"),
+                "chemin_hierarchique": meta.get("chemin_hierarchique"),
+                "date": meta.get("date"),
+                "date_publication": meta.get("date_publication"),
+                "statut": meta.get("statut"),
+                "abroge_par": meta.get("abroge_par"),
+                "publication_abrogation": meta.get("publication_abrogation"),
+                "date_abrogation": meta.get("date_abrogation"),
                 "texte": texte,
             }
             index[cle] = entree
@@ -207,19 +332,53 @@ def _nettoyer_reponse_visible(texte: str) -> str:
 def _etiquette(meta: dict) -> str:
     """Identique à halex_core.py."""
     source = meta.get("source", "Source inconnue")
-    rang   = meta.get("rang", "?")
     statut = meta.get("statut", "")
     date   = meta.get("date", "")
+    date_publication = meta.get("date_publication", "")
+    abroge_par = meta.get("abroge_par")
+    publication_abrogation = meta.get("publication_abrogation")
+    date_abrogation = meta.get("date_abrogation")
+    article_modifie_par = meta.get("article_modifie_par")
+    article_date_modification = meta.get("article_date_modification")
+    article_publication_modification = meta.get("article_publication_modification")
 
-    parties = [source, f"rang {rang}"]
+    parties = [source, libelle_type_norme(meta.get("type_norme", ""))]
     if statut:
-        parties.append(statut.replace("_", " "))
+        libelle = libelle_statut(statut)
+        details_abrogation = []
+        if statut == "abroge":
+            if isinstance(abroge_par, str) and abroge_par.strip():
+                details_abrogation.append(abroge_par.strip())
+            if (
+                isinstance(publication_abrogation, str)
+                and publication_abrogation.strip()
+            ):
+                details_abrogation.append(
+                    f"publication : {publication_abrogation.strip()}"
+                )
+            if isinstance(date_abrogation, str) and date_abrogation.strip():
+                details_abrogation.append(
+                    f"date d’abrogation : {date_abrogation.strip()}"
+                )
+        elif statut == "modifie":
+            for valeur, prefixe in (
+                (article_modifie_par, "par"),
+                (article_date_modification, "date de modification :"),
+                (article_publication_modification, "publication :"),
+            ):
+                if isinstance(valeur, str) and valeur.strip():
+                    details_abrogation.append(f"{prefixe} {valeur.strip()}")
+        if details_abrogation:
+            libelle += " (" + " ; ".join(details_abrogation) + ")"
+        parties.append(libelle)
+    if meta.get("historique"):
+        parties.append("texte historique")
     if date and not date.startswith("XXXX"):
         parties.append(date)
-    if meta.get("moniteur_annee") and meta.get("moniteur_numero") and meta.get("moniteur_type"):
-        parties.append(
-            f"Le Moniteur n° {meta['moniteur_numero']} {meta['moniteur_type']} {meta['moniteur_annee']}"
-        )
+    if date_publication and date_publication != date:
+        parties.append(f"publication : {date_publication}")
+    if meta.get("moniteur_publication"):
+        parties.append(meta["moniteur_publication"])
     return "[" + " — ".join(str(p) for p in parties) + "]"
 
 
@@ -227,90 +386,68 @@ def _etiquette(meta: dict) -> str:
 
 _prompt = ChatPromptTemplate.from_template(
     """AVANT TOUTE CHOSE, vérifie : la question posée peut-elle être réellement
-résolue par les articles fournis ci-dessous ? Une simple ressemblance de mots
-ne suffit pas (exemple : une question sur la capitale d'un pays étranger NE
-PEUT PAS être résolue par l'article sur la capitale d'Haïti). Si la réponse
-est non, ta réponse entière doit être exactement : [HORS_DOMAINE]
-Rien d'autre. Pas d'excuse, pas d'explication, pas de recommandation. Cette
-règle prime sur toutes les instructions de style qui suivent.
+résolue par les textes fournis ci-dessous ? Une simple proximité de mots ne
+suffit pas. Si la réponse est non, ta réponse entière doit être exactement :
+[HORS_DOMAINE]
+Rien d'autre.
 
 Tu es Halex, un assistant juridique spécialisé dans le droit haïtien.
-Ta mission : expliquer la loi aux citoyens en français simple et clair.
+Tu expliques uniquement les textes fournis ; tu n'ajoutes pas de droit externe.
+
+RELATIONS EXPLICITES DE MODIFICATION / ABROGATION DÉJÀ ENRICHIES :
+{bloc_modifications}
+
+ANALYSE NORMATIVE CALCULÉE AVANT RÉDACTION :
+{bloc_normatif}
 
 RÈGLES STRICTES :
-1. Réponds UNIQUEMENT à partir des articles fournis ci-dessous.
-2. Cite toujours les articles sur lesquels tu t'appuies (ex: "selon l'Article 4...")
-   ET le texte dont ils proviennent (Constitution, Code pénal...).
-3. Si les articles fournis ne permettent pas de répondre, dis-le honnêtement
-   et suggère de consulter un professionnel du droit.
-4. Ne donne jamais de conseil juridique personnalisé : tu expliques ce que dit la loi.
-5. Dans articles_cites, liste UNIQUEMENT les étiquettes [SOURCE: ...] des articles
-   que tu as effectivement utilisés pour fonder ta réponse. N'inclus pas les
-   extraits consultés mais non utilisés. Recopie ces étiquettes EXACTEMENT
-   telles qu'elles apparaissent ci-dessous, sans les modifier.
-6. RÈGLE DE COMPLÉTUDE : Tu dois citer et utiliser TOUS les articles pertinents
-   fournis dans le contexte. Le style de réponse demandé change la présentation
-   et le ton, jamais la quantité d'information juridique. Omettre un article
-   pertinent est une erreur grave.
-7. Si tu mentionnes des étiquettes [SOURCE: ...] dans le texte de ta réponse,
-   elles doivent apparaître UNIQUEMENT en toute fin de réponse, une par ligne,
-   sans titre, sans puce, sans texte d'accompagnement.
+1. Réponds UNIQUEMENT à partir des ARTICLES DISPONIBLES ci-dessous.
+2. L'analyse normative ci-dessus est CONTRAIGNANTE pour la rédaction.
+   Tu ne peux pas inverser une priorité déjà calculée ni inventer une nouvelle
+   contradiction.
+3. Les relations explicites de modification/abrogation priment sur une simple
+   ressemblance sémantique.
+4. Utilise d'abord tous les documents marqués rôle=principal.
+5. Utilise les documents rôle=complementaire lorsqu'ils ajoutent une condition,
+   exception, conséquence, peine ou régime distinct nécessaire.
+6. Ne fusionne jamais deux régimes distincts en une seule règle. Présente-les
+   séparément s'ils sont complémentaires.
+7. Un texte `abroge` ou `adopte_non_applique` ne fonde pas l'état courant du
+   droit. Il peut seulement être signalé si l'analyse normative le demande.
+8. Si un conflit est marqué NON RÉSOLU, indique clairement qu'une tension
+   subsiste. Ne choisis pas toi-même un gagnant.
+9. `date_publication` est documentaire : ne l'utilise jamais pour décider quel
+   texte prévaut.
+10. Cite toujours le numéro d'article ET le texte source.
+11. Ne donne pas de conseil juridique personnalisé : explique ce que disent les
+    textes.
+12. Dans `articles_cites`, liste UNIQUEMENT les étiquettes [SOURCE: ...] des
+    articles réellement utilisés dans la réponse. Recopie-les EXACTEMENT.
+13. Si tu mentionnes des étiquettes [SOURCE: ...] dans `reponse`, elles doivent
+    apparaître uniquement à la toute fin, une par ligne. Le frontend les
+    retirera du texte visible.
+14. Si un article est seulement marqué `contexte`, ne le force pas dans la
+    réponse s'il n'est pas nécessaire.
 
-COMMENT LIRE LES ARTICLES :
-Chaque article est précédé de DEUX étiquettes entre crochets :
-- [SOURCE: ...] l'identifie de façon stable, ex : [SOURCE: Article 8 — Constitution
-  1987 Amendée]. C'est CETTE étiquette qu'il faut recopier dans articles_cites.
-- une seconde étiquette donne sa source, son rang et son statut juridique.
-  Exemple : [Code pénal — rang 3 — en vigueur].
-- rang 1 = Constitution (loi suprême)
-- rang 2-4 = étage législatif (lois, codes, décrets)
-- rang 5 = actes subordonnés (arrêtés)
-- statut « adopté non appliqué » = texte voté mais PAS appliqué par les tribunaux.
-
-RÉSOLUTION DES CONTRADICTIONS (n'applique ces règles QUE si deux articles
-fournis se contredisent réellement sur le même point) :
-
-A. STATUT D'ABORD. Un article au statut « adopté non appliqué » ne l'emporte
-   JAMAIS, même s'il est plus récent. Signale qu'il existe mais n'est pas
-   encore appliqué, et réponds selon le texte réellement en vigueur.
-
-B. LA CONSTITUTION EST LE PLAFOND (rang 1). Si un texte de rang inférieur
-   semble la contredire, cite LES DEUX, précise que la Constitution prime
-   en principe, et ajoute exactement ce message au citoyen :
-   « ⚠️ Sur ce point, deux textes se contredisent. La Constitution prévaut en
-   principe, car elle est la loi suprême. Il faut toutefois savoir que le
-   Parlement n'est plus fonctionnel depuis le 13 janvier 2020 : l'exécutif
-   adopte des décrets qui tiennent lieu de loi, sans le contrôle habituel du
-   pouvoir législatif. Halex vous signale cette contradiction sans trancher à
-   votre place ; pour votre situation précise, consultez un professionnel du droit. »
-
-C. ENTRE TEXTES DE L'ÉTAGE LÉGISLATIF (lois, codes, décrets — rangs 2 à 4),
-   c'est la DATE la plus récente qui l'emporte. Cite les deux et ajoute :
-   « ℹ️ Deux textes traitent de cette question. Le plus récent l'emporte : la
-   règle applicable est celle du texte le plus récent. »
-
-D. TEXTES COMPLÉMENTAIRES (qui ne se contredisent pas mais se complètent) :
-   cite-les ensemble, sans choisir.
-
-Dans le doute, ne tranche pas : signale la tension et renvoie vers un
-professionnel du droit.
+COMMENT LIRE CHAQUE ARTICLE :
+- [SOURCE: ...] = identifiant stable à recopier dans `articles_cites`.
+- la deuxième étiquette décrit source, type de norme, statut et dates.
+- les métadonnées et l'analyse normative servent à distinguer les rôles des
+  textes ; le texte intégral reste la base du contenu juridique.
 
 ARTICLES DISPONIBLES :
 {contexte}
 
-QUESTION DU CITOYEN :
+QUESTION :
 {question}
 
-RÉPONSE (en français clair, avec citations de l'article ET du texte source) :
-
+STYLE :
 {instructions_mode}
 
-RAPPEL FINAL (prime sur le style ci-dessus) : le style change la présentation,
-JAMAIS la sélection des articles. Avant de rédiger, détermine la liste des
-articles pertinents comme si aucun style n'était demandé, puis rédige dans le
-style demandé en utilisant et citant TOUS ces articles. En mode simple, tu
-peux traiter un article en une phrase, mais tu ne peux pas l'omettre."""
+RÉPONSE :
+"""
 )
+
 
 _prompt_reformulation = ChatPromptTemplate.from_template(
     """Reformule la requête suivante en UNE seule question claire et complète,
@@ -454,6 +591,7 @@ def invalider_caches() -> None:
     global _cache_mapping_mots_cles, _cache_libelles_corpus
     _cache_mapping_mots_cles = None
     _cache_libelles_corpus = None
+    invalider_cache_registre()
 
 
 def _detecter_source_corpus(question_minuscule: str) -> str | None:
@@ -539,18 +677,83 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
             "contexte_clarification": {"type_lookup": "article", "numero": numero},
         }
 
+    # Enrichissement APRÈS le test de désambiguïsation ci-dessus : enrichir
+    # avant ferait entrer le texte modificateur dans `sources_trouvees` et
+    # déclencherait une clarification entre un article et sa modification.
+    chunks, relations = enrichir_modifications(_supabase, chunks)
+    _, registre_par_id = charger_registre(_supabase)
+
     toutes_sources = _construire_sources(chunks)
     contexte = "\n\n".join(
         f"{_etiquette_citation(s['article'], libelle_source(s))}\n{s['texte']}"
         for s in toutes_sources
     )
-    prompt_final = (
-        "Restitue fidèlement le texte de l'article suivant, en citant "
-        "clairement son numéro d'article et sa source. Ne reformule pas le "
-        "fond et ne résume pas : restitue le texte intégral fourni.\n\n"
-        f"ARTICLE(S) :\n{contexte}\n\n"
-        f"DEMANDE : {valeur_article}"
-    )
+
+    if relations:
+        # Cette branche n'est PAS une simple restitution : le texte demandé
+        # a été modifié. Restituer l'article seul serait donner au citoyen
+        # un état du droit périmé.
+        prompt_final = (
+            formater_bloc_prompt(relations, registre_par_id)
+            + "\nRestitue le texte de l'article demandé, puis la "
+            "modification qui lui a été apportée. Ne résume pas : les deux "
+            "textes doivent apparaître intégralement, dans cet ordre.\n\n"
+            f"TEXTES :\n{contexte}\n\n"
+            f"DEMANDE : {valeur_article}"
+        )
+    else:
+        # lookup_article contourne match_documents : le filtre statut de la
+        # Phase 3 ne s'applique pas ici. Restituer un article abrogé sans le
+        # dire donnerait au citoyen un état du droit périmé.
+        est_abroge = any(c["metadata"].get("statut") == "abroge" for c in chunks)
+        textes_abrogation = sorted({
+            valeur.strip()
+            for c in chunks
+            if isinstance((valeur := c["metadata"].get("abroge_par")), str)
+            and valeur.strip()
+        })
+        publications_abrogation = sorted({
+            valeur.strip()
+            for c in chunks
+            if isinstance(
+                (valeur := c["metadata"].get("publication_abrogation")), str
+            )
+            and valeur.strip()
+        })
+        dates_abrogation = sorted({
+            valeur.strip()
+            for c in chunks
+            if isinstance((valeur := c["metadata"].get("date_abrogation")), str)
+            and valeur.strip()
+        })
+        indications_abrogation = (
+            textes_abrogation
+            + [f"publication : {v}" for v in publications_abrogation]
+            + [f"date d’abrogation : {v}" for v in dates_abrogation]
+        )
+        detail_abrogation = (
+            " Indications enregistrées : "
+            + " ; ".join(indications_abrogation)
+            + "."
+            if indications_abrogation
+            else ""
+        )
+        avertissement = (
+            "AVERTISSEMENT OBLIGATOIRE : ce texte est ABROGÉ."
+            + detail_abrogation
+            + " Commence ta "
+            "réponse par une phrase indiquant clairement qu'il n'est plus en "
+            "vigueur, puis restitue son texte.\n\n"
+            if est_abroge else ""
+        )
+        prompt_final = (
+            avertissement
+            + "Restitue fidèlement le texte de l'article suivant, en citant "
+            "clairement son numéro d'article et sa source. Ne reformule pas le "
+            "fond et ne résume pas : restitue le texte intégral fourni.\n\n"
+            f"ARTICLE(S) :\n{contexte}\n\n"
+            f"DEMANDE : {valeur_article}"
+        )
     reponse_texte = _llm.invoke(prompt_final).content
 
     return {
@@ -657,19 +860,35 @@ def suggerer_questions_mot(mot: str, lang: str = "fr") -> dict:
         }
 
 
-def poser_question(question: str, mode: str = MODE_PAR_DEFAUT) -> dict:
-    """Même logique que halex_core.py, adaptée à la similarité pgvector.
-    Conversion des seuils (embeddings normalisés) : sim = 1 - distance/2.
-      distance 1.25  ->  similarité 0.375
-      distance 0.9   ->  similarité 0.55
-    Les comparaisons s'inversent : hors domaine si similarité < seuil.
+def poser_question(
+    question: str,
+    mode: str = MODE_PAR_DEFAUT,
+    historique: list[dict] | None = None,
+) -> dict:
+    """Point d'entrée RAG avec résolution conversationnelle.
 
-    Ordre de résolution : salutation -> référence directe à un article ->
-    mot unique -> recherche vectorielle (comportement d'origine, inchangé)."""
+    Ordre :
+      1. salutation ;
+      2. référence directe explicite dans la question originale ;
+      3. contextualisation linguistique -> question autonome ;
+      4. clarification si référent ambigu ;
+      5. nouvelle détection de référence directe après contextualisation ;
+      6. mot unique / retrieval vectoriel ;
+      7. références explicites / modifications ;
+      8. moteur normatif ;
+      9. rédaction LLM.
 
-    instructions_mode = INSTRUCTIONS_MODES.get(mode, INSTRUCTIONS_MODES[MODE_PAR_DEFAUT])
+    L'historique ne fonde JAMAIS la réponse juridique. Il sert seulement à
+    produire `question_autonome`, qui est ensuite traitée comme une nouvelle
+    requête indépendante.
+    """
 
-    if detecter_salutation(question):
+    question_originale = " ".join(question.split()).strip()
+    instructions_mode = INSTRUCTIONS_MODES.get(
+        mode, INSTRUCTIONS_MODES[MODE_PAR_DEFAUT]
+    )
+
+    if detecter_salutation(question_originale):
         return {
             "reponse": (
                 "Bonjour ! Je suis Halex, votre assistant sur le droit "
@@ -683,39 +902,126 @@ def poser_question(question: str, mode: str = MODE_PAR_DEFAUT) -> dict:
             "methode": "salutation",
         }
 
-    reference = detecter_reference_article(question)
+    # Une référence explicite ("article 38", "préambule") doit gagner sur tout
+    # l'historique. Elle reste autonome même après une longue conversation.
+    reference = detecter_reference_article(question_originale)
     if reference is not None:
         return lookup_article(
-            reference["numero"], reference["source"], preambule=reference["preambule"]
+            reference["numero"],
+            reference["source"],
+            preambule=reference["preambule"],
         )
 
-    if len(question.split()) == 1:
-        return suggerer_questions_mot(question.split()[0])
+    resolution = resoudre_question_conversationnelle(
+        question_originale,
+        historique,
+        _llm,
+    )
 
-    question_recherche = question
+    _logger.info(
+        "Résolution conversationnelle: depend=%s ambigu=%s confiance=%s "
+        "originale=%r autonome=%r",
+        resolution.depend_historique,
+        resolution.ambigu,
+        resolution.confiance,
+        question_originale,
+        resolution.question_autonome,
+    )
 
-    # ① Jugement sur la requête ORIGINALE (similarité du meilleur résultat)
-    meilleur = _chercher(question, k=1)
+    if resolution.ambigu:
+        return {
+            "reponse": resolution.question_clarification
+            or "Pouvez-vous préciser votre question ?",
+            "sources": [],
+            "hors_domaine": False,
+            "demande_precision": True,
+            "type": "clarification",
+            "methode": "clarification_conversationnelle",
+            "options": [],
+            "autre_autorise": True,
+            "contexte_clarification": {
+                "type_lookup": "conversation",
+                "question_originale": question_originale,
+            },
+        }
+
+    question_autonome = resolution.question_autonome.strip() or question_originale
+
+    # La contextualisation peut résoudre "Et le précédent ?" en une référence
+    # explicite. On bénéficie alors du lookup direct au lieu du vectoriel.
+    reference = detecter_reference_article(question_autonome)
+    if reference is not None:
+        resultat = lookup_article(
+            reference["numero"],
+            reference["source"],
+            preambule=reference["preambule"],
+        )
+        resultat["methode_conversationnelle"] = (
+            "contextualisee" if resolution.depend_historique else "autonome"
+        )
+        return resultat
+
+    if len(question_autonome.split()) == 1:
+        return suggerer_questions_mot(question_autonome.split()[0])
+
+    question_recherche = question_autonome
+
+    # ① Le seuil de domaine porte désormais sur la QUESTION AUTONOME.
+    # Une ellipse conversationnelle ne doit jamais être vectorisée telle quelle.
+    meilleur = _chercher(question_autonome, k=1)
     sim_originale = meilleur[0]["similarity"] if meilleur else 0.0
 
     if sim_originale < SEUIL_SIM:
-        # ② Seconde chance UNIQUEMENT pour les requêtes courtes (< 5 mots)
-        if len(question.split()) < 5:
-            question_reformulee = reformuler(question)
+        # ② Seconde chance uniquement pour les requêtes autonomes encore très
+        # courtes. La reformulation n'a plus à deviner le contexte : celui-ci
+        # a déjà été résolu en amont.
+        if len(question_autonome.split()) < 5:
+            question_reformulee = reformuler(question_autonome)
             resultat_reformule = _chercher(question_reformulee, k=1)
             sim_reformulee = (
-                resultat_reformule[0]["similarity"] if resultat_reformule else 0.0
+                resultat_reformule[0]["similarity"]
+                if resultat_reformule
+                else 0.0
             )
             if sim_reformulee < SEUIL_SIM_SECONDE_CHANCE:
-                return _reponse_hors_domaine()
+                return _reponse_hors_domaine(
+                    methode="vectorielle_contextualisee"
+                    if resolution.depend_historique
+                    else "vectorielle"
+                )
             question_recherche = question_reformulee
         else:
-            return _reponse_hors_domaine()
-    elif len(question.split()) < 5:
-        question_recherche = reformuler(question)
+            return _reponse_hors_domaine(
+                methode="vectorielle_contextualisee"
+                if resolution.depend_historique
+                else "vectorielle"
+            )
+    elif len(question_autonome.split()) < 5:
+        question_recherche = reformuler(question_autonome)
 
-    # ③ Recherche élargie (k=6), comme dans halex_core.py
+    # ③ Recherche élargie.
     articles = _chercher(question_recherche, k=6)
+
+    # ③bis Expansion des références juridiques explicites encodées dans les
+    # métadonnées (ex. un article qui renvoie expressément à l'article 84).
+    articles = _enrichir_references_articles(articles)
+
+    # ③ter Enrichissement par les textes modificateurs.
+    articles, relations = enrichir_modifications(_supabase, articles)
+    _, registre_par_id = charger_registre(_supabase)
+    bloc_modifications = formater_bloc_prompt(relations, registre_par_id)
+
+    # ④ Phase 3 : qualification sémantique + résolution normative
+    # déterministe. Le qualificateur peut dire "complémentaire",
+    # "contradiction", "spécialité", etc., mais il ne choisit jamais la norme
+    # gagnante. Ce choix est fait dans moteur_normatif.py.
+    analyse_normative = analyser_normativement(
+        question_autonome,
+        articles,
+        _llm,
+    )
+    articles = analyse_normative["documents"]
+    bloc_normatif = analyse_normative["bloc_prompt"]
 
     contexte = "\n\n".join(
         f"{_etiquette_citation(a['metadata'].get('article', '?'), libelle_source(a['metadata']))}\n"
@@ -723,55 +1029,77 @@ def poser_question(question: str, mode: str = MODE_PAR_DEFAUT) -> dict:
         for a in articles
     )
 
-    # ④ Le modèle répond à la QUESTION ORIGINALE, en sortie structurée
-    # (réponse rédigée + étiquettes SOURCE réellement citées).
-    prompt_final = _prompt.format(contexte=contexte, question=question, instructions_mode=instructions_mode)
+    # Le LLM reçoit la question AUTONOME et l'analyse normative, mais jamais
+    # l'historique brut.
+    prompt_final = _prompt.format(
+        contexte=contexte,
+        question=question_autonome,
+        instructions_mode=instructions_mode,
+        bloc_modifications=bloc_modifications,
+        bloc_normatif=bloc_normatif,
+    )
+
     echec_technique = False
     try:
         resultat = _llm_structure.invoke(prompt_final)
         reponse_texte = resultat.reponse
         articles_cites = resultat.articles_cites
     except Exception:
-        # Sortie structurée invalide/imparfaite (ex. appel de fonction raté) :
-        # on retombe sur un appel texte brut pour ne jamais priver
-        # l'utilisateur de réponse. Signal de citation perdu -> repli top-1
-        # ci-dessous (impossible de distinguer "rien cité" de "panne").
-        _logger.warning("Sortie structurée invalide pour la question %r ; repli sur réponse brute.", question)
+        _logger.warning(
+            "Sortie structurée invalide pour la question autonome %r ; "
+            "repli sur réponse brute.",
+            question_autonome,
+        )
         reponse_texte = _llm.invoke(prompt_final).content
         articles_cites = []
         echec_technique = True
 
     if "[HORS_DOMAINE]" in reponse_texte:
-        return _reponse_hors_domaine()
+        return _reponse_hors_domaine(
+            methode="vectorielle_contextualisee"
+            if resolution.depend_historique
+            else "vectorielle"
+        )
 
     reponse_texte = _nettoyer_reponse_visible(reponse_texte)
 
     toutes_sources = _construire_sources(articles)
     sources_citees = _filtrer_sources_citees(toutes_sources, articles_cites)
 
-    if not sources_citees and toutes_sources and (echec_technique or articles_cites):
-        # Repli top-1 uniquement en cas de signal cassé : panne technique,
-        # ou articles_cites non vide mais ne correspondant à aucune source
-        # récupérée (dérive de format / incohérence). Dans ces deux cas on
-        # ne peut pas faire confiance au signal -> puce sûre (top-1) plutôt
-        # que les six d'origine.
-        # Si articles_cites est une liste vide *valide* (le LLM a répondu
-        # normalement et n'a réellement rien cité), on n'affiche aucune
-        # puce : une puce hors-sujet serait plus trompeuse qu'aucune puce.
+    if not sources_citees and toutes_sources and (
+        echec_technique or articles_cites
+    ):
         _logger.warning(
-            "Signal de citation incohérent (articles_cites=%r) pour la question %r ; repli top-1.",
-            articles_cites, question,
+            "Signal de citation incohérent (articles_cites=%r) pour la "
+            "question autonome %r ; repli top-1.",
+            articles_cites,
+            question_autonome,
         )
         sources_citees = toutes_sources[:1]
 
-    return {
+    reponse = {
         "reponse": reponse_texte,
         "sources": sources_citees,
         "hors_domaine": False,
         "demande_precision": False,
         "type": "reponse",
-        "methode": "vectorielle",
+        "methode": (
+            "vectorielle_contextualisee"
+            if resolution.depend_historique
+            else "vectorielle"
+        ),
     }
+
+    # Trace légère, utile au frontend/logs pour diagnostiquer le retrieval.
+    # Aucun historique complet n'est renvoyé.
+    reponse["conversation"] = {
+        "depend_historique": resolution.depend_historique,
+        "question_originale": question_originale,
+        "question_autonome": question_autonome,
+        "confiance": resolution.confiance,
+    }
+    reponse["normatif"] = analyse_normative["diagnostic"]
+    return reponse
 
 
 # --- Article du jour : sélection déterministe par jour calendaire, sans cron ---
@@ -830,6 +1158,7 @@ def article_du_jour() -> dict:
         _supabase.table("documents")
         .select("id", count="exact")
         .like("content", "Article%")
+        .neq("metadata->>statut", "abroge")
         .execute()
     )
     if not total.count:
@@ -843,10 +1172,18 @@ def article_du_jour() -> dict:
         _supabase.table("documents")
         .select("id, content, metadata")
         .like("content", "Article%")
+        .neq("metadata->>statut", "abroge")
         .order("id")
         .range(offset, offset)
         .execute()
     )
+    if not resultat.data:
+        # Ne devrait jamais arriver : les filtres de comptage et de sélection
+        # sont identiques. Si cela se produit, ils ont divergé.
+        return {
+            "indisponible": True,
+            "message": "Aucun article disponible pour le moment.",
+        }
     doc = resultat.data[0]
     article = doc["metadata"].get("article", "?")
     source = doc["metadata"].get("source", "?")

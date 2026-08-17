@@ -1,0 +1,18 @@
+﻿source,nb_chunks,source_courte,type_norme,rang,date,date_publication,historique,nb_par_statut,source_courte_nb_valeurs,type_norme_nb_valeurs,rang_nb_valeurs,date_nb_valeurs,date_publication_nb_valeurs,historique_nb_valeurs
+Arrêté du 6 mai 2026 fixant le salaire minimum à compter du 6 mai 2026,9,Arrêté sur le salaire minimum (2026),arrêté,5,2026-05-06,<null/absent>,<null/absent>,"{""en_vigueur"": 9}",1,1,1,1,1,1
+Arrêté fixant le salaire minimum à compter du 6 mai 2026,10,Arrêté sur le salaire minimum de 2026,arrete,60,2026-05-06,2026-05-06,False,"{""en_vigueur"": 10}",1,1,1,1,1,1
+Arrêté portant règlement général de la Comptabilité Publique,105,Arrêté comptabilité publique 2005,arrete,60,2005-05-19,<null/absent>,False,"{""en_vigueur"": 105}",1,1,1,1,1,1
+Code Pénal,1038,Code Pénal,code,40,2020-06-24,2020-06-24,True,"{""en_vigueur"": 1038}",1,1,1,1,1,1
+Code des douanes du 21 mars 2023,348,Code des douanes 2023,code,40,2023-03-21,<null/absent>,False,"{""en_vigueur"": 348}",1,1,1,1,1,1
+Code des investissements,86,Code des investissements 2002,code,40,2002-11-26,<null/absent>,False,"{""en_vigueur"": 86}",1,1,1,1,1,1
+Code du Travail,499,Code du Travail,code,40,2017-09-21,1961-09-12,True,"{""abroge"": 3, ""en_vigueur"": 482, ""modifie"": 14}",1,1,1,1,1,1
+Constitution de 1987 amendée,514,Constitution haïtienne amendée 2012,constitution,10,2012-06-19,<null/absent>,True,"{""en_vigueur"": 514}",1,1,1,1,1,1
+Décret du 29 janvier 2016 reconnaissant le droit de tout administré à s’adresser à l’Administration Publique par des moyens électroniques,54,Décret sur l’administration électronique 2016,decret,50,2016-01-29,<null/absent>,False,"{""en_vigueur"": 54}",1,1,1,1,1,1
+Décret reconnaissant le droit de tout administré à s'adresser à l'Administration Publique par des moyens électroniques,54,Décret administration électronique 2016,decret,50,2016-01-29,<null/absent>,False,"{""en_vigueur"": 54}",1,1,1,1,1,1
+Loi du 11 septembre 2017 portant organisation et réglementation du travail sur la durée de vingt-quatre (24) heures répartie en trois (3) tranches de huit (8) heures,13,Loi sur la durée du travail (2017),loi,2,2017-09-21,<null/absent>,<null/absent>,"{""en_vigueur"": 13}",1,1,1,1,1,1
+Loi du 19 août 1955 réglementant la pharmacie et les produits pharmaceutiques,53,Loi sur les pharmacies 1955,loi,30,1955-08-19,<null/absent>,False,"{""en_vigueur"": 53}",1,1,1,1,1,1
+Loi modifiant l'article 257 du Code du Travail,4,Loi modifiant l'article 257 du Code du Travail,loi,30,2009-05-06,2009-05-06,False,"{""en_vigueur"": 4}",1,1,1,1,1,1
+"Loi portant formation, fonctionnement et financement des partis politiques",72,Loi sur les partis politiques,loi,30,2014-01-16,<null/absent>,False,"{""en_vigueur"": 72}",1,1,1,1,1,1
+Loi portant organisation et réglementation du travail sur la durée de vingt-quatre heures répartie en trois tranches de huit heures,13,Loi sur le travail en trois tranches de huit heures,loi,30,2017-09-21,2017-09-21,False,"{""en_vigueur"": 13}",1,1,1,1,1,1
+Loi sanctionnant le blanchiment de capitaux et le financement du terrorisme,91,Loi blanchiment et financement du terrorisme 2013,loi,30,2013-11-14,<null/absent>,False,"{""en_vigueur"": 91}",1,1,1,1,1,1
+Loi sur les coopératives d'épargne et de crédit,154,Loi CEC,loi,30,2002-07-09,<null/absent>,False,"{""en_vigueur"": 154}",1,1,1,1,1,1

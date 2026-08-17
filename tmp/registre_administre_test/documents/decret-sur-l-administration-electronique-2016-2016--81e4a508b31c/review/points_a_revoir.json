@@ -1,0 +1,10 @@
+{
+  "statut": "a_revoir",
+  "points": [
+    "Les dates 1980-11-17 et 1996-10-10 ne correspondent pas au document; la date imprimée 2016-01-06 a été appliquée.",
+    "La couverture indique une édition ordinaire 171e Année No. 20; la valeur spécial de l'ancien bloc n'a pas été reprise.",
+    "La page PDF 1 contient la couverture et la fin du décret sur la signature électronique; elle a été exclue du contenu de ce décret.",
+    "Quelques fins de lignes rognées dans le scan ont été restaurées après double OCR et contrôle visuel; toutes les corrections figurent dans le rapport.",
+    "Le statut en_vigueur doit être confirmé lors de la relecture juridique finale."
+  ]
+}

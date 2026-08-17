@@ -1,0 +1,141 @@
+{
+  "format": "halex-integrite-markdown-v2",
+  "pdf": "C:\\Users\\Andres Luis\\Downloads\\Legis\\la_constitution_de_1987_amendee.pdf",
+  "pdf_sha256": "c367026b242390d717c5a8ed2d8e6d7101006515e5dbe8632b65c18ff8330209",
+  "markdown_sha256": "288afd7450fa90426a3dfdde9b278f5c9c7928f24549fcbc375a390db79799d0",
+  "encodage": "utf-8-sans-bom",
+  "separateur_pages": "U+000C FORM FEED",
+  "pages_pdf": 26,
+  "pages": [
+    {
+      "numero": 1,
+      "caracteres": 3985,
+      "texte_sha256": "87062369913260bcbc2b482077ffec26540c057eaaaeb92677089ebc7b550f20"
+    },
+    {
+      "numero": 2,
+      "caracteres": 3726,
+      "texte_sha256": "28185f6551a996473428d9d28dbbbff99acec280e4c43b9e364569747d258d6c"
+    },
+    {
+      "numero": 3,
+      "caracteres": 5130,
+      "texte_sha256": "cac744f516fd4ae06e27dab07b4be0e799d3e238cebc5051700cfb2f9d41a159"
+    },
+    {
+      "numero": 4,
+      "caracteres": 4807,
+      "texte_sha256": "92ab88f67c37769cd3435268e01fdaaf2f6731672b94d02f0eeb8bf3f7c7eb04"
+    },
+    {
+      "numero": 5,
+      "caracteres": 4744,
+      "texte_sha256": "170797c960f6f688b184a82f9252d51023d6a3273616db1fadd0b71e508050fb"
+    },
+    {
+      "numero": 6,
+      "caracteres": 4112,
+      "texte_sha256": "615a4e9e1e066f8bff18dec8cf0f93a5e5443ec0daa3fadb8bb06da82d9a9cff"
+    },
+    {
+      "numero": 7,
+      "caracteres": 4524,
+      "texte_sha256": "29872c654a3b9e7f1608092f683db69bddbfaaad623c6d6fc1b5fafdfd8f53fe"
+    },
+    {
+      "numero": 8,
+      "caracteres": 4779,
+      "texte_sha256": "2e461d77673c32c95fcc105db9a2b38d1795f8cc4cb2a082bc71029c9c45f93f"
+    },
+    {
+      "numero": 9,
+      "caracteres": 5243,
+      "texte_sha256": "d361bf8308f73fa5cb65e0aadcdc8d1215c3cae2d183e4e5a40a46fc2d1aaf3a"
+    },
+    {
+      "numero": 10,
+      "caracteres": 5136,
+      "texte_sha256": "414e8d9c66fef93592ebf358fa309c59f411b158ed4d70d6ee66c46253520c12"
+    },
+    {
+      "numero": 11,
+      "caracteres": 5240,
+      "texte_sha256": "3b472ce5fd9e1cb951a463a4f71e3bf868e96eff8d46480a96e574e547a89737"
+    },
+    {
+      "numero": 12,
+      "caracteres": 5123,
+      "texte_sha256": "935990e72492cc0cf6172356f155c42f12399b30c4ecd655941a1bb93ae78f0a"
+    },
+    {
+      "numero": 13,
+      "caracteres": 5820,
+      "texte_sha256": "a0887254ce1a9fa21b145a015d82a1945b70741f70937879f237f5294a75c6a3"
+    },
+    {
+      "numero": 14,
+      "caracteres": 4942,
+      "texte_sha256": "d93e70fe1d3b4301b4ec05ce2f99b9d27ee0c464515356f90172849200cbc212"
+    },
+    {
+      "numero": 15,
+      "caracteres": 4719,
+      "texte_sha256": "3a3ab938f3c4d68ecd3235e7c5aa527f9a36b009020fc634a12f573cdf82c4c4"
+    },
+    {
+      "numero": 16,
+      "caracteres": 4977,
+      "texte_sha256": "949d651b3f8337f56df00fb418f15fbb60d0fb8b9122fe4ecda62f732a653394"
+    },
+    {
+      "numero": 17,
+      "caracteres": 3366,
+      "texte_sha256": "a8a6eb1230db5c3e91116153d362b2015de04b2c1a66580f57fa05633989eb87"
+    },
+    {
+      "numero": 18,
+      "caracteres": 4421,
+      "texte_sha256": "80271357d64e30f6d7514b314e52b0158a3b76dbb90c5cd99c6d1abf8b5c7fa1"
+    },
+    {
+      "numero": 19,
+      "caracteres": 4050,
+      "texte_sha256": "e002f64f7d43f9b53446677f149aaba58209dd64e5b455691fbaf5091599d5e9"
+    },
+    {
+      "numero": 20,
+      "caracteres": 4839,
+      "texte_sha256": "a7c58dfd4e5a3a5ba5ac235fb75331f492ceef34a5524a97dfb1bb2ab824a207"
+    },
+    {
+      "numero": 21,
+      "caracteres": 5516,
+      "texte_sha256": "9d0203130de8762731bfc2153e75057c27cb66bcb76f641cf19c5db7de84b4aa"
+    },
+    {
+      "numero": 22,
+      "caracteres": 4716,
+      "texte_sha256": "ae0348cd12555fea015ca89f300d550e93ff1dd59c51e473c460eb424a0762ce"
+    },
+    {
+      "numero": 23,
+      "caracteres": 4101,
+      "texte_sha256": "d415b9631142f735af6d1c437c2b9097d9e6034417da8bb310518b757865f3bf"
+    },
+    {
+      "numero": 24,
+      "caracteres": 4999,
+      "texte_sha256": "cb3b1232b7627b018b4f9a498a4d2e369559a83d2aafc673a218d55a1598a896"
+    },
+    {
+      "numero": 25,
+      "caracteres": 3549,
+      "texte_sha256": "ed0467e53a261ad9dd83edc7b0f7bc204263bea7549a67aace6eefce540bbee9"
+    },
+    {
+      "numero": 26,
+      "caracteres": 97,
+      "texte_sha256": "90caeaba89a5142f3265971e1d90078fd0967bb0cacc7172ef35da136cb7de14"
+    }
+  ]
+}

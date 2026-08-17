@@ -1,0 +1,229 @@
+{
+  "source_texte": "couche texte native du PDF officiel diffusé par la BRH",
+  "extracteur_principal": "pdfplumber 0.11.9 avec géométrie des lignes",
+  "verificateur_pdf": "pypdf 6.10.0",
+  "controle_visuel_pages": 17,
+  "rendu_global_dpi": 150,
+  "rendu_detail_dpi": 300,
+  "coupures_de_lignes_du_pdf_supprimees": true,
+  "separateurs_de_paragraphes": "double retour; listes et numérotations seulement dans les articles",
+  "titres_migres_vers_chemin_hierarchique": true,
+  "corrections_juridiques_silencieuses": false,
+  "corrections_extraction": [
+    {
+      "page": 1,
+      "avant": "n le propriétaire ou par le détenteur d’au moins 10% du capital social;",
+      "apres": "- le propriétaire ou par le détenteur d’au moins 10% du capital social;",
+      "raison": "glyphe Symbol de puce normalisé en tiret ASCII"
+    },
+    {
+      "page": 2,
+      "avant": "n les dirigeants, administrateurs, gérants et membres du personnel;",
+      "apres": "- les dirigeants, administrateurs, gérants et membres du personnel;",
+      "raison": "glyphe Symbol de puce normalisé en tiret ASCII"
+    },
+    {
+      "page": 2,
+      "avant": "ARTICLE 6- P ar Banque Commerciale, le présent Décret désigne les établissements de Banque dont les",
+      "apres": "ARTICLE 6- Par Banque Commerciale, le présent Décret désigne les établissements de Banque dont les",
+      "raison": "'P ar' → 'Par'"
+    },
+    {
+      "page": 4,
+      "avant": "ARTICLE 22-L a Banque de la République d’Haïti (BRH) approuvera les changements de Statuts ou Capital",
+      "apres": "ARTICLE 22-La Banque de la République d’Haïti (BRH) approuvera les changements de Statuts ou Capital",
+      "raison": "'L a' → 'La'"
+    },
+    {
+      "page": 5,
+      "avant": "ARTICLE 31-T oute personne ou société surprise en flagrant délit, à faire des opérations de banque sans",
+      "apres": "ARTICLE 31-Toute personne ou société surprise en flagrant délit, à faire des opérations de banque sans",
+      "raison": "'T oute' → 'Toute'"
+    },
+    {
+      "page": 5,
+      "avant": "ARTICLE 34-L es Banques Etrangères doivent justifier auprès de la BRH de l’affectation à l’ensemble de",
+      "apres": "ARTICLE 34-Les Banques Etrangères doivent justifier auprès de la BRH de l’affectation à l’ensemble de",
+      "raison": "'L es' → 'Les'"
+    },
+    {
+      "page": 6,
+      "avant": "ARTICLE 43-L a BRH peut déterminer le rapport minimum ou maximum que toutes les Banques de même",
+      "apres": "ARTICLE 43-La BRH peut déterminer le rapport minimum ou maximum que toutes les Banques de même",
+      "raison": "'L a' → 'La'"
+    },
+    {
+      "page": 7,
+      "avant": "l’article 34 de la Loi du 17nAoût 1979 créant la BRH.",
+      "apres": "l’article 34 de la Loi du 17 Août 1979 créant la BRH.",
+      "raison": "'17nAoût' → '17 Août'"
+    },
+    {
+      "page": 7,
+      "avant": "ARTICLE 48-L es Banques peuvent consentir des prêts non garantis aux membres de leur Conseil",
+      "apres": "ARTICLE 48-Les Banques peuvent consentir des prêts non garantis aux membres de leur Conseil",
+      "raison": "'L es' → 'Les'"
+    },
+    {
+      "page": 7,
+      "avant": "ARTICLE 49- E n cas de faillite ou de mise sous gestion contrôlée d’une Banque, sont nuls et sans effets",
+      "apres": "ARTICLE 49- En cas de faillite ou de mise sous gestion contrôlée d’une Banque, sont nuls et sans effets",
+      "raison": "'E n' → 'En'"
+    },
+    {
+      "page": 7,
+      "avant": "ARTICLE 50- C es dispositions ne sont pas applicables si le Tribunal reconnaît que la faillite ou la mise sous",
+      "apres": "ARTICLE 50- Ces dispositions ne sont pas applicables si le Tribunal reconnaît que la faillite ou la mise sous",
+      "raison": "'C es' → 'Ces'"
+    },
+    {
+      "page": 7,
+      "avant": "ARTICLE 52- L a BRH peut, sans aucun préavis donné à une Banque, procéder à son inspection toute les",
+      "apres": "ARTICLE 52- La BRH peut, sans aucun préavis donné à une Banque, procéder à son inspection toute les",
+      "raison": "'L a' → 'La'"
+    },
+    {
+      "page": 7,
+      "avant": "ARTICLE 53- T oute Banque est tenue de fournir aux inspecteurs de la BRH quand elle est requise tous les",
+      "apres": "ARTICLE 53- Toute Banque est tenue de fournir aux inspecteurs de la BRH quand elle est requise tous les",
+      "raison": "'T oute' → 'Toute'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 54- S i l’Inspecteur d’une Banque fait apparaître dans son administration ou sa gestion de",
+      "apres": "ARTICLE 54- Si l’Inspecteur d’une Banque fait apparaître dans son administration ou sa gestion de",
+      "raison": "'S i' → 'Si'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 55-L e Contrôleur provisoire est informé de toute décision concernant l’Administration, direction",
+      "apres": "ARTICLE 55-Le Contrôleur provisoire est informé de toute décision concernant l’Administration, direction",
+      "raison": "'L e' → 'Le'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 56- E n cas de récidive, la BRH pourra reprendre le contrôle de l’établissement qui sera mis en état",
+      "apres": "ARTICLE 56- En cas de récidive, la BRH pourra reprendre le contrôle de l’établissement qui sera mis en état",
+      "raison": "'E n' → 'En'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 57- T oute Banque établie et fonctionnant sur le territoire de la République d’Haïti devra",
+      "apres": "ARTICLE 57- Toute Banque établie et fonctionnant sur le territoire de la République d’Haïti devra",
+      "raison": "'T oute' → 'Toute'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 59- L es Banques qui ont leur siège hors du territoire de la République d’Haïti doivent tenir, de",
+      "apres": "ARTICLE 59- Les Banques qui ont leur siège hors du territoire de la République d’Haïti doivent tenir, de",
+      "raison": "'L es' → 'Les'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 60- L es Banques établies en Haïti devront publier à la fin de chaque trois (3) mois leur situation",
+      "apres": "ARTICLE 60- Les Banques établies en Haïti devront publier à la fin de chaque trois (3) mois leur situation",
+      "raison": "'L es' → 'Les'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 61- T ous les renseignements fournis par une Banque restent confidentiels et ne sont dévoilés au",
+      "apres": "ARTICLE 61- Tous les renseignements fournis par une Banque restent confidentiels et ne sont dévoilés au",
+      "raison": "'T ous' → 'Tous'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 62- C ependant quand les circonstances l’exigent et dans l’intérêt du public, la BRH peut",
+      "apres": "ARTICLE 62- Cependant quand les circonstances l’exigent et dans l’intérêt du public, la BRH peut",
+      "raison": "'C ependant' → 'Cependant'"
+    },
+    {
+      "page": 8,
+      "avant": "ARTICLE 63- L es Banques pourront maintenir des Comptes ouverts en leur nom à la BRH, soit pour les",
+      "apres": "ARTICLE 63- Les Banques pourront maintenir des Comptes ouverts en leur nom à la BRH, soit pour les",
+      "raison": "'L es' → 'Les'"
+    },
+    {
+      "page": 9,
+      "avant": "ARTICLE 64- L a BRH remplit le rôle d’une chambre de Compensation quotidienne entre les différentes",
+      "apres": "ARTICLE 64- La BRH remplit le rôle d’une chambre de Compensation quotidienne entre les différentes",
+      "raison": "'L a' → 'La'"
+    },
+    {
+      "page": 9,
+      "avant": "ARTICLE 65- L a BRH effectue à ce titre, tous les jours ouvrables, le règlement aux Banques des chèques,",
+      "apres": "ARTICLE 65- La BRH effectue à ce titre, tous les jours ouvrables, le règlement aux Banques des chèques,",
+      "raison": "'L a' → 'La'"
+    },
+    {
+      "page": 10,
+      "avant": "ARTICLE 81-1- L orsque le Tribunal ordonne la liquidation forcée, il désigne comme liquidateur la BRH qui",
+      "apres": "ARTICLE 81-1- Lorsque le Tribunal ordonne la liquidation forcée, il désigne comme liquidateur la BRH qui",
+      "raison": "'L orsque' → 'Lorsque'"
+    },
+    {
+      "page": 12,
+      "avant": "ARTI CLE 92 - Le créancier d’une banque en liquidation forcée dont la créance est réglée avant l’échéance",
+      "apres": "ARTICLE 92 - Le créancier d’une banque en liquidation forcée dont la créance est réglée avant l’échéance",
+      "raison": "'ARTI CLE' → 'ARTICLE'"
+    },
+    {
+      "page": 13,
+      "avant": "ARTICLE 101- S ile plan de réorganisation ne peut être mené à bine ou si son exécution est indument",
+      "apres": "ARTICLE 101- Sile plan de réorganisation ne peut être mené à bine ou si son exécution est indument",
+      "raison": "'S i' → 'Si'"
+    },
+    {
+      "page": 14,
+      "avant": "VII) b anqueroute ou infraction y assimilée",
+      "apres": "VII) banqueroute ou infraction y assimilée",
+      "raison": "'b anqueroute' → 'banqueroute'"
+    }
+  ],
+  "anomalies_imprimees_conservees": [
+    {
+      "emplacement": "Article 1",
+      "texte": "Demeure cependant régies",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 74",
+      "texte": "la BRH ne eut vendre",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 92",
+      "texte": "stipulée a l titre",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 93",
+      "texte": "ont ;été payées",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 96",
+      "texte": "put se faire suppléer",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 101",
+      "texte": "mené à bine",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 107",
+      "texte": "mise ne faillite / un tire quelconque",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Article 118",
+      "texte": "fonds à la BRH.. / mis ne paquet",
+      "decision": "conservé"
+    },
+    {
+      "emplacement": "Hiérarchie",
+      "texte": "TITRE III après TITRE VI",
+      "decision": "conservé"
+    }
+  ]
+}

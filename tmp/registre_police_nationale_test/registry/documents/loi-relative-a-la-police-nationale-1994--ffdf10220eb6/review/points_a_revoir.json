@@ -1,0 +1,84 @@
+{
+  "statut": "a_revoir",
+  "raison": "validation humaine demandée avant ingestion",
+  "points": {
+    "artefacts_deja_presents_dans_la_source": [
+      {
+        "page": 1,
+        "motif": "corps professionnel de police civil",
+        "ligne_source": "but de créer un corps professionnel de police civil, avec accent sur la protection de la vie et des biens du",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 2,
+        "motif": "maritime, portuaires",
+        "ligne_source": "9. Contrôler toutes les voies de communications terrestres, maritime, portuaires et aériennes;",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 4,
+        "motif": "toues dépenses",
+        "ligne_source": "7. Superviser et contrôler le fonctionnement de toues dépenses ou sorties de fonds et préparer, de",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 4,
+        "motif": "à lui conférés",
+        "ligne_source": "10. Exercer toutes autres attributions à lui conférés par la constitution, les lois et les règlements.",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 7,
+        "motif": "poli-ce",
+        "ligne_source": "5. veiller à l’entraînement régulier des sections de poli-ce nationale;",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 9,
+        "motif": "annuel-le",
+        "ligne_source": "9. adresser un rapport d’activité mensuelle et annuel-le au directeur général avec copie au commissaire",
+        "action": "conservé exactement; relecture humaine recommandée"
+      },
+      {
+        "page": 11,
+        "motif": "poli-ce",
+        "ligne_source": "Article 60.- La carrière des différents fonctionnaires de la Poli-ce nationale comprend des grades",
+        "action": "conservé exactement; relecture humaine recommandée"
+      }
+    ],
+    "nombre_artefacts_reperes": 7,
+    "cloture_absente": true,
+    "entete_documentaire_non_chunked": [
+      {
+        "page": 1,
+        "top": 111.1,
+        "texte": "Loi relative à la Police nationale",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 147.6,
+        "texte": "Loi du 29 novembre 1994",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 170.2,
+        "texte": "Portant création, organisation et fonctionnement de la Police nationale (Moniteur nº 103, 28 décembre",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      },
+      {
+        "page": 1,
+        "top": 181.3,
+        "texte": "1994)",
+        "raison": "titre, date et référence de publication migrés en métadonnées"
+      }
+    ],
+    "corrections_silencieuses": false
+  },
+  "suggestions": [
+    "Comparer les artefacts signalés à l'exemplaire officiel du Moniteur nº 103 avant correction.",
+    "Vérifier dans l'exemplaire officiel si une formule de promulgation ou des signatures suivent l'article 70; elles sont absentes du PDF fourni.",
+    "Conserver l'état a_revoir jusqu'à la validation humaine demandée."
+  ]
+}

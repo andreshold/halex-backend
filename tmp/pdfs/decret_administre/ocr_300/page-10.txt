@@ -1,0 +1,62 @@
+No. 20 - Vendredi 29 Janvier 2016 << LE MONITEUR >> 19
+
+Section 2.-
+
+Article 14.-
+
+Article 15.-
+
+Article 16.-
+
+Les administrés peuvent utiliser les systèmes suivants de signature électronique dans leurs rapports
+avec l’administration publique, compte tenu des exigences de chaque entité administrative :
+
+a) Les signatures électroniques sécurisées, y compris celles attestées par des certificats électroniques
+qualifiés ;
+
+b) D'autres systèmes de signature électronique, comme la fourniture d’une information connue
+seulement des deux parties ou des systèmes non cryptographiques, selon les termes et conditions
+déterminés par chaque cas.
+
+Les entités administratives peuvent utiliser les systèmes suivants d'identification électronique et
+d’authentification des documents électroniques qu’elles produisent:
+
+a) Les signatures électroniques sécurisées attestées par des certificats électroniques qualifiés ou des
+moyens équivalents permettant l'identification du site électronique et l'établissement à travers lui de
+communications sécurisées ;
+
+b) Les systèmes de signature électronique adaptés aux procédures administratives automatisées ;
+c) La signature électronique d’un agent de l'administration publique ;
+
+d) L'’échange électronique de données dans des univers fermés de communication, selon accorc
+spécifique des parties.
+
+Identification des administrés et authentification de leurs démarches
+
+L'Office National d’Identification a vocation naturelle de prestataire de services de certificatio
+électronique. Il remplit à cet effet toutes les conditions prescrites par l’ Arrêté d'application de la Lx
+sur la signature électronique en vue de sa qualification par le Conseil National des Télécommunication
+Une fois qualifié, il fournit ses services exclusivement aux personnes physiques titulaires de la Cart
+d’Identification Nationale qui en feront la demande.
+
+Il étudie les voies et moyens et mettra en œuvre les ressources financières, techniques et humaines po
+l’incorporation de la signature électronique des citoyens dans la Carte d’Identification Nationale.
+
+Les administrés peuvent faire usage de la signature électronique sécurisée pour s'identifier et authentifi
+leurs documents.
+
+La signature électronique sécurisée doit être attestée par un certificat électronique délivré par
+prestataire de services de certification électronique qualifié.
+
+Les entités administratives peuvent déterminer et justifier, en tenant compte des données et intérêts
+cause, les circonstances et conditions d'utilisation par les administrés d’autres systèmes de signat
+électronique, comme la fourniture d’une information connue seulement des deux parties ou d’aut
+systèmes non cryptographiques.
+
+Lorsque ces systèmes sont utilisés pour confirmer un renseignement, une proposition ou un proje
+document remis ou produits par une entité administrative, celle-ci doit s’assurer de l’intégrité e
+l'acceptation par les deux parties des documents électroniques concernés.
+
+Lorsque cela s'avère nécessaire, les entités administratives attesteront de l'existence et du contenu
+formalités entreprises par les administrés pour lesquelles il aura été fait usage des moyens d’identific:
+et d’authentification mentionnés dans le présent article.

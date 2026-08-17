@@ -1,0 +1,11 @@
+{
+  "statut": "a_revoir",
+  "points": [
+    "La date 1980-11-17 fournie correspond à la publication; la date juridique imprimée 1980-11-14 a été appliquée.",
+    "Le PDF ne fournit que le numéro 82 du Moniteur: faute d'année ordinale et de type, les trois clés moniteur_* sont toutes omises.",
+    "Le titre pénal est imprimé TITRE III après le TITRE VI; cette numérotation n'a pas été corrigée silencieusement.",
+    "L'en-tête ARTICLE 971- a été interprété comme Article 97, paragraphe 1-, sans perte de caractère.",
+    "Les anomalies typographiques imprimées recensées ont été conservées.",
+    "Le statut en_vigueur doit être confirmé lors de la relecture juridique finale."
+  ]
+}

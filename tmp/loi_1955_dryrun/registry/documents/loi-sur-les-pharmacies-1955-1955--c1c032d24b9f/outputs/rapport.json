@@ -1,0 +1,265 @@
+{
+  "statut": "conforme_techniquement_a_relecture_humaine",
+  "source": {
+    "pdf": "C:\\Users\\Andres Luis\\Andres Docs\\halex-conversion\\document_old\\Loi 1955.pdf",
+    "sha256": "c1c032d24b9f2237a8b2e9800cbfb86f9a43f1392c02ee14c3e3d39cc253e029",
+    "pages": 11,
+    "pages_pdfplumber": 11,
+    "caracteres_couche_texte": 0,
+    "nature": "PDF image sans couche texte exploitable",
+    "identifiant_imprime": "1955/85 LOI",
+    "date_promulgation_imprimee": "1955-08-19",
+    "controle_visuel": "11 pages rendues à 150 dpi; zones ambiguës contrôlées à 300 dpi",
+    "contre_verification": "OCR local Tesseract français et texte indexé du PDF FAOLEX/ONU",
+    "elements_non_juridiques_ignores": [
+      "back to top",
+      "Home | Sitemap | Links | Search | Contact Us",
+      "Copyright© 2007 UNODC, All Rights Reserved Legal Notice"
+    ]
+  },
+  "sorties": {
+    "dossier_registre": "C:\\Users\\Andres Luis\\Andres Docs\\halex-backend\\tmp\\loi_1955_dryrun\\registry\\documents\\loi-sur-les-pharmacies-1955-1955--c1c032d24b9f",
+    "markdown": "outputs/document.md",
+    "chunks": "outputs/chunks.json",
+    "validation_backend": "outputs/rapport_validation_backend.json"
+  },
+  "chunks": {
+    "prevus": 53,
+    "trouves": 53,
+    "ecart": 0,
+    "par_type_bloc": {
+      "article": 50,
+      "cloture": 1,
+      "preambule": 1,
+      "visas": 1
+    }
+  },
+  "articles": {
+    "prevus": 50,
+    "trouves": 50,
+    "numeros": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "articles_introuvables": [],
+    "doublons": []
+  },
+  "hierarchie": {
+    "rubriques_imprimees": 10,
+    "tous_chunks_avec_chemin_hierarchique": true,
+    "titres_absents_du_corps_des_articles": true,
+    "exemples": {
+      "Article 1er": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DISPOSITIONS GENERALES",
+      "Article 4": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DEFINITIONS",
+      "Article 14": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DES ORDONNANCES ET DE LEUR EXECUTION",
+      "Article 30": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DES RESTRICTIONS RELATIVES AU COMMERCE DES MEDICAMENTS",
+      "Article 44": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DE LA TRANSMISSION DES PHARMACIES",
+      "Article 50": "LOI DU 19 AOÛT 1955 RÉGLEMENTANT L'INTRODUCTION, LA FABRICATION, LA DISTRIBUTION ET LA VENTE DES PRODUITS PHARMACEUTIQUES ET BIOLOGIQUES > DISPOSITIONS TRANSITOIRES"
+    }
+  },
+  "integrite_caracteres": {
+    "reference": "transcription contrôlée contre le rendu; espaces et retours de ligne normalisés pour la comparaison",
+    "reference_hors_espaces": 19574,
+    "chunks_hors_espaces": 19574,
+    "chunks_identiques_a_la_reference": true,
+    "caracteres_manquants_detectes": 0,
+    "caracteres_ajoutes_detectes": 0,
+    "anomalies_imprimees_non_corrigees": [
+      {
+        "article": "Article 21",
+        "texte": "Les substance",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 22",
+        "texte": "cidessus",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 22",
+        "texte": "Santé Publique.communiquée",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 27",
+        "texte": "produits ,du. Tableau B",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 44",
+        "texte": "déj À établie",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 44",
+        "texte": "Santé Publique.au",
+        "decision": "conservé tel qu'imprimé"
+      },
+      {
+        "article": "Article 46",
+        "texte": "À sesmalades",
+        "decision": "conservé tel qu'imprimé"
+      }
+    ]
+  },
+  "mise_en_page": {
+    "retours_simples_dans_les_articles": 0,
+    "retours_simples_attendus": 0,
+    "separateur_paragraphe": "double retour de ligne",
+    "coupures_de_lignes_du_scan_supprimees": true,
+    "rubriques_migrees_vers_chemin_hierarchique": true
+  },
+  "metadata": {
+    "dates_recues_dans_le_message": [
+      "2012-06-19",
+      "1996-10-10"
+    ],
+    "date_imprimee_appliquee": "1955-08-19",
+    "motif_correction_date": "le PDF indique: Donné au Palais National, le 19 août 1955",
+    "historique": false,
+    "tous_chunks_historique_false": true,
+    "moniteur": null,
+    "regle_moniteur": "aucune des trois clés moniteur_* n'est présente; règle tout-ou-rien respectée",
+    "cles_moniteur_presentes_par_chunk": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "note_identifiant_1955_85": "1955/85 est l'identifiant imprimé de la copie ONU, pas une référence Moniteur attribuable sans source",
+    "types_bloc_utilises": [
+      "article",
+      "cloture",
+      "preambule",
+      "visas"
+    ],
+    "types_bloc_valides_backend": [
+      "annexe",
+      "article",
+      "cloture",
+      "preambule",
+      "visas"
+    ],
+    "types_bloc_tous_valides": true
+  },
+  "validation_backend": {
+    "nb_chunks_total": 53,
+    "nb_chunks_valides": 53,
+    "valide": true,
+    "pret_pour_insertion": true,
+    "erreurs": [],
+    "doublons_internes": [],
+    "doublons_en_base": []
+  },
+  "points_a_revoir": [
+    "Les dates 2012-06-19 et 1996-10-10 fournies dans le message ne correspondent pas au document; la date imprimée 1955-08-19 a été appliquée.",
+    "Aucune référence complète au Moniteur ne figure dans la copie; les trois clés moniteur_* sont donc toutes absentes.",
+    "Les anomalies typographiques imprimées recensées ont été conservées sans correction juridique silencieuse.",
+    "La page 11 contient un pied de page du site UNODC sans valeur juridique; il a été exclu."
+  ],
+  "suggestions": [
+    "Relire manuellement les sept anomalies imprimées listées avant l'insertion définitive.",
+    "Ajouter les trois clés moniteur_* ensemble seulement si un exemplaire du Moniteur permet d'établir l'année, le numéro et le type."
+  ],
+  "markdown": {
+    "caracteres": 24057,
+    "sha256_calcule_apres_ecriture": true
+  }
+}

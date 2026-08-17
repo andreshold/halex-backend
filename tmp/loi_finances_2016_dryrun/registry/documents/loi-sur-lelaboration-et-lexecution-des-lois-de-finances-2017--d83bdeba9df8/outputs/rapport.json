@@ -1,0 +1,952 @@
+{
+  "statut": "conforme_techniquement_a_relecture_humaine",
+  "source": {
+    "pdf": "C:\\Users\\Andres Luis\\Andres Docs\\halex-conversion\\document_old\\loi_du_4_mai_2016.pdf",
+    "sha256": "d83bdeba9df845f9b317ffe4ced661b633c73c5a64a58cb345dad80178a2e549",
+    "pages_pdf": 32,
+    "pages_retenues": "pages PDF 4 à 31",
+    "pages_exclues": {
+      "1_a_3": "autre loi du même numéro du Moniteur: modification de l’article 29 de la loi organique de la Police nationale d’Haïti",
+      "32": "communiqué conjoint MPCE, MICT et MAE, étranger à la loi traitée"
+    },
+    "couche_texte_native": false,
+    "publication": "Le Moniteur, 172e Année, Spécial No 5, mercredi 1er février 2017",
+    "vote_chambre_deputes": "2016-05-04",
+    "promulgation": "2017-01-23",
+    "date_metadata_imposee": "2017-02-01",
+    "verification_visuelle": "32 pages contrôlées sur planches-contact; pages 4 à 31 contrôlées sur rendus 300 dpi pour la structure et les zones ambiguës",
+    "ocr": {
+      "principal": "Tesseract LSTM tessdata_best français sur rendu Poppler 300 dpi",
+      "contre_lecture": {
+        "modele_principal": "Tesseract tessdata_best français, PSM 6",
+        "modele_secondaire": "Tesseract tessdata_fast français, PSM 3",
+        "similarite_sequence": 0.606328,
+        "sha256_tsv_secondaire": "0d2312c70f790f8654031300536436c2383598455fd3e817e96d7596cf3b76f7"
+      },
+      "fichiers_tsv": 28,
+      "lignes_faible_confiance_retenues": [
+        {
+          "page_pdf": 7,
+          "top_300dpi": 1481,
+          "confiance": 69.87,
+          "texte": "• Les Ressources Budgétaires"
+        },
+        {
+          "page_pdf": 10,
+          "top_300dpi": 2995,
+          "confiance": 76.75,
+          "texte": "accordées par l’État."
+        },
+        {
+          "page_pdf": 15,
+          "top_300dpi": 1760,
+          "confiance": 75.68,
+          "texte": "• un exposé des motifs ;"
+        },
+        {
+          "page_pdf": 18,
+          "top_300dpi": 2962,
+          "confiance": 74.48,
+          "texte": "Trésor;"
+        },
+        {
+          "page_pdf": 25,
+          "top_300dpi": 653,
+          "confiance": 74.12,
+          "texte": "économique, sociale et culturelle."
+        },
+        {
+          "page_pdf": 27,
+          "top_300dpi": 2980,
+          "confiance": 69.58,
+          "texte": "• Octroi d'avantages injustifiés à autrui."
+        },
+        {
+          "page_pdf": 29,
+          "top_300dpi": 594,
+          "confiance": 78.62,
+          "texte": "financier à l’État."
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 594,
+          "confiance": 36.74,
+          "texte": "- dede —"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 771,
+          "confiance": 30.49,
+          "texte": "ÊCHÉ"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 871,
+          "confiance": 24.14,
+          "texte": "> “ est a rm e RE EE À Na"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 901,
+          "confiance": 13.44,
+          "texte": "- ECS >"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 960,
+          "confiance": 45.58,
+          "texte": "François tucas {L Ï Li D Z\\ even VEñSOR BENOIT"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 1002,
+          "confiance": 63.09,
+          "texte": "Premier Secrétaire A ESA Z } Deuxième Secrétaire"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 1284,
+          "confiance": 30.7,
+          "texte": "ln A I 2)"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 1508,
+          "confiance": 46.38,
+          "texte": "——Écaètt2= F, Hermano EXINORD"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 1638,
+          "confiance": 71.64,
+          "texte": "Premief Secrétaire SP; C8, Deuxième Secrétaire"
+        },
+        {
+          "page_pdf": 31,
+          "top_300dpi": 1763,
+          "confiance": 67.35,
+          "texte": "% F"
+        }
+      ]
+    }
+  },
+  "sorties": {
+    "dossier_registre": "C:\\Users\\Andres Luis\\Andres Docs\\halex-backend\\tmp\\loi_finances_2016_dryrun\\registry\\documents\\loi-sur-lelaboration-et-lexecution-des-lois-de-finances-2017--d83bdeba9df8",
+    "markdown": "outputs/document.md",
+    "chunks": "outputs/chunks.json",
+    "rapport_validation_backend": "outputs/rapport_validation_backend.json"
+  },
+  "chunks": {
+    "prevus": 123,
+    "trouves": 123,
+    "ecart": 0,
+    "par_type_bloc": {
+      "article": 120,
+      "cloture": 1,
+      "preambule": 1,
+      "visas": 1
+    }
+  },
+  "articles": {
+    "prevus": 120,
+    "trouves": 120,
+    "numeros": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "68.1",
+      "68.2",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "96.1",
+      "97",
+      "98",
+      "99",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117"
+    ],
+    "articles_introuvables": [],
+    "doublons": [],
+    "articles_decimaux": [
+      "68.1",
+      "68.2",
+      "96.1"
+    ]
+  },
+  "hierarchie": {
+    "groupes_structuraux_prevus": 32,
+    "groupes_structuraux_trouves": 32,
+    "tous_chunks_avec_chemin_hierarchique": true,
+    "niveaux": {
+      "titre": 2,
+      "chapitre": 9,
+      "section": 21
+    },
+    "exemples": {
+      "Article 1": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE PREMIER > DES PRINCIPES ET DÉFINITIONS > CHAPITRE I > DES DÉFINITIONS ET CONTENU DES LOIS DE FINANCES",
+      "Article 17": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE PREMIER > DES PRINCIPES ET DÉFINITIONS > CHAPITRE III > DES RESSOURCES DE L’ÉTAT > Section 1 - Des dispositions générales",
+      "Article 42": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE PREMIER > DES PRINCIPES ET DÉFINITIONS > CHAPITRE IV > DES CHARGES DE L’ÉTAT > Section 2 - Des charges de trésorerie",
+      "Article 68.1": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE SECOND > DE L’IMPLÉMENTATION DES LOIS DE FINANCES > CHAPITRE VI > DE L’EXÉCUTION DES OPÉRATIONS BUDGÉTAIRES DE L’ÉTAT > Section 2 - De l’exécution des recettes et des dépenses",
+      "Article 96.1": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE SECOND > DE L’IMPLÉMENTATION DES LOIS DE FINANCES > CHAPITRE VIII > DES RESPONSABILITÉS EN MATIÈRE D’EXÉCUTION DES BUDGETS PUBLICS > Section 2 - De la responsabilité des ordonnateurs",
+      "Article 117": "LOI REMPLAÇANT LE DÉCRET DU 16 FÉVRIER 2005 SUR LE PROCESSUS D’ÉLABORATION ET D’EXÉCUTION DES LOIS DE FINANCES > TITRE SECOND > DE L’IMPLÉMENTATION DES LOIS DE FINANCES > CHAPITRE IX > DES DISPOSITIONS TRANSITOIRES ET FINALES"
+    }
+  },
+  "integrite_caracteres": {
+    "methode": "comparaison de séquence entre l’OCR principal corrigé et les chunks; seuls espaces, retours de ligne et césures typographiques sont neutralisés",
+    "reference_corrigee_hors_espaces": 66520,
+    "chunks_hors_espaces": 66520,
+    "chunks_identiques_a_la_reference_corrigee": true,
+    "caracteres_manquants_detectes_par_la_comparaison": 0,
+    "caracteres_ajoutes_detectes_par_la_comparaison": 0,
+    "markdown_incluant_structures_identique": true,
+    "limite": "le PDF est une image; l’égalité est établie contre la transcription OCR corrigée, pas contre une couche texte native inexistante"
+  },
+  "mise_en_page": {
+    "retours_ligne_simples_dans_articles": 0,
+    "regle": "aucun retour simple; doubles retours uniquement pour alinéas, listes, numérotations et tableaux calendaires"
+  },
+  "metadata": {
+    "historique_false_partout": true,
+    "moniteur_tout_ou_rien": true,
+    "moniteur_annee": 172,
+    "moniteur_numero": "5",
+    "moniteur_type": "special",
+    "date": "2017-02-01",
+    "types_bloc_valides_backend": [
+      "annexe",
+      "article",
+      "cloture",
+      "preambule",
+      "visas"
+    ],
+    "types_bloc_produits_tous_valides": true
+  },
+  "validation_backend": {
+    "nb_chunks_total": 123,
+    "nb_chunks_valides": 123,
+    "valide": true,
+    "pret_pour_insertion": true,
+    "erreurs": [],
+    "doublons_internes": [],
+    "doublons_en_base": [],
+    "resume_par_source": [
+      {
+        "source": "Loi remplaçant le décret du 16 février 2005 sur le processus d’élaboration et d’exécution des lois de finances",
+        "source_courte": "Loi sur l’élaboration et l’exécution des lois de finances",
+        "type_norme": "loi",
+        "rang": 30,
+        "nb_chunks": 123,
+        "nb_chunks_sans_moniteur": 0,
+        "nb_par_type_bloc": {
+          "preambule": 1,
+          "visas": 1,
+          "article": 120,
+          "cloture": 1
+        },
+        "thematiques": [
+          "droit_administratif",
+          "droit_fiscal",
+          "marches_publics"
+        ],
+        "ordre_min": 1,
+        "ordre_max": 123,
+        "ordre_contigu": true,
+        "historique": false
+      }
+    ]
+  },
+  "audit_ocr": {
+    "lignes_brutes": 1081,
+    "lignes_retenues": 1026,
+    "lignes_entete_et_filet_exclues": 55,
+    "corrections_documentees": [
+      {
+        "page_pdf": 4,
+        "top_300dpi": 2046,
+        "avant": "Vu le Décret du 12 mars 1987 créant l’ Administration Générale des Douanes ;",
+        "apres": "Vu le Décret du 12 mars 1987 créant l’Administration Générale des Douanes ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 5,
+        "top_300dpi": 2645,
+        "avant": "e Laloi de finances de l’exercice ou loi de finances initiale ;",
+        "apres": "• La loi de finances de l’exercice ou loi de finances initiale ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 5,
+        "top_300dpi": 2744,
+        "avant": "e Les lois de finances rectificatives ;",
+        "apres": "• Les lois de finances rectificatives ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 5,
+        "top_300dpi": 2844,
+        "avant": "e La loi de règlement.",
+        "apres": "• La loi de règlement.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 6,
+        "top_300dpi": 2517,
+        "avant": "spéciaux du Trésor ne peuvent être ouverts que par le biais d’une loi. Is sont présentés à l'équilibre.",
+        "apres": "spéciaux du Trésor ne peuvent être ouverts que par le biais d’une loi. Ils sont présentés à l'équilibre.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 7,
+        "top_300dpi": 1086,
+        "avant": "CHAPITRE IN",
+        "apres": "CHAPITRE III",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 7,
+        "top_300dpi": 1481,
+        "avant": "« Les Ressources Budgétaires",
+        "apres": "• Les Ressources Budgétaires",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 7,
+        "top_300dpi": 1580,
+        "avant": "« Les Ressources de Trésorerie.",
+        "apres": "• Les Ressources de Trésorerie.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 8,
+        "top_300dpi": 339,
+        "avant": "Article L7.- Le produit des impôts affectés à l’État est déterminé par la loi de finances. Toutes les ressources de",
+        "apres": "Article 17.- Le produit des impôts affectés à l’État est déterminé par la loi de finances. Toutes les ressources de",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 8,
+        "top_300dpi": 1332,
+        "avant": "* les rôles, les états récapitulatifs des montants des rôles, les extraits de jugement émis, les",
+        "apres": "• les rôles, les états récapitulatifs des montants des rôles, les extraits de jugement émis, les",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 8,
+        "top_300dpi": 1499,
+        "avant": "« les copies certifiées des bordereaux des recettes, les originaux des bordereaux de réduction ou",
+        "apres": "• les copies certifiées des bordereaux des recettes, les originaux des bordereaux de réduction ou",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 9,
+        "top_300dpi": 3008,
+        "avant": "Être engagées. Ce sont des autorisations et non des ordres de dépenses.",
+        "apres": "être engagées. Ce sont des autorisations et non des ordres de dépenses.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 10,
+        "top_300dpi": 2606,
+        "avant": "programme budgétaire. I! s’assure du respect des dispositifs de contrôle interne et de contrôle de",
+        "apres": "programme budgétaire. Il s’assure du respect des dispositifs de contrôle interne et de contrôle de",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 10,
+        "top_300dpi": 2933,
+        "avant": ". de justice, aux réparations civiles, aux dégrèvements et restitutions et à la mise enjeu des garanties",
+        "apres": "de justice, aux réparations civiles, aux dégrèvements et restitutions et à la mise en jeu des garanties",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 11,
+        "top_300dpi": 2805,
+        "avant": "d’une même entité administrative. Is sont pris par arrêté ministériel du Ministre chargé des Finances",
+        "apres": "d’une même entité administrative. Ils sont pris par arrêté ministériel du Ministre chargé des Finances",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 12,
+        "top_300dpi": 654,
+        "avant": "« des crédits de paiement applicables à toutes les catégories de dépenses pour l’exercice fiscal",
+        "apres": "• des crédits de paiement applicables à toutes les catégories de dépenses pour l’exercice fiscal",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 12,
+        "top_300dpi": 807,
+        "avant": "* d’autorisations d’engagement applicables uniquement aux dépenses d’investissement et aux",
+        "apres": "• d’autorisations d’engagement applicables uniquement aux dépenses d’investissement et aux",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 13,
+        "top_300dpi": 1213,
+        "avant": "Section 1! - De l’élaboration des lois de finances",
+        "apres": "Section 1 - De l’élaboration des lois de finances",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 14,
+        "top_300dpi": 1183,
+        "avant": "1‘ mai - 15 mai : Arbitrages et finalisation du projet de loi de finances.",
+        "apres": "1er mai - 15 mai : Arbitrages et finalisation du projet de loi de finances.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 14,
+        "top_300dpi": 1481,
+        "avant": "Au plus tard le I” juin : Transmission du projet de loi de finances à la Cour Supérieure des Comptes et du",
+        "apres": "Au plus tard le 1er juin : Transmission du projet de loi de finances à la Cour Supérieure des Comptes et du",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 14,
+        "top_300dpi": 1940,
+        "avant": "Au plus tard le 2°\"lundi",
+        "apres": "Au plus tard le 2ème lundi",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 14,
+        "top_300dpi": 2096,
+        "avant": "Au plus tard le 25 septembre : Promuigation de la loi de finances par le Président de la République.",
+        "apres": "Au plus tard le 25 septembre : Promulgation de la loi de finances par le Président de la République.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 14,
+        "top_300dpi": 3020,
+        "avant": "e autorise la prorogation des ressources existant pour l’exercice administratif en cours ;",
+        "apres": "• autorise la prorogation des ressources existant pour l’exercice administratif en cours ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 321,
+        "avant": "e autorise la perception des ressources publiques et précise les dispositions nouvelles de nature à",
+        "apres": "• autorise la perception des ressources publiques et précise les dispositions nouvelles de nature à",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 541,
+        "avant": "« fixe la répartition des crédits par entités administratives de premier rang et par programme",
+        "apres": "• fixe la répartition des crédits par entités administratives de premier rang et par programme",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 681,
+        "avant": "» fixe les plafonds d’emplois de fonctionnaires par entités administratives de premier rang ;",
+        "apres": "• fixe les plafonds d’emplois de fonctionnaires par entités administratives de premier rang ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 765,
+        "avant": "e fixe les plafonds d’emprunts intérieurs et extérieurs ;",
+        "apres": "• fixe les plafonds d’emprunts intérieurs et extérieurs ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 841,
+        "avant": "+ fixe les plafonds de garanties consenties par l’État ;",
+        "apres": "• fixe les plafonds de garanties consenties par l’État ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 1017,
+        "avant": "e établit les dispositions relatives à l’équilibre financier.",
+        "apres": "• établit les dispositions relatives à l’équilibre financier.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 1299,
+        "avant": "« fixe le détail des ressources de dons et d’emprunt par destination principale et par bailleur ;",
+        "apres": "• fixe le détail des ressources de dons et d’emprunt par destination principale et par bailleur ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 1383,
+        "avant": "* fixe le montant des crédits relevant du budget général alloué aux différentes entités",
+        "apres": "• fixe le montant des crédits relevant du budget général alloué aux différentes entités",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 1760,
+        "avant": "« un exposé des motifs ;",
+        "apres": "• un exposé des motifs ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 1844,
+        "avant": "* uncadre budgétaire à moyen terme décrivant le contexte macro-économique justifiant la politique",
+        "apres": "• un cadre budgétaire à moyen terme décrivant le contexte macro-économique justifiant la politique",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2037,
+        "avant": "« unétat reflétant par entité administrative de premier rang et par programme les crédits exécutés",
+        "apres": "• unétat reflétant par entité administrative de premier rang et par programme les crédits exécutés",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2229,
+        "avant": "» un état d'exécution par entité administrative de premier rang et par programme du budget de",
+        "apres": "• un état d'exécution par entité administrative de premier rang et par programme du budget de",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2369,
+        "avant": "e un programme d’investissement public annuel ventilant les nouvelles autorisations",
+        "apres": "• un programme d’investissement public annuel ventilant les nouvelles autorisations",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2561,
+        "avant": "» un plan prévisionnel de l’exécution des ressources et des dépenses par nature ventilées par",
+        "apres": "• un plan prévisionnel de l’exécution des ressources et des dépenses par nature ventilées par",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2699,
+        "avant": "« l’échelonnement sur les exercices fiscaux futurs des obligations résultant des autorisations",
+        "apres": "• l’échelonnement sur les exercices fiscaux futurs des obligations résultant des autorisations",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2892,
+        "avant": "* une évaluation de la viabilité de la dette incluant les nouveaux engagements proposés au vote;",
+        "apres": "• une évaluation de la viabilité de la dette incluant les nouveaux engagements proposés au vote;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 15,
+        "top_300dpi": 2977,
+        "avant": "« tout autre document susceptible d’éclairer l’information et le contrôle du Parlement.",
+        "apres": "• tout autre document susceptible d’éclairer l’information et le contrôle du Parlement.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 16,
+        "top_300dpi": 747,
+        "avant": "+ Le respect du cadre légal et réglementaire relatif aux ressources et aux charges ;",
+        "apres": "• Le respect du cadre légal et réglementaire relatif aux ressources et aux charges ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 16,
+        "top_300dpi": 846,
+        "avant": "+ La pertinence des mesures à caractère fiscal et douanier ;",
+        "apres": "• La pertinence des mesures à caractère fiscal et douanier ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 16,
+        "top_300dpi": 946,
+        "avant": "« La cohérence budgétaire mesurée à travers l’adéquation entre les politiques poursuivies",
+        "apres": "• La cohérence budgétaire mesurée à travers l’adéquation entre les politiques poursuivies",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 16,
+        "top_300dpi": 1098,
+        "avant": "Section 2- De l’examen et du vote des lois de finances",
+        "apres": "Section 2 - De l’examen et du vote des lois de finances",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 880,
+        "avant": "Article 52.- Dans l’hypothèse où les deux chambres n’auraiènt pas achevé le vote de la totalité du projet de loi",
+        "apres": "Article 52.- Dans l’hypothèse où les deux chambres n’auraient pas achevé le vote de la totalité du projet de loi",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 2352,
+        "avant": "« arrête le montant définitif des recettes et des dépenses de l’exercice auquel elle se rapporte et",
+        "apres": "• arrête le montant définitif des recettes et des dépenses de l’exercice auquel elle se rapporte et",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 2505,
+        "avant": "« arrête également le montant des ressources et des charges de trésorerie ayant concouru à",
+        "apres": "• arrête également le montant des ressources et des charges de trésorerie ayant concouru à",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 2661,
+        "avant": "* approuve et affecte le résultat de l’exercice (compte de résultat);",
+        "apres": "• approuve et affecte le résultat de l’exercice (compte de résultat);",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 2759,
+        "avant": "* ratifie les ouvertures de crédits supplémentaires décidées par décret d’avances depuis la dernière",
+        "apres": "• ratifie les ouvertures de crédits supplémentaires décidées par décret d’avances depuis la dernière",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 17,
+        "top_300dpi": 2968,
+        "avant": "« procède à l’annulation des crédits non consommés et non reportés;",
+        "apres": "• procède à l’annulation des crédits non consommés et non reportés;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 18,
+        "top_300dpi": 309,
+        "avant": "» rend compte de la gestion et des résultats des programmes budgétaires;",
+        "apres": "• rend compte de la gestion et des résultats des programmes budgétaires;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 18,
+        "top_300dpi": 409,
+        "avant": "» peut comporter toutes dispositions relatives à l’information du Parlement sur les Finances",
+        "apres": "• peut comporter toutes dispositions relatives à l’information du Parlement sur les Finances",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 18,
+        "top_300dpi": 2901,
+        "avant": "1“ novembre - 30 janvier Centralisation des comptes de l’ Administration Publique par la Direction chargée du",
+        "apres": "1er novembre - 30 janvier Centralisation des comptes de l’Administration Publique par la Direction chargée du",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 19,
+        "top_300dpi": 1343,
+        "avant": "DE L’EXÉCUTION DES OPÉRATIONS BUDGETAIRES DE L’ÉTAT",
+        "apres": "DE L’EXÉCUTION DES OPÉRATIONS BUDGÉTAIRES DE L’ÉTAT",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 19,
+        "top_300dpi": 1454,
+        "avant": "Section 1I- De la régulation budgétaire",
+        "apres": "Section 1 - De la régulation budgétaire",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 19,
+        "top_300dpi": 2223,
+        "avant": "sur les exercices antérieurs, conformément aux dispositions figurant à l’article 41.\"",
+        "apres": "sur les exercices antérieurs, conformément aux dispositions figurant à l’article 41.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 21,
+        "top_300dpi": 2608,
+        "avant": "Article 68.1. | Le Parlement, s’il estime que ces fonds ont été utilisés en violation des lois, peut demander à la",
+        "apres": "Article 68.1.- Le Parlement, s’il estime que ces fonds ont été utilisés en violation des lois, peut demander à la",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 22,
+        "top_300dpi": 1306,
+        "avant": "+ Toute demande écrite de paiement ou toute réclamation écrite adressée par un créancier à",
+        "apres": "• Toute demande écrite de paiement ou toute réclamation écrite adressée par un créancier à",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 22,
+        "top_300dpi": 1583,
+        "avant": "» Tout recours formé devant une juridiction, relatif au fait générateur, à l’existence, au montant",
+        "apres": "• Tout recours formé devant une juridiction, relatif au fait générateur, à l’existence, au montant",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 22,
+        "top_300dpi": 1859,
+        "avant": "* Toute communication écrite d’une administration intéressée, même si cette communication",
+        "apres": "• Toute communication écrite d’une administration intéressée, même si cette communication",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 22,
+        "top_300dpi": 2082,
+        "avant": "» Toute émission de moyen de règlement, même si ce règlement ne couvre qu’une partie de la",
+        "apres": "• Toute émission de moyen de règlement, même si ce règlement ne couvre qu’une partie de la",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 23,
+        "top_300dpi": 976,
+        "avant": "Dès contrôles de la performance sont développés sur la base d’indicateurs et de cibles établis pour",
+        "apres": "Des contrôles de la performance sont développés sur la base d’indicateurs et de cibles établis pour",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 25,
+        "top_300dpi": 946,
+        "avant": "Article 89.- Le Parlement vote les ressources et les charges du budget de l’État à travers les lois de finances. II",
+        "apres": "Article 89.- Le Parlement vote les ressources et les charges du budget de l’État à travers les lois de finances. Il",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 25,
+        "top_300dpi": 1062,
+        "avant": "branches du Parlement, le contrôle permanent et régulier des dépenses publiques. II est en droit à",
+        "apres": "branches du Parlement, le contrôle permanent et régulier des dépenses publiques. Il est en droit à",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 25,
+        "top_300dpi": 2105,
+        "avant": "CHAPITRE VII",
+        "apres": "CHAPITRE VIII",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 26,
+        "top_300dpi": 1269,
+        "avant": "» empêché ou perturbé le déroulement de la procédure d’établissement et de perception",
+        "apres": "• empêché ou perturbé le déroulement de la procédure d’établissement et de perception",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 26,
+        "top_300dpi": 1421,
+        "avant": "» détruit, détourné, soustrait ou contrefait des justifications de recettes :",
+        "apres": "• détruit, détourné, soustrait ou contrefait des justifications de recettes :",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 26,
+        "top_300dpi": 1724,
+        "avant": "Section 2 -De la responsabilité des ordonnateurs",
+        "apres": "Section 2 - De la responsabilité des ordonnateurs",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 27,
+        "top_300dpi": 2523,
+        "avant": "» Non-respect des règles d’exécution des recettes, des dépenses et des règles de gestion des",
+        "apres": "• Non-respect des règles d’exécution des recettes, des dépenses et des règles de gestion des",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 27,
+        "top_300dpi": 2679,
+        "avant": "+ Couverture hiérarchique de l’acte constitutif de l’infraction ;",
+        "apres": "• Couverture hiérarchique de l’acte constitutif de l’infraction ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 27,
+        "top_300dpi": 2980,
+        "avant": "e Octroi d'avantages injustifiés à autrui.",
+        "apres": "• Octroi d'avantages injustifiés à autrui.",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 28,
+        "top_300dpi": 1769,
+        "avant": "Article 101.- | Les contrôleurs financiers sont personnellement responsables aux plans disciplinaire, pénal et civil",
+        "apres": "Article 101.- Les contrôleurs financiers sont personnellement responsables aux plans disciplinaire, pénal et civil",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 28,
+        "top_300dpi": 2312,
+        "avant": "Article 102.- | Les comptables publics sont personnellement et pécuniairement responsables du recouvrement des",
+        "apres": "Article 102.- Les comptables publics sont personnellement et pécuniairement responsables du recouvrement des",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 29,
+        "top_300dpi": 919,
+        "avant": "+ aux opérations des comptables publics et autres agents placés sous leur autorité ;",
+        "apres": "• aux opérations des comptables publics et autres agents placés sous leur autorité ;",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 29,
+        "top_300dpi": 1314,
+        "avant": "cumptable entrant dans un délai de six mois, le cas échéant, renouvelable une fois avec l’autorisation",
+        "apres": "comptable entrant dans un délai de six mois, le cas échéant, renouvelable une fois avec l’autorisation",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 30,
+        "top_300dpi": 885,
+        "avant": "montant sera fixé par arrêté pris par le Ministre chargé des Financés. Ce cautionnement sera",
+        "apres": "montant sera fixé par arrêté pris par le Ministre chargé des Finances. Ce cautionnement sera",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 30,
+        "top_300dpi": 1603,
+        "avant": "Article 112. | Les dispositions des articles relatifs aux programmes budgétaires sont d’application au plus tard",
+        "apres": "Article 112.- Les dispositions des articles relatifs aux programmes budgétaires sont d’application au plus tard",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 30,
+        "top_300dpi": 1826,
+        "avant": "Article 113.- | Les dispositions des articles 62 et 64 relatifs aux droits constatés sont soumis, en matière de",
+        "apres": "Article 113.- Les dispositions des articles 62 et 64 relatifs aux droits constatés sont soumis, en matière de",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      },
+      {
+        "page_pdf": 30,
+        "top_300dpi": 2682,
+        "avant": "Article 116.- | Deux (2) ans puis quatre (4) ans, à compter de la date de promulgation de la présente loi, le",
+        "apres": "Article 116.- Deux (2) ans puis quatre (4) ans, à compter de la date de promulgation de la présente loi, le",
+        "raison": "correction OCR ou libellé structural vérifié sur le rendu 300 dpi"
+      }
+    ]
+  },
+  "points_a_revoir": [
+    {
+      "priorite": "haute",
+      "portee": "ensemble des pages 4 à 31",
+      "motif": "PDF image sans couche texte; une relecture humaine caractère par caractère reste nécessaire avant insertion définitive"
+    },
+    {
+      "priorite": "moyenne",
+      "portee": "page PDF 31",
+      "motif": "noms et qualités des six signataires législatifs ont été rétablis après contrôle visuel du rendu 300 dpi"
+    },
+    {
+      "priorite": "moyenne",
+      "portee": "articles 44 et 58",
+      "motif": "calendriers convertis en paragraphes structurés; vérifier la correspondance visuelle des libellés et échéances"
+    },
+    {
+      "priorite": "basse",
+      "portee": "pages PDF 1 à 3 et 32",
+      "motif": "contenus étrangers à la loi ciblée exclus intentionnellement et consignés dans le rapport"
+    }
+  ],
+  "suggestions": [
+    "Relire prioritairement les lignes signalées à faible confiance et les tableaux calendaires des articles 44 et 58.",
+    "Conserver l’état a_revoir jusqu’à validation humaine du Markdown et du JSON côte à côte avec le PDF.",
+    "Après validation humaine, faire passer le document à chunks_valides puis pret_ingestion dans le registre."
+  ]
+}

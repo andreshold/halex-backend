@@ -1,0 +1,28 @@
+{
+  "source": "Code civil d’Haïti",
+  "source_courte": "Code civil d’Haïti",
+  "type_norme": "code",
+  "rang": 40,
+  "date": "2023-01-01",
+  "statut": "en_vigueur",
+  "mots_cles": [
+    "code civil",
+    "personnes",
+    "famille",
+    "biens",
+    "obligations",
+    "contrats",
+    "successions"
+  ],
+  "type_thematique": [
+    "droit_civil",
+    "droit_de_la_famille",
+    "successions_et_liberalites",
+    "droit_foncier",
+    "droit_des_societes"
+  ],
+  "historique": false,
+  "abroge_par": null,
+  "publication_abrogation": null,
+  "date_abrogation": null
+}

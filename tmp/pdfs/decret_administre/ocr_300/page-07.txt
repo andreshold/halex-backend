@@ -1,0 +1,63 @@
+16
+
+<< LE MONITEUR >> No. 20 - Vendredi 29 Janvier 2016
+
+Article 6.-
+
+w) Signature électronique : donnée qui résulte de l’usage d’un procédé fiable d'identification
+garantissant son lien avec l'acte auquel elle s'attache. Elle identifie celui qui l’appose et manifeste le
+consentement du signataire aux obligations qui découlent de cet acte;
+
+x) Signature électronique sécurisée : une signature électronique qui est propre au signataire, qui est
+créée par des moyens que le signataire puisse garder sous son contrôle exclusif, qui garantit avec l’acte
+auquel elle s’attache un lien tel que toute modification ultérieure de l'acte soit-détectable:
+
+y) Standard ouvert : celui qui réunit les conditions suivantes :
+
+1. Qu'il soit public et que son utilisation soit disponible gratuitement ou à un coût qui n’en
+prohibe pas l'accès ;
+
+2. Que son usage et son application ne soient pas subordonnés au paiement d’un droit de propriété
+intellectuelle.
+TITRE I
+
+DU DROIT DES ADMINISTRÉS À UTILISER LES MOYENS ÉLECTRONIQUES
+
+DANS LEURS RAPPORTS AVEC L'ADMINISTRATION PUBLIQUE
+
+Il est reconnu aux administrés le droit d’utiliser les moyens électroniques dans leurs rapports avec
+l'administration publique pour l'exercice de leurs droits, l'obtention d'informations, la formulation
+de réclamations, la présentation de requêtes, l'expression de consentement, la réalisation de paiements
+ou de transactions, l'opposition à des décisions ou actes administratifs.
+
+De plus, les administrés ont, relativement à l’utilisation des moyens électroniques dans l’activité
+administrative, les droits suivants :
+
+a) Choisir, parmi tous ceux qui sont disponibles sur le moment, le canal par lequel s’établissent les
+rapports avec l'administration publique ;
+
+b) N'avoir pas à soumettre les données et documents que détient déjà l'administration publique,
+laquelle utilisera les moyens électroniques pour obtenir ladite information ;
+
+Toutes les fois où il s’agira de données à caractère personnel, le consentement de la personne intéressée
+est obligatoire sauf dans les cas relevant de la police judiciaire, de la lutte contre la corruption,
+l'évasion fiscale, le blanchiment d’avoirs ou le financement du terrorisme ou relevant de la sécurité
+nationale. Le consentement pourra être émis et obtenu par des moyens électroniques.
+
+c) L'égalité d’accès électronique aux services de l'administration publique :
+
+d) Savoir, grâce aux moyens électroniques, l’état des procédures en cours qui les concernent, sauf
+dans les cas où la loi ou les règlements restreignent l'accès à cette connaissance ;
+
+e) Obtenir copie électronique des documents électroniques constituant le dossier d’une procédure où
+ils sont intéressés;
+
+f) La conservation et l'archivage par l’administration publique sous forme électronique des docu-
+ments électroniques constitutifs d’une démarche ou d’une procédure ;
+
+g) Obtenir les moyens d'identification électronique nécessaires et utiliser les systèmes de signature
+électronique admis dans le cadre de l’administration publique :
+
+h) La garantie de sécurité et de confidentialité des données figurant dans les fichiers, systèmes et
+applications de l’administration publique ;
+

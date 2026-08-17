@@ -1,0 +1,54 @@
+20 << LE MONITEUR >> No. 20 - Vendredi 29 Janvier 2016
+pr
+
+Section 3.- Identification électronique des entités administratives
+
+Article 17.- Les sites électroniques doivent utiliser, pour s'identifier et garantir une communication sécurisée avec
+eux, des systèmes de signature électronique sécurisée attestée par des certificats électroniques qualifiés
+ou un moyen équivalent.
+
+Article 18. Pour l'identification et l’authentification de l'exercice de sa compétence lors d’une procédure adminis-
+trative automatisée, chaque entité administrative pourra déterminer les circonstances d’utilisation des
+systèmes suivants de signature électronique :
+
+a) Le sceau électronique de l’entité administrative, attesté par un certificat électronique qualifié ;
+b) Le code sécurisé de vérification lié à l'entité administrative et dans ce cas à la personne signataire
+du document, permettant à tout moment le contrôle de l'intégrité du document à travers l’accès au site
+électronique correspondant.
+
+Les certificats électroniques mentionnés à l'alinéa précédent, utilisés pour attester des sceaux
+électroniques des entités administratives, contiendront le numéro d’identification nationale et le titre
+de la fonction occupée par le représentant de cette entité.
+
+La liste des sceaux électroniques utilisés par chaque entité administrative, de même que les caractéristiques
+des certificats électroniques et des prestataires de services de certification électronique qui les délivrent,
+sont publiques et accessibles par des moyens électroniques. De plus, chaque entité administrative
+adopte les mesures adéquates permettant la vérification de ses sceaux électroniques.
+
+Article 19.- Sans préjudice des dispositions des articles 17 et 18 du présent Décret, l’ identification et l’authentification
+de l’exercice de la compétence d’une entité administrative, lorsque cette dernière utilise des moyens
+électroniques, s'effectue à travers la signature électronique de son personnel selon ce qui est dit ci-
+après.
+
+Chaque entité administrative pourvoit des agents déterminés en dispositifs sécurisés de création de
+signatures électroniques, lesquels identifient conjointement le titulaire du service envisagé et l'entité
+administrative à laquelle il appartient.
+
+Article 20.- Les documents électroniques transmis à l’intérieur d’environnements fermés de communications établis
+entre entités administratives sont réputés authentiques et aptes à identifier les expéditeurs et les
+destinataires selon les conditions établies dans le présent article.
+
+Lorsque les émetteurs et les destinataires appartiennent à la même entité administrative, celle-ci détermine
+les conditions et garanties d'utilisation. Au minimum sera établie la liste des émetteurs et destinataires
+autorisés et la nature des données susceptibles d'échanges électroniques.
+
+Lorsque les parties à l’échange de données proviennent d'entités administratives différentes, les con-
+ditions et garanties mentionnées à l’alinéa précédent font l’objet d'une convention.
+
+Dans tous les cas, la sécurité de l’environnement fermé de communications et la protection des données
+transmises doivent être garanties.
+
+Section 4.- De l’interopérabilité, de l’accréditation et de la représentation des administrés
+
+Article 21.- Les certificats électroniques émis par des prestataires de services de certification qualifiés seront reconnus
+valides par l’administration publique.

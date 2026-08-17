@@ -1,0 +1,34 @@
+{
+  "nb_chunks_total": 123,
+  "nb_chunks_valides": 123,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Loi remplaçant le décret du 16 février 2005 sur le processus d’élaboration et d’exécution des lois de finances",
+      "source_courte": "Loi sur l’élaboration et l’exécution des lois de finances",
+      "type_norme": "loi",
+      "rang": 30,
+      "nb_chunks": 123,
+      "nb_chunks_sans_moniteur": 0,
+      "nb_par_type_bloc": {
+        "preambule": 1,
+        "visas": 1,
+        "article": 120,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_administratif",
+        "droit_fiscal",
+        "marches_publics"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 123,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

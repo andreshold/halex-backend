@@ -1,0 +1,25 @@
+{
+  "statut": "a_revoir",
+  "points": [
+    {
+      "priorite": "haute",
+      "portee": "ensemble des pages 4 à 31",
+      "motif": "PDF image sans couche texte; une relecture humaine caractère par caractère reste nécessaire avant insertion définitive"
+    },
+    {
+      "priorite": "moyenne",
+      "portee": "page PDF 31",
+      "motif": "noms et qualités des six signataires législatifs ont été rétablis après contrôle visuel du rendu 300 dpi"
+    },
+    {
+      "priorite": "moyenne",
+      "portee": "articles 44 et 58",
+      "motif": "calendriers convertis en paragraphes structurés; vérifier la correspondance visuelle des libellés et échéances"
+    },
+    {
+      "priorite": "basse",
+      "portee": "pages PDF 1 à 3 et 32",
+      "motif": "contenus étrangers à la loi ciblée exclus intentionnellement et consignés dans le rapport"
+    }
+  ]
+}

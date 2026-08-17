@@ -1,0 +1,33 @@
+{
+  "nb_chunks_total": 136,
+  "nb_chunks_valides": 136,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Décret du 14 novembre 1980 réglementant le fonctionnement des banques et des activités bancaires",
+      "source_courte": "Décret bancaire du 14 novembre 1980",
+      "type_norme": "decret",
+      "rang": 50,
+      "nb_chunks": 136,
+      "nb_chunks_sans_moniteur": 136,
+      "nb_par_type_bloc": {
+        "preambule": 1,
+        "visas": 1,
+        "article": 133,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_bancaire",
+        "droit_commercial"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 136,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

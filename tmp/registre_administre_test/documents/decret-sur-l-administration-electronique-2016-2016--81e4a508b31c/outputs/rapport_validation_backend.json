@@ -1,0 +1,33 @@
+{
+  "nb_chunks_total": 54,
+  "nb_chunks_valides": 54,
+  "valide": true,
+  "pret_pour_insertion": true,
+  "erreurs": [],
+  "doublons_internes": [],
+  "doublons_en_base": [],
+  "resume_par_source": [
+    {
+      "source": "Décret du 6 janvier 2016 reconnaissant le droit de tout administré à s’adresser à l’Administration Publique par des moyens électroniques",
+      "source_courte": "Décret sur l’administration électronique 2016",
+      "type_norme": "decret",
+      "rang": 50,
+      "nb_chunks": 54,
+      "nb_chunks_sans_moniteur": 0,
+      "nb_par_type_bloc": {
+        "preambule": 1,
+        "visas": 1,
+        "article": 51,
+        "cloture": 1
+      },
+      "thematiques": [
+        "droit_administratif",
+        "droits_fondamentaux"
+      ],
+      "ordre_min": 1,
+      "ordre_max": 54,
+      "ordre_contigu": true,
+      "historique": false
+    }
+  ]
+}

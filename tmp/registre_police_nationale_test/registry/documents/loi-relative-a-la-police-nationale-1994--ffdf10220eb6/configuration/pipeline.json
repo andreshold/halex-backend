@@ -1,0 +1,16 @@
+{
+  "script": "traiter_loi_police_nationale_registre.py",
+  "extracteur_principal": "pdfplumber 0.11.9",
+  "verificateur": "pypdf 6.10.0",
+  "source_texte": "couche texte native du PDF",
+  "analyse_geometrique_et_typographique": true,
+  "pages_controlees_visuellement": 13,
+  "en_tete_documentaire_migre_en_metadata": true,
+  "corrections_silencieuses": false,
+  "normalisations": [
+    "Unicode NFC",
+    "espaces de mise en page fusionnés",
+    "double retour uniquement pour article/corps, listes, tableau des grades et serment",
+    "tirets lexicaux de Port-au-Prince et sous-commissariats conservés"
+  ]
+}

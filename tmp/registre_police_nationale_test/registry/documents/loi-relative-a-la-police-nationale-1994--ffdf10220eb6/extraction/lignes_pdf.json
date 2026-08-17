@@ -1,0 +1,3800 @@
+[
+  {
+    "ordre": 0,
+    "page": 1,
+    "top": 216.557,
+    "type": "structure_label",
+    "texte": "CHAPITRE I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 1,
+    "page": 1,
+    "top": 242.513,
+    "type": "article",
+    "texte": "Article 1.- Il est créé une force de police dénommée la Police nationale d’Haïti. Son siège central est à Port-",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 2,
+    "page": 1,
+    "top": 253.673,
+    "type": "corps",
+    "texte": "au-Prince.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 3,
+    "page": 1,
+    "top": 276.473,
+    "type": "article",
+    "texte": "Article 2.- Les institutions de police nationale sont :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 4,
+    "page": 1,
+    "top": 293.513,
+    "type": "corps",
+    "texte": "1. La Police nationale d’Haïti;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 5,
+    "page": 1,
+    "top": 310.673,
+    "type": "corps",
+    "texte": "2. L’Académie nationale de police (ANP);",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 6,
+    "page": 1,
+    "top": 327.713,
+    "type": "corps",
+    "texte": "3. L’École nationale de police (ENP).",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 7,
+    "page": 1,
+    "top": 350.393,
+    "type": "article",
+    "texte": "Article 3.- La présente loi fixe le régime d’organisation et de fonctionnement de la Police nationale dans le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 8,
+    "page": 1,
+    "top": 361.673,
+    "type": "corps",
+    "texte": "but de créer un corps professionnel de police civil, avec accent sur la protection de la vie et des biens du",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 9,
+    "page": 1,
+    "top": 372.833,
+    "type": "corps",
+    "texte": "citoyen.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 10,
+    "page": 1,
+    "top": 395.753,
+    "type": "article",
+    "texte": "Article 4.- La Police nationale, distincte et séparée des forces armées, relève du Ministère de la Justice et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 11,
+    "page": 1,
+    "top": 407.033,
+    "type": "corps",
+    "texte": "est placée sous l’autorité du titulaire de ce Ministère. Les membres de la Police nationale ont le statut civil.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 12,
+    "page": 1,
+    "top": 429.833,
+    "type": "article",
+    "texte": "Article 5.- La Police nationale a juridiction sur toute l’étendue du territoire national.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 13,
+    "page": 1,
+    "top": 452.633,
+    "type": "corps",
+    "texte": "Elle est constituée de sections armées hiérarchisées. Ses membres sont formés et spécialisés à l’Académie",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 14,
+    "page": 1,
+    "top": 463.913,
+    "type": "corps",
+    "texte": "nationale de police (ANP) et à l’École nationale de police (ENP) prévues par la Constitution ou dans un",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 15,
+    "page": 1,
+    "top": 475.073,
+    "type": "corps",
+    "texte": "centre étranger de formation dont le contenu des études et la doctrine sont agréés par les autorités",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 16,
+    "page": 1,
+    "top": 486.233,
+    "type": "corps",
+    "texte": "compétentes de la Police nationale. Le port d’armes par les membres de la Police nationale ne sera",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 17,
+    "page": 1,
+    "top": 497.513,
+    "type": "corps",
+    "texte": "autorisé par le directeur général de la Police nationale qu’après une formation professionnelle et est limité",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 18,
+    "page": 1,
+    "top": 508.673,
+    "type": "corps",
+    "texte": "aux armes courtes qui seront définies dans les règlements intérieurs.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 19,
+    "page": 1,
+    "top": 531.473,
+    "type": "article",
+    "texte": "Article 6.- Les membres de la Police nationale située dans les communes, quartiers et les sections",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 20,
+    "page": 1,
+    "top": 542.753,
+    "type": "corps",
+    "texte": "communales relevant de l’autorité du Ministère de la Justice, sont responsables des activités de police dans",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 21,
+    "page": 1,
+    "top": 553.913,
+    "type": "corps",
+    "texte": "les limites géographiques desdits communes, quartiers et sections communales.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 22,
+    "page": 1,
+    "top": 588.797,
+    "type": "structure_label",
+    "texte": "CHAPITRE II",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 23,
+    "page": 1,
+    "top": 603.317,
+    "type": "structure_title",
+    "texte": "Des missions de la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 24,
+    "page": 1,
+    "top": 629.273,
+    "type": "article",
+    "texte": "Article 7.- La Police nationale est instituée en auxiliaire des pouvoirs publics en vue de maintenir l’ordre en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 25,
+    "page": 1,
+    "top": 640.433,
+    "type": "corps",
+    "texte": "général et de prêter force à l’exécution de la loi et des règlements. Elle a pour mission de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 26,
+    "page": 1,
+    "top": 657.473,
+    "type": "corps",
+    "texte": "1. Assurer la protection et le respect des libertés des personnes, des vies et des biens;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 27,
+    "page": 1,
+    "top": 674.393,
+    "type": "corps",
+    "texte": "2. Garantir la sûreté des institutions de l’État;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 28,
+    "page": 1,
+    "top": 691.553,
+    "type": "corps",
+    "texte": "3. Maintenir l’ordre, la paix, la sécurité, la tranquillité et la salubrité publiques;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 29,
+    "page": 1,
+    "top": 708.593,
+    "type": "corps",
+    "texte": "4. Prévenir les infractions et rechercher activement les auteurs pour les traduire devant les juridictions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 30,
+    "page": 1,
+    "top": 719.753,
+    "type": "corps",
+    "texte": "compétentes dans le délai fixé par la loi;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 31,
+    "page": 2,
+    "top": 115.193,
+    "type": "corps",
+    "texte": "5. Contrôler la détention et le port d’armes sur le territoire national;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 32,
+    "page": 2,
+    "top": 132.233,
+    "type": "corps",
+    "texte": "6. Exécuter les arrestations dans tous les cas prévus par la loi;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 33,
+    "page": 2,
+    "top": 149.273,
+    "type": "corps",
+    "texte": "7. Prévenir, constater et combattre les infractions à la législation sociale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 34,
+    "page": 2,
+    "top": 166.193,
+    "type": "corps",
+    "texte": "8. Contrôler toutes les activités des services privés de sécurité;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 35,
+    "page": 2,
+    "top": 183.353,
+    "type": "corps",
+    "texte": "9. Contrôler toutes les voies de communications terrestres, maritime, portuaires et aériennes;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 36,
+    "page": 2,
+    "top": 200.393,
+    "type": "corps",
+    "texte": "10. Exécuter les dispositions relatives à la protection et à la conservation de l’environnement;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 37,
+    "page": 2,
+    "top": 217.433,
+    "type": "corps",
+    "texte": "11. Fournir aux fonctionnaires du pouvoir judiciaire les moyens nécessaires pour atteindre leurs",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 38,
+    "page": 2,
+    "top": 228.593,
+    "type": "corps",
+    "texte": "objectifs;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 39,
+    "page": 2,
+    "top": 245.633,
+    "type": "corps",
+    "texte": "12. Fournir au protecteur du citoyen, pour la défense des droits humains, l’appui nécessaire dans",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 40,
+    "page": 2,
+    "top": 256.793,
+    "type": "corps",
+    "texte": "l’accomplissement de sa fonction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 41,
+    "page": 2,
+    "top": 273.833,
+    "type": "corps",
+    "texte": "13. Fournir les données pour l’élaboration d’une statistique criminologique nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 42,
+    "page": 2,
+    "top": 290.873,
+    "type": "corps",
+    "texte": "14. Participer à des programmes d’ordre social, civique, culturel ou éducatif mis en oeuvre par le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 43,
+    "page": 2,
+    "top": 302.033,
+    "type": "corps",
+    "texte": "gouvernement de la République;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 44,
+    "page": 2,
+    "top": 319.193,
+    "type": "corps",
+    "texte": "15. Exécuter toutes autres actions ou activités prévues par la loi.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 45,
+    "page": 2,
+    "top": 341.993,
+    "type": "article",
+    "texte": "Article 8.- Les fonctionnaires de police sont essentiellement apolitiques et soumis aux ordres des autorités",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 46,
+    "page": 2,
+    "top": 353.153,
+    "type": "corps",
+    "texte": "de police prévues par la loi. Ils sont tenus, sous peine de sanctions, de déférer avec promptitude à toute",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 47,
+    "page": 2,
+    "top": 364.313,
+    "type": "corps",
+    "texte": "réquisition légale de ces autorités, ainsi que des autorités administratives et judiciaires locales.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 48,
+    "page": 2,
+    "top": 387.233,
+    "type": "article",
+    "texte": "Article 9.- Le fonctionnaire de police est tenu à une obligation de réserve.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 49,
+    "page": 2,
+    "top": 410.153,
+    "type": "corps",
+    "texte": "Les autres droits et devoirs de toutes les catégories de membres de la police sont prévus et définis dans les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 50,
+    "page": 2,
+    "top": 421.313,
+    "type": "corps",
+    "texte": "statuts particuliers conformes aux dispositions du statut général de la fonction publique et dans les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 51,
+    "page": 2,
+    "top": 432.593,
+    "type": "corps",
+    "texte": "règlements intérieurs de la police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 52,
+    "page": 2,
+    "top": 455.273,
+    "type": "article",
+    "texte": "Article 10.- Hors les cas de flagrant délit, les autorités et membres de la police ne peuvent procéder à",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 53,
+    "page": 2,
+    "top": 466.553,
+    "type": "corps",
+    "texte": "aucune arrestation, perquisition ou visite domiciliaire sauf dans les conditions et modes prévus par la loi et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 54,
+    "page": 2,
+    "top": 477.713,
+    "type": "corps",
+    "texte": "notamment le Code d’instruction criminelle.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 55,
+    "page": 2,
+    "top": 512.717,
+    "type": "structure_label",
+    "texte": "TITRE DEUXIÈME",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 56,
+    "page": 2,
+    "top": 527.237,
+    "type": "structure_title",
+    "texte": "De l’organisation générale de la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 57,
+    "page": 2,
+    "top": 553.073,
+    "type": "article",
+    "texte": "Article 11.- L’organisation générale de la Police nationale d’Haïti comprend :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 58,
+    "page": 2,
+    "top": 570.113,
+    "type": "corps",
+    "texte": "· Le Conseil supérieur de la Police nationale (CSPN);",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 59,
+    "page": 2,
+    "top": 587.153,
+    "type": "corps",
+    "texte": "· La Police administrative",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 60,
+    "page": 2,
+    "top": 604.193,
+    "type": "corps",
+    "texte": "· La Police judiciaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 61,
+    "page": 2,
+    "top": 621.233,
+    "type": "corps",
+    "texte": "· L’Académie nationale de police (ANP);",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 62,
+    "page": 2,
+    "top": 638.273,
+    "type": "corps",
+    "texte": "· L’École nationale de police (ENP);",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 63,
+    "page": 2,
+    "top": 655.313,
+    "type": "corps",
+    "texte": "· Toutes autres institutions créées par la loi.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 64,
+    "page": 2,
+    "top": 690.197,
+    "type": "structure_label",
+    "texte": "CHAPITRE I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 65,
+    "page": 2,
+    "top": 704.717,
+    "type": "structure_title",
+    "texte": "Du Conseil supérieur de la Police nationale (CSPN)",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 66,
+    "page": 3,
+    "top": 133.157,
+    "type": "structure_label",
+    "texte": "Section première",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 67,
+    "page": 3,
+    "top": 147.677,
+    "type": "structure_title",
+    "texte": "Des compétences du Conseil",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 68,
+    "page": 3,
+    "top": 173.513,
+    "type": "article",
+    "texte": "Article 12.- Le Conseil supérieur de la Police nationale créé par la présente loi est l’organe compétent pour",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 69,
+    "page": 3,
+    "top": 184.673,
+    "type": "corps",
+    "texte": "définir la politique et les stratégies nationales en tout ce qui concerne les missions de la Police nationale",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 70,
+    "page": 3,
+    "top": 195.953,
+    "type": "corps",
+    "texte": "relevant de l’autorité du Ministère de la Justice. Il joue un rôle consultatif sur les grandes orientations de la",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 71,
+    "page": 3,
+    "top": 207.113,
+    "type": "corps",
+    "texte": "politique d’action de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 72,
+    "page": 3,
+    "top": 229.913,
+    "type": "article",
+    "texte": "Article 13.- Le CSPN donne son avis sur toute question touchant la réglementation générale, la formation et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 73,
+    "page": 3,
+    "top": 241.073,
+    "type": "corps",
+    "texte": "le renforcement des effectifs, la discipline, la carrière, la rémunération des membres de la police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 74,
+    "page": 3,
+    "top": 276.077,
+    "type": "structure_label",
+    "texte": "Section deuxième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 75,
+    "page": 3,
+    "top": 290.717,
+    "type": "structure_title",
+    "texte": "Organisation et fonction du Conseil supérieur de la Police nationale (CSPN)",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 76,
+    "page": 3,
+    "top": 316.433,
+    "type": "article",
+    "texte": "Article 14.- Le CSPN est composé comme suit :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 77,
+    "page": 3,
+    "top": 333.473,
+    "type": "corps",
+    "texte": "1. Le Premier Ministre, chef du gouvernement, président;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 78,
+    "page": 3,
+    "top": 350.513,
+    "type": "corps",
+    "texte": "2. Le Ministre de la Justice, premier vice-président;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 79,
+    "page": 3,
+    "top": 367.673,
+    "type": "corps",
+    "texte": "3. Le Ministre de l’Intérieur, deuxième vice-président;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 80,
+    "page": 3,
+    "top": 384.713,
+    "type": "corps",
+    "texte": "4. Le Commandant en chef des forces de police (le directeur général de la Police nationale), secrétaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 81,
+    "page": 3,
+    "top": 395.753,
+    "type": "corps",
+    "texte": "exécutif;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 82,
+    "page": 3,
+    "top": 412.793,
+    "type": "corps",
+    "texte": "5. L’Inspecteur général en chef de la Police nationale, secrétaire exécutif-adjoint.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 83,
+    "page": 3,
+    "top": 435.713,
+    "type": "article",
+    "texte": "Article 15.- Le CSPN se réunit à l’ordinaire chaque trimestre et à l’extraordinaire sur la convocation de son",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 84,
+    "page": 3,
+    "top": 446.873,
+    "type": "corps",
+    "texte": "président à la demande de deux de ses membres ou sur requête motivée de son secrétaire exécutif.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 85,
+    "page": 3,
+    "top": 469.793,
+    "type": "article",
+    "texte": "Article 16.- Les décisions du CSPN sont prises à la majorité absolue des voix et sont consignées dans le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 86,
+    "page": 3,
+    "top": 480.953,
+    "type": "corps",
+    "texte": "registre de son secrétariat affecté à cette fin.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 87,
+    "page": 3,
+    "top": 503.753,
+    "type": "article",
+    "texte": "Article 17.- En des circonstances exceptionnelles appelant le renforcement des mesures de police, l’avis",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 88,
+    "page": 3,
+    "top": 515.033,
+    "type": "corps",
+    "texte": "préalable du CSPN est obligatoire.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 89,
+    "page": 3,
+    "top": 549.917,
+    "type": "structure_label",
+    "texte": "CHAPITRE II",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 90,
+    "page": 3,
+    "top": 564.557,
+    "type": "structure_title",
+    "texte": "De l’organisation de la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 91,
+    "page": 3,
+    "top": 590.393,
+    "type": "article",
+    "texte": "Article 18.- La Police nationale comprend la Police administrative et la Police judiciaire organisées en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 92,
+    "page": 3,
+    "top": 601.553,
+    "type": "corps",
+    "texte": "structures centrales et en structures territoriales déconcentrées. Les deux polices sont complémentaires et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 93,
+    "page": 3,
+    "top": 612.833,
+    "type": "corps",
+    "texte": "indépendantes.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 94,
+    "page": 3,
+    "top": 635.633,
+    "type": "article",
+    "texte": "Article 19.- Les structures centrales de la Police nationale sont :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 95,
+    "page": 3,
+    "top": 652.553,
+    "type": "corps",
+    "texte": "· La Direction générale et les directions qui en dépendent;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 96,
+    "page": 3,
+    "top": 669.713,
+    "type": "corps",
+    "texte": "· Le cabinet de la Direction générale de la Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 97,
+    "page": 3,
+    "top": 686.753,
+    "type": "corps",
+    "texte": "· L’Inspection générale de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 98,
+    "page": 3,
+    "top": 709.553,
+    "type": "article",
+    "texte": "Article 20.- Les structures territoriales de la Police nationale comprennent dans chaque chef-lieu une",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 99,
+    "page": 3,
+    "top": 720.833,
+    "type": "corps",
+    "texte": "direction départementale dont relèvent :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 100,
+    "page": 4,
+    "top": 115.193,
+    "type": "corps",
+    "texte": "· Les commissariats d’arrondissements;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 101,
+    "page": 4,
+    "top": 132.233,
+    "type": "corps",
+    "texte": "· Les commissariats de communes;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 102,
+    "page": 4,
+    "top": 149.273,
+    "type": "corps",
+    "texte": "· Les sous-commissariats des quartiers et sections communales.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 103,
+    "page": 4,
+    "top": 166.193,
+    "type": "corps",
+    "texte": "· L’organisation et le fonctionnement des structures territoriales déconcentrées sont traités à la Section 4",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 104,
+    "page": 4,
+    "top": 177.473,
+    "type": "corps",
+    "texte": "du présent chapitre de la présente loi.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 105,
+    "page": 4,
+    "top": 212.357,
+    "type": "structure_label",
+    "texte": "Section première",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 106,
+    "page": 4,
+    "top": 226.997,
+    "type": "structure_title",
+    "texte": "De la Direction générale de la Police nationale (DGPN)",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 107,
+    "page": 4,
+    "top": 252.833,
+    "type": "article",
+    "texte": "Article 21.- La Direction générale de la Police nationale, organe central de commandement de la Police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 108,
+    "page": 4,
+    "top": 263.993,
+    "type": "corps",
+    "texte": "nationale, est une institution déconcentrée du Ministère de la Justice siégeant à la capitale. Elle est placée",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 109,
+    "page": 4,
+    "top": 275.273,
+    "type": "corps",
+    "texte": "sous l’autorité d’un directeur général, occupant la fonction de Commandant en chef de la police, nommé par",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 110,
+    "page": 4,
+    "top": 286.433,
+    "type": "corps",
+    "texte": "le Président de la République conformément à la Constitution.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 111,
+    "page": 4,
+    "top": 309.353,
+    "type": "article",
+    "texte": "Article 22.- Le Directeur général de la Police nationale, secrétaire exécutif du CSPN, est choisi parmi les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 112,
+    "page": 4,
+    "top": 320.393,
+    "type": "corps",
+    "texte": "directeurs centraux ou les commissaires divisionnaires et nommé, conformément à la Constitution, pour un",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 113,
+    "page": 4,
+    "top": 331.673,
+    "type": "corps",
+    "texte": "mandat de trois ans renouvelable.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 114,
+    "page": 4,
+    "top": 354.473,
+    "type": "article",
+    "texte": "Article 23.- Le Directeur général de la Police nationale exerce les attributions suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 115,
+    "page": 4,
+    "top": 371.633,
+    "type": "corps",
+    "texte": "1. Faire appliquer et exécuter toutes les dispositions légales relatives aux missions dévolues à la Police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 116,
+    "page": 4,
+    "top": 382.793,
+    "type": "corps",
+    "texte": "nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 117,
+    "page": 4,
+    "top": 399.833,
+    "type": "corps",
+    "texte": "2. Contrôler et superviser la bonne marche des services centraux, des commissariats et sous-",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 118,
+    "page": 4,
+    "top": 410.993,
+    "type": "corps",
+    "texte": "commissariats territoriaux;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 119,
+    "page": 4,
+    "top": 428.033,
+    "type": "corps",
+    "texte": "3. S’assurer de rapports harmonieux entre les cadres et autres agents de la Police administrative et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 120,
+    "page": 4,
+    "top": 439.193,
+    "type": "corps",
+    "texte": "ceux de la Police judiciaire;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 121,
+    "page": 4,
+    "top": 456.233,
+    "type": "corps",
+    "texte": "4. Soumettre au Ministre de la Justice un rapport mensuel sur l’évolution de la Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 122,
+    "page": 4,
+    "top": 473.273,
+    "type": "corps",
+    "texte": "5. Maintenir la discipline et le moral des membres du personnel de la Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 123,
+    "page": 4,
+    "top": 490.313,
+    "type": "corps",
+    "texte": "6. Faciliter le recrutement et la formation périodique du personnel et promouvoir, sur recommandation",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 124,
+    "page": 4,
+    "top": 501.473,
+    "type": "corps",
+    "texte": "des chefs de services, l’avancement des membres des sections dans le respect des statuts particuliers;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 125,
+    "page": 4,
+    "top": 518.513,
+    "type": "corps",
+    "texte": "7. Superviser et contrôler le fonctionnement de toues dépenses ou sorties de fonds et préparer, de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 126,
+    "page": 4,
+    "top": 529.673,
+    "type": "corps",
+    "texte": "concert avec la direction administrative, l’avant-projet de budget annuel;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 127,
+    "page": 4,
+    "top": 546.833,
+    "type": "corps",
+    "texte": "8. Superviser et contrôler le fonctionnement de l’Académie et de l’École nationales de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 128,
+    "page": 4,
+    "top": 563.873,
+    "type": "corps",
+    "texte": "9. Entretenir de bonnes relations avec les membres de la police internationale dans le cadre des",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 129,
+    "page": 4,
+    "top": 574.913,
+    "type": "corps",
+    "texte": "conventions signées;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 130,
+    "page": 4,
+    "top": 591.953,
+    "type": "corps",
+    "texte": "10. Exercer toutes autres attributions à lui conférés par la constitution, les lois et les règlements.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 131,
+    "page": 4,
+    "top": 614.873,
+    "type": "article",
+    "texte": "Article 24.- Le directeur général de la Police nationale est assisté dans l’exercice de ses fonctions par le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 132,
+    "page": 4,
+    "top": 626.033,
+    "type": "corps",
+    "texte": "directeur du Cabinet et les directeurs centraux.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 133,
+    "page": 4,
+    "top": 661.037,
+    "type": "structure_label",
+    "texte": "Section deuxième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 134,
+    "page": 4,
+    "top": 675.557,
+    "type": "structure_title",
+    "texte": "Le Cabinet et les directions centrales",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 135,
+    "page": 4,
+    "top": 713.477,
+    "type": "structure_label",
+    "texte": "Sous-section I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 136,
+    "page": 5,
+    "top": 121.073,
+    "type": "article",
+    "texte": "Article 25.- Assiste également le directeur général de la Police nationale un cabinet formé, d’une part, de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 137,
+    "page": 5,
+    "top": 132.233,
+    "type": "corps",
+    "texte": "directeurs centraux et, d’autre part, de directeurs départementaux.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 138,
+    "page": 5,
+    "top": 155.153,
+    "type": "article",
+    "texte": "Article 26.- Le directeur du Cabinet assure la direction du secrétariat de la Direction générale de la Police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 139,
+    "page": 5,
+    "top": 166.193,
+    "type": "corps",
+    "texte": "nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 140,
+    "page": 5,
+    "top": 183.353,
+    "type": "corps",
+    "texte": "1. Les attributions du Cabinet sont définies dans les règlements intérieurs de la Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 141,
+    "page": 5,
+    "top": 200.393,
+    "type": "corps",
+    "texte": "2. L’établissement et les attributions d’un conseil disciplinaire sont prévus dans lesdits règlements.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 142,
+    "page": 5,
+    "top": 235.277,
+    "type": "structure_label",
+    "texte": "Sous-section II",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 143,
+    "page": 5,
+    "top": 249.917,
+    "type": "structure_title",
+    "texte": "Des directions centrales",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 144,
+    "page": 5,
+    "top": 275.633,
+    "type": "article",
+    "texte": "Article 27.- Les attributions de police administrative et de police judiciaire de la Direction générale sont",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 145,
+    "page": 5,
+    "top": 286.913,
+    "type": "corps",
+    "texte": "réparties en trois grandes directions centrales :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 146,
+    "page": 5,
+    "top": 303.953,
+    "type": "corps",
+    "texte": "1. La Direction générale de la Police administrative;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 147,
+    "page": 5,
+    "top": 320.993,
+    "type": "corps",
+    "texte": "2. La Direction générale de la Police judiciaire;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 148,
+    "page": 5,
+    "top": 337.913,
+    "type": "corps",
+    "texte": "3. La Direction centrale de l’administration et des services généraux.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 149,
+    "page": 5,
+    "top": 372.917,
+    "type": "structure_label",
+    "texte": "Sous-section III",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 150,
+    "page": 5,
+    "top": 387.437,
+    "type": "structure_title",
+    "texte": "De la Direction centrale de la Police administrative",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 151,
+    "page": 5,
+    "top": 413.273,
+    "type": "article",
+    "texte": "Article 28.- La Direction centrale de la Police administrative est une structure destinée à garantir et à",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 152,
+    "page": 5,
+    "top": 424.553,
+    "type": "corps",
+    "texte": "assurer l’ordre public. Elle se charge des missions suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 153,
+    "page": 5,
+    "top": 441.593,
+    "type": "corps",
+    "texte": "1. veiller à la sécurité publique et à la protection des personnes, des biens et des institutions publiques;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 154,
+    "page": 5,
+    "top": 458.633,
+    "type": "corps",
+    "texte": "2. garantir le bon ordre, la paix, la tranquillité et la salubrité publiques dans les villes comme dans les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 155,
+    "page": 5,
+    "top": 469.793,
+    "type": "corps",
+    "texte": "campagnes;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 156,
+    "page": 5,
+    "top": 486.713,
+    "type": "corps",
+    "texte": "3. canaliser, coordonner et superviser le mode de fonctionnement et les activités des commissariats",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 157,
+    "page": 5,
+    "top": 497.993,
+    "type": "corps",
+    "texte": "territoriaux déconcentrés sur l’ensemble du territoire;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 158,
+    "page": 5,
+    "top": 515.033,
+    "type": "corps",
+    "texte": "4. prévoir en permanence et en coordination avec les autres services compétents, les besoins en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 159,
+    "page": 5,
+    "top": 526.193,
+    "type": "corps",
+    "texte": "renforts dans certaines circonscriptions de la vie socio-politique du pays;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 160,
+    "page": 5,
+    "top": 543.233,
+    "type": "corps",
+    "texte": "5. maintenir un registre national des demandes de détention et d’autorisation de port d’armes;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 161,
+    "page": 5,
+    "top": 560.393,
+    "type": "corps",
+    "texte": "6. émettre des certificats de détention et d’autorisation du port d’armes;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 162,
+    "page": 5,
+    "top": 577.313,
+    "type": "corps",
+    "texte": "7. accomplir toutes attributions découlant des missions de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 163,
+    "page": 5,
+    "top": 600.113,
+    "type": "article",
+    "texte": "Article 29.- Les attributions de cette direction centrale sont réparties et exercées à travers les directions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 164,
+    "page": 5,
+    "top": 611.393,
+    "type": "corps",
+    "texte": "suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 165,
+    "page": 5,
+    "top": 628.433,
+    "type": "corps",
+    "texte": "1. La Direction de la circulation des véhicules et de la police routière;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 166,
+    "page": 5,
+    "top": 645.473,
+    "type": "corps",
+    "texte": "2. La Direction de la sûreté publique et de maintien de l’ordre;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 167,
+    "page": 5,
+    "top": 662.513,
+    "type": "corps",
+    "texte": "3. La Direction de la protection civile;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 168,
+    "page": 5,
+    "top": 679.433,
+    "type": "corps",
+    "texte": "4. La Direction des services territoriaux;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 169,
+    "page": 5,
+    "top": 696.473,
+    "type": "corps",
+    "texte": "5. La Direction de la police de mer, de l’air, des frontières, de la migration et des forêts.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 170,
+    "page": 6,
+    "top": 133.157,
+    "type": "structure_label",
+    "texte": "Sous-section IV",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 171,
+    "page": 6,
+    "top": 147.677,
+    "type": "structure_title",
+    "texte": "De la Direction centrale de la Police judiciaire",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 172,
+    "page": 6,
+    "top": 173.513,
+    "type": "article",
+    "texte": "Article 30.- La Direction centrale de la Police judiciaire est auxiliaire immédiate des autorités judiciaires,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 173,
+    "page": 6,
+    "top": 184.673,
+    "type": "corps",
+    "texte": "notamment des commissaires de gouvernement et leurs substituts près les tribunaux de première instance,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 174,
+    "page": 6,
+    "top": 195.953,
+    "type": "corps",
+    "texte": "des juges de paix et des juges d’instruction près ces tribunaux.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 175,
+    "page": 6,
+    "top": 218.753,
+    "type": "article",
+    "texte": "Article 31.- Les attributions de la Direction centrale de la Police judiciaire sont celles qui sont déterminées",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 176,
+    "page": 6,
+    "top": 229.913,
+    "type": "corps",
+    "texte": "par le Code d’instruction criminelle, les autres lois et règlements régissant la matière. Elle a pour attributions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 177,
+    "page": 6,
+    "top": 241.073,
+    "type": "corps",
+    "texte": "spécifiques de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 178,
+    "page": 6,
+    "top": 258.113,
+    "type": "corps",
+    "texte": "1. constater les infractions aux lois pénales, en dresser procès-verbal, en établir les circonstances et en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 179,
+    "page": 6,
+    "top": 269.393,
+    "type": "corps",
+    "texte": "rassembler les preuves;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 180,
+    "page": 6,
+    "top": 286.433,
+    "type": "corps",
+    "texte": "2. rechercher les auteurs des crimes, délits et flagrants délits;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 181,
+    "page": 6,
+    "top": 303.473,
+    "type": "corps",
+    "texte": "3. surveiller et rechercher les malfaiteurs opérant ou se réfugiant sur le territoire national;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 182,
+    "page": 6,
+    "top": 320.393,
+    "type": "corps",
+    "texte": "4. coopérer, au besoin, avec les organisations étrangères de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 183,
+    "page": 6,
+    "top": 337.433,
+    "type": "corps",
+    "texte": "5. lutter contre la contrebande et le trafic illicite des stupéfiants;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 184,
+    "page": 6,
+    "top": 354.473,
+    "type": "corps",
+    "texte": "6. fournir toutes informations susceptibles de prévenir ou de réprimer les atteintes à l’ordre et la sûreté",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 185,
+    "page": 6,
+    "top": 365.753,
+    "type": "corps",
+    "texte": "politique, économique et sociale dans le cadre des lois de la République.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 186,
+    "page": 6,
+    "top": 388.673,
+    "type": "article",
+    "texte": "Article 32.- Les attributions de cette direction sont réparties à travers les directions suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 187,
+    "page": 6,
+    "top": 405.713,
+    "type": "corps",
+    "texte": "1. La Direction des affaires criminelles, de la lutte contre le banditisme, le proxénétisme et le trafic illicite",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 188,
+    "page": 6,
+    "top": 416.753,
+    "type": "corps",
+    "texte": "des stupéfiants;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 189,
+    "page": 6,
+    "top": 433.793,
+    "type": "corps",
+    "texte": "2. La Direction du renseignement;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 190,
+    "page": 6,
+    "top": 450.833,
+    "type": "corps",
+    "texte": "3. La Direction de la police scientifique et du rapprochement judiciaire;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 191,
+    "page": 6,
+    "top": 467.993,
+    "type": "corps",
+    "texte": "4. La Direction de l’identification et du fichier central;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 192,
+    "page": 6,
+    "top": 485.033,
+    "type": "corps",
+    "texte": "5. La Direction de la délinquance juvénile.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 193,
+    "page": 6,
+    "top": 507.833,
+    "type": "article",
+    "texte": "Article 33.- Les directeurs des directions centrales exercent leurs attributions sous l’autorité directe du",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 194,
+    "page": 6,
+    "top": 518.993,
+    "type": "corps",
+    "texte": "directeur général de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 195,
+    "page": 6,
+    "top": 541.913,
+    "type": "article",
+    "texte": "Article 34.- Chacune des directions techniques ou administratives relevant de l’une des trois directions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 196,
+    "page": 6,
+    "top": 553.073,
+    "type": "corps",
+    "texte": "centrales est administrée par un directeur de service. Le détail des attributions de chaque direction",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 197,
+    "page": 6,
+    "top": 564.353,
+    "type": "corps",
+    "texte": "technique ou administrative est fixé par les règlements intérieurs de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 198,
+    "page": 6,
+    "top": 599.237,
+    "type": "structure_label",
+    "texte": "Sous-section V",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 199,
+    "page": 6,
+    "top": 613.757,
+    "type": "structure_title",
+    "texte": "De la Direction centrale de l’administration et des services généraux",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 200,
+    "page": 6,
+    "top": 639.593,
+    "type": "article",
+    "texte": "Article 35.- La Direction centrale de l’administration et des services généraux est une structure de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 201,
+    "page": 6,
+    "top": 650.873,
+    "type": "corps",
+    "texte": "normalisation et d’appui logistique à la disposition de l’ensemble des forces de police. Elle a pour",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 202,
+    "page": 6,
+    "top": 661.913,
+    "type": "corps",
+    "texte": "principales attributions de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 203,
+    "page": 6,
+    "top": 678.953,
+    "type": "corps",
+    "texte": "1. participer à l’élaboration des textes législatifs et réglementaires en relation avec l’organisation et le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 204,
+    "page": 6,
+    "top": 690.233,
+    "type": "corps",
+    "texte": "fonctionnement intérieur de la Police nationale; elle participe également aux études relatives à",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 205,
+    "page": 6,
+    "top": 701.393,
+    "type": "corps",
+    "texte": "l’accomplissement des missions et attributions de la police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 206,
+    "page": 6,
+    "top": 718.433,
+    "type": "corps",
+    "texte": "2. élaborer l’avant-projet du budget annuel;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 207,
+    "page": 7,
+    "top": 115.193,
+    "type": "corps",
+    "texte": "3. prévoir et gérer le recrutement, l’utilisation, la rémunération et la carrière du personnel de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 208,
+    "page": 7,
+    "top": 132.233,
+    "type": "corps",
+    "texte": "4. mettre à la disposition des autres services les moyens de tous ordres indispensables à leur bon",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 209,
+    "page": 7,
+    "top": 143.513,
+    "type": "corps",
+    "texte": "fonctionnement dans les limites des disponibilités budgétaires;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 210,
+    "page": 7,
+    "top": 160.433,
+    "type": "corps",
+    "texte": "5. veiller à l’entraînement régulier des sections de poli-ce nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 211,
+    "page": 7,
+    "top": 177.473,
+    "type": "corps",
+    "texte": "6. assurer le bon fonctionnement de la Direction de la logistique.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 212,
+    "page": 7,
+    "top": 200.393,
+    "type": "article",
+    "texte": "Article 36.- Les attributions de cette direction centrale sont réparties et exercées à travers les directions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 213,
+    "page": 7,
+    "top": 211.553,
+    "type": "corps",
+    "texte": "suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 214,
+    "page": 7,
+    "top": 228.593,
+    "type": "corps",
+    "texte": "1. La Direction de réglementation juridique;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 215,
+    "page": 7,
+    "top": 245.633,
+    "type": "corps",
+    "texte": "2. La Direction du personnel;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 216,
+    "page": 7,
+    "top": 262.553,
+    "type": "corps",
+    "texte": "3. La Direction de la logistique;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 217,
+    "page": 7,
+    "top": 279.713,
+    "type": "corps",
+    "texte": "4. La Direction des écoles et de la formation permanente;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 218,
+    "page": 7,
+    "top": 296.753,
+    "type": "corps",
+    "texte": "5. La Direction de l’administration pénitentiaire.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 219,
+    "page": 7,
+    "top": 331.637,
+    "type": "structure_label",
+    "texte": "Section troisième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 220,
+    "page": 7,
+    "top": 346.157,
+    "type": "structure_title",
+    "texte": "L’Inspection générale de la Police nationale (IGPN)",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 221,
+    "page": 7,
+    "top": 371.993,
+    "type": "article",
+    "texte": "Article 37.- L’Inspection générale de la Police nationale relève du directeur général et est rattachée au",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 222,
+    "page": 7,
+    "top": 383.273,
+    "type": "corps",
+    "texte": "Ministère de la Justice.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 223,
+    "page": 7,
+    "top": 406.193,
+    "type": "article",
+    "texte": "Article 38.- L’Inspection est un service de conseil, de contrôle et d’enquête à la disposition du directeur",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 224,
+    "page": 7,
+    "top": 417.353,
+    "type": "corps",
+    "texte": "général de la Police nationale et du Ministre de la Justice.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 225,
+    "page": 7,
+    "top": 440.153,
+    "type": "corps",
+    "texte": "Elle a pour fonction de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 226,
+    "page": 7,
+    "top": 457.193,
+    "type": "corps",
+    "texte": "· recevoir les plaintes et procéder aux enquêtes relatives aux atteintes aux droits humains et tous autres",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 227,
+    "page": 7,
+    "top": 468.353,
+    "type": "corps",
+    "texte": "abus qui pourraient être reprochés aux fonctionnaires de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 228,
+    "page": 7,
+    "top": 485.513,
+    "type": "corps",
+    "texte": "· émettre un accusé de réception relatif à toutes plaintes portées par un citoyen contre un membre de la",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 229,
+    "page": 7,
+    "top": 496.673,
+    "type": "corps",
+    "texte": "Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 230,
+    "page": 7,
+    "top": 513.593,
+    "type": "corps",
+    "texte": "· établir un rapport à la suite de leurs investigations, adressé simultanément au Ministre de la Justice et",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 231,
+    "page": 7,
+    "top": 524.873,
+    "type": "corps",
+    "texte": "au directeur général de la Police nationale;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 232,
+    "page": 7,
+    "top": 541.913,
+    "type": "corps",
+    "texte": "· assurer l’inspection et le contrôle périodiques des services centraux territoriaux et des institutions de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 233,
+    "page": 7,
+    "top": 553.073,
+    "type": "corps",
+    "texte": "formation et de recyclage des forces de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 234,
+    "page": 7,
+    "top": 570.113,
+    "type": "corps",
+    "texte": "· informer le Ministre de la Justice et le directeur général de la Police nationale sur l’état général des",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 235,
+    "page": 7,
+    "top": 581.393,
+    "type": "corps",
+    "texte": "forces de police ainsi que sur les problèmes qui nuisent à leur bon fonctionnement;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 236,
+    "page": 7,
+    "top": 598.313,
+    "type": "corps",
+    "texte": "· réaliser des études, enquêtes et faire toutes recommandations jugées nécessaires à l’évolution et à",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 237,
+    "page": 7,
+    "top": 609.473,
+    "type": "corps",
+    "texte": "l’efficience de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 238,
+    "page": 7,
+    "top": 632.393,
+    "type": "article",
+    "texte": "Article 39.- L’Inspection générale regroupe six (6) inspecteurs généraux de la Police nationale placés sous la",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 239,
+    "page": 7,
+    "top": 643.553,
+    "type": "corps",
+    "texte": "responsabilité d’un inspecteur général en chef.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 240,
+    "page": 7,
+    "top": 666.473,
+    "type": "corps",
+    "texte": "L’inspecteur général est membre de droit du CSPN. Les inspecteurs généraux sont choisis et nommés",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 241,
+    "page": 7,
+    "top": 677.753,
+    "type": "corps",
+    "texte": "parmi les cadres ayant déjà atteint dans la carrière de police, le grade de commissaire divisionnaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 242,
+    "page": 7,
+    "top": 688.793,
+    "type": "corps",
+    "texte": "conformément aux statuts particuliers des sections de police. Lesdits statuts sont établis par arrêté du chef",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 243,
+    "page": 7,
+    "top": 700.073,
+    "type": "corps",
+    "texte": "de l’exécutif.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 244,
+    "page": 8,
+    "top": 133.157,
+    "type": "structure_label",
+    "texte": "Section quatrième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 245,
+    "page": 8,
+    "top": 147.677,
+    "type": "structure_title",
+    "texte": "Des commissariats territoriaux",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 246,
+    "page": 8,
+    "top": 173.513,
+    "type": "article",
+    "texte": "Article 40.- Les structures territoriales prévues à l’article 6 de la présente loi constituent l’extension des",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 247,
+    "page": 8,
+    "top": 184.673,
+    "type": "corps",
+    "texte": "services de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 248,
+    "page": 8,
+    "top": 207.593,
+    "type": "article",
+    "texte": "Article 41.- Les circonscriptions territoriales de la Police nationale sont conformes à l’organisation",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 249,
+    "page": 8,
+    "top": 218.753,
+    "type": "corps",
+    "texte": "administrative et judiciaire prévues par la Constitution et par la loi.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 250,
+    "page": 8,
+    "top": 241.553,
+    "type": "article",
+    "texte": "Article 42.- Le Département a le double statut de circonscription de la Police administrative et judiciaire. Il y",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 251,
+    "page": 8,
+    "top": 252.833,
+    "type": "corps",
+    "texte": "a dans chaque chef-lieu de département une direction départementale de la Police nationale dont relèvent :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 252,
+    "page": 8,
+    "top": 269.873,
+    "type": "corps",
+    "texte": "· les commissariats d’arrondissement,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 253,
+    "page": 8,
+    "top": 286.913,
+    "type": "corps",
+    "texte": "· les commissariats des communes,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 254,
+    "page": 8,
+    "top": 303.953,
+    "type": "corps",
+    "texte": "· les sous-commissariats des quartiers et des sections communales.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 255,
+    "page": 8,
+    "top": 326.873,
+    "type": "article",
+    "texte": "Article 42.1.- Des commissariats ou sous-commissariats de police sont créés au besoin.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 256,
+    "page": 8,
+    "top": 361.637,
+    "type": "structure_label",
+    "texte": "Sous-section I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 257,
+    "page": 8,
+    "top": 376.277,
+    "type": "structure_title",
+    "texte": "Les directions départementales",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 258,
+    "page": 8,
+    "top": 402.233,
+    "type": "article",
+    "texte": "Article 43.- Il est établi dans chaque chef-lieu de département une direction départementale de la Police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 259,
+    "page": 8,
+    "top": 413.273,
+    "type": "corps",
+    "texte": "nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 260,
+    "page": 8,
+    "top": 436.193,
+    "type": "article",
+    "texte": "Article 44.- La direction départementale est une structure territoriale déconcentrée de police. Elle comporte",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 261,
+    "page": 8,
+    "top": 447.353,
+    "type": "corps",
+    "texte": "des services techniques et administratifs existant au niveau central et exerce toutes les fonctions",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 262,
+    "page": 8,
+    "top": 458.633,
+    "type": "corps",
+    "texte": "reconnues à la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 263,
+    "page": 8,
+    "top": 481.553,
+    "type": "article",
+    "texte": "Article 45.- La direction départementale est dirigée par un commissaire divisionnaire. Il est le directeur",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 264,
+    "page": 8,
+    "top": 492.593,
+    "type": "corps",
+    "texte": "départemental de la Police nationale. Il est nommé par le directeur général après consultation avec le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 265,
+    "page": 8,
+    "top": 503.753,
+    "type": "corps",
+    "texte": "CSPN.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 266,
+    "page": 8,
+    "top": 526.673,
+    "type": "article",
+    "texte": "Article 46.- Le directeur départemental exerce les attributions suivantes :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 267,
+    "page": 8,
+    "top": 543.713,
+    "type": "corps",
+    "texte": "1. assurer dans les limites de sa juridiction le bon fonctionnement des forces de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 268,
+    "page": 8,
+    "top": 560.753,
+    "type": "corps",
+    "texte": "2. superviser et contrôler les commissariats d’arrondissement et de commune et les sous-commissariats",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 269,
+    "page": 8,
+    "top": 572.033,
+    "type": "corps",
+    "texte": "des quartiers et sections communales;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 270,
+    "page": 8,
+    "top": 588.953,
+    "type": "corps",
+    "texte": "3. coordonner l’action de toutes les sections administratives et techniques placées sous son autorité;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 271,
+    "page": 8,
+    "top": 605.993,
+    "type": "corps",
+    "texte": "4. superviser et coordonner l’avant-projet du budget préparé au commissariat;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 272,
+    "page": 8,
+    "top": 623.033,
+    "type": "corps",
+    "texte": "5. évaluer et noter le personnel placé sous son autorité;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 273,
+    "page": 8,
+    "top": 640.073,
+    "type": "corps",
+    "texte": "6. proposer à l’approbation du directeur général la liste des candidats de recrutement;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 274,
+    "page": 8,
+    "top": 657.113,
+    "type": "corps",
+    "texte": "7. veiller à la discipline des cadres et autres agents de police dans l’exercice de leur fonction d’auxiliaires",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 275,
+    "page": 8,
+    "top": 668.393,
+    "type": "corps",
+    "texte": "des instances administratives et judiciaires de la juridiction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 276,
+    "page": 8,
+    "top": 685.313,
+    "type": "corps",
+    "texte": "8. recevoir et acheminer à l’Inspection générale toute plainte déposée par un citoyen relatif à une",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 277,
+    "page": 8,
+    "top": 696.473,
+    "type": "corps",
+    "texte": "accusation d’abus d’autorité par les membres de la Police nationale sous sa juridiction; communiquer à",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 278,
+    "page": 8,
+    "top": 707.753,
+    "type": "corps",
+    "texte": "tout plaignant, sur demande, une copie de l’accusé de réception; faciliter l’enquête menée par le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 279,
+    "page": 8,
+    "top": 718.913,
+    "type": "corps",
+    "texte": "commissaire du gouvernement dans le cadre de la plainte; donner suite à toute décision judiciaire qui en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 280,
+    "page": 9,
+    "top": 109.313,
+    "type": "corps",
+    "texte": "découle;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 281,
+    "page": 9,
+    "top": 126.473,
+    "type": "corps",
+    "texte": "9. adresser un rapport d’activité mensuelle et annuel-le au directeur général avec copie au commissaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 282,
+    "page": 9,
+    "top": 137.633,
+    "type": "corps",
+    "texte": "du gouvernement;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 283,
+    "page": 9,
+    "top": 154.553,
+    "type": "corps",
+    "texte": "10. accomplir toutes autres attributions entrant dans les missions des forces de police dans sa",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 284,
+    "page": 9,
+    "top": 165.833,
+    "type": "corps",
+    "texte": "juridiction.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 285,
+    "page": 9,
+    "top": 200.717,
+    "type": "structure_label",
+    "texte": "Sous-section II",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 286,
+    "page": 9,
+    "top": 215.357,
+    "type": "structure_title",
+    "texte": "Des commissariats d’arrondissements",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 287,
+    "page": 9,
+    "top": 241.073,
+    "type": "article",
+    "texte": "Article 47.- Il y a dans chaque chef-lieu d’arrondissement un commissariat d’arrondissement placé sous",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 288,
+    "page": 9,
+    "top": 252.353,
+    "type": "corps",
+    "texte": "l’autorité d’un cadre de police ayant le grade de commissaire principal. Celui-ci relève hiérarchiquement du",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 289,
+    "page": 9,
+    "top": 263.513,
+    "type": "corps",
+    "texte": "directeur départemental (commissaire divisionnaire) pour les questions propres à la gestion de sa",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 290,
+    "page": 9,
+    "top": 274.793,
+    "type": "corps",
+    "texte": "juridiction, et est mis à la disposition des juges pour les questions de Police judiciaire.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 291,
+    "page": 9,
+    "top": 297.593,
+    "type": "article",
+    "texte": "Article 48.- Le commissaire principal est choisi parmi les commissaires de police. Il est nommé par le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 292,
+    "page": 9,
+    "top": 308.753,
+    "type": "corps",
+    "texte": "directeur général après consultation avec le CSPN.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 293,
+    "page": 9,
+    "top": 331.673,
+    "type": "article",
+    "texte": "Article 49.- Le commissaire d’arrondissement de police a pour autres attributions de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 294,
+    "page": 9,
+    "top": 348.713,
+    "type": "corps",
+    "texte": "1. exercer un contrôle effectif sur le travail fourni et la discipline de tous les commissariats de communes",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 295,
+    "page": 9,
+    "top": 359.873,
+    "type": "corps",
+    "texte": "placés dans sa juridiction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 296,
+    "page": 9,
+    "top": 376.913,
+    "type": "corps",
+    "texte": "2. inspecter au moins tous les quinze (15) jours les commissariats de commune et chaque mois les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 297,
+    "page": 9,
+    "top": 388.193,
+    "type": "corps",
+    "texte": "sous-commissariats de quartiers et de sections communales et signaler dans le plus bref délai les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 298,
+    "page": 9,
+    "top": 399.233,
+    "type": "corps",
+    "texte": "anomalies constatées à l’attention de son supérieur hiérarchique immédiat;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 299,
+    "page": 9,
+    "top": 416.273,
+    "type": "corps",
+    "texte": "3. s’assurer que les agents placés sous son autorité exercent effectivement leur fonction d’auxiliaire de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 300,
+    "page": 9,
+    "top": 427.553,
+    "type": "corps",
+    "texte": "l’administration locale et de la justice;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 301,
+    "page": 9,
+    "top": 444.593,
+    "type": "corps",
+    "texte": "4. aider à l’exécution des décisions prises par les conseils municipaux et les CASEC, en vue d’empêcher",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 302,
+    "page": 9,
+    "top": 455.753,
+    "type": "corps",
+    "texte": "la pollution des rivières, la coupe des arbres sans autorisation, la pratique de la chasse en dehors du",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 303,
+    "page": 9,
+    "top": 466.913,
+    "type": "corps",
+    "texte": "calendrier annuel prévu par les règlements ainsi que la dévastation des champs par des animaux",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 304,
+    "page": 9,
+    "top": 478.073,
+    "type": "corps",
+    "texte": "épaves;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 305,
+    "page": 9,
+    "top": 495.113,
+    "type": "corps",
+    "texte": "5. adresser au directeur départemental de la Police nationale et aux autorités communales et judiciaires",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 306,
+    "page": 9,
+    "top": 506.393,
+    "type": "corps",
+    "texte": "un rapport mensuel ou ponctuel sur ces activités.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 307,
+    "page": 9,
+    "top": 541.277,
+    "type": "structure_label",
+    "texte": "Sous-section III",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 308,
+    "page": 9,
+    "top": 555.797,
+    "type": "structure_title",
+    "texte": "Des commissariats de communes",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 309,
+    "page": 9,
+    "top": 581.753,
+    "type": "article",
+    "texte": "Article 50.- Il y a dans chaque commune un commissariat de police relevant du commissariat",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 310,
+    "page": 9,
+    "top": 592.913,
+    "type": "corps",
+    "texte": "d’arrondissement. Le commissariat de commune est placé sous les ordres d’un commissaire de police ou",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 311,
+    "page": 9,
+    "top": 604.193,
+    "type": "corps",
+    "texte": "d’un inspecteur divisionnaire selon l’importance de la commune. Il porte le titre de commissaire municipal.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 312,
+    "page": 9,
+    "top": 626.873,
+    "type": "article",
+    "texte": "Article 51.- Le commissaire municipal est nommé par le directeur général après consultation avec le CSPN.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 313,
+    "page": 9,
+    "top": 649.793,
+    "type": "article",
+    "texte": "Article 52.- Il a pour attribution de :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 314,
+    "page": 9,
+    "top": 666.833,
+    "type": "corps",
+    "texte": "1. exercer un contrôle effectif sur le travail et la discipline des sous-commissariats de sections",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 315,
+    "page": 9,
+    "top": 678.113,
+    "type": "corps",
+    "texte": "communales et de quartiers de sa juridiction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 316,
+    "page": 9,
+    "top": 695.153,
+    "type": "corps",
+    "texte": "2. inspecter au moins tous les quinze (15) jours les sous-commissariats de police de sa juridiction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 317,
+    "page": 9,
+    "top": 712.193,
+    "type": "corps",
+    "texte": "3. faire respecter les dispositions légales et réglementaires relatives à la police des forêts, de la chasse,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 318,
+    "page": 9,
+    "top": 723.233,
+    "type": "corps",
+    "texte": "des rivières, des marchés communaux et de la sécurité des jardins contre les voleurs et les animaux;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 319,
+    "page": 10,
+    "top": 115.193,
+    "type": "corps",
+    "texte": "4. veiller au respect des règles d’urbanisme, de salubrité des places publiques et des marchés",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 320,
+    "page": 10,
+    "top": 126.473,
+    "type": "corps",
+    "texte": "communaux;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 321,
+    "page": 10,
+    "top": 143.513,
+    "type": "corps",
+    "texte": "5. déférer à toutes réquisitions légales des autorités de sa juridiction;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 322,
+    "page": 10,
+    "top": 160.433,
+    "type": "corps",
+    "texte": "6. adresser au commissaire d’arrondissement et aux juges de paix, un rapport mensuel ou ponctuel sur",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 323,
+    "page": 10,
+    "top": 171.593,
+    "type": "corps",
+    "texte": "ses activités avec copie aux maires;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 324,
+    "page": 10,
+    "top": 188.633,
+    "type": "corps",
+    "texte": "7. accomplir toutes attributions entrant dans la mission de la police municipale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 325,
+    "page": 10,
+    "top": 223.637,
+    "type": "structure_label",
+    "texte": "Sous-section IV",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 326,
+    "page": 10,
+    "top": 238.277,
+    "type": "structure_title",
+    "texte": "Des sous-commissariats de police de section communale et de quartier",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 327,
+    "page": 10,
+    "top": 263.993,
+    "type": "article",
+    "texte": "Article 53.- Le sous-commissariat de police est la plus petite division de la Police nationale. Il relève du",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 328,
+    "page": 10,
+    "top": 275.273,
+    "type": "corps",
+    "texte": "commissariat municipal de police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 329,
+    "page": 10,
+    "top": 298.073,
+    "type": "article",
+    "texte": "Article 54.- Il y a dans chaque quartier et dans chaque section communale un sous-commissariat de police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 330,
+    "page": 10,
+    "top": 309.353,
+    "type": "corps",
+    "texte": "placé respectivement sous l’autorité d’un inspecteur principal ou d’un inspecteur de police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 331,
+    "page": 10,
+    "top": 332.153,
+    "type": "article",
+    "texte": "Article 55.- L’inspecteur principal ou l’inspecteur de police, a sous ses ordres un effectif d’agents déterminé",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 332,
+    "page": 10,
+    "top": 343.313,
+    "type": "corps",
+    "texte": "par la densité de la population et l’éloignement du sous-commissariat municipal. Néanmoins, cet effectif ne",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 333,
+    "page": 10,
+    "top": 354.473,
+    "type": "corps",
+    "texte": "peut jamais être inférieur à trois.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 334,
+    "page": 10,
+    "top": 377.393,
+    "type": "article",
+    "texte": "Article 56.- L’effectif en poste dans un sous-commissariat ne peut jamais dépasser une durée de trois (3)",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 335,
+    "page": 10,
+    "top": 388.673,
+    "type": "corps",
+    "texte": "ans sans être l’objet d’une rotation. Le commissaire d’arrondissement est chargé de veiller à la stricte",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 336,
+    "page": 10,
+    "top": 399.833,
+    "type": "corps",
+    "texte": "observance de cette disposition sous peine de sanction.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 337,
+    "page": 10,
+    "top": 422.633,
+    "type": "article",
+    "texte": "Article 57.- Les conditions de nomination des fonctionnaires de police sont prévues dans les règlements",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 338,
+    "page": 10,
+    "top": 433.793,
+    "type": "corps",
+    "texte": "intérieurs.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 339,
+    "page": 10,
+    "top": 468.797,
+    "type": "structure_label",
+    "texte": "TITRE TROISIÈME",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 340,
+    "page": 10,
+    "top": 483.437,
+    "type": "structure_title",
+    "texte": "Dispositions diverses",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 341,
+    "page": 10,
+    "top": 521.237,
+    "type": "structure_label",
+    "texte": "CHAPITRE I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 342,
+    "page": 10,
+    "top": 535.877,
+    "type": "structure_title",
+    "texte": "Des membres du personnel",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 343,
+    "page": 10,
+    "top": 561.593,
+    "type": "article",
+    "texte": "Article 58.- Le personnel de la Police nationale est constitué de membres actifs des deux sexes répartis en :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 344,
+    "page": 10,
+    "top": 578.633,
+    "type": "corps",
+    "texte": "· cadres supérieurs et moyens de carrière;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 345,
+    "page": 10,
+    "top": 595.673,
+    "type": "corps",
+    "texte": "· agents de police;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 346,
+    "page": 10,
+    "top": 612.833,
+    "type": "corps",
+    "texte": "· employés non intégrés à la hiérarchie.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 347,
+    "page": 10,
+    "top": 647.717,
+    "type": "structure_label",
+    "texte": "Section première",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 348,
+    "page": 10,
+    "top": 662.237,
+    "type": "structure_title",
+    "texte": "Des conditions d’intégration dans la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 349,
+    "page": 10,
+    "top": 688.073,
+    "type": "article",
+    "texte": "Article 59.- Pour intégrer la Police nationale les conditions suivantes sont requises :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 350,
+    "page": 10,
+    "top": 705.113,
+    "type": "corps",
+    "texte": "a. être haïtien et n’avoir jamais renoncé à sa nationalité;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 351,
+    "page": 10,
+    "top": 722.153,
+    "type": "corps",
+    "texte": "b. n’avoir jamais été condamné à une peine afflictive ou infamante;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 352,
+    "page": 11,
+    "top": 115.193,
+    "type": "corps",
+    "texte": "c. être diplômé de l’Académie nationale de police, de l’École nationale de police ou être détenteur d’un",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 353,
+    "page": 11,
+    "top": 126.473,
+    "type": "corps",
+    "texte": "diplôme équivalent;",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 354,
+    "page": 11,
+    "top": 143.513,
+    "type": "corps",
+    "texte": "d. avoir au moins dix-huit ans accomplis.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 355,
+    "page": 11,
+    "top": 178.277,
+    "type": "structure_label",
+    "texte": "Section deuxième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 356,
+    "page": 11,
+    "top": 192.917,
+    "type": "structure_title",
+    "texte": "Des statuts des membres du personnel de la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 357,
+    "page": 11,
+    "top": 218.753,
+    "type": "article",
+    "texte": "Article 60.- La carrière des différents fonctionnaires de la Poli-ce nationale comprend des grades",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 358,
+    "page": 11,
+    "top": 229.913,
+    "type": "corps",
+    "texte": "hiérarchisés de façon ascendante sans discontinuité à l’intérieur de trois niveaux. À l’intérieur de chaque",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 359,
+    "page": 11,
+    "top": 241.073,
+    "type": "corps",
+    "texte": "niveau la promotion se fera sur la base d’ancienneté et de compétence. Le candidat à un niveau supérieur",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 360,
+    "page": 11,
+    "top": 252.353,
+    "type": "corps",
+    "texte": "de police devra subir des concours internes dont les épreuves et les conditions d’accès sont déterminées",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 361,
+    "page": 11,
+    "top": 263.513,
+    "type": "corps",
+    "texte": "par des règlements.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 362,
+    "page": 11,
+    "top": 286.433,
+    "type": "corps",
+    "texte": "Ces grades sont présentés dans le tableau ci-après :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 363,
+    "page": 11,
+    "top": 303.473,
+    "type": "corps",
+    "texte": "Niveau A : 1. Agents de police, classe 1 à 4",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 364,
+    "page": 11,
+    "top": 320.393,
+    "type": "corps",
+    "texte": "Niveau B1 : 1. Inspecteur de police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 365,
+    "page": 11,
+    "top": 337.433,
+    "type": "corps",
+    "texte": "2. Inspecteur principal",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 366,
+    "page": 11,
+    "top": 354.473,
+    "type": "corps",
+    "texte": "3. Inspecteur divisionnaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 367,
+    "page": 11,
+    "top": 371.633,
+    "type": "corps",
+    "texte": "Niveau B2 : 4. Commissaire de police",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 368,
+    "page": 11,
+    "top": 388.673,
+    "type": "corps",
+    "texte": "5. Commissaire principal",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 369,
+    "page": 11,
+    "top": 405.713,
+    "type": "corps",
+    "texte": "6. Commissaire divisionnaire",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 370,
+    "page": 11,
+    "top": 422.633,
+    "type": "corps",
+    "texte": "7. Directeur central, inspecteur général",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 371,
+    "page": 11,
+    "top": 439.673,
+    "type": "corps",
+    "texte": "8. Directeur général de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 372,
+    "page": 11,
+    "top": 474.677,
+    "type": "structure_label",
+    "texte": "Section troisième",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 373,
+    "page": 11,
+    "top": 489.197,
+    "type": "structure_title",
+    "texte": "Dispositions communes à tous les commissaires de la Police nationale",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 374,
+    "page": 11,
+    "top": 515.033,
+    "type": "article",
+    "texte": "Article 61.- Tout commissaire de police nommé ou affecté à un poste ou fonction centrale ou territoriale de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 375,
+    "page": 11,
+    "top": 526.193,
+    "type": "corps",
+    "texte": "quelque niveau de responsabilité que ce soit, est tenu, avant sa prise de fonction, de prêter ou de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 376,
+    "page": 11,
+    "top": 537.473,
+    "type": "corps",
+    "texte": "renouveler par devant le Doyen du tribunal civil ou du juge de paix, le serment réglementaire ci-après :",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 377,
+    "page": 11,
+    "top": 560.393,
+    "type": "corps",
+    "texte": "«Je jure sur mon honneur et devant la collectivité de respecter et de faire respecter la Constitution, le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 378,
+    "page": 11,
+    "top": 571.433,
+    "type": "corps",
+    "texte": "Drapeau, les Lois et Règlements régissant les forces de police nationale, de protéger les droits et libertés de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 379,
+    "page": 11,
+    "top": 582.593,
+    "type": "corps",
+    "texte": "tous les habitants sans aucune forme d’ostracisme ou discrimination, de maintenir l’ordre, la paix, la sûreté,",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 380,
+    "page": 11,
+    "top": 593.873,
+    "type": "corps",
+    "texte": "la sécurité et la tranquillité publique sur toute l’étendue du territoire et de me comporter en toutes",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 381,
+    "page": 11,
+    "top": 605.033,
+    "type": "corps",
+    "texte": "circonstances comme un honnête et digne auxiliaire soumis aux ordres des autorités établies par la",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 382,
+    "page": 11,
+    "top": 616.313,
+    "type": "corps",
+    "texte": "Constitution.»",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 383,
+    "page": 11,
+    "top": 639.233,
+    "type": "article",
+    "texte": "Article 62.- Ledit serment est calligraphié de façon lisible, affiché dans les carrés de toutes les salles de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 384,
+    "page": 11,
+    "top": 650.273,
+    "type": "corps",
+    "texte": "classe, dans les dortoirs de l’Académie de police et de l’École nationale de police et dans les commissariats",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 385,
+    "page": 11,
+    "top": 661.433,
+    "type": "corps",
+    "texte": "et sous-commissariats de police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 386,
+    "page": 11,
+    "top": 684.353,
+    "type": "article",
+    "texte": "Article 63.- Au chapitre des règlements intérieurs et des statuts traitant du régime disciplinaire auquel sont",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 387,
+    "page": 11,
+    "top": 695.633,
+    "type": "corps",
+    "texte": "soumis les cadres supérieurs et moyens de la Police nationale, le serment réglementaire libellé à l’article 61",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 388,
+    "page": 11,
+    "top": 706.793,
+    "type": "corps",
+    "texte": "est pris en compte pour l’avancement d’échelon et la promotion de grade.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 389,
+    "page": 12,
+    "top": 133.157,
+    "type": "structure_label",
+    "texte": "TITRE QUATRIÈME",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 390,
+    "page": 12,
+    "top": 147.677,
+    "type": "structure_title",
+    "texte": "Dispositions transitoires",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 391,
+    "page": 12,
+    "top": 185.597,
+    "type": "structure_label",
+    "texte": "CHAPITRE I",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 392,
+    "page": 12,
+    "top": 200.117,
+    "type": "structure_title",
+    "texte": "Des conditions de nomination des directeurs centraux et des autres",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 393,
+    "page": 12,
+    "top": 214.637,
+    "type": "structure_title",
+    "texte": "commissaires",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 394,
+    "page": 12,
+    "top": 240.593,
+    "type": "article",
+    "texte": "Article 64.- En attendant la sortie des premières promotions de l’Académie nationale de police, les",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 395,
+    "page": 12,
+    "top": 251.753,
+    "type": "corps",
+    "texte": "commissaires sont recrutés en priorité parmi les officiers et sous-officiers des forces armées d’Haïti ayant",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 396,
+    "page": 12,
+    "top": 262.913,
+    "type": "corps",
+    "texte": "reçu dans un centre étranger reconnu la formation théorique et pratique en matière de police administrative",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 397,
+    "page": 12,
+    "top": 274.073,
+    "type": "corps",
+    "texte": "et judiciaire, après examen de leur dossier par le CSPN.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 398,
+    "page": 12,
+    "top": 296.993,
+    "type": "article",
+    "texte": "Article 64.1.- Les biens meubles et immeubles appartenant aux FADH et utilisés par ces dernières dans",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 399,
+    "page": 12,
+    "top": 308.153,
+    "type": "corps",
+    "texte": "leurs fonctions de police rentrent dans le patrimoine de la Police nationale.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 400,
+    "page": 12,
+    "top": 331.073,
+    "type": "article",
+    "texte": "Article 64.2.- Tout membre des forces armées d’Haïti dénoncé par la clameur publique comme auteur ou",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 401,
+    "page": 12,
+    "top": 342.233,
+    "type": "corps",
+    "texte": "complice de violation de droits humains, après vérification du CSPN, ne peut intégrer ce nouveau corps.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 402,
+    "page": 12,
+    "top": 377.117,
+    "type": "structure_label",
+    "texte": "CHAPITRE II",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 403,
+    "page": 12,
+    "top": 391.637,
+    "type": "structure_title",
+    "texte": "Transfert des institutions et des moyens",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 404,
+    "page": 12,
+    "top": 417.593,
+    "type": "article",
+    "texte": "Article 65.- Dès l’entrée en vigueur de la présente loi, le Ministre de la Défense, chargé de la tutelle des",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 405,
+    "page": 12,
+    "top": 428.753,
+    "type": "corps",
+    "texte": "forces armées d’Haïti, met à la disposition du Ministre de la Justice tous les moyens en personnel, en",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 406,
+    "page": 12,
+    "top": 439.913,
+    "type": "corps",
+    "texte": "matériel et armement nécessaires à l’accomplissement des missions confiées à la police.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 407,
+    "page": 12,
+    "top": 462.833,
+    "type": "article",
+    "texte": "Article 66.- Le transfert progressif des structures susmentionnées est rendu effectif par arrêté conjoint des",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 408,
+    "page": 12,
+    "top": 473.993,
+    "type": "corps",
+    "texte": "ministres de la Défense et de la Justice.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 409,
+    "page": 12,
+    "top": 496.913,
+    "type": "article",
+    "texte": "Article 67.- Les règlements intérieurs de tous les services définis dans la présente loi sont publiés au Journal",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 410,
+    "page": 12,
+    "top": 508.073,
+    "type": "corps",
+    "texte": "Officiel «Le Moniteur».",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 411,
+    "page": 12,
+    "top": 530.873,
+    "type": "article",
+    "texte": "Article 68.- L’organisation et le fonctionnement de l’Académie de police et de l’École de police sont",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 412,
+    "page": 12,
+    "top": 542.153,
+    "type": "corps",
+    "texte": "déterminés par la loi, conformément à l’article 271 de la Constitution.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 413,
+    "page": 12,
+    "top": 577.037,
+    "type": "structure_label",
+    "texte": "CHAPITRE III",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 414,
+    "page": 12,
+    "top": 591.677,
+    "type": "structure_title",
+    "texte": "Des services privés de sécurité",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 415,
+    "page": 12,
+    "top": 617.393,
+    "type": "article",
+    "texte": "Article 69.- La Police nationale est chargée de l’application des règlements administratifs émis par le",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 416,
+    "page": 12,
+    "top": 628.673,
+    "type": "corps",
+    "texte": "Ministre de la Justice sur les conditions de création, d’enregistrement, de formation et de fonctionnement",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 417,
+    "page": 12,
+    "top": 639.833,
+    "type": "corps",
+    "texte": "des offices privés de détective ou d’investigation.",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 418,
+    "page": 12,
+    "top": 674.837,
+    "type": "structure_label",
+    "texte": "CHAPITRE IV",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 419,
+    "page": 12,
+    "top": 689.357,
+    "type": "structure_title",
+    "texte": "Dispositions finales",
+    "police": "Helvetica-Bold",
+    "taille": 12.6
+  },
+  {
+    "ordre": 420,
+    "page": 12,
+    "top": 715.193,
+    "type": "article",
+    "texte": "Article 70.- La présente loi abroge toutes lois ou dispositions de lois, tous décrets-lois ou dispositions de",
+    "police": "Helvetica",
+    "taille": 9.7
+  },
+  {
+    "ordre": 421,
+    "page": 13,
+    "top": 109.313,
+    "type": "corps",
+    "texte": "décrets-lois, tous décrets ou dispositions de décrets qui lui sont contraires.",
+    "police": "Helvetica",
+    "taille": 9.7
+  }
+]

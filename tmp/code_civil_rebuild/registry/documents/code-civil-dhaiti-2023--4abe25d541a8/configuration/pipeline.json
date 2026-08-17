@@ -1,0 +1,29 @@
+{
+  "script": "traiter_code_civil_lexhaiti_registre.py",
+  "extracteur_principal": "pdfplumber 0.11.9",
+  "verificateur": "pypdf 6.10.0",
+  "source_texte": "couche texte native du PDF",
+  "analyse_geometrique_et_typographique": true,
+  "pages_exclues": [
+    1,
+    6
+  ],
+  "zone_verticale_retenue_points": {
+    "min_exclusif": 50,
+    "max_exclusif": 780
+  },
+  "entete_ignore": "LEXHAÏTI / Code civil d'Haïti",
+  "pied_ignore": "Source : https://lexhaiti.org/loi/code-civil et pagination",
+  "corrections_silencieuses": false,
+  "metadonnees_abrogation": {
+    "abroge_par": null,
+    "publication_abrogation": null,
+    "date_abrogation": null
+  },
+  "normalisations": [
+    "Unicode NFC",
+    "espaces de mise en page fusionnés",
+    "césures typographiques ressoudées devant une minuscule",
+    "double retour uniquement pour article/corps, énumérations et signatures"
+  ]
+}
