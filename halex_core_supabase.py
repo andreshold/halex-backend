@@ -2,12 +2,13 @@
 halex_core_supabase.py
 Moteur RAG Halex sur Supabase/pgvector.
 
-Phase 3 :
+Phase 4 :
 - résolution conversationnelle avant retrieval ;
 - enrichissement des références explicites ;
 - qualification normative avant rédaction ;
 - priorité déterministe (statut/rang/spécialité/date) uniquement lorsqu'une
-  contradiction a été qualifiée.
+  contradiction a été qualifiée ;
+- sélection déterministe de la version juridique applicable avant rédaction.
 
 La RPC Supabase renvoie une similarité cosinus : 1 - cosine_distance.
 """
@@ -24,7 +25,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from supabase import create_client
 
-from schema_metadata import libelle_source, libelle_statut, libelle_type_norme
+from schema_metadata import (
+    STATUTS_APPLICABLES,
+    libelle_source,
+    libelle_statut,
+    libelle_type_norme,
+)
 
 from conversation_context import resoudre_question_conversationnelle
 from moteur_normatif import analyser_normativement
@@ -85,6 +91,128 @@ SEUIL_SIM_SECONDE_CHANCE = 0.55
 
 MODE_PAR_DEFAUT = "citoyen"
 
+
+def _numero_version(meta: dict) -> int:
+    valeur = meta.get("version_numero", 1)
+    if isinstance(valeur, int) and not isinstance(valeur, bool) and valeur > 0:
+        return valeur
+    return 1
+
+
+def _date_debut_version(meta: dict) -> str:
+    valeur = meta.get("date_debut_effet")
+    if isinstance(valeur, str) and valeur:
+        return valeur
+    valeur = meta.get("date")
+    return valeur if isinstance(valeur, str) else ""
+
+
+def _version_applicable(meta: dict, date_cible: str | None = None) -> bool:
+    """True si le chunk peut fonder l'état du droit à la date cible.
+
+    `date_fin_effet` est l'autorité temporelle de la version. `historique`
+    reste un indicateur documentaire hérité et n'est pas utilisé comme filtre
+    dur afin de conserver la compatibilité avec le corpus v1.0 migré.
+    """
+    if meta.get("statut") not in STATUTS_APPLICABLES:
+        return False
+
+    cible = date_cible or date.today().isoformat()
+    debut = _date_debut_version(meta)
+    fin = meta.get("date_fin_effet")
+
+    if isinstance(debut, str) and debut and debut > cible:
+        return False
+    if isinstance(fin, str) and fin and fin < cible:
+        return False
+    return True
+
+
+def _selectionner_versions_applicables(
+    documents: list[dict],
+    date_cible: str | None = None,
+) -> list[dict]:
+    """Conserve seulement la version applicable la plus récente de chaque
+    (document_id, article), tout en gardant tous les chunks d'une même version
+    lorsqu'un article est segmenté.
+    """
+    applicables = [
+        d
+        for d in documents
+        if _version_applicable(d.get("metadata") or {}, date_cible)
+    ]
+    if not applicables:
+        return []
+
+    max_version: dict[tuple[str, str], int] = {}
+    for doc in applicables:
+        meta = doc.get("metadata") or {}
+        identite = str(meta.get("document_id") or meta.get("source") or "?")
+        article = str(meta.get("article") or "?")
+        cle = (identite, article)
+        max_version[cle] = max(
+            max_version.get(cle, 0),
+            _numero_version(meta),
+        )
+
+    resultat: list[dict] = []
+    for doc in applicables:
+        meta = doc.get("metadata") or {}
+        identite = str(meta.get("document_id") or meta.get("source") or "?")
+        article = str(meta.get("article") or "?")
+        cle = (identite, article)
+        if _numero_version(meta) == max_version[cle]:
+            resultat.append(doc)
+    return resultat
+
+
+def _selectionner_derniere_version(documents: list[dict]) -> list[dict]:
+    """Repli historique pour un article qui n'a plus de version applicable.
+
+    Sert notamment au lookup direct d'un article abrogé : on montre sa dernière
+    version en avertissant explicitement qu'elle n'est plus en vigueur.
+    """
+    if not documents:
+        return []
+
+    max_version: dict[tuple[str, str], int] = {}
+    for doc in documents:
+        meta = doc.get("metadata") or {}
+        identite = str(meta.get("document_id") or meta.get("source") or "?")
+        article = str(meta.get("article") or "?")
+        cle = (identite, article)
+        max_version[cle] = max(
+            max_version.get(cle, 0),
+            _numero_version(meta),
+        )
+
+    return [
+        doc
+        for doc in documents
+        if _numero_version(doc.get("metadata") or {})
+        == max_version[
+            (
+                str((doc.get("metadata") or {}).get("document_id")
+                    or (doc.get("metadata") or {}).get("source")
+                    or "?"),
+                str((doc.get("metadata") or {}).get("article") or "?"),
+            )
+        ]
+    ]
+
+
+def _necessite_enrichissement_modifications(documents: list[dict]) -> bool:
+    """Le registre textuel reste un filet de compatibilité pour les anciens
+    chunks `modifie`. Une version consolidée matérialisée ne doit pas être
+    recombinée par le LLM avec son acte modificatif.
+    """
+    return any(
+        (d.get("metadata") or {}).get("statut") == "modifie"
+        and (d.get("metadata") or {}).get("version_consolidee") is not True
+        for d in documents
+    )
+
+
 INSTRUCTIONS_MODES = {
     "citoyen": """STYLE DE RÉPONSE — MODE CITOYEN (défaut) :
 - Oriente ta réponse vers l'ACTION : que peut faire la personne, quelles
@@ -121,20 +249,19 @@ SALUTATIONS: set[str] = {
 
 
 def _chercher(question: str, k: int = 6) -> list[dict]:
-    """Recherche par similarité dans Supabase.
-    Retourne une liste de dicts : content, metadata, similarity."""
+    """Recherche vectorielle puis sélection de la version applicable.
+
+    La RPC peut encore renvoyer des versions historiques. On demande donc une
+    fenêtre plus large et le backend choisit ensuite, de façon déterministe,
+    la version courante la plus récente de chaque article.
+    """
     vecteur = _embeddings.embed_query(question)
     resultat = _supabase.rpc(
         "match_documents",
-        {"query_embedding": vecteur, "match_count": k * 3},
+        {"query_embedding": vecteur, "match_count": k * 8},
     ).execute()
-    # Défense en profondeur : même si la fonction SQL déployée est ancienne
-    # et ne filtre pas encore les abrogations, un article abrogé n'entre pas
-    # dans le contexte qui fonde une réponse.
-    return [
-        ligne for ligne in (resultat.data or [])
-        if (ligne.get("metadata") or {}).get("statut") != "abroge"
-    ][:k]
+    versions = _selectionner_versions_applicables(resultat.data or [])
+    return versions[:k]
 
 
 
@@ -178,15 +305,34 @@ def _enrichir_references_articles(
         for numero in refs:
             if total >= limite_references:
                 break
-            if not isinstance(numero, int) or isinstance(numero, bool):
+            if isinstance(numero, bool) or not isinstance(numero, (int, str)):
                 continue
-            article = f"Article {numero}"
-            if (source, article) in existants:
+            numero_texte = str(numero).strip()
+            if not numero_texte:
                 continue
-            par_source.setdefault(source, [])
-            if article not in par_source[source]:
-                par_source[source].append(article)
-                total += 1
+
+            if numero_texte.lower().startswith("article "):
+                article_principal = (
+                    "Article " + numero_texte.split(None, 1)[1]
+                )
+                numero_brut = numero_texte.split(None, 1)[1]
+            else:
+                article_principal = f"Article {numero_texte}"
+                numero_brut = numero_texte
+
+            candidats = [article_principal]
+            if numero_brut == "1":
+                candidats.append("Article 1er")
+
+            for article in candidats:
+                if total >= limite_references:
+                    break
+                if (source, article) in existants:
+                    continue
+                par_source.setdefault(source, [])
+                if article not in par_source[source]:
+                    par_source[source].append(article)
+                    total += 1
 
     if not par_source:
         return documents
@@ -212,7 +358,10 @@ def _enrichir_references_articles(
             )
             continue
 
-        for ligne in (resultat.data or []):
+        lignes_applicables = _selectionner_versions_applicables(
+            resultat.data or []
+        )
+        for ligne in lignes_applicables:
             meta = ligne.get("metadata") or {}
             cle = (meta.get("source"), meta.get("article"))
             if cle in existants:
@@ -243,17 +392,20 @@ def _texte_article(a: dict) -> str:
 
 
 def _construire_sources(articles: list[dict]) -> list[dict]:
-    """Regroupe les chunks retrouvés par (article, source), dans l'ordre de
-    pertinence (le chunk le mieux classé fixe la position de son article).
-    Si un même article revient sur plusieurs chunks, leurs textes sont
-    concaténés dans l'ordre où ils apparaissent."""
+    """Regroupe les morceaux d'une MÊME version d'article.
+
+    La clé inclut document_id et version_numero : deux versions juridiques
+    successives ne sont jamais concaténées accidentellement.
+    """
     sources: list[dict] = []
-    index: dict[tuple[str, str], dict] = {}
+    index: dict[tuple[str, str, int], dict] = {}
     for a in articles:
         meta = a["metadata"]
         article = meta.get("article", "?")
         source = meta.get("source", "?")
-        cle = (article, source)
+        document_id = str(meta.get("document_id") or source)
+        version_numero = _numero_version(meta)
+        cle = (document_id, article, version_numero)
         texte = _texte_article(a)
         if cle in index:
             index[cle]["texte"] += "\n\n" + texte
@@ -262,6 +414,12 @@ def _construire_sources(articles: list[dict]) -> list[dict]:
                 "article": article,
                 "source": source,
                 "source_courte": meta.get("source_courte"),
+                "document_id": meta.get("document_id"),
+                "chunk_id": meta.get("chunk_id"),
+                "version_numero": version_numero,
+                "version_consolidee": meta.get("version_consolidee", False),
+                "date_debut_effet": meta.get("date_debut_effet"),
+                "date_fin_effet": meta.get("date_fin_effet"),
                 "chemin_hierarchique": meta.get("chemin_hierarchique"),
                 "date": meta.get("date"),
                 "date_publication": meta.get("date_publication"),
@@ -341,6 +499,10 @@ def _etiquette(meta: dict) -> str:
     article_modifie_par = meta.get("article_modifie_par")
     article_date_modification = meta.get("article_date_modification")
     article_publication_modification = meta.get("article_publication_modification")
+    version_numero = _numero_version(meta)
+    version_consolidee = meta.get("version_consolidee") is True
+    date_debut_effet = meta.get("date_debut_effet")
+    date_fin_effet = meta.get("date_fin_effet")
 
     parties = [source, libelle_type_norme(meta.get("type_norme", ""))]
     if statut:
@@ -371,6 +533,18 @@ def _etiquette(meta: dict) -> str:
         if details_abrogation:
             libelle += " (" + " ; ".join(details_abrogation) + ")"
         parties.append(libelle)
+    if version_numero > 1 or version_consolidee:
+        libelle_version = f"version {version_numero}"
+        if version_consolidee:
+            libelle_version += " consolidée"
+        parties.append(libelle_version)
+    if isinstance(date_debut_effet, str) and date_debut_effet:
+        if isinstance(date_fin_effet, str) and date_fin_effet:
+            parties.append(
+                f"applicable du {date_debut_effet} au {date_fin_effet}"
+            )
+        else:
+            parties.append(f"applicable depuis le {date_debut_effet}")
     if meta.get("historique"):
         parties.append("texte historique")
     if date and not date.startswith("XXXX"):
@@ -500,7 +674,7 @@ def detecter_salutation(question: str) -> bool:
 # --- Détection de référence directe à un article ---
 
 _RE_ARTICLE = re.compile(
-    r"(?:\barticles?\b|\bart\.?\b|\batik\b)\s*(\d+(?:-\d+)?)",
+    r"(?:\barticles?\b|\bart\.?\b|\batik\b)\s*(\d+(?:[.-]\d+)*)",
     re.IGNORECASE,
 )
 _RE_PREAMBULE = re.compile(r"\b(?:pr[ée]ambule|preyanbil)\b", re.IGNORECASE)
@@ -635,17 +809,20 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
     (et éventuellement sa source), pour répondre exactement et sans coût de
     recherche vectorielle aux questions du type « article 4 » / « atik 12 »."""
     valeur_article = "Préambule" if preambule else f"Article {numero}"
+    valeurs_article = [valeur_article]
+    if not preambule and str(numero) == "1":
+        valeurs_article.append("Article 1er")
 
     requete = (
         _supabase.table("documents")
         .select("content, metadata")
-        .eq("metadata->>article", valeur_article)
+        .in_("metadata->>article", valeurs_article)
     )
     if source:
         requete = requete.eq("metadata->>source", source)
-    chunks = requete.execute().data
+    chunks_tous = requete.execute().data or []
 
-    if not chunks:
+    if not chunks_tous:
         return {
             "reponse": (
                 f"{valeur_article} n'existe pas dans les textes actuellement "
@@ -657,6 +834,13 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
             "type": "reponse",
             "methode": "lookup_direct",
         }
+
+    chunks_applicables = _selectionner_versions_applicables(chunks_tous)
+    chunks = (
+        chunks_applicables
+        if chunks_applicables
+        else _selectionner_derniere_version(chunks_tous)
+    )
 
     sources_trouvees = sorted({c["metadata"].get("source", "?") for c in chunks})
 
@@ -677,11 +861,16 @@ def lookup_article(numero: str | None, source: str | None, preambule: bool = Fal
             "contexte_clarification": {"type_lookup": "article", "numero": numero},
         }
 
-    # Enrichissement APRÈS le test de désambiguïsation ci-dessus : enrichir
-    # avant ferait entrer le texte modificateur dans `sources_trouvees` et
-    # déclencherait une clarification entre un article et sa modification.
-    chunks, relations = enrichir_modifications(_supabase, chunks)
-    _, registre_par_id = charger_registre(_supabase)
+    # Une version consolidée matérialisée est déjà le texte applicable :
+    # on ne demande plus au LLM de recomposer l'ancien article et son acte
+    # modificatif. L'enrichissement historique reste un filet de compatibilité
+    # pour les anciens chunks `modifie` non consolidés.
+    if _necessite_enrichissement_modifications(chunks):
+        chunks, relations = enrichir_modifications(_supabase, chunks)
+        _, registre_par_id = charger_registre(_supabase)
+    else:
+        relations = []
+        registre_par_id = {}
 
     toutes_sources = _construire_sources(chunks)
     contexte = "\n\n".join(
@@ -1006,10 +1195,15 @@ def poser_question(
     # métadonnées (ex. un article qui renvoie expressément à l'article 84).
     articles = _enrichir_references_articles(articles)
 
-    # ③ter Enrichissement par les textes modificateurs.
-    articles, relations = enrichir_modifications(_supabase, articles)
-    _, registre_par_id = charger_registre(_supabase)
-    bloc_modifications = formater_bloc_prompt(relations, registre_par_id)
+    # ③ter Enrichissement de compatibilité. Les versions consolidées
+    # matérialisées n'ont plus besoin d'être recomposées par le LLM.
+    if _necessite_enrichissement_modifications(articles):
+        articles, relations = enrichir_modifications(_supabase, articles)
+        _, registre_par_id = charger_registre(_supabase)
+        bloc_modifications = formater_bloc_prompt(relations, registre_par_id)
+    else:
+        relations = []
+        bloc_modifications = "(aucune relation supplémentaire à recomposer)"
 
     # ④ Phase 3 : qualification sémantique + résolution normative
     # déterministe. Le qualificateur peut dire "complémentaire",
@@ -1154,11 +1348,14 @@ def article_du_jour() -> dict:
     if cache.data:
         return cache.data[0]
 
+    aujourd_hui = date.today().isoformat()
     total = (
         _supabase.table("documents")
         .select("id", count="exact")
         .like("content", "Article%")
-        .neq("metadata->>statut", "abroge")
+        .in_("metadata->>statut", list(STATUTS_APPLICABLES))
+        .is_("metadata->>date_fin_effet", "null")
+        .lte("metadata->>date_debut_effet", aujourd_hui)
         .execute()
     )
     if not total.count:
@@ -1172,7 +1369,9 @@ def article_du_jour() -> dict:
         _supabase.table("documents")
         .select("id, content, metadata")
         .like("content", "Article%")
-        .neq("metadata->>statut", "abroge")
+        .in_("metadata->>statut", list(STATUTS_APPLICABLES))
+        .is_("metadata->>date_fin_effet", "null")
+        .lte("metadata->>date_debut_effet", aujourd_hui)
         .order("id")
         .range(offset, offset)
         .execute()
